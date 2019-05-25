@@ -33,6 +33,7 @@ class AdminController extends Controller
      */
     public function index(Request $request)
     {
+        
         $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
 
         $arbitros = Arbitro::all();

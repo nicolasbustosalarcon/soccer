@@ -114,6 +114,7 @@ Route::get('directortecnico/{idDirectorTecnico}/destroy',[
 
 
 //--------------Rutas de Partido---------------//
+Route::group(['middleware' =>'auth'], function(){
 Route::resource('partido','PartidoController');
 Route::get('partido/{idPartido}/destroy',[
 	'uses'	=>	'PartidoController@destroy',
@@ -127,6 +128,7 @@ Route::get('partido/{idPartido}/indexbuscador',[
 	'uses'	=>	'PartidoController@buscador',
 	'as'	=>	'partido.indexbuscador'
 ]);
+});
 
 
 //--------------Rutas de Torneo---------------//
@@ -149,40 +151,45 @@ Route::get('historial/{idHistorial}/destroy',[
 	'as'	=>	'historial.destroy'
 ]);
 //esta ruta le pasa el id del partido para crear las plantillas
+Route::group(['middleware' =>'auth'], function(){
 Route::get('historial/{idPartido}/create',[
 	'uses'	=>	'HistorialController@create',
 	'as'	=>	'historial.create']);
+});
 ///////////////////////////////////////////////////////////
 
 //------------------Rutas de TrayectoriaJugador-----------//
+Route::group(['middleware' =>'auth'], function(){
 Route::resource('trayectoriajugador','TrayectoriaJugadorController');
 Route::get('trayectoriajugador/{idTrayectoriaJugador}/destroy',[
 	'uses'	=>	'TrayectoriaJugadorController@destroy',
 	'as'	=>	'trayectoriajugador.destroy'
 ]);
+});
 //esta ruta le pasa el id del jugador para crear la trayectoria
+Route::group(['middleware' =>'auth'], function(){
 Route::get('trayectoriajugador/{idJugador}/create',[
 	'uses'	=>	'TrayectoriaJugadorController@create',
 	'as'	=>	'trayectoriajugador.create']);
-
+});
 
 //**********************************************************/
 
 //--------------Rutas de User---------------//
+Route::group(['middleware' =>'auth'], function(){
 Route::resource('user','UserController');
 Route::get('user/{idPais}/destroy',[
 	'uses'	=>	'UserController@destroy',
 	'as'	=>	'user.destroy'
 ]);
-
-
+});
 //------------Rutas de Administrador----------//
 
+Route::group(['middleware' =>'auth'], function(){
 Route::resource('admin','AdminController');
  	
 Route::get('/admin', 'AdminController@index')->name('admin.index');
-
-
+});
 
 
 

@@ -58,8 +58,8 @@
 	@if(($partidos->estadoPartido != 'Suspendido')) <!-- Valida para que crear plantilla de jugadores del partido-->
 		<div class="row">
 			<div class="col">
-				<!----------- SOLO LE MUESTRA ESTA PARTE A LOS USUARIOS DE TIPO user ---------------->
-				@if(auth()->user()->authorizeRolesLogin('user')) 
+				<!----------- SOLO LE MUESTRA ESTA PARTE A LOS USUARIOS DE TIPO admin ---------------->
+				@if(auth()->user()->authorizeRolesLogin('admin')) 
 					<!--<form class="form-group" method="POST" action="/historial/{{$partidos->idPartido}}/create" enctype="multipart/form-data">	
 						
     					<select name="idPartido" class="form-control">
