@@ -17,19 +17,13 @@
 				<th>Posición</th>
 				<th>Altura</th>
 				<th>Peso</th>
-				<th>ID Club</th>
+				<th>Club</th>
 				<!--<th>Goles</th>
 				<th>Amarillas</th>
 				<th>Rojas</th>
 				<th>Minutos</th>-->
-				<th>ID Nacionalidad</th>
-
-
-				
-				
-				
+				<th>Nacionalidad</th>
 				<th>Acción</th>
-				
 			</thead>
 			<tbody>
 				@foreach($jugadores as $jug)

@@ -463,7 +463,7 @@
 		
 		<div class="row">
 			<div class="col">
-											<a href="/jugador/create" class="btn btn-success">Crear Jugador</a>
+				<a href="/jugador/create" class="btn btn-success">Crear Jugador</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -476,12 +476,12 @@
 						<th>Posición</th>
 						<th>Altura</th>
 						<th>Peso</th>
-						<th>ID Club</th>
+						<th>Club</th>
 						<!--<th>Goles</th>
 						<th>Amarillas</th>
 						<th>Rojas</th>
 						<th>Minutos</th>-->
-						<th>ID Nacionalidad</th>							
+						<th>Nacionalidad</th>							
 						<th>Acción</th>
 						
 					</thead>
