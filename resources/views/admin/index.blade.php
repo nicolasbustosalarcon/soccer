@@ -61,7 +61,8 @@
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
   		<div class="row">
   			<div class="col">
-  					<a href="/arbitro/create" class="btn btn-success">Crear Arbitro</a>
+  					<a href="/arbitro/create" class="btn btn-outline-success my-2 my-sm-0">Crear Arbitro</a>
+
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
@@ -97,8 +98,8 @@
 								<td>{{ $arb['gradoArbitro'] }}</td>
 
 								<td>
-									<a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>Editar</a>
-									<a href="{{ route('arbitro.destroy', $arb->idArbitro)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el árbitro?')" class="btn btn-danger">Eliminar</a>
+									<a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-outline-primary my-2 my-sm-0"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>Editar</a>
+									<a href="{{ route('arbitro.destroy', $arb->idArbitro)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el árbitro?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 									</td>
 							</tr>
 						@endforeach
@@ -115,7 +116,7 @@
 		
 		<div class="row">
 			<div class="col">
-				<a href="/asociacion/create" class="btn btn-success"><span class="glyphicon glyphicon-wrench"></span>Crear Asociación</a>
+				<a href="/asociacion/create" class="btn btn-outline-success my-2 my-sm-0"s><span class="glyphicon glyphicon-wrench"></span>Crear Asociación</a>
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
@@ -145,8 +146,8 @@
 
 								
 								<td>
-									<a href="/asociacion/{{$asoc->idAsociacion}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
-									<a href="{{ route('asociacion.destroy', $asoc->idAsociacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la asociación?')" class="btn btn-danger">Eliminar</a>
+									<a href="/asociacion/{{$asoc->idAsociacion}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
+									<a href="{{ route('asociacion.destroy', $asoc->idAsociacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la asociación?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -162,7 +163,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/ciudad/create" class="btn btn-success">Crear Ciudad</a>
+				<a href="/ciudad/create" class="btn btn-outline-success my-2 my-sm-0">Crear Ciudad</a>
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
@@ -191,8 +192,8 @@
 
 								
 								<td>
-									<a href="/ciudad/{{$ciu->idCiudad}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
-									<a href="{{ route('ciudad.destroy', $ciu->idCiudad)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la ciudad?')" class="btn btn-danger">Eliminar</a>
+									<a href="/ciudad/{{$ciu->idCiudad}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
+									<a href="{{ route('ciudad.destroy', $ciu->idCiudad)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la ciudad?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -206,7 +207,7 @@
 
 	<div class="tab-pane fade" id="club" role="tabpanel" aria-labelledby="club-tab">
 		<div class="col">
-			<a href="/club/create" class="btn btn-success">Crear equipo</a>
+			<a href="/club/create" class="btn btn-outline-success my-2 my-sm-0">Crear equipo</a>
 			<table class="table table-striped">
 				<thead>
 					<th>ID</th>
@@ -235,8 +236,8 @@
 							<td>{{ $club->fundacionClub}}</td>
 							<td><img src="images/club/{{ $club['imagenClub']}}" class="img-responsive" style="width:45px !important; height:45px !important"></td>
 							<td>
-								<a href="/club/{{$club->idClub}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-								<a href="{{ route('club.destroy', $club->idClub)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el club?')" class="btn btn-danger">Borrar</a>
+								<a href="/club/{{$club->idClub}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+								<a href="{{ route('club.destroy', $club->idClub)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el club?')" class="btn btn-outline-danger my-2 my-sm-0">Borrar</a>
 								</td>
 						</tr>
 					@endforeach
@@ -266,7 +267,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/confederacion/create" class="btn btn-success">Crear Confederación</a>
+				<a href="/confederacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Confederación</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -294,8 +295,8 @@
 								<td>{{ $conf['fundacionConfederacion'] }}</td>
 								
 								<td>
-									<a href="/confederacion/{{$conf->idConfederacion}}/edit" class="btn btn-warning">Editar<span class="glyphicon glyphicon-wrench"></span></a>
-									<a href="{{ route('confederacion.destroy', $conf->idConfederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la confederación?')" class="btn btn-danger">Eliminar</a>
+									<a href="/confederacion/{{$conf->idConfederacion}}/edit" class="btn btn-outline-info my-2 my-sm-0">Editar<span class="glyphicon glyphicon-wrench"></span></a>
+									<a href="{{ route('confederacion.destroy', $conf->idConfederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la confederación?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -310,7 +311,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/directortecnico/create" class="btn btn-success">Crear Director Tecnico</a>
+				<a href="/directortecnico/create" class="btn btn-outline-success my-2 my-sm-0">Crear Director Tecnico</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -347,8 +348,8 @@
 
 								
 								<td>
-									<a href="/directortecnico/{{$dt->idDirectorTecnico}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-									<a href="{{ route('directortecnico.destroy', $dt->idDirectorTecnico)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el DT?')" class="btn btn-danger">Eliminar</a>
+									<a href="/directortecnico/{{$dt->idDirectorTecnico}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+									<a href="{{ route('directortecnico.destroy', $dt->idDirectorTecnico)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el DT?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -363,7 +364,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/estadio/create" class="btn btn-success">Crear Estadio</a>
+				<a href="/estadio/create" class="btn btn-outline-success my-2 my-sm-0">Crear Estadio</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -403,8 +404,8 @@
 
 								
 								<td>
-									<a href="/estadio/{{$est->idEstadio}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
-									<a href="{{ route('estadio.destroy', $est->idEstadio)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el estadio?')" class="btn btn-danger">Eliminar</a>
+									<a href="/estadio/{{$est->idEstadio}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench"></span>Editar</a>
+									<a href="{{ route('estadio.destroy', $est->idEstadio)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el estadio?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -419,7 +420,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/federacion/create" class="btn btn-success">Crear Federación</a>
+				<a href="/federacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Federación</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -447,8 +448,8 @@
 								<td>{{ $fed['fundacionFederacion'] }}</td>
 								
 								<td>
-									<a href="/federacion/{{$fed->idFederacion}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-									<a href="{{ route('federacion.destroy', $fed->idConfederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la federación?')" class="btn btn-danger">Eliminar</a>
+									<a href="/federacion/{{$fed->idFederacion}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+									<a href="{{ route('federacion.destroy', $fed->idConfederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la federación?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -463,7 +464,7 @@
 		
 		<div class="row">
 			<div class="col">
-				<a href="/jugador/create" class="btn btn-success">Crear Jugador</a>
+				<a href="/jugador/create" class="btn btn-outline-success my-2 my-sm-0">Crear Jugador</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -472,7 +473,7 @@
 						<th>Nombre</th>
 						<th>Apellidos</th>
 						<th>Nacimiento</th>
-						<th>Edad</th>
+						<!--<th>Edad</th>-->
 						<th>Posición</th>
 						<th>Altura</th>
 						<th>Peso</th>
@@ -481,7 +482,7 @@
 						<th>Amarillas</th>
 						<th>Rojas</th>
 						<th>Minutos</th>-->
-						<th>Nacionalidad</th>							
+						<th>Pais</th>							
 						<th>Acción</th>
 						
 					</thead>
@@ -493,7 +494,7 @@
 								<td>{{ $jug['nombreJugador'] }}</td>
 								<td>{{ $jug['apellidosJugador'] }}</td>
 								<td>{{ $jug['nacimientoJugador'] }}</td>
-								<td>{{ $jug['edadJugador'] }}</td>
+								<!--<td>{{ $jug['edadJugador'] }}</td>-->
 								<td>{{ $jug['posicionJugador'] }}</td>
 								<td>{{ $jug['alturaJugador'] }}</td>
 								<td>{{ $jug['pesoJugador'] }}</td>
@@ -514,10 +515,10 @@
 								@endforeach
 
 								
-								<td>
-									<a href="/jugador/{{$jug->idJugador}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-									<a href="{{ route('jugador.destroy', $jug->idJugador)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el jugador?')" class="btn btn-danger">Eliminar</a>
-								</td>
+								<th>
+									<a href="/jugador/{{$jug->idJugador}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+									<a href="{{ route('jugador.destroy', $jug->idJugador)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el jugador?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
+								</th>
 							</tr>
 						@endforeach
 					</tbody>
@@ -530,7 +531,7 @@
 	<div class="tab-pane fade" id="pais" role="tabpanel" aria-labelledby="pais-tab">
 		<div class="row">
 			<div class="col">
-												<a href="/pais/create" class="btn btn-success">Añadir nuevo País...</a>
+				<a href="/pais/create" class="btn btn-outline-success my-2 my-sm-0">Añadir nuevo País...</a>
 
 					<table class="table table-striped">
 						<thead>
@@ -557,8 +558,8 @@
 	    			
 									
 									<td>
-										<a href="/pais/{{$pais->idPais}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-										<a href="{{ route('pais.destroy', $pais->idPais)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el país?')" class="btn btn-danger">Eliminar</a>
+										<a href="/pais/{{$pais->idPais}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+										<a href="{{ route('pais.destroy', $pais->idPais)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el país?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 									</td>
 								</tr>
 							@endforeach
@@ -574,7 +575,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/torneo/create" class="btn btn-success">Crear Torneo</a>
+				<a href="/torneo/create" class="btn btn-outline-success my-2 my-sm-0">Crear Torneo</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -618,8 +619,8 @@
 
 								
 								<td>
-									<a href="/torneo/{{$tor->idTorneo}}/edit" class="btn btn-warning">Editar<span class="glyphicon glyphicon-wrench"></span></a>
-									<a href="{{ route('torneo.destroy', $tor->idTorneo)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el Torneo?')" class="btn btn-danger">Eliminar</a>
+									<a href="/torneo/{{$tor->idTorneo}}/edit" class="btn btn-outline-info my-2 my-sm-0">Editar<span class="glyphicon glyphicon-wrench"></span></a>
+									<a href="{{ route('torneo.destroy', $tor->idTorneo)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el Torneo?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -634,7 +635,7 @@
 	
 		<div class="row">
 			<div class="col">
-										<a href="/user/create" class="btn btn-default">Crear Usuario</a>
+				<a href="/user/create" class="btn btn-outline-success my-2 my-sm-0">Crear Usuario</a>
 	
 	<div class="row">
 		<table class="table table-striped">
@@ -653,8 +654,8 @@
 						<td>{{ $user['email'] }}</td>
 						<td>{{ $user->tipo}}</td>
 						<td>
-							<a href="/user/{{$user->id}}/edit" class="btn btn-warning">Editar</a>			
-							<a href="{{ route('user.destroy', $user->id)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el usuario?')" class="btn btn-danger">Eliminar</a>	
+							<a href="/user/{{$user->id}}/edit" class="btn btn-outline-info my-2 my-sm-0">Editar</a>			
+							<a href="{{ route('user.destroy', $user->id)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el usuario?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>	
 						</td>
 					</tr>
 				@endforeach
