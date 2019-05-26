@@ -9,60 +9,102 @@
 		@method('PUT')
 		@csrf
 		<div class="form-group">
-			<label for="">Nombre</label>
-			<input type="text" name="nombreJugador" class="form-control" value="{{$jugadores->nombreJugador}}">
-			<label for="">Apellidos</label>
-			<input type="text" name="apellidosJugador" class="form-control" value="{{$jugadores->apellidosJugador}}">
-			<label for="">Nacimiento</label>
-			<input type="date" name="nacimientoJugador" class="form-control" value="{{$jugadores->nacimientoJugador}}">
-			<label for="">Edad</label>
-			<input type="text" name="edadJugador" class="form-control" value="{{$jugadores->edadJugador}}">
-			<label>Posición</label>
-			<select name="posicionJugador" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
-					<option value="Arquero">Arquero</option>
-					<option value="Defensa">Defensa</option>
-					<option value="Mediocampista">Mediocampista</option>
-					<option value="Delantero">Delantero</option>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Nombre</label>
+					<input type="text" name="nombreJugador" class="form-control" value="{{$jugadores->nombreJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Apellidos</label>
+					<input type="text" name="apellidosJugador" class="form-control" value="{{$jugadores->apellidosJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Nacimiento</label>
+					<input type="date" name="nacimientoJugador" class="form-control" value="{{$jugadores->nacimientoJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Edad</label>
+					<input type="text" name="edadJugador" class="form-control" value="{{$jugadores->edadJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label>Posición</label>
+					<select name="posicionJugador" class="form-control" value="{{$jugadores->posicionJugador}}">
+						<option disabled selected value>Seleciona una opción...</option>
+						<option value="Arquero">Arquero</option>
+						<option value="Defensa">Defensa</option>
+						<option value="Mediocampista">Mediocampista</option>
+						<option value="Delantero">Delantero</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Altura (cm)</label>
+					<input type="text" name="alturaJugador" class="form-control" value="{{$jugadores->alturaJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Peso (kg)</label>
+					<input type="text" name="pesoJugador" class="form-control" value="{{$jugadores->pesoJugador}}">
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label>Pie</label>
+					<select name="pieJugador" class="form-control" value="{{$jugadores->pieJugador}}">
+						<option disabled selected value>Seleciona una opción...</option>
+						<option value="derecho">Derecho</option>
+						<option value="izquierdo">Izquierdo</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label for="">Imagen</label>
+					<input type="file" name="imagenJugador" class="form-control">
+					@if (($jugadores->imagenJugador)!="")
+					<img height="100px" width="100px"src="images/jugador/{{ $jugadores['imagenJugador']}}" class="img-responsive">
+					@endif
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label>Club</label>
+					<select name="idClub" class="form-control" value="{{$jugadores->idClub}}">
+						<option disabled selected value>Seleciona una opción...</option>
+						@foreach ($clubes as $club)
+						<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
+						@endforeach
+					</select>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+				<div class="form-group">
+					<label>Nacionalidad</label>
+					<select name="idPais" class="form-control" value="{{$jugadores->idPais}}">
+						<option disabled selected value>Seleciona una opción...</option>
+						@foreach ($paises as $ps)
+						<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
+						@endforeach
+					</select>
+				</div>
+			</div>
 
-
-			</select>	
-			<label for="">Altura (cm)</label>
-			<input type="text" name="alturaJugador" class="form-control" value="{{$jugadores->alturaJugador}}">
-			<label for="">Peso (kg)</label>
-			<input type="text" name="pesoJugador" class="form-control" value="{{$jugadores->pesoJugador}}">
-			<label>Pie</label>
-			<select name="pieJugador" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
-					<option value="derecho">Derecho</option>
-					<option value="izquierdo">Izquierdo</option>
-			</select>
-			<label for="">Imagen</label>
-			<input type="file" name="imagenJugador" class="form-control">
-			
-
-					
-			<label>Club</label>
-    			<select name="idClub" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
-    				@foreach ($clubes as $club)
-    					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
-    				@endforeach
-    			</select>
-			
-    		<label>Nacionalidad</label>
-    			<select name="idPais" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
-    				@foreach ($paises as $ps)
-    					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
-    				@endforeach
-    			</select>
-			
-			
-
-			<button type="submit" class="btn btn-primary">Guardar</button>
+			<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">  
+				<button type="submit" class="btn btn-primary">Guardar</button>
+			</div>
 		</div>
 	</form>
-		<a href="../../admin"><button class='btn btn-danger'>Atrás</button>
-
+	<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">  
+		<a href="../../admin"><button class='btn btn-danger'>Atrás</button></a>
+    </div>
 @endsection

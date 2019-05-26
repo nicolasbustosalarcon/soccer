@@ -120,8 +120,7 @@
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
-						<th>ID Federación</th>
-						<th>Nombre</th>
+						<th>Asociacion</th>
 						<th>Fundación</th>
 						<th>Imagen</th>
 						
@@ -134,11 +133,11 @@
 							<tr>
 								<td>{{ $asoc['idAsociacion'] }}</td>
 
-								@foreach($federaciones as $fed)
+								<!--@foreach($federaciones as $fed)
 									@if($asoc->idFederacion === $fed->idFederacion)
 										<td>{{ $fed['nombreFederacion'] }}</td>		
 									@endif
-								@endforeach
+								@endforeach-->
 
 								<td>{{ $asoc['nombreAsociacion'] }}</td>
 								<td>{{ $asoc['fundacionAsociacion'] }}</td>
@@ -490,7 +489,8 @@
 						@foreach($jugadores as $jug)
 							<tr>
 								<td>{{ $jug['idJugador'] }}</td>
-								<td><img src="{{asset('imagenes/jugador/' .$jug->imagenJugador)}}" class="img-responsive" style="width:21px !important; height:21px !important"></td>
+								
+								<td><img src="images/jugador/{{ $jug['imagenJugador']}}" class="img-responsive" style="width:60px !important"></td>
 								<td>{{ $jug['nombreJugador'] }}</td>
 								<td>{{ $jug['apellidosJugador'] }}</td>
 								<td>{{ $jug['nacimientoJugador'] }}</td>
