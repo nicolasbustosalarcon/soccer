@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-
+use Illuminate\Support\Facades\Input;
 use App\Pais;
 use App\Club;
 use App\Jugador;
@@ -61,13 +61,13 @@ class JugadorController extends Controller
      */
     public function store(Request $request)
     {
-         if($request->hasFile('imagenJugador')){
-            $file = $request->file('imagenJugador');
-            $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/jugador/',$name);
+        //if($request->hasFile('imagenJugador')){
+        //    $file = $request->file('imagenJugador');
+        //    $name = time().$file->getClientOriginalName();
+        //    $file->move(public_path().'/images/jugador/',$name);
             
             
-        }
+        //}
 
         $jugador = new Jugador();
         $jugador->nombreJugador = $request->input('nombreJugador');
@@ -83,8 +83,12 @@ class JugadorController extends Controller
         $jugador->amarillasJugador = $request->input('amarillasJugador');
         $jugador->rojasJugador = $request->input('rojasJugador');
         $jugador->minutostotalesJugador = $request->input('minutostotalesJugador');        
-        $jugador->imagenJugador = $name;    
-
+        //$jugador->imagenJugador = $name;    
+        if(Input::hasfile('imagenJugador')){
+            $file=Input::file('imagenJugador');
+            $file->move(public_path().'/images/jugador/',$file->getClientOriginalName());
+            $jugador->imagenJugador=$file->getClientOriginalName();
+        }
         $jugador->idPais = $request->input('idPais');        
         
         $jugador->save();
@@ -160,7 +164,13 @@ class JugadorController extends Controller
         $jugador->amarillasJugador = $request->input('amarillasJugador');
         $jugador->rojasJugador = $request->input('rojasJugador');
         $jugador->minutostotalesJugador = $request->input('minutostotalesJugador');        
-        $jugador->imagenJugador = $request->input('imagenJugador');        
+        //$jugador->imagenJugador = $request->input('imagenJugador');
+        if(Input::hasfile('imagenJugador')){
+            $file=Input::file('imagenJugador');
+            $file->move(public_path().'/images/jugador',$file->getClientOriginalName());
+            $jugador->imagenJugador=$file->getClientOriginalName();
+
+        }
         $jugador->idPais = $request->input('idPais');        
   
         $jugador->update();

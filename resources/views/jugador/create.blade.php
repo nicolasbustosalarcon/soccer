@@ -70,11 +70,10 @@
 		</div>
 
 		<div class="form-group">
-			<label for="">Imagen</label>
+			<label for="imagenJugador">Imagen</label>
 			<input type="file" name="imagenJugador" class="form-control">
 		</div>
-
-
+		
 		<div class="form-group">
 							
 			<label>Club</label>
