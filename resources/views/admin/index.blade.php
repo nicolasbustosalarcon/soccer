@@ -472,7 +472,7 @@
 						<th>Nombre</th>
 						<th>Apellidos</th>
 						<th>Nacimiento</th>
-						<!--<th>Edad</th>-->
+						<th>Edad</th>
 						<th>Posición</th>
 						<th>Altura</th>
 						<th>Peso</th>
@@ -494,7 +494,7 @@
 								<td>{{ $jug['nombreJugador'] }}</td>
 								<td>{{ $jug['apellidosJugador'] }}</td>
 								<td>{{ $jug['nacimientoJugador'] }}</td>
-								<!--<td>{{ $jug['edadJugador'] }}</td>-->
+								<td>{{ $jug['edadJugador'] }}</td>
 								<td>{{ $jug['posicionJugador'] }}</td>
 								<td>{{ $jug['alturaJugador'] }}</td>
 								<td>{{ $jug['pesoJugador'] }}</td>
@@ -515,10 +515,12 @@
 								@endforeach
 
 								
-								<th>
+								<td>
 									<a href="/jugador/{{$jug->idJugador}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+								</td>
+								<td>
 									<a href="{{ route('jugador.destroy', $jug->idJugador)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el jugador?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
-								</th>
+								<td>
 							</tr>
 						@endforeach
 					</tbody>
