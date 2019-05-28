@@ -9,14 +9,17 @@
 	<div class="row">
 		<div class="col">
 			<form class="form-inline my-2 my-lg-0" method="GET" action="/admin" enctype="multipart/form-data">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    	
+      			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>	
 			</form>
 		</div>
 	</div>	
 
+	<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir Partido</a>
+
 <!--- Fin Buscador del Admin --->
+
+
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -274,8 +277,6 @@
 						<th>ID Continente</th>
 						<th>Nombre</th>
 						<th>Fundación</th>
-						
-						
 						<th>Acción</th>
 						
 					</thead>
@@ -323,8 +324,7 @@
 
 
 						
-						
-						
+							
 						<th>Acción</th>
 						
 					</thead>
@@ -666,12 +666,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
 </div>
 
 @endsection

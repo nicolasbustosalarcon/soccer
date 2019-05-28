@@ -1,4 +1,3 @@
-
 @extends ('layouts.app')
 
 @section ('titulo', 'Partido Create')

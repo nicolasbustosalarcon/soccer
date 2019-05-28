@@ -128,6 +128,10 @@ Route::get('partido/{idPartido}/indexbuscador',[
 	'uses'	=>	'PartidoController@buscador',
 	'as'	=>	'partido.indexbuscador'
 ]);
+Route::get('partido/create',[
+	'uses' => 'PartidoController@create',
+	'as'   => 'partido.create'
+]);
 });
 
 

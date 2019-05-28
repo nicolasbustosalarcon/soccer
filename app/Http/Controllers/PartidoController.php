@@ -61,7 +61,7 @@ class PartidoController extends Controller
      */
     public function create(Request $request)
     {   
-        $request->user()->authorizeRoles('user'); //Se valida que el usuario que verá estos datos sea de tipo administrador
+        $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
 
         $asociaciones=Asociacion::all();
         $clubes=Club::all();
