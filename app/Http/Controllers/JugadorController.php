@@ -10,7 +10,10 @@ use App\Club;
 use App\Jugador;
 use App\TrayectoriaJugador;
 use App\Torneo;
+use DateTime;
+use Auth;
 
+use Carbon\Carbon;
 
 class JugadorController extends Controller
 {
@@ -72,8 +75,11 @@ class JugadorController extends Controller
         $jugador = new Jugador();
         $jugador->nombreJugador = $request->input('nombreJugador');
         $jugador->apellidosJugador = $request->input('apellidosJugador');
-        $jugador->nacimientoJugador = $request->input('nacimientoJugador');
-        $jugador->edadJugador = $request->input('edadJugador');
+        $anho = $request->input('anho');
+        $mes = $request->input('mes');
+        $dia = $request->input('dia');
+        $jugador->nacimientoJugador = $anho.'-'.$mes.'-'.$dia;
+        $jugador->edadJugador= Carbon::createFromDate($anho,$mes,$dia)->age;
         $jugador->posicionJugador = $request->input('posicionJugador');
         $jugador->alturaJugador = $request->input('alturaJugador');
         $jugador->pesoJugador = $request->input('pesoJugador');
