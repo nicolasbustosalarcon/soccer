@@ -138,8 +138,11 @@ class JugadorController extends Controller
         $jugadores = Jugador::findOrFail($id);
         $clubes=Club::all();
         $paises=Pais::all();
-        
-        return view('jugador.edit', ['paises' => $paises, 'jugadores' => $jugadores, 'clubes' => $clubes]);
+        $fecha_como_entero = strtotime($jugadores->nacimientoJugador);
+        $anho = date("Y", $fecha_como_entero);
+        $mes = date("m", $fecha_como_entero);
+        $dia = date("d", $fecha_como_entero);
+        return view('jugador.edit', ['paises' => $paises, 'jugadores' => $jugadores, 'clubes' => $clubes,'anho' => $anho, 'mes' => $mes, 'dia' => $dia]);
     }
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -156,11 +159,13 @@ class JugadorController extends Controller
     public function update(Request $request, $id)
     {
         $jugador = Jugador::findOrFail($id);
-        
+        $anho = $request->input('anho');
+        $mes = $request->input('mes');
+        $dia = $request->input('dia');
         $jugador->nombreJugador = $request->input('nombreJugador');
         $jugador->apellidosJugador = $request->input('apellidosJugador');
-        $jugador->nacimientoJugador = $request->input('nacimientoJugador');
-        $jugador->edadJugador = $request->input('edadJugador');
+        $jugador->nacimientoJugador =  $anho.'-'.$mes.'-'.$dia;
+        $jugador->edadJugador = Carbon::createFromDate($anho,$mes,$dia)->age;
         $jugador->posicionJugador = $request->input('posicionJugador');
         $jugador->alturaJugador = $request->input('alturaJugador');
         $jugador->pesoJugador = $request->input('pesoJugador');
