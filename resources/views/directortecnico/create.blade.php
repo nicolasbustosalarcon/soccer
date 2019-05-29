@@ -8,20 +8,20 @@
 		@csrf
 		<div class="form-group">
 			<label for="">Nombre</label>
-			<input type="text" name="nombreDirectorTecnico" class="form-control">
+			<input type="text" name="nombreDirectorTecnico" class="form-control" required >
 			<label for="">Apellidos</label>
-			<input type="text" name="apellidosDirectorTecnico" class="form-control">
+			<input type="text" name="apellidosDirectorTecnico" class="form-control" required>
 			<label for="">Nacimiento</label>
-			<input type="date" name="nacimientoDirectorTecnico" class="form-control">
+			<input type="date" name="nacimientoDirectorTecnico" class="form-control" required>
 			<label for="">Edad</label>
-			<input type="text" name="edadDirectorTecnico" class="form-control">
+			<input type="text" name="edadDirectorTecnico" class="form-control" required>
 			
 			<label for="">Imagen</label>
-			<input type="file" name="imagenDirectorTecnico" class="form-control">
+			<input type="file" name="imagenDirectorTecnico" class="form-control" required>
 	
 			
     		<label>Nacionalidad</label>
-    			<select name="idPais" class="form-control">
+    			<select name="idPais" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>

@@ -15,7 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('partido/search', function(){
+	$search = urlencode(e(Input::get('search')));
+	$route = "partido/search/$search";
+	return redirect($route);
+});
+Route::get("partido/search/{search}", "PartidoController@search");
 
 Route::get('prueba ', 'TestController@prueba');
 
