@@ -679,7 +679,32 @@
 				<th>Acción</th>	
 			</thead>
 			<tbody>
-				
+				@foreach($partido as $parti)
+					<tr>
+						<td>{{$parti['idPartido']}}</td>
+						@foreach($clubes as $club)
+							@if($club->idClub === $parti->clubLocalPartido)
+								<td>{{ $club['nombreClub'] }}</td>
+							@endif
+						@endforeach
+						@foreach($clubes as $club)
+							@if($club->idClub === $parti->clubVisitaPartido)
+								<td>{{ $club['nombreClub'] }}</td>
+							@endif
+						@endforeach
+						@foreach($torneos as $tor)
+							@if($tor->idTorneo === $parti->idTorneo)
+								<td>{{ $tor['nombreTorneo'] }}</td>
+							@endif
+						@endforeach
+						<td>
+							<a href="/partido/{{$parti->idPartido}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+						</td>
+						<td>
+							<a href="{{ route('partido.destroy', $parti->idPartido)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el partido?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
+						</td>
+					</tr>
+				@endforeach
 			</tbody>
 		</table>
 	</div>

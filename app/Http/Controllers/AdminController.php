@@ -18,6 +18,7 @@ use App\Confederacion;
 use App\Continente;
 use App\Jugador;
 use App\User;
+use App\Partido;
 
 
 
@@ -49,7 +50,7 @@ class AdminController extends Controller
         $estadios = Estadio::all();
         $jugadores = Jugador::all();
         $users = User::all();
-
+        $partido = Partido::all();
         /*if ($request)
         {
             $query=trim($request->get('searchText'));//Se obtiene la busqueda por parte del usuario
@@ -63,7 +64,7 @@ class AdminController extends Controller
 
 
 
-        return view('admin.index', ['paises' => $paises, 'asociaciones' => $asociaciones, 'arbitros' => $arbitros, 'federaciones' => $federaciones, 'ciudades' => $ciudades, 'clubes'=> $clubes, 'torneos' => $torneos, 'continentes' => $continentes, 'confederaciones' => $confederaciones, 'directorestecnicos' => $directorestecnicos, 'estadios' => $estadios, 'jugadores' => $jugadores, 'users'=> $users]);
+        return view('admin.index', ['paises' => $paises, 'asociaciones' => $asociaciones, 'arbitros' => $arbitros, 'federaciones' => $federaciones, 'ciudades' => $ciudades, 'clubes'=> $clubes, 'torneos' => $torneos, 'continentes' => $continentes, 'confederaciones' => $confederaciones, 'directorestecnicos' => $directorestecnicos, 'estadios' => $estadios, 'jugadores' => $jugadores, 'users'=> $users,'partido'=>$partido]);
     }
 
     /**
