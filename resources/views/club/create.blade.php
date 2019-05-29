@@ -8,7 +8,7 @@
 		@csrf
 		<div class="form-group">
 			<label for="">Nombre</label>
-			<input type="text" name="nombreClub" class="form-control">
+			<input type="text" name="nombreClub" class="form-control" required>
         </div>
         <div class="form-group">
 
@@ -17,11 +17,11 @@
         </div>
         <div class="form-group">
 			<label for="">Fundación</label>
-			<input type="date" name="fundacionClub" class="form-control">
+			<input type="date" name="fundacionClub" class="form-control" required>
         </div>
         <div class="form-group">
 			<label for="">Sede</label>
-			<input type="text" name="sedeClub" class="form-control">
+			<input type="text" name="sedeClub" class="form-control" required>
         </div>
         <div class="form-group">
 			<label for="">Correo</label>
@@ -34,7 +34,7 @@
 
         <div class="form-group">
 			<label>Estadio</label>
-    			<select name="idEstadio" class="form-control">
+    			<select name="idEstadio" class="form-control" required>
    					<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($estadios as $est)
     					<option value="{{$est['idEstadio']}}">{{$est['nombreEstadio']}}</option>
@@ -44,7 +44,7 @@
 
         <div class="form-group">
     		<label>País</label>
-    			<select name="idPais" class="form-control">
+    			<select name="idPais" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
@@ -54,7 +54,7 @@
 
         <div class="form-group">
         	<label>Ciudad</label>
-    			<select name="idCiudad" class="form-control">
+    			<select name="idCiudad" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($ciudades as $cd)
     					<option value="{{$cd['idCiudad']}}">{{$cd['nombreCiudad']}}</option>
@@ -85,7 +85,7 @@
 
         <div class="form-group">
             <label>Torneo</label>
-                <select name="idTorneo" class="form-control">
+                <select name="idTorneo" class="form-control" required>
                     <option disabled selected value>Seleciona una opción...</option>
                     @foreach ($torneos as $tor)
                         <option value="{{$tor['idTorneo']}}">{{$tor['nombreTorneo']}}</option>
@@ -94,6 +94,7 @@
         </div>
 
 			<button type="submit" class="btn btn-primary">Guardar</button>
+            <a href="../../admin" class='btn btn-danger'>Atrás</a>
 		
 	</form>	
 @endsection
