@@ -14,7 +14,7 @@
 			
 			<label>Continente</label>
     			<select name="idContinente" class="form-control">
-   					<option disabled selected value>Seleciona una opción...</option>
+   					<option value="{{$paises->idContinente}}" >Seleciona una opción...</option>
     				@foreach ($continentes as $cont)
     					<option value="{{$cont['idContinente']}}">{{$cont['nombreContinente']}}</option>
     				@endforeach
