@@ -5,6 +5,11 @@
 
 @section ('content')
 
+<form class="navbar-form navbar-left" role="search" action="{{url('partido/search')}}">
+ <div class="form-group">
+  <input type="text" class="form-control" name='search' placeholder="Buscar ..." required /> <button type="submit" class="btn btn-success">Buscar</button>
+ </div>
+</form>
 <div class="row border justify-content-center">
 	
 	<div class="col">

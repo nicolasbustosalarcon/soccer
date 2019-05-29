@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
+
 
 use App\Partido;
 use App\Club;
@@ -48,7 +50,16 @@ class PartidoController extends Controller
 
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
 
+    }
 
+    public function search($search){
+        $search = urldecode($search);
+        $club = Club::select()
+                ->where('nombreClub', 'LIKE', '%'.$search.'%')
+                ->orderBy('idClub', 'desc')
+                ->get();
+        return view('partido.search',  ['club' => $club]);
+        
     }
 //-------------------------------------------------------------------------------------------------------------------
 
