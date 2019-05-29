@@ -7,10 +7,10 @@
 		@csrf
 		<div class="form-group">
 			<label for="">Nombre</label>
-			<input type="text" name="nombrePais" class="form-control">
+			<input type="text" name="nombrePais" class="form-control" required>
 			
 			<label>Continente</label>
-    			<select name="idContinente" class="form-control">
+    			<select name="idContinente" class="form-control" required>
    					<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($continentes as $cont)
     					<option value="{{$cont['idContinente']}}">{{$cont['nombreContinente']}}</option>
@@ -19,5 +19,6 @@
     		
 			<button type="submit" class="btn btn-primary">Guardar</button>
 		</div>
-	</form>	
+	</form>
+	<a href="../../admin"><button class='btn btn-danger'>Atrás</button>
 @endsection

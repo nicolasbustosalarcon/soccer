@@ -118,7 +118,6 @@
 					<label>Posición</label>
 					<select name="posicionJugador" class="form-control">
 						<option value="{{$jugadores->posicionJugador}}">Seleccionar Posicion</option>
-		
 						<option value="Arquero">Arquero</option>
 						<option value="Defensa">Defensa</option>
 						<option value="Mediocampista">Mediocampista</option>

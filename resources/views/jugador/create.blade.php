@@ -10,11 +10,11 @@
 			<label for="">Nombre</label>
 		</div>
 		<div class="form-group">
-			<input type="text" name="nombreJugador" class="form-control">
+			<input type="text" name="nombreJugador" class="form-control" required>
 		</div>
 		<div class="form-group">
 			<label for="">Apellidos</label>
-			<input type="text" name="apellidosJugador" class="form-control">
+			<input type="text" name="apellidosJugador" class="form-control" required>
 		</div>
 		<div class="form-group">
 			<label for="">Nacimiento</label>
@@ -22,7 +22,7 @@
 		<div class="form-group">
 			<div class="form-group">
 				<label>Año:  </label>
-				<select name="anho" class="form-control">
+				<select name="anho" class="form-control" required>
 					<option disabled selected value>Selecionar Año...</option>
 					<option value="2000">2000</option>
 					<option value="1999">1999</option>
@@ -47,7 +47,7 @@
 		</div>
 		<div class="form-group">
 			<label>Mes: </label>
-			<select name="mes" class="form-control">
+			<select name="mes" class="form-control" required>
 				<option disabled selected value>Seleciona Mes...</option>
 				<option value="01">Enero</option>
 				<option value="02">Febrero</option>
@@ -65,7 +65,7 @@
 		</div>
 		<div class="form-group">
 			<label>Dia:   </label>
-			<select name="dia" class="form-control">
+			<select name="dia" class="form-control" required>
 				<option disabled selected value>Seleciona Día...</option>
 				<option value="01">01</option>
 				<option value="02">02</option>
@@ -102,33 +102,29 @@
 		</div>
 		<div class="form-group">
 			<label>Posición</label>
-			<select name="posicionJugador" class="form-control">
+			<select name="posicionJugador" class="form-control" required>
 		</div>
 		<div class="form-group">
-    				<option disabled selected value>Seleciona una opción...</option>
-					<option value="Arquero">Arquero</option>
-					<option value="Defensa">Defensa</option>
-					<option value="Mediocampista">Mediocampista</option>
-					<option value="Delantero">Delantero</option>
-
-
-			</select>	
-		</div>
-
-		<div class="col-3 form-group">
-
-			<label for="">Altura</label>
-			<div class="input-group mb-3">
-				<input type="text" name="alturaJugador" class="form-control">
-				<div class="input-group-append">
+			<option disabled selected value>Seleciona una opción...</option>
+			<option value="Arquero">Arquero</option>
+			<option value="Defensa">Defensa</option>
+			<option value="Mediocampista">Mediocampista</option>
+			<option value="Delantero">Delantero</option>
+		</select>
+	    </div>
+	    <div class="col-3 form-group">
+	    	<label for="">Altura</label>
+	    	<div class="input-group mb-3">
+	    		<input type="text" name="alturaJugador" class="form-control" required>
+	    		<div class="input-group-append">
 	    		<span class="input-group-text">cm.</span>
-  				</div>
+	    	    </div>
 			</div>
 		</div>
 		<div class="col-3 form-group">
 			<label for="">Peso</label>
 				<div class="input-group mb-3">
-				<input type="text" name="pesoJugador" class="form-control">
+				<input type="text" name="pesoJugador" class="form-control" required>
 				<div class="input-group-append">
 	    		<span class="input-group-text">kg.</span>
   				</div>
@@ -136,7 +132,7 @@
 		</div>
 		<div class="form-group">
 			<label>Pie</label>
-			<select name="pieJugador" class="form-control">
+			<select name="pieJugador" class="form-control" required>
 		</div>
 		<div class="form-group">
     				<option disabled selected value>Seleciona una opción...</option>
@@ -153,7 +149,7 @@
 		<div class="form-group">
 							
 			<label>Club</label>
-    			<select name="idClub" class="form-control">
+    			<select name="idClub" class="form-control" required>
 		
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($clubes as $club)
@@ -166,7 +162,7 @@
 		<div class="form-group">
 			
     		<label>Nacionalidad</label>
-    			<select name="idPais" class="form-control">
+    			<select name="idPais" class="form-control" required>
 		
 			<option disabled selected value>Seleciona una opción...</option>
 			@foreach ($paises as $ps)
@@ -174,12 +170,11 @@
 			@endforeach
 			</select>
 		</div>
-			
-			
-
-		
-					<button type="submit" class="btn btn-primary">Guardar</button>
-
+		<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">
+			<button type="submit" class="btn btn-primary">Guardar</button>
+		</div>
 	</form>
-
+	<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">  
+		<a href="../../admin"><button class='btn btn-danger'>Atrás</button></a>
+    </div>
 @endsection
