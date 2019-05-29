@@ -4,7 +4,8 @@
 @section ('title', 'Torneos')
 
 @section ('content')
-	
+<!DOCTYPE html>
+	<html>
 	<div class="row">
 		<table class="table table-striped">
 			<thead>
@@ -43,19 +44,6 @@
 			</tbody>
 		</table>
 	</div>
-	<!DOCTYPE html>
-	<html>
-		<body>
-
-			<audio controls>
-  				<source src="HimnodelaUEFAChampionsLeague.ogg" type="audio/ogg">
-  				<source src="HimnodelaUEFAChampionsLeague.mp3" type="audio/mpeg">
-			</audio>
-		</body>
+	<iframe width="1100" height="5" src="https://www.youtube.com/embed/UbjnIJ4LB30?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</html>
-
-
-
-
-
 @endsection
