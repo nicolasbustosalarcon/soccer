@@ -14,9 +14,6 @@
 			</form>
 		</div>
 	</div>	
-
-	<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir Partido</a>
-
 <!--- Fin Buscador del Admin --->
 
 
@@ -58,6 +55,9 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Usuarios</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="partidos-tab" data-toggle="tab" href="#partidos" role="tab" aria-controls="partidos" aria-selected="false">Partidos</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -585,12 +585,7 @@
 						<th>Nombre</th>
 						<th>Edicion</th>
 						<th>Organizador</th>
-						<th>ID Club Campeon</th>
-
-
-						
-						
-						
+						<th>ID Club Campeon</th>						
 						<th>Acción</th>
 						
 					</thead>
@@ -633,7 +628,7 @@
 		</div>
 	</div>
 
-	<div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="torneo-tab">
+	<div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
 	
 		<div class="row">
 			<div class="col">
@@ -661,6 +656,30 @@
 						</td>
 					</tr>
 				@endforeach
+			</tbody>
+		</table>
+	</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane fade" id="partidos" role="tabpanel" aria-labelledby="partidos-tab">
+	
+		<div class="row">
+			<div class="col">
+				<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir partido</a>
+	
+	<div class="row">
+		<table class="table table-striped">
+			<thead>
+				<th>ID</th>	
+				<th>Equipo Local</th>	
+				<th>Equipo Visitante</th>
+				<th>Campeonato</th>	
+				<th>Acción</th>	
+			</thead>
+			<tbody>
+				
 			</tbody>
 		</table>
 	</div>

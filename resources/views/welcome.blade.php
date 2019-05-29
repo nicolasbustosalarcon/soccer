@@ -83,7 +83,7 @@
                 </div>
                 
                 <div class="links">
-                    <a>Bienvenidos a la Plataforma, por favor Inicia sesión o Regsitrate</a>
+                    <a>Bienvenidos a la Plataforma, por favor Inicia sesión o Registrate</a>
                 </div>
                 
             </div>
