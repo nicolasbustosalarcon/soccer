@@ -60,6 +60,9 @@
   <li class="nav-item">
     <a class="nav-link" id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Users</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="partidos-tab" data-toggle="tab" href="#partidos" role="tab" aria-controls="partidos" aria-selected="false">Partidos</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
@@ -586,12 +589,7 @@
 						<th>Nombre</th>
 						<th>Edicion</th>
 						<th>Organizador</th>
-						<th>ID Club Campeon</th>
-
-
-						
-						
-						
+						<th>ID Club Campeon</th>						
 						<th>Acción</th>
 						
 					</thead>
@@ -634,7 +632,7 @@
 		</div>
 	</div>
 
-	<div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="torneo-tab">
+	<div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab">
 	
 		<div class="row">
 			<div class="col">
@@ -659,6 +657,55 @@
 						<td>
 							<a href="/user/{{$user->id}}/edit" class="btn btn-outline-info my-2 my-sm-0">Editar</a>			
 							<a href="{{ route('user.destroy', $user->id)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el usuario?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>	
+						</td>
+					</tr>
+				@endforeach
+			</tbody>
+		</table>
+	</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane fade" id="partidos" role="tabpanel" aria-labelledby="partidos-tab">
+	
+		<div class="row">
+			<div class="col">
+				<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir partido</a>
+	
+	<div class="row">
+		<table class="table table-striped">
+			<thead>
+				<th>ID</th>	
+				<th>Equipo Local</th>	
+				<th>Equipo Visitante</th>
+				<th>Campeonato</th>	
+				<th>Acción</th>	
+			</thead>
+			<tbody>
+				@foreach($partido as $parti)
+					<tr>
+						<td>{{$parti['idPartido']}}</td>
+						@foreach($clubes as $club)
+							@if($club->idClub === $parti->clubLocalPartido)
+								<td>{{ $club['nombreClub'] }}</td>
+							@endif
+						@endforeach
+						@foreach($clubes as $club)
+							@if($club->idClub === $parti->clubVisitaPartido)
+								<td>{{ $club['nombreClub'] }}</td>
+							@endif
+						@endforeach
+						@foreach($torneos as $tor)
+							@if($tor->idTorneo === $parti->idTorneo)
+								<td>{{ $tor['nombreTorneo'] }}</td>
+							@endif
+						@endforeach
+						<td>
+							<a href="/partido/{{$parti->idPartido}}/edit" class="btn btn-outline-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
+						</td>
+						<td>
+							<a href="{{ route('partido.destroy', $parti->idPartido)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el partido?')" class="btn btn-outline-danger my-2 my-sm-0">Eliminar</a>
 						</td>
 					</tr>
 				@endforeach

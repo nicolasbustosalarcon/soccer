@@ -9,9 +9,10 @@
 	
 	<div class="col">
 		@foreach($torneos as $tor) 
-			<h3>{{ $tor['nombreTorneo'] }} </h3><!-- Muestra los torneos que hay -->
-			@foreach($partidos as $part)
-				@if($part->idTorneo === $tor->idTorneo)
+			@if($tor->idConfederacion === NULL)
+				<h3>{{ $tor['nombreTorneo'] }} </h3><!-- Muestra los torneos que hay -->
+				@foreach($partidos as $part)
+					@if($part->idTorneo === $tor->idTorneo)
 						<div class="row justify-content-center" >
 							<div class="col-4 border" align="right">	
 								@foreach($clubes as $club)									
@@ -45,13 +46,13 @@
 									@endif
 								@endforeach			
 							</div>
-
-						</div>
-					
-				@endif
-			@endforeach	
+						</div>					
+					@endif
+				@endforeach
+			@endif	
 		@endforeach	
 	</div>
+
 
 	<!--------------------BUSCADOR POR FECHA------------------------------>
 	
@@ -61,11 +62,24 @@
 					<a href="">Ver partidos</a>
 
 			</div>
-		
-
-
 </div>
 
+<div>
+	<div class="row justify-content-center">
+		<h2> Torneos Internacionales </h2>
+	</div>
+
+	<div class="container" style="height:500px"> 
+		<ul class="" role="" style="width: 1200px;"> 
+			<li class="" role="" aria-hidden="" style="width: 1200px; height: 500px; margin-right: 0px;"> 
+				<a href="torneo" class="internacional"> 
+					<img class="lazy-load" width="1000" height="340" alt="UEFA" src="images/torneos/championsleague.jpg"> 
+				</a> 
+			</li>
+		</ul>
+	</div>
+</div>
+	
 
 
 
