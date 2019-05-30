@@ -10,21 +10,21 @@
 		@csrf
 		<div class="form-group">
 				<label for="">Nombre</label>
-			<input type="text" name="nombreDirectorTecnico" class="form-control" required value="{{$directorestecnicos->nombreDirectorTecnico}}">
+			<input type="text" name="nombreDirectorTecnico" class="form-control"  value="{{$directorestecnicos->nombreDirectorTecnico}}">
 			<label for="">Apellidos</label>
-			<input type="text" name="apellidosDirectorTecnico" class="form-control" required value="{{$directorestecnicos->apellidosDirectorTecnico}}">
+			<input type="text" name="apellidosDirectorTecnico" class="form-control"value="{{$directorestecnicos->apellidosDirectorTecnico}}">
 			<label for="">Nacimiento</label>
-			<input type="date" name="nacimientoDirectorTecnico" class="form-control" required value="{{$directorestecnicos->nacimientoDirectorTecnico}}">
+			<input type="date" name="nacimientoDirectorTecnico" class="form-control"  value="{{$directorestecnicos->nacimientoDirectorTecnico}}">
 			<label for="">Edad</label>
-			<input type="text" name="edadDirectorTecnico" class="form-control" required value="{{$directorestecnicos->edadDirectorTecnico}}">
+			<input type="text" name="edadDirectorTecnico" class="form-control" value="{{$directorestecnicos->edadDirectorTecnico}}">
 			
 			<label for="">Imagen</label>
-			<input type="file" name="imagenDirectorTecnico" class="form-control" required value="{{$directorestecnicos->imagenDirectorTecnico}}">
+			<input type="file" name="imagenDirectorTecnico" class="form-control" value="{{$directorestecnicos->imagenDirectorTecnico}}">
 	
 			
     		<label>Nacionalidad</label>
     			<select name="idPais" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$directorestecnicos->idPais}}">Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
     				@endforeach

@@ -20,14 +20,14 @@
 			
 			<label>Continente</label>
     			<select name="idContinente" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$confederaciones->idContinente}}">Seleciona una opción...</option>
     				@foreach ($continentes as $cont)
     					<option value="{{$cont['idContinente']}}">{{$cont['nombreContinente']}}</option>
     				@endforeach
     			</select>
     		<label>País</label>
     			<select name="idPais" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$confederaciones->idPais}}">Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
     				@endforeach
