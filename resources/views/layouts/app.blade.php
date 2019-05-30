@@ -19,17 +19,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+
+
+<body class="bg-secondary">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand " href="{{ route('partido.index')}}">Soccer</a>
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel bg-dark">
+            <div class="container ">
+                <a class="navbar-brand  text-success" href="{{ route('partido.index')}}">Soccer</a>
                 
-                <a class="navbar-brand " href="{{ route('admin.index')}}">Datos</a>
+                <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <div class="row">
+    <div class="col">
+        <form class="navbar-form navbar-left form-inline my-2 my-lg-0" role="search" action="{{url('partido/search')}}">
+         <div class="form-group">
+          <input type="text" class="form-control" name='search' placeholder="BUSCAR..." required /> <button type="submit" class="btn btn-success">Buscar</button>
+         </div>
+        </form>
+    </div>
+</div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
@@ -41,16 +51,16 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
+                                <a class="nav-link text-primary" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
                             </li>
                             <li class="nav-item">
                                 @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
+                                    <a class="nav-link text-warning" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                                 @endif
                             </li>
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -69,13 +79,31 @@
                         @endguest
                     </ul>
                 </div>
+
             </div>
         </nav>
-        <div class="container border">
+        <div class="container border bg-white">
         	<main class="py-4">
         	    @yield('content')
         	</main>
     	</div>
+        <nav class=" navbar navbar-expand-md fixed-bottom navbar-light navbar-laravel bg-dark">
+            
+        
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Soccer</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Matías Acuña | Juan Aravena | Nicolás Bustos | Luis Fuenzalida
+    </span>
+  </div>
+</nav>
     </div>
+   
 </body>
 </html>
