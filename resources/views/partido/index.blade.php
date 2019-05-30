@@ -5,21 +5,20 @@
 
 @section ('content')
 
-<form class="navbar-form navbar-left" role="search" action="{{url('partido/search')}}">
- <div class="form-group">
-  <input type="text" class="form-control" name='search' placeholder="Buscar ..." required /> <button type="submit" class="btn btn-success">Buscar</button>
- </div>
-</form>
-<div class="row border justify-content-center">
+
+<div class="row  justify-content-center">
 	
 	<div class="col">
 		@foreach($torneos as $tor) 
+		<div class="border">
 			@if($tor->idConfederacion === NULL)
-				<h3>{{ $tor['nombreTorneo'] }} </h3><!-- Muestra los torneos que hay -->
+				<h3 class="">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
 				@foreach($partidos as $part)
+
 					@if($part->idTorneo === $tor->idTorneo)
+					<div class="border">
 						<div class="row justify-content-center" >
-							<div class="col-4 border" align="right">	
+							<div class="col-4 " align="right">	
 								@foreach($clubes as $club)									
 									@if($part->clubLocalPartido === $club->idClub)
 									
@@ -28,7 +27,7 @@
 									@endif
 								@endforeach
 							</div>
-							<div class="col-1 border" align="center">
+							<div class="col-1 " align="center">
 								@if($part->estadoPartido === 'Proximo')
 									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-dark"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
@@ -42,7 +41,7 @@
 									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-dark"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 							</div>
-							<div class="col-4 border" align="left">	
+							<div class="col-4 " align="left">	
 								@foreach($clubes as $club)									
 									@if($part->clubVisitaPartido === $club->idClub)
 										<a href="{{ route('club.show', $club->idClub)}}" class="text-dark"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important">
@@ -51,15 +50,18 @@
 									@endif
 								@endforeach			
 							</div>
-						</div>					
+						</div>	
+						</div>				
 					@endif
 				@endforeach
 			@endif	
+			</div>
+		<p></p>
 		@endforeach	
 	</div>
 
 
-	<!--------------------BUSCADOR POR FECHA------------------------------>
+	<!--------------------BUSCADOR POR FECHA-----------------------------
 	
 			<div class="col-2">
 				<label for="">Fecha</label>
@@ -67,6 +69,8 @@
 					<a href="">Ver partidos</a>
 
 			</div>
+			------------->
+	
 </div>
 
 <div>
@@ -254,7 +258,7 @@
 			</ul>
 		</div>		
 	</div>
-
+-->
 
 
 @endsection
