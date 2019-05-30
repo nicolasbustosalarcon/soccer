@@ -18,14 +18,14 @@
 			
 			<label>Ciudad</label>
     			<select name="idCiudad" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$estadios->idCiudad}}">Seleciona una opción...</option>
     				@foreach ($ciudades as $ciu)
     					<option value="{{$ciu['idCiudad']}}">{{$ciu['nombreCiudad']}}</option>
     				@endforeach
     			</select>
     		<label>País</label>
     			<select name="idPais" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value = "{{$estadios->idPais}}">Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
     				@endforeach

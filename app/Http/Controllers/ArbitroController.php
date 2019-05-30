@@ -11,6 +11,8 @@ use App\Asociacion;
 use App\Pais;
 use App\Arbitro;
 
+use DateTime;
+use Carbon\Carbon;
 class ArbitroController extends Controller
 {
     /**
@@ -58,22 +60,22 @@ class ArbitroController extends Controller
      */
     public function store(Request $request)
     {
-         if($request->hasFile('imagenArbitro')){
-            $file = $request->file('imagenArbitro');
-            $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/arbitro/',$name);
-            
-            
-        }
         $arbitro = new Arbitro();
         $arbitro->idAsociacion = $request->input('idAsociacion');
         $arbitro->nombreArbitro = $request->input('nombreArbitro');
         $arbitro->apellidosArbitro = $request->input('apellidosArbitro');
         $arbitro->tipoArbitro = $request->input('tipoArbitro');
-        $arbitro->nacimientoArbitro = $request->input('nacimientoArbitro');
+        $anho = $request->input('anho');
+        $mes = $request->input('mes');
+        $dia = $request->input('dia');
+        $arbitro->nacimientoArbitro = $anho.'-'.$mes.'-'.$dia;
         $arbitro->idPais = $request->input('idPais');        
-        $arbitro->imagenArbitro = $name;
-        $arbitro->edadArbitro = $request->input('edadArbitro');
+        if(Input::hasfile('imagenArbitro')){
+            $file=Input::file('imagenArbitro');
+            $file->move(public_path().'/images/arbitro/',$file->getClientOriginalName());
+            $arbitro->imagenArbitro=$file->getClientOriginalName();
+        }
+        $arbitro->edadArbitro= Carbon::createFromDate($anho,$mes,$dia)->age;
         $arbitro->gradoArbitro = $request->input('gradoArbitro');
         
         $arbitro->save();

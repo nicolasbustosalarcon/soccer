@@ -38,9 +38,6 @@
 					<option value="arbitroNacional">Árbitro Nacional</option>
 
 			</select>	
-
-			<label for="">Edad</label>
-			<input type="text" name="edadArbitro" class="form-control" value="{{$arbitros->edadArbitro}}">
 			
 			
     		<label>País</label>
