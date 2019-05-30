@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use App\Jugador;
 use App\Club;
 use App\Asociacion;
@@ -73,18 +74,14 @@ class ClubController extends Controller
      */
     public function store(Request $request)
     {
-        
-        if($request->hasFile('imagenClub')){
-            $file = $request->file('imagenClub');
-            $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/club/',$name);
-            
-            
-        }
 
         $club = new Club();
         $club->nombreClub = $request->input('nombreClub');
-        $club->imagenClub = $name;
+        if(Input::hasfile('imagenClub')){
+            $file=Input::file('imagenClub');
+            $file->move(public_path().'/images/club/',$file->getClientOriginalName());
+            $club->imagenClub=$file->getClientOriginalName();
+        }
         $club->fundacionClub = $request->input('fundacionClub');
         $club->sedeClub = $request->input('sedeClub');
         $club->idCiudad = $request->input('idCiudad');
@@ -169,17 +166,13 @@ class ClubController extends Controller
     public function update(Request $request, $id)
     {
         $club = Club::findOrFail($id);
-        
-        if($request->hasFile('imagenClub')){
-            $file = $request->file('imagenClub');
-            $name = time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/club/',$name);
-            
-            
-        }
        
         $club->nombreClub = $request->input('nombreClub');
-        $club->imagenClub = $name;
+        if(Input::hasfile('imagenClub')){
+            $file=Input::file('imagenClub');
+            $file->move(public_path().'/images/club/',$file->getClientOriginalName());
+            $club->imagenClub=$file->getClientOriginalName();
+        }
         $club->fundacionClub = $request->input('fundacionClub');
         $club->sedeClub = $request->input('sedeClub');
         $club->idCiudad = $request->input('idCiudad');

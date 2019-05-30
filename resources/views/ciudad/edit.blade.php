@@ -14,7 +14,7 @@
 			
     		<label>País</label>
     			<select name="idPais" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$ciudades->idPais}}">Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
     				@endforeach

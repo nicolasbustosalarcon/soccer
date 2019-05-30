@@ -12,7 +12,7 @@
 
 			<label>Club Local</label>
     			<select name="clubLocalPartido" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->clubLocalPartido}}">Selecciona una opción...</option>
     				@foreach ($clubes as $club)
     					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
     				@endforeach
@@ -23,7 +23,7 @@
 
 			<label>Club Visita</label>
     			<select name="clubVisitaPartido" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->clubVisitaPartido}}">Seleciona una opción...</option>
     				@foreach ($clubes as $club)
     					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
     				@endforeach
@@ -38,8 +38,8 @@
 			<input type="text" name="jornadaPartido" class="form-control" value="{{$partidos->jornadaPartido}}" required>
 
 			<label>Estado</label>
-			<select name="posicionJugador" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+			<select name="estadoPartido" class="form-control" required>
+    				<option value="{{$partidos->estadoPartido}}">Seleciona una opción...</option>
 					<option value="Expirado">Expirado</option>
 					<option value="Proximo">Proximo</option>
 					<option value="Suspendido">Suspendido</option>
@@ -51,14 +51,14 @@
 
 			<label>Tipo de Partido</label>
 			<select name="TipoPartido" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->TipoPartido}}">Seleciona una opción...</option>
 					<option value="amistoso">Amistoso</option>
 					<option value="oficial">Oficial</option>
 			</select>
 			
 			<label>Torneo</label>
     			<select name="idTorneo" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idTorneo}}">Seleciona una opción...</option>
     				@foreach ($torneos as $tor)
     					<option value="{{$tor['idTorneo']}}">{{$tor['nombreTorneo']}}</option>
     				@endforeach
@@ -67,7 +67,7 @@
 					
 			<label>Estadio</label>
     			<select name="idEstadio" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idEstadio}}">Seleciona una opción...</option>
     				@foreach ($estadios as $est)
     					<option value="{{$est['idEstadio']}}">{{$est['nombreEstadio']}}</option>
     				@endforeach
@@ -75,7 +75,7 @@
 			
     		<label>Arbitro Central</label>
     			<select name="idArbitroCentral" class="form-control" required>
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idArbitroCentral}}">Seleciona una opción...</option>
     				@foreach ($arbitros as $arc)
     					<option value="{{$arc['idArbitro']}}">{{$arc['nombreArbitro']}} {{$arc['apellidosArbitro']}}</option>
     				@endforeach
@@ -83,7 +83,7 @@
 
     		<label>Arbitro Asistente número 1</label>
     			<select name="idArbitroAsistente1" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idArbitroAsistente1}}">Seleciona una opción...</option>
     				@foreach ($arbitros as $aa1)
     					<option value="{{$aa1['idArbitro']}}">{{$aa1['nombreArbitro']}} {{$aa1['apellidosArbitro']}}</option>
     				@endforeach
@@ -91,7 +91,7 @@
 
     		<label>Arbitro Asistente número 2</label>
     			<select name="idArbitroAsistente2" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idArbitroAsistente2}}">Seleciona una opción...</option>
     				@foreach ($arbitros as $aa2)
     					<option value="{{$aa2['idArbitro']}}">{{$aa2['nombreArbitro']}} {{$aa2['apellidosArbitro']}}</option>
     				@endforeach
@@ -99,7 +99,7 @@
 
     		<label>Cuarto Arbitro</label>
     			<select name="idCuartoArbitro" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$partidos->idCuartoArbitro}}">Seleciona una opción...</option>
     				@foreach ($arbitros as $car)
     					<option value="{{$car['idArbitro']}}">{{$car['nombreArbitro']}} {{$car['apellidosArbitro']}}</option>
     				@endforeach

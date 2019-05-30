@@ -32,6 +32,7 @@
 
 			<button type="submit" class="btn btn-primary">Guardar</button>
 		</div>
+		 <a href="../../admin" class='btn btn-danger'>Atrás</a>
 	</form>
 
 @endsection

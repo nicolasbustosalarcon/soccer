@@ -56,9 +56,9 @@
   <li class="nav-item">
     <a class="nav-link" id="torneo-tab" data-toggle="tab" href="#torneo" role="tab" aria-controls="torneo" aria-selected="false">Torneos</a>
   </li>
-  <li class="nav-item">
+  <!--<li class="nav-item">
     <a class="nav-link" id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Users</a>
-  </li>
+  </li>-->
   <li class="nav-item">
     <a class="nav-link" id="partidos-tab" data-toggle="tab" href="#partidos" role="tab" aria-controls="partidos" aria-selected="false">Partidos</a>
   </li>
@@ -635,7 +635,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/user/create" class="btn btn-outline-success my-2 my-sm-0">Crear Usuario</a>
+				<a href="/user/create" class="btn btn-outline-success my-2 my-sm-0">Crear Usuarios</a>
 	
 	<div class="row">
 		<table class="table table-striped">

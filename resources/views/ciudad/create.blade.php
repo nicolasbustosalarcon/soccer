@@ -8,10 +8,10 @@
 		@csrf
 		<div class="form-group">
 			<label for="">Nombre</label>
-			<input type="text" name="nombreCiudad" class="form-control">
+			<input type="text" name="nombreCiudad" class="form-control" required="">
 			
     		<label>País</label>
-    			<select name="idPais" class="form-control">
+    			<select name="idPais" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
@@ -23,5 +23,7 @@
 			<button type="submit" class="btn btn-primary">Guardar</button>
 		</div>
 	</form>	
+	<a href="../../admin"><button class='btn btn-danger'>Atrás</button></a>
+
 
 @endsection

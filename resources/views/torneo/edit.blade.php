@@ -18,7 +18,7 @@
 			
 			<label>Asociación</label>
     			<select name="idAsociacion" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$torneos->idAsociacion}}">Seleciona una opción...</option>
     				@foreach ($asociaciones as $asoc)
     					<option value="{{$asoc['idAsociacion']}}">{{$asoc['nombreAsociacion']}}</option>
     				@endforeach
@@ -27,7 +27,7 @@
 					
 			<label>Confederación</label>
     			<select name="idConfederacion" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$torneos->idConfederacion}}">Seleciona una opción...</option>
     				@foreach ($confederaciones as $conf)
     					<option value="{{$conf['idConfederacion']}}">{{$conf['nombreConfederacion']}}</option>
     				@endforeach
@@ -35,7 +35,7 @@
 			
     		<label>Club Campeón</label>
     			<select name="idClubCampeon" class="form-control">
-    				<option disabled selected value>Seleciona una opción...</option>
+    				<option value="{{$torneos->idClubCampeon}}">Seleciona una opción...</option>
     				@foreach ($clubes as $club)
     					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
     				@endforeach
