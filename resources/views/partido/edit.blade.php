@@ -110,6 +110,6 @@
 			<button type="submit" class="btn btn-primary">Guardar</button>
 		</div>
 	</form>
-		<a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
+		<a href="../../partido" class='btn btn-danger'>Atrás</button></a>
 
 @endsection
