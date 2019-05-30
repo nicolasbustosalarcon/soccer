@@ -8,7 +8,7 @@
 		<div class="form-group">
 
 			<label>Club Local</label>
-    			<select name="clubLocalPartido" class="form-control">
+    			<select name="clubLocalPartido" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($clubes as $club)
     					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
@@ -19,7 +19,7 @@
 			
 
 			<label>Club Visita</label>
-    			<select name="clubVisitaPartido" class="form-control">
+    			<select name="clubVisitaPartido" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($clubes as $club)
     					<option value="{{$club['idClub']}}">{{$club['nombreClub']}}</option>
@@ -28,14 +28,14 @@
 			<label for="">Goles Visita</label>
 			<input type="text" name="golesVisitaPartido" class="form-control">
 			<label for="">Fecha</label>
-			<input type="date" name="fechaPartido" class="form-control">
+			<input type="date" name="fechaPartido" class="form-control" required>
             <label for="">Hora</label>
-            <input type="time" name="horaPartido" class="form-control">
+            <input type="time" name="horaPartido" class="form-control" required>
 			<label for="">Jornada</label>
-			<input type="text" name="jornadaPartido" class="form-control">
+			<input type="text" name="jornadaPartido" class="form-control" required>
 
 			<label>Estado</label>
-			<select name="estadoPartido" class="form-control">
+			<select name="estadoPartido" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
 					<option value="Expirado">Expirado</option>
 					<option value="Proximo">Proximo</option>
@@ -47,14 +47,14 @@
 			
 
 			<label>Tipo de Partido</label>
-			<select name="TipoPartido" class="form-control">
+			<select name="TipoPartido" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
 					<option value="amistoso">Amistoso</option>
 					<option value="oficial">Oficial</option>
 			</select>
 			
 			<label>Torneo</label>
-    			<select name="idTorneo" class="form-control">
+    			<select name="idTorneo" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($torneos as $tor)
     					<option value="{{$tor['idTorneo']}}">{{$tor['nombreTorneo']}}</option>
@@ -63,7 +63,7 @@
 
 					
 			<label>Estadio</label>
-    			<select name="idEstadio" class="form-control">
+    			<select name="idEstadio" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($estadios as $est)
     					<option value="{{$est['idEstadio']}}">{{$est['nombreEstadio']}}</option>
@@ -71,7 +71,7 @@
     			</select>
 			
     		<label>Arbitro Central</label>
-    			<select name="idArbitroCentral" class="form-control">
+    			<select name="idArbitroCentral" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($arbitros as $arc)
     					<option value="{{$arc['idArbitro']}}">{{$arc['nombreArbitro']}} {{$arc['apellidosArbitro']}}</option>

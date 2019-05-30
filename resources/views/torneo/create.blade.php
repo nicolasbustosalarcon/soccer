@@ -10,7 +10,7 @@
 
 			
 			<label for="">Nombre Torneo</label>
-			<input type="text" name="nombreTorneo" class="form-control">
+			<input type="text" name="nombreTorneo" class="form-control" required>
 			<label for="">Edición</label>
 			<input type="text" name="edicion" class="form-control">
 			
@@ -43,6 +43,7 @@
 			
 
 			<button type="submit" class="btn btn-primary">Guardar</button>
+            <a href="../../admin" class='btn btn-danger'>Atrás</button>
 		</div>
 	</form>
 

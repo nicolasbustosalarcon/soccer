@@ -12,9 +12,9 @@
 
 			
 			<label for="">Nombre Torneo</label>
-			<input type="text" name="nombreTorneo" class="form-control" value="{{$torneos->nombreTorneo}}">
+			<input type="text" name="nombreTorneo" class="form-control" value="{{$torneos->nombreTorneo}}" required>
 			<label for="">Edición</label>
-			<input type="text" name="edicion" class="form-control" value="{{$torneos->edicion}}">
+			<input type="text" name="edicion" class="form-control" value="{{$torneos->edicion}}" required>
 			
 			<label>Asociación</label>
     			<select name="idAsociacion" class="form-control">
