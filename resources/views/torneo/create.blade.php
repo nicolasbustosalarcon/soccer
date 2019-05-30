@@ -42,7 +42,7 @@
 			
 
 			<button type="submit" class="btn btn-primary">Guardar</button>
-            <a href="../../admin" class='btn btn-danger'>Atrás</button>
+            <a href="../../admin" class='btn btn-danger'>Atrás</a>
 		</div>
 	</form>
 

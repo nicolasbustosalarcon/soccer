@@ -12,7 +12,6 @@
       			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>	
       			<div style="text-align: right;width:815px">
-      				<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0" >Añadir Partido</a>
       			</div>
 			</form>
 		</div>
