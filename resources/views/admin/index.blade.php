@@ -77,7 +77,7 @@
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
-						<th>Imagen</th>
+						<!--<th>Imagen</th>-->
 						<th>Nombre</th>
 						<th>Apellidos</th>
 						<th>Tipo</th>
@@ -93,7 +93,7 @@
 						@foreach($arbitros as $arb)
 							<tr>
 								<td>{{ $arb['idArbitro'] }}</td>
-								<td><img src="images/arbitro/{{ $arb['imagenArbitro']}}" class="img-responsive" style="width:45px !important; height:45px !important"></td>
+								<!--<td><img src="images/arbitro/{{ $arb['imagenArbitro']}}" class="img-responsive" style="width:45px !important; height:45px !important"></td>-->
 								<td>{{ $arb['nombreArbitro'] }}</td>
 								<td>{{ $arb['apellidosArbitro'] }}</td>
 								<td>{{ $arb['tipoArbitro'] }}</td>
@@ -134,7 +134,7 @@
 						<th>ID</th>
 						<th>Asociacion</th>
 						<th>Fundación</th>
-						<th>Imagen</th>
+						<!--<th>Imagen</th>-->
 						
 						
 						<th>Acción</th>
@@ -153,7 +153,7 @@
 
 								<td>{{ $asoc['nombreAsociacion'] }}</td>
 								<td>{{ $asoc['fundacionAsociacion'] }}</td>
-								<td><img src="images/asociacion/{{ $asoc['imagenAsociacion']}}" class="img-responsive" style="width:60px !important"></td>
+								<!--<td><img src="images/asociacion/{{ $asoc['imagenAsociacion']}}" class="img-responsive" style="width:60px !important"></td>-->
 
 								
 								<td>
@@ -433,7 +433,7 @@
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
-						<th>ID Confederacion</th>
+						<th>Confederacion</th>
 						<th>Nombre</th>
 						<th>Fundación</th>
 						
@@ -457,7 +457,7 @@
 								
 								<td>
 									<a href="/federacion/{{$fed->idFederacion}}/edit" class="btn btn-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-									<a href="{{ route('federacion.destroy', $fed->idConfederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la federación?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a>
+									<a href="{{ route('federacion.destroy', $fed->idFederacion)}}" onclick="return confirm('¿Estás seguro que deseas eliminar la federación?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 							</tr>
 						@endforeach
@@ -610,7 +610,7 @@
 										<td>{{ $conf['nombreConfederacion'] }}</td>		
 									@endif
 								@endforeach
-								@foreach($asociaciones as $asoc)
+									@foreach($asociaciones as $asoc)
 									@if($tor->idAsociacion === $asoc->idAsociacion)
 										<td>{{ $asoc['nombreAsociacion'] }}</td>		
 									@endif

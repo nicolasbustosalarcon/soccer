@@ -4,7 +4,8 @@
 @section ('titulo', 'Torneo Create')
 
 @section ('content')
-	<form class="form-group" method="POST" action="/torneo">	
+	<form class="form-group" method="POST" action="/torneo">
+    @csrf	
 		<div class="form-group">
 
 			

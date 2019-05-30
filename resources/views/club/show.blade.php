@@ -57,8 +57,8 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col" style="height: 100px"> 
+		<div class="col">
+			<div class="row" style="height: 100px"> 
 				@foreach($jugadores as $jug)
 				@if($jug->idClub === $clubes->idClub)
 						@if($jug->posicionJugador === 'Arquero')
