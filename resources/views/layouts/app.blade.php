@@ -82,7 +82,7 @@
 
             </div>
         </nav>
-        <div class="container border bg-white">
+        <div class="container border bg-secondary">
         	<main class="py-4">
         	    @yield('content')
         	</main>
@@ -98,7 +98,7 @@
         <a class="nav-link" href="#">Soccer</a>
       </li>
     </ul>
-    <span class="navbar-text">
+    <span class="navbar-text text-muted">
       Matías Acuña | Juan Aravena | Nicolás Bustos | Luis Fuenzalida
     </span>
   </div>

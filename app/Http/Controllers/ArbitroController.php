@@ -112,8 +112,12 @@ class ArbitroController extends Controller
         $arbitros = Arbitro::findOrFail($id);
         $asociaciones=Asociacion::all();
         $paises=Pais::all();
+        $fecha_como_entero = strtotime($arbitros->nacimientoArbitro);
+        $anho = date("Y", $fecha_como_entero);
+        $mes = date("m", $fecha_como_entero);
+        $dia = date("d", $fecha_como_entero);
         
-        return view('arbitro.edit', ['paises' => $paises, 'asociaciones' => $asociaciones, 'arbitros' => $arbitros]);
+        return view('arbitro.edit', ['paises' => $paises, 'asociaciones' => $asociaciones, 'arbitros' => $arbitros, 'anho' => $anho, 'mes' => $mes, 'dia' => $dia]);
      
     }
 //-------------------------------------------------------------------------------------------------------------------
@@ -142,15 +146,16 @@ class ArbitroController extends Controller
         
         $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
         $arbitro = Arbitro::findOrFail($id);
-        
+        $anho = $request->input('anho');
+        $mes = $request->input('mes');
+        $dia = $request->input('dia');
         $arbitro->idAsociacion = $request->input('idAsociacion');
         $arbitro->nombreArbitro = $request->input('nombreArbitro');
         $arbitro->apellidosArbitro = $request->input('apellidosArbitro');
         $arbitro->tipoArbitro = $request->input('tipoArbitro');
-        $arbitro->nacimientoArbitro = $request->input('nacimientoArbitro');
+        $arbitro->nacimientoArbitro = $anho.'-'.$mes.'-'.$dia;
         $arbitro->idPais = $request->input('idPais');        
-        
-        $arbitro->edadArbitro = $request->input('edadArbitro');
+        $arbitro->edadArbitro= Carbon::createFromDate($anho,$mes,$dia)->age;
         $arbitro->gradoArbitro = $request->input('gradoArbitro');
         $arbitro->update();
 

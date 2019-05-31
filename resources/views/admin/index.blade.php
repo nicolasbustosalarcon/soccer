@@ -25,48 +25,48 @@
 
 <ul class="nav nav-tabs nav-pills flex-column " id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="arbitro-tab" data-toggle="tab" href="#arbitro" role="tab" aria-controls="arbitro" aria-selected="true">Arbitros</a>
+    <a class="nav-link active text-white " id="arbitro-tab" data-toggle="tab" href="#arbitro" role="tab" aria-controls="arbitro" aria-selected="true">Arbitros</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="asociacion-tab" data-toggle="tab" href="#asociacion" role="tab" aria-controls="asociacion" aria-selected="false">Asociaciones</a>
+    <a class="nav-link text-white" id="asociacion-tab" data-toggle="tab" href="#asociacion" role="tab" aria-controls="asociacion" aria-selected="false">Asociaciones</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="ciudad-tab" data-toggle="tab" href="#ciudad" role="tab" aria-controls="ciudad" aria-selected="false">Ciudades</a>
+    <a class="nav-link text-white" id="ciudad-tab" data-toggle="tab" href="#ciudad" role="tab" aria-controls="ciudad" aria-selected="false">Ciudades</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="club-tab" data-toggle="tab" href="#club" role="tab" aria-controls="club" aria-selected="false">Clubes</a>
+    <a class="nav-link text-white" id="club-tab" data-toggle="tab" href="#club" role="tab" aria-controls="club" aria-selected="false">Clubes</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="confederacion-tab" data-toggle="tab" href="#confederacion" role="tab" aria-controls="confederacion" aria-selected="false">Confederaciones</a>
+    <a class="nav-link text-white" id="confederacion-tab" data-toggle="tab" href="#confederacion" role="tab" aria-controls="confederacion" aria-selected="false">Confederaciones</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="dt-tab" data-toggle="tab" href="#dt" role="tab" aria-controls="dt" aria-selected="false">Dts</a>
+    <a class="nav-link text-white" id="dt-tab" data-toggle="tab" href="#dt" role="tab" aria-controls="dt" aria-selected="false">Dts</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="estadio-tab" data-toggle="tab" href="#estadio" role="tab" aria-controls="estadio" aria-selected="false">Estadios</a>
+    <a class="nav-link text-white" id="estadio-tab" data-toggle="tab" href="#estadio" role="tab" aria-controls="estadio" aria-selected="false">Estadios</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="federacion-tab" data-toggle="tab" href="#federacion" role="tab" aria-controls="federacion" aria-selected="false">Federaciones</a>
+    <a class="nav-link text-white" id="federacion-tab" data-toggle="tab" href="#federacion" role="tab" aria-controls="federacion" aria-selected="false">Federaciones</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="jugador-tab" data-toggle="tab" href="#jugador" role="tab" aria-controls="jugador" aria-selected="false">Jugadores</a>
+    <a class="nav-link text-white" id="jugador-tab" data-toggle="tab" href="#jugador" role="tab" aria-controls="jugador" aria-selected="false">Jugadores</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="pais-tab" data-toggle="tab" href="#pais" role="tab" aria-controls="pais" aria-selected="false">Paises</a>
+    <a class="nav-link text-white" id="pais-tab" data-toggle="tab" href="#pais" role="tab" aria-controls="pais" aria-selected="false">Paises</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="torneo-tab" data-toggle="tab" href="#torneo" role="tab" aria-controls="torneo" aria-selected="false">Torneos</a>
+    <a class="nav-link text-white" id="torneo-tab" data-toggle="tab" href="#torneo" role="tab" aria-controls="torneo" aria-selected="false">Torneos</a>
   </li>
   <!--<li class="nav-item">
     <a class="nav-link" id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Users</a>
   </li>-->
   <li class="nav-item">
-    <a class="nav-link" id="partidos-tab" data-toggle="tab" href="#partidos" role="tab" aria-controls="partidos" aria-selected="false">Partidos</a>
+    <a class="nav-link text-white" id="partidos-tab" data-toggle="tab" href="#partidos" role="tab" aria-controls="partidos" aria-selected="false">Partidos</a>
   </li>
 	</ul>
 
 
-	<div class="col tab-content" id="myTabContent">
+	<div class="col tab-content text-white" id="myTabContent">
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
   		<div class="row">
   			<div class="col">
@@ -610,18 +610,23 @@
 										<td>{{ $conf['nombreConfederacion'] }}</td>		
 									@endif
 								@endforeach
+								@if($tor->idConfederacion === null)
 									@foreach($asociaciones as $asoc)
 									@if($tor->idAsociacion === $asoc->idAsociacion)
 										<td>{{ $asoc['nombreAsociacion'] }}</td>		
 									@endif
 								@endforeach
-								<td>
+								@endif
+								@if($tor->idClubCampeon === null)
+							    <td>Aun no está definido</td>
+							    @endif
+								
 								@foreach($clubes as $club)
 									@if($tor->idClubCampeon === $club->idClub)
-										{{ $club['nombreClub'] }}	
+										<td>{{ $club['nombreClub'] }}</td>	
 									@endif
 								@endforeach	
-								</td>	
+									
 
 								
 								<td>

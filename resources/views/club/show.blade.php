@@ -5,7 +5,7 @@
 
 @section ('content')
 		
-		<div class="row">
+		<div class="row text-white">
 			<div class="col">
 				<p> 
 					<h1 class="float-sm-left">{{ $clubes['nombreClub'] }}</h1>
@@ -13,7 +13,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="col">
+		<div class="col text-white">
 			<p></p>
 			<p> Fundación {{ $clubes['fundacionClub'] }}</p>
 			
@@ -36,98 +36,99 @@
 			<p> Contacto {{ $clubes['correoClub'] }} // {{ $clubes['telefonoClub'] }} </p>
 		</div>
 
-		<div class="row">
+		<div class="row text-white">
 			<div class="col">
 				<p><h3 class="float-sm-left">Estadio</h3></p>
 			</div>
 		</div>
 		
-		<div class="col">
+		<div class="col text-white">
 			@foreach($estadios as $est)
 				@if($clubes->idEstadio === $est->idEstadio)
-				<a href="{{ route('estadio.show', $est->idEstadio)}}" class="text-dark"><span class="row align-self-center"> <p>Nombre {{ $est['nombreEstadio'] }}</p></span></a>
+				<a href="{{ route('estadio.show', $est->idEstadio)}}" class="text-white"><span class="row align-self-center"> <p>Nombre {{ $est['nombreEstadio'] }}</p></span></a>
 				@endif
 			@endforeach		
 			
 		</div>
 		
-		<div class="row">
+		<div class="row text-white">
 			<div class="col">
 				<p><h3 class="float-sm-left">Plantilla</h3></p>
 			</div>
 		</div>
 
-		<div class="col">
-			<div class="row" style="height: 100px"> 
+		<div class="col text-white">
+			
 				@foreach($jugadores as $jug)
-				@if($jug->idClub === $clubes->idClub)
-						@if($jug->posicionJugador === 'Arquero')
-							<div class="row">
-								<div class="col">
-									<h5>Arqueros</h5>
+					@if($jug->idClub === $clubes->idClub)
+						<div class="col">
+							@if($jug->posicionJugador === 'Arquero')
+								<div class="row">
+									<div class="col">
+										<h5>Arqueros</h5>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col align-self-center">
-									<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
+								<div class="row">
+									<div class="col align-self-center">
+										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
+								
+										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+									</div>
+								</div>
+							@endif
+						
+							@if($jug->posicionJugador === 'Defensa')
+								<div class="row">
+									<div class="col">
+										<h5>Defensas</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col align-self-center">
+										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-									<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-dark"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+									</div>
 								</div>
-
-							</div>
-						@endif
-
-						@if($jug->posicionJugador === 'Defensa')
-							<div class="row">
-								<div class="col">
-									<h5>Defensas</h5>
+							@endif	
+						
+							@if($jug->posicionJugador === 'Mediocampista')
+								<div class="row">
+									<div class="col">
+										<h5>Mediocampistas</h5>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col align-self-center">
-									<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
+								<div class="row">
+									<div class="col align-self-center">
+										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-									<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-dark"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+									</div>
 								</div>
-
-							</div>
-						@endif						
-
-						@if($jug->posicionJugador === 'Mediocampista')
-							<div class="row">
-								<div class="col">
-									<h5>Mediocampistas</h5>
+							@endif
+					
+							@if($jug->posicionJugador === 'Delantero')
+								<div class="row">
+									<div class="col">
+										<h5>Delanteros</h5>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col align-self-center">
-									<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
+								<div class="row">
+									<div class="col align-self-center">
+										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-									<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-dark"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+									</div>
 								</div>
+							@endif
+						</div>
+					@endif
+				@endforeach	
 
-							</div>
-						@endif
-
-						@if($jug->posicionJugador === 'Delantero')
-							<div class="row">
-								<div class="col">
-									<h5>Delanteros</h5>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col align-self-center">
-									<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
-							
-									<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-dark"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
-								</div>
-
-							</div>
-						@endif
-				@endif
-			@endforeach
-			</div>
-		</div>
+				</div>		
+			<p class="text-white">.</p>
+			
+		
 		
 					
 
