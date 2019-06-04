@@ -35,7 +35,7 @@
     <div class="col">
         <form class="navbar-form navbar-left form-inline my-2 my-lg-0" role="search" action="{{url('partido/search')}}">
          <div class="form-group">
-          <input type="text" class="form-control" name='search' placeholder="BUSCAR..." required /> <button type="submit" class="btn btn-success">Buscar</button>
+          <input type="text" class="form-control" name='search' placeholder="Buscar..." required /> <button type="submit" class="btn btn-outline-success">Buscar</button>
          </div>
         </form>
     </div>

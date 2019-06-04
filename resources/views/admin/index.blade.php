@@ -70,7 +70,7 @@
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
   		<div class="row">
   			<div class="col">
-  					<a href="/arbitro/create"  class="btn btn-success">Crear Arbitro</a>
+  					<a href="/arbitro/create"  class="btn btn-outline-success">Crear Arbitro</a>
 
 
 
@@ -128,7 +128,7 @@
 		
 		<div class="row">
 			<div class="col">
-				<a href="/asociacion/create" class="btn btn-success my-2 my-sm-0"s><span class="glyphicon glyphicon-wrench"></span>Crear Asociación</a>
+				<a href="/asociacion/create" class="btn btn-outline-success my-2 my-sm-0"s><span class="glyphicon glyphicon-wrench"></span>Crear Asociación</a>
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
@@ -174,7 +174,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/ciudad/create" class="btn btn-success my-2 my-sm-0">Crear Ciudad</a>
+				<a href="/ciudad/create" class="btn btn-outline-success my-2 my-sm-0">Crear Ciudad</a>
 				<table class="table table-striped">
 					<thead>
 						<th>ID</th>
@@ -218,7 +218,7 @@
 
 	<div class="tab-pane fade" id="club" role="tabpanel" aria-labelledby="club-tab">
 		<div class="col">
-			<a href="/club/create" class="btn btn-success my-2 my-sm-0">Crear equipo</a>
+			<a href="/club/create" class="btn btn-outline-success my-2 my-sm-0">Crear equipo</a>
 			<table class="table table-striped">
 				<thead>
 					<th>ID</th>
@@ -278,7 +278,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/confederacion/create" class="btn btn-success my-2 my-sm-0">Crear Confederación</a>
+				<a href="/confederacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Confederación</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -320,7 +320,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/directortecnico/create" class="btn btn-success my-2 my-sm-0">Crear Director Tecnico</a>
+				<a href="/directortecnico/create" class="btn btn-outline-success my-2 my-sm-0">Crear Director Tecnico</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -372,7 +372,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/estadio/create" class="btn btn-success my-2 my-sm-0">Crear Estadio</a>
+				<a href="/estadio/create" class="btn btn-outline-success my-2 my-sm-0">Crear Estadio</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -428,7 +428,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/federacion/create" class="btn btn-success my-2 my-sm-0">Crear Federación</a>
+				<a href="/federacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Federación</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -472,7 +472,7 @@
 		
 		<div class="row">
 			<div class="col">
-				<a href="/jugador/create" class="btn btn-success my-2 my-sm-0">Crear Jugador</a>
+				<a href="/jugador/create" class="btn btn-outline-success my-2 my-sm-0">Crear Jugador</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -542,7 +542,7 @@
 	<div class="tab-pane fade" id="pais" role="tabpanel" aria-labelledby="pais-tab">
 		<div class="row">
 			<div class="col">
-				<a href="/pais/create" class="btn btn-success my-2 my-sm-0">Añadir nuevo País...</a>
+				<a href="/pais/create" class="btn btn-outline-success my-2 my-sm-0">Añadir nuevo País...</a>
 
 					<table class="table table-striped">
 						<thead>
@@ -586,7 +586,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/torneo/create" class="btn btn-success my-2 my-sm-0">Crear Torneo</a>
+				<a href="/torneo/create" class="btn btn-outline-success my-2 my-sm-0">Crear Torneo</a>
 
 				<table class="table table-striped">
 					<thead>
@@ -646,7 +646,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/user/create" class="btn btn-success my-2 my-sm-0">Crear Usuarios</a>
+				<a href="/user/create" class="btn btn-outline-success my-2 my-sm-0">Crear Usuarios</a>
 	
 	<div class="row">
 		<table class="table table-striped">
@@ -681,7 +681,7 @@
 	
 		<div class="row">
 			<div class="col">
-				<a href="/partido/create" class="btn btn-success my-2 my-sm-0">Añadir partido</a>
+				<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir partido</a>
 	
 	<div class="row">
 		<table class="table table-striped">
