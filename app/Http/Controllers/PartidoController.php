@@ -53,12 +53,32 @@ class PartidoController extends Controller
     }
 
     public function search($search){
+
         $search = urldecode($search);
         $club = Club::select()
                 ->where('nombreClub', 'LIKE', '%'.$search.'%')
                 ->orderBy('idClub', 'desc')
                 ->get();
-        return view('partido.search',  ['club' => $club]);
+
+        $jugadores = Jugador::select()
+                ->where('nombreJugador', 'LIKE', '%'.$search.'%')
+                ->orwhere('apellidosJugador', 'LIKE', '%'.$search.'%')
+                ->orderBy('idJugador', 'desc')
+                ->get();
+
+        $torneos = Torneo::select()
+                ->where('nombreTorneo', 'LIKE', '%'.$search.'%')
+                ->orderBy('idTorneo', 'desc')
+                ->get();
+
+        $estadios = Estadio::select()
+                ->where('nombreEstadio', 'LIKE', '%'.$search.'%')
+                ->orderBy('idEstadio', 'desc')
+                ->get();
+
+
+
+        return view('partido.search',  ['club' => $club, "jugadores" => $jugadores,  "torneos" => $torneos,  "estadios" => $estadios]);
         
     }
 //-------------------------------------------------------------------------------------------------------------------
