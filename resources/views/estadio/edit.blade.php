@@ -8,7 +8,7 @@
 	<form class="form-group" method="POST" action="/estadio/{{$estadios->idEstadio}}" enctype="multipart/form-data">	
 		@method('PUT')
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 			<input type="text" name="nombreEstadio" class="form-control" value="{{$estadios->nombreEstadio}}">
 			<label for="">Inauguración</label>

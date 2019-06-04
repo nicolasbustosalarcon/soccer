@@ -6,7 +6,7 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/estadio" enctype="multipart/form-data">	
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 			<input type="text" name="nombreEstadio" class="form-control" required>
 			<label for="">Inauguración</label>

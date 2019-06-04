@@ -12,39 +12,39 @@
 		@foreach($torneos as $tor) 
 		<div class="">
 			@if($tor->idConfederacion === NULL)
-				<h3 class="row justify-content-center">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
+				<h3 class="row justify-content-center text-light">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
 				@foreach($partidos as $part)
 
 					@if($part->idTorneo === $tor->idTorneo)
-					<div class="border">
+					<div class="">
 						<div class="row justify-content-center" >
 							<div class="col-4 " align="right">	
 								@foreach($clubes as $club)									
 									@if($part->clubLocalPartido === $club->idClub)
 									
-										<a href="{{ route('club.show', $club->idClub)}}" class="text-white"><span>{{ $club['nombreClub'] }}</span>
+										<a href="{{ route('club.show', $club->idClub)}}" class="text-light"><span>{{ $club['nombreClub'] }}</span>
 										<img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important"></a>
 									@endif
 								@endforeach
 							</div>
 							<div class="col-1 " align="center">
 								@if($part->estadoPartido === 'Proximo')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-white"><span> {{ $part['horaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Suspendido')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-white"><span> {{ $part['estadoPartido'] }}</span></a>	
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['estadoPartido'] }}</span></a>	
 								@endif				
 								@if($part->estadoPartido === 'En curso')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-white"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Expirado')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-white"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 							</div>
 							<div class="col-4 " align="left">	
 								@foreach($clubes as $club)									
 									@if($part->clubVisitaPartido === $club->idClub)
-										<a href="{{ route('club.show', $club->idClub)}}" class="text-white"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important">
+										<a href="{{ route('club.show', $club->idClub)}}" class="text-light"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important">
 										<span>{{ $club['nombreClub'] }}</span></a>
 
 									@endif
@@ -74,7 +74,7 @@
 </div>
 
 <div>
-	<div class="row justify-content-center">
+	<div class="row justify-content-center text-light">
 		<h2> Torneos Internacionales </h2>
 	</div>
 

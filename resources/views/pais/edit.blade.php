@@ -8,7 +8,7 @@
 	<form class="form-group" method="POST" action="/pais/{{$paises->idPais}}" enctype="multipart/form-data">	
 		@method('PUT')
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 			<input type="text" name="nombrePais" class="form-control" value="{{$paises->nombrePais}}">
 			

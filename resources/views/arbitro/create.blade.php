@@ -6,22 +6,22 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/arbitro" enctype="multipart/form-data">	
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 			<input type="text" name="nombreArbitro" class="form-control" required>
 		</div>
-        <div class="form-group">
+        <div class="form-group text-light">
 			<label for="">Apellidos</label>
 			<input type="text" name="apellidosArbitro" class="form-control" required>
 		</div>
-        <div class="form-group">
+        <div class="form-group text-light">
 			<label for="">Imagen</label>
 			<input type="file" name="imagenArbitro" >
 		</div>
-        <div class="form-group">
+        <div class="form-group text-light">
 			<label for="">Nacimiento</label>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<div class="form-group">
 				<label>Año:  </label>
 				<select name="anho" class="form-control" required>
@@ -47,7 +47,7 @@
 				</select>
 			</div>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Mes: </label>
 			<select name="mes" class="form-control" required>
 				<option disabled selected value>Seleciona Mes...</option>
@@ -65,7 +65,7 @@
 				<option value="12">Diciembre</option>
 			</select>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Dia:   </label>
 			<select name="dia" class="form-control" required>
 				<option disabled selected value>Seleciona Día...</option>
@@ -103,7 +103,7 @@
 			</select>
 		</div>
 
-        <div class="form-group">
+        <div class="form-group text-light">
 			<label>Tipo</label>
 			<select name="tipoArbitro" class="form-control" required>
 
@@ -115,7 +115,7 @@
 			</select>	
 		</div>
 
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Grado</label>
 			<select name="gradoArbitro" class="form-control" required>
 			

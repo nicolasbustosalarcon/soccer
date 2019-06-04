@@ -6,7 +6,7 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/torneo">
     @csrf	
-		<div class="form-group">
+		<div class="form-group text-light">
 
 			
 			<label for="">Nombre Torneo</label>

@@ -8,7 +8,7 @@
 	<form class="form-group" method="POST" action="/jugador/{{$jugadores->idJugador}}" enctype="multipart/form-data">	
 		@method('PUT')
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 				<div class="form-group">
 					<label for="">Nombre</label>
@@ -16,17 +16,17 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label for="">Apellidos</label>
 					<input type="text" name="apellidosJugador" class="form-control" value="{{$jugadores->apellidosJugador}}">
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label for="">Nacimiento</label>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="form-group text-light">
 				<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 					<div class="form-group">
 						<label>Año:  </label>
@@ -126,19 +126,19 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label for="">Altura (cm)</label>
 					<input type="text" name="alturaJugador" class="form-control" value="{{$jugadores->alturaJugador}}">
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label for="">Peso (kg)</label>
 					<input type="text" name="pesoJugador" class="form-control" value="{{$jugadores->pesoJugador}}">
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label>Pie</label>
 					<select name="pieJugador" class="form-control" value="{{$jugadores->pieJugador}}">
 						<option value="{{$jugadores->pieJugador}}">Seleccionar Pie</option>
@@ -150,7 +150,7 @@
 			
 
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label for="imagenJugador">Imagen</label>
 					<input type="file" name="imagenJugador" class="form-control">
 					@if (($jugadores->imagenJugador)!="")
@@ -159,7 +159,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label>Club</label>
 					<select name="idClub" class="form-control" value="{{$jugadores->idClub}}">
 						<option value="{{$jugadores->idClub}}">Seleccionar Club</option>
@@ -170,7 +170,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
-				<div class="form-group">
+				<div class="form-group text-light">
 					<label>Nacionalidad</label>
 					<select name="idPais" class="form-control" value="{{$jugadores->idPais}}">
 						<option value="{{$jugadores->idPais}}">Seleccionar Pais</option>

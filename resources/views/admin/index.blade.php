@@ -70,7 +70,7 @@
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
   		<div class="row">
   			<div class="col">
-  					<a href="/arbitro/create" class="btn btn-success my-2 my-sm-0">Crear Arbitro</a>
+  					<a href="/arbitro/create"  class="btn btn-success">Crear Arbitro</a>
 
 
 

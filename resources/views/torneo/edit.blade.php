@@ -8,7 +8,7 @@
 	<form class="form-group" method="POST" action="/torneo/{{$torneos->idTorneo}}" enctype="multipart/form-data">	
 		@method('PUT')
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 
 			
 			<label for="">Nombre Torneo</label>

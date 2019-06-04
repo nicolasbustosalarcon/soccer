@@ -82,7 +82,7 @@
 
             </div>
         </nav>
-        <div class="container border bg-secondary">
+        <div class="container  bg-dark">
         	<main class="py-4">
         	    @yield('content')
         	</main>

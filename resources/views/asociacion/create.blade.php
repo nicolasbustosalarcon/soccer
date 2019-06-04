@@ -6,13 +6,13 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/asociacion" enctype="multipart/form-data">	
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
-			<input type="text" name="nombreAsociacion" class="form-control">
+			<input type="text text-light" name="nombreAsociacion" class="form-control">
 			<label for="">Imagen</label>
 			<input type="file" name="imagenAsociacion" >
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Fundación</label>
 			<input type="date" name="fundacionAsociacion" class="form-control">
 			<label for="">Sede</label>

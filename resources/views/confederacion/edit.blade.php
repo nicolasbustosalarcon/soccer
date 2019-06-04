@@ -8,7 +8,7 @@
 	<form class="form-group" method="POST" action="/confederacion/{{$confederaciones->idConfederacion}}" enctype="multipart/form-data">	
 		@method('PUT')
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 			<input type="text" name="nombreConfederacion" class="form-control" value="{{$confederaciones->nombreConfederacion}}">
 			<label for="">Imagen</label>

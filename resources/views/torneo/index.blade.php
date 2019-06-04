@@ -6,10 +6,9 @@
 @section ('content')
 <!DOCTYPE html>
 	<html>
-	<div class="row">
+	<div class="row text-light">
 		<table class="table table-striped">
 			<thead>
-				<th>ID</th>
 				<th>Nombre</th>
 				<th>Edicion</th>
 				<th>Organizador</th>
@@ -21,7 +20,6 @@
 					@foreach($confederaciones as $conf)
 						@if($tor->idConfederacion === $conf->idConfederacion)
 						<tr>
-							<td>{{ $tor['idTorneo'] }}</td>
 							<td>{{ $tor['nombreTorneo'] }}</td>
 							<td>{{ $tor['edicion'] }}</td>
 							@foreach($confederaciones as $conf)

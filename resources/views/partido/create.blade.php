@@ -5,7 +5,7 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/partido">	
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 
 			<label>Club Local</label>
     			<select name="clubLocalPartido" class="form-control" required>

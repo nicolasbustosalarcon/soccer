@@ -6,20 +6,20 @@
 @section ('content')
 	<form class="form-group" method="POST" action="/jugador" enctype="multipart/form-data">	
 		@csrf
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nombre</label>
 		</div>
 		<div class="form-group">
 			<input type="text" name="nombreJugador" class="form-control" required>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Apellidos</label>
 			<input type="text" name="apellidosJugador" class="form-control" required>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="">Nacimiento</label>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<div class="form-group">
 				<label>Año:  </label>
 				<select name="anho" class="form-control" required>
@@ -45,7 +45,7 @@
 				</select>
 			</div>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Mes: </label>
 			<select name="mes" class="form-control" required>
 				<option disabled selected value>Seleciona Mes...</option>
@@ -63,7 +63,7 @@
 				<option value="12">Diciembre</option>
 			</select>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Dia:   </label>
 			<select name="dia" class="form-control" required>
 				<option disabled selected value>Seleciona Día...</option>
@@ -100,11 +100,11 @@
 				<option value="31">31</option>
 			</select>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Posición</label>
 			<select name="posicionJugador" class="form-control" required>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<option disabled selected value>Seleciona una opción...</option>
 			<option value="Arquero">Arquero</option>
 			<option value="Defensa">Defensa</option>
@@ -112,7 +112,7 @@
 			<option value="Delantero">Delantero</option>
 		</select>
 	    </div>
-	    <div class="col-3 form-group">
+	    <div class="col-3 form-group text-light">
 	    	<label for="">Altura</label>
 	    	<div class="input-group mb-3">
 	    		<input type="text" name="alturaJugador" class="form-control" required>
@@ -121,7 +121,7 @@
 	    	    </div>
 			</div>
 		</div>
-		<div class="col-3 form-group">
+		<div class="col-3 form-group text-light">
 			<label for="">Peso</label>
 				<div class="input-group mb-3">
 				<input type="text" name="pesoJugador" class="form-control" required>
@@ -130,7 +130,7 @@
   				</div>
 			</div>
 		</div>
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label>Pie</label>
 			<select name="pieJugador" class="form-control" required>
 		</div>
@@ -141,12 +141,12 @@
 			</select>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group text-light">
 			<label for="imagenJugador">Imagen</label>
 			<input type="file" name="imagenJugador" class="form-control">
 		</div>
 		
-		<div class="form-group">
+		<div class="form-group text-light">
 							
 			<label>Club</label>
     			<select name="idClub" class="form-control" required>
@@ -159,7 +159,7 @@
 		</div>
 
 
-		<div class="form-group">
+		<div class="form-group text-light">
 			
     		<label>Nacionalidad</label>
     			<select name="idPais" class="form-control" required>
