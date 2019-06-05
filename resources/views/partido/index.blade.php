@@ -12,7 +12,7 @@
 		@foreach($torneos as $tor) 
 		<div class="">
 			@if($tor->idConfederacion === NULL)
-				<h3 class="row justify-content-center text-light">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
+				<h3 class="row justify-content-center text-warning">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
 				@foreach($partidos as $part)
 
 					@if($part->idTorneo === $tor->idTorneo)
@@ -74,7 +74,7 @@
 </div>
 
 <div>
-	<div class="row justify-content-center text-light">
+	<div class="row justify-content-center text-warning">
 		<h2> Torneos Internacionales </h2>
 	</div>
 

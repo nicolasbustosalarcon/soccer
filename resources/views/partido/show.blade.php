@@ -4,7 +4,7 @@
 @section ('titulo', 'Partidos' .$partidos->idPartido)
 
 @section ('content')
-		<div class="row border justify-content-center">
+		<div class="row border justify-content-center text-light">
 			@foreach($clubes as $club)
 				@if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
 
@@ -29,7 +29,7 @@
 		
 		</div>
 
-		<div class="row border justify-content-center">
+		<div class="row border justify-content-center text-light">
 			<h1>INFO</h1>
 			<div class="col">
 				@foreach($torneos as $tor)
@@ -85,7 +85,7 @@
 	@endif
 	
 	@if(($partidos->estadoPartido != 'Suspendido')) <!-- Valida para que no se muestren jugadores si se suspendió el partido-->
-		<div class="row border justify-content-center">
+		<div class="row border justify-content-center text-light">
 
 			<h1>Plantillas</h1>
 			</div>
@@ -94,7 +94,7 @@
 
 					<!------------Plantilla Local------------------------>
 
-					<div class="col-5" align="left">
+					<div class="col-5 text-light" align="left">
 						
 							@foreach($plantilla as $plan)
 								@if($partidos->idPartido === $plan->idPartido)
@@ -111,7 +111,7 @@
 
 									
 					<!-----------Plantilla Visita--------------------------->
-					<div class="col-5 " align="right">
+					<div class="col-5 text-light" align="right">
 
 						@foreach($plantilla as $plan)
 								@if($partidos->idPartido === $plan->idPartido)
