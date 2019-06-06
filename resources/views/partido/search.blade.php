@@ -55,7 +55,7 @@
                         <div>
                             <!--<a href="{{ route('torneo.show', $tor->idTorneo)}}" class="text-white">-->
                                 <span>{{ $tor->nombreTorneo}}</span>
-                                <img src="{{asset('images/torneos/' .$tor->imagenTorneo)}}" class="img-responsive" style="width:25px !important; height:25px !important">
+                               
                             </a>
                         </div>
                     @endforeach

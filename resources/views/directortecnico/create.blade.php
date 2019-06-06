@@ -17,7 +17,7 @@
 			<input type="text" name="edadDirectorTecnico" class="form-control" required>
 			
 			<label for="">Imagen</label>
-			<input type="file" name="imagenDirectorTecnico" class="form-control" required>
+			<input type="file" name="imagenDirectorTecnico" class="form-control">
 	
 			
     		<label>Nacionalidad</label>

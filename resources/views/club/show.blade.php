@@ -87,7 +87,7 @@
 									<div class="col align-self-center">
 										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<!--<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">--><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
 									</div>
 								</div>
 							@endif	
@@ -102,7 +102,7 @@
 									<div class="col align-self-center">
 										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<!--<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">--><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
 									</div>
 								</div>
 							@endif
@@ -117,7 +117,7 @@
 									<div class="col align-self-center">
 										<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" class="img-responsive float-sm-left" style="width:90px !important; height:90px !important">
 							
-										<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white"><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
+										<!--<a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">--><span class="row align-self-center">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</span></a>
 									</div>
 								</div>
 							@endif
@@ -125,7 +125,10 @@
 					@endif
 				@endforeach	
 
-				</div>		
+				</div>
+				<div>
+				   	<a href="../../partido"><button class="btn btn-danger">Volver</button> </a>
+				</div>
 			<p class="text-white">.</p>
 			
 		

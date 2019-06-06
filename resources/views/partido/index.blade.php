@@ -27,18 +27,18 @@
 									@endif
 								@endforeach
 							</div>
-							<div class="col-1 " align="center">
+							<div class="col-1 text-light" align="center">
 								@if($part->estadoPartido === 'Proximo')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
+									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Suspendido')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['estadoPartido'] }}</span></a>	
+									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span> {{ $part['estadoPartido'] }}</span></a>	
 								@endif				
 								@if($part->estadoPartido === 'En curso')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Expirado')
-									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 							</div>
 							<div class="col-4 " align="left">	
