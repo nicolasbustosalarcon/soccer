@@ -22,7 +22,6 @@
 <div class="row">
 
 
-
 <ul class="nav nav-tabs nav-pills flex-column " id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active text-white " id="arbitro-tab" data-toggle="tab" href="#arbitro" role="tab" aria-controls="arbitro" aria-selected="true">Arbitros</a>
@@ -70,11 +69,12 @@
   	<div class="tab-pane fade show active" id="arbitro" role="tabpanel" aria-labelledby="arbitro-tab">
   		<div class="row">
   			<div class="col">
+  				<i class="fas fa-exclamation-square"></i>
   					<a href="/arbitro/create"  class="btn btn-outline-success">Crear Arbitro</a>
 
 
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<!--<th>Imagen</th>-->
@@ -93,6 +93,7 @@
 						@foreach($arbitros as $arb)
 							<tr>
 								<td>{{ $arb['idArbitro'] }}</td>
+
 								<!--<td><img src="images/arbitro/{{ $arb['imagenArbitro']}}" class="img-responsive" style="width:45px !important; height:45px !important"></td>-->
 								<td>{{ $arb['nombreArbitro'] }}</td>
 								<td>{{ $arb['apellidosArbitro'] }}</td>
@@ -109,9 +110,10 @@
 								<td>{{ $arb['gradoArbitro'] }}</td>
 
 								<td>
-									<div class="row"><a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-primary my-2 my-sm-0"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>Editar</a>
+									<div class="row"><a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-primary my-2 my-sm-0"><span class="glyphicon glyphicon-wrench " aria-hidden="true"></span>Editar</a>
 									<a href=""> .</a>
 									<a href="{{ route('arbitro.destroy', $arb->idArbitro)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el árbitro?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a></div>
+
 								</td>
 							</tr>
 						@endforeach
@@ -129,7 +131,7 @@
 		<div class="row">
 			<div class="col">
 				<a href="/asociacion/create" class="btn btn-outline-success my-2 my-sm-0"s><span class="glyphicon glyphicon-wrench"></span>Crear Asociación</a>
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Asociacion</th>
@@ -175,7 +177,7 @@
 		<div class="row">
 			<div class="col">
 				<a href="/ciudad/create" class="btn btn-outline-success my-2 my-sm-0">Crear Ciudad</a>
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Nombre</th>
@@ -219,7 +221,7 @@
 	<div class="tab-pane fade" id="club" role="tabpanel" aria-labelledby="club-tab">
 		<div class="col">
 			<a href="/club/create" class="btn btn-outline-success my-2 my-sm-0">Crear equipo</a>
-			<table class="table table-striped">
+			<table class="table table-striped text-white">
 				<thead>
 					<th>ID</th>
 					<th>Nombre</th>
@@ -280,7 +282,7 @@
 			<div class="col">
 				<a href="/confederacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Confederación</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>ID Continente</th>
@@ -322,7 +324,7 @@
 			<div class="col">
 				<a href="/directortecnico/create" class="btn btn-outline-success my-2 my-sm-0">Crear Director Tecnico</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Nombre</th>
@@ -374,7 +376,7 @@
 			<div class="col">
 				<a href="/estadio/create" class="btn btn-outline-success my-2 my-sm-0">Crear Estadio</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Nombre</th>
@@ -430,7 +432,7 @@
 			<div class="col">
 				<a href="/federacion/create" class="btn btn-outline-success my-2 my-sm-0">Crear Federación</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Confederacion</th>
@@ -474,7 +476,7 @@
 			<div class="col">
 				<a href="/jugador/create" class="btn btn-outline-success my-2 my-sm-0">Crear Jugador</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						
@@ -544,7 +546,7 @@
 			<div class="col">
 				<a href="/pais/create" class="btn btn-outline-success my-2 my-sm-0">Añadir nuevo País...</a>
 
-					<table class="table table-striped">
+					<table class="table table-striped text-white">
 						<thead>
 							<th>ID</th>
 							<th>Nombre</th>
@@ -588,7 +590,7 @@
 			<div class="col">
 				<a href="/torneo/create" class="btn btn-outline-success my-2 my-sm-0">Crear Torneo</a>
 
-				<table class="table table-striped">
+				<table class="table table-striped text-white">
 					<thead>
 						<th>ID</th>
 						<th>Nombre</th>
@@ -649,7 +651,7 @@
 				<a href="/user/create" class="btn btn-outline-success my-2 my-sm-0">Crear Usuarios</a>
 	
 	<div class="row">
-		<table class="table table-striped">
+		<table class="table table-striped text-white">
 			<thead>
 				<th>ID</th>
 				<th>Nombre</th>
@@ -684,7 +686,7 @@
 				<a href="/partido/create" class="btn btn-outline-success my-2 my-sm-0">Añadir partido</a>
 	
 	<div class="row">
-		<table class="table table-striped">
+		<table class="table table-striped text-white">
 			<thead>
 				<th>ID</th>	
 				<th>Equipo Local</th>	
