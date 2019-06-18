@@ -25,6 +25,12 @@ Route::get("partido/search/{search}", "PartidoController@search");
 Route::get('prueba ', 'TestController@prueba');
 
 
+
+//-------------Rutas de vista Inicio (IndexController)----//
+Route::get('/inicio', 'IndexController@index')->name('inicio.index');
+
+
+
 //--------------Rutas de Club---------------//
 Route::resource('club','ClubController');
 Route::get('club/{idClub}/destroy',[
