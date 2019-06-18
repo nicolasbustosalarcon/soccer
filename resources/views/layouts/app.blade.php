@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Soccer - @yield('titulo')</title>
+    <title>4-4-2 - @yield('titulo')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -29,7 +29,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel bg-dark">
             <div class="container ">
-                <a class="navbar-brand  text-success" href="{{ route('partido.index')}}">Soccer</a>
+                <a class="navbar-brand  text-success" href="{{ route('partido.index')}}"><img width="81" height="27" src="imagenes/inicio/icono.png"></a>
                 
                 <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -87,7 +87,7 @@
             </div>
         </nav>
         <div class="container  bg-dark">
-        	<main class="py-4">
+        	<main class="py-1">
         	    @yield('content')
         	</main>
     	</div>
@@ -99,7 +99,7 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Soccer</a>
+        <a class="nav-link" href="#"><img width="81" height="27" src="imagenes/inicio/icono.png"></a>
       </li>
     </ul>
     <span class="navbar-text text-muted">
