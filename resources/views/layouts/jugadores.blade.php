@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="bg-secondary">
+<body bg="css/Holanda.jpg">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel bg-dark">
             <div class="container ">
