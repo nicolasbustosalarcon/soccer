@@ -12,6 +12,7 @@ use App\TrayectoriaJugador;
 use App\Torneo;
 use DateTime;
 use Auth;
+use DB;
 
 use Carbon\Carbon;
 
@@ -113,11 +114,23 @@ class JugadorController extends Controller
     public function show($id)
     {
         $jugadores = Jugador::findOrFail($id);
-       
-        $paises         = Pais::all();
-        $clubes         = Club::all();
-       $trayectorias    = TrayectoriaJugador::all();
-       $torneos         = Torneo::all();
+        $paises = Pais::all();
+        $clubes = Club::all();
+        $trayectorias = DB::table('TrayectoriasJugadores as tj')
+        ->join('clubes as c','tj.idClub','=','c.idClub')
+        ->select('tj.camisetaJugador','c.nombreClub as nombreClub','c.imagenClub as imagen','tj.idClub')
+        ->where('tj.idJugador','=',$id)
+        ->get();
+        $torneos = Torneo::all();
+        //$anuncios1=DB::table('anuncio as a')
+        //    ->join('users as u','a.idusuario','=','u.id')
+        //    ->join('tipo_anuncios as ta','a.tipo_anuncio','=','ta.idtipo_anuncios')
+        //    ->join('categoria as c','a.idcategoria','=','c.idcategoria')
+        //    ->select('a.idanuncio','a.titulo','a.region','a.estado','c.nombre as categoria','u.name as usuario','a.descripcion','a.imagen','a.id_secretaria','a.precio','ta.nombre_tipo as tipo_anuncio','a.comentario_secretaria')
+        //    ->where('a.idusuario','=',Auth::user()->id)
+        //    ->where('a.estado','=','0')
+        //    ->orderBy('a.idanuncio','asc')
+        //    ->paginate(3);
         //dd($trayectorias);
 
         return view('jugador.show',['clubes' => $clubes, 'paises' => $paises,  'jugadores' => $jugadores, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
