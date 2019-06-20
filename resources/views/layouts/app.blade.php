@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    <link rel="icon"  href="imagenes/inicio/escudoinicio.png">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
@@ -32,6 +33,8 @@
                 <a class="navbar-brand  text-success" href="{{ route('partido.index')}}"><img width="81" height="27" src="imagenes/inicio/icono.png"></a>
                 
                 <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
+                <a class="navbar-brand text-white" href="">Calendario</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

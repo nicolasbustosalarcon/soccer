@@ -4,7 +4,6 @@
 @section ('title', 'Torneos')
 
 @section ('content')
-
 	<div class="row text-warning">
 		<table class="table table-striped text-success">
 			<thead>
@@ -46,9 +45,9 @@
 	<div class="row justify-content-center">
 		<div class="row justify-content-center" style="height:250px"> 
 			<ul class="row justify-content-center" role="" style="width: 229px;"> 
-				<li class="row justify-content-center"  role="" aria-hidden="" style="width: 200px;   height: 90px; margin-right: 0px;"> 
+				<li class="row justify-content-center"  role="" aria-hidden="" style="width: 800px;   height: 400px; margin-right: 0px;"> 
   				<a href="torneo" class="row justify-content-center" > 
-						<img class="row justify-content-center" width="250" height="229" alt="levantar_copa" src="images/torneos/dab.png"> 
+						<img class="row justify-content-center" width="1000" height="350" alt="levantar_copa" src="https://www.britanico.edu.pe/blog/wp-content/uploads/2017/10/vocabulario-ingles-britanico-futbol-800x400.jpg"> 
 					</a> 
 				</li>
 			</ul>
@@ -82,6 +81,8 @@
         
     </div>
   </div>
+
+  	<a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
  
 	<iframe width="1100" height="0.1" src="https://www.youtube.com/embed/UbjnIJ4LB30?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
