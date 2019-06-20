@@ -162,8 +162,21 @@ class PartidoController extends Controller
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
+        $todospartidos=Partido::all();
 
-
+        $partidos_historial = array(array('local','visita','goles_local','goles_visita'));
+        $contador = 0;
+        foreach ($todospartidos as $todos) {
+            if ($todos->clubLocalPartido == $partidos->clubLocalPartido && $todos->clubVisitaPartido==$partidos->clubVisitaPartido || $todos->clubLocalPartido == $partidos->clubVisitaPartido && $todos->clubVisitaPartido == $partidos->clubLocalPartido ) {
+                $partidos_historial[$contador]['local'] =$todos->clubLocalPartido;
+                $partidos_historial[$contador]['visita'] =$todos->clubVisitaPartido;
+                $partidos_historial[$contador]['goles_local'] =$todos->golesLocalPartido;
+                $partidos_historial[$contador]['goles_visita'] =$todos->golesVisitaPartido;
+                $contador = $contador + 1;
+            }
+            # code...
+        }
+        $contador = $contador;
         $jugadores = Jugador::all();
         $trayectoriasjugadores = TrayectoriaJugador::all();
         $historiales = DB::table('Historiales')->get();
@@ -201,7 +214,7 @@ class PartidoController extends Controller
 
 
 
-        return view('partido.show',['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla]);
+        return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla]);
                 
     }
 
