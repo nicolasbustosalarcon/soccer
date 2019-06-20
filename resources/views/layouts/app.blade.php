@@ -29,7 +29,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel bg-dark">
             <div class="container ">
-                <a class="navbar-brand  text-success" href="{{ route('partido.index')}}"><img width="81" height="27" src="imagenes/inicio/icono.png"></a>
+                <a class="navbar-brand  text-success" href="{{ route('partido.index')}}"><img width="81" height="27" src="{{asset('imagenes/inicio/icono.png')}}"></a>
                 
                 <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -99,7 +99,7 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item">
-        <a class="nav-link" href="#"><img width="81" height="27" src="imagenes/inicio/icono.png"></a>
+        <a class="nav-link" href="#"><img width="81" height="27" src="{{asset('imagenes/inicio/icono.png')}}"></a>
       </li>
     </ul>
     <span class="navbar-text text-muted">
