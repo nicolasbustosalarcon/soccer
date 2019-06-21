@@ -13,7 +13,7 @@
                     <tr>
                       <th colspan="7" >
                         <a class="btn"><i class="icon-chevron-left"></i></a>
-                        <a class="btn">{{$month}}</a>
+                        <a class="btn">Enero</a>
                         <a class="btn"><i class="icon-chevron-right"></i></a>
                       </th>
                     </tr>

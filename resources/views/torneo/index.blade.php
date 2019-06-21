@@ -105,6 +105,7 @@
 													    			</div> 
 													    			<div class="col">
 													    				<td>{{ $club['nombreClub'] }}</td>
+													    				<td>{{ $tor['edicion'] }}</td>
 													    			</div>
 												    			</div>
 												    		@endif
