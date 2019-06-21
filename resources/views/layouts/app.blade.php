@@ -33,7 +33,7 @@
                 <a class="navbar-brand  text-success" href="{{ route('partido.index')}}"><img width="81" height="27" src="{{asset('imagenes/inicio/icono.png')}}"></a>
                 
                 <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
-                <a class="navbar-brand text-white" href="">Calendario</a>
+                <a class="navbar-brand text-white" href="{{ route('calendario.fechas')}}">Calendario</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

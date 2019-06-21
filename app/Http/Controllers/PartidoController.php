@@ -51,6 +51,25 @@ class PartidoController extends Controller
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
 
     }
+    public function index_fechas()
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        
+        //Ordenar los partidos por dia
+        $hoy = getdate();
+        $dia = $hoy['mday'];
+        $mes = $hoy['mon'];
+        $year = $hoy['year'];
+        $fecha = "$year"."-"."$mes"."-"."$dia";
+        
+
+
+
+        return view('partido.calendario',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
+
+    }
 
     public function search($search){
 
