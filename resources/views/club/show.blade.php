@@ -227,12 +227,43 @@
 												  			@endforeach
 														</div>
 											  		</div>
-											  		</div>
+											  		@foreach($partidos as $part)
+														@if($part->clubVisitaPartido === $clubes->idClub)
+															@foreach($allclubs as $club)
+																@if($club->idClub === $part->clubLocalPartido)						
+																<div class="row">
+																	<div class="col text-center">
+																		<span class="text-light font-weight-bold">{{ $part->fechaPartido }}</span>
+																			<div>
+																	  			<a href="{{ route('club.show', $club->idClub)}}">
+																      				<img class="img-responsive float-sm text-left" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35">
+																      			</a>
+																      			<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>			      				
+																		       	<a href="{{ route('club.show', $part->clubVisitaPartido)}}">
+																		       		<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$clubes->imagenClub)}}" width="35" height="35">
+																		       	</a>
+																@endif
+														   	@endforeach
+																				<div style="height:45px;">
+																					<div class="col align-self-start">
+																						<button type="button" class="btn btn-sm btn-primary text-white" disabled>{{$part->estadoPartido}}</button>
+																					</div>
+																				</div>
+														      				</div>
+															    <div class="caption">
+															    				<p>
+															    				</p>
+														        				
+													  			</div>
+													  	@endif
+													@endforeach
+																	</div>
+											  					</div>
+											  	</div>
 													
 											</div>
 		
 							<!-- FIN PARTIDOS-->				
-							<a href="../../partido"><button class='btn btn-danger'>Atrás</button>
 							<div class="row">
 								<p></p>
 							</div>
@@ -241,6 +272,8 @@
 				</div>
 			</div>
 		</div>
+	<a href="../../partido"><button class='btn btn-danger'>Atrás</button>
+
 	</div>
 </div>
 

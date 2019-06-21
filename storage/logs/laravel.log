@@ -11582,3 +11582,18 @@ icobu...')
 #59 {main}
 >>>>>>> master
 "} 
+[2019-06-21 06:33:42] local.ERROR: Command "server.php" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server.php\" is not defined. at C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\vendor\\symfony\\console\\Application.php:648)
+[stacktrace]
+#0 C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\vendor\\symfony\\console\\Application.php(233): Symfony\\Component\\Console\\Application->find('server.php')
+#1 C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\vendor\\symfony\\console\\Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\
+icobustos\\Documents\\Repository\\soccer\\soccer\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
