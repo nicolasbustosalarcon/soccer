@@ -251,6 +251,10 @@
 														@endforeach
 														</div>
 														@endfor
+														@for($i=0; $i < $contador2; $i++)
+														<span class="text-light font-weight-bold">jugador:{{ $gol_jugador[$i]['jugador'] }} minutos jugados: {{ $gol_jugador[$i]['minutos_jugados'] }} 
+														goles: {{$gol_jugador[$i]['gol'] }}</span>
+														@endfor
 								  					</div>
 								  					
 									    			
