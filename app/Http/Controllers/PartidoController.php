@@ -238,7 +238,7 @@ class PartidoController extends Controller
 
 
 
-        return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla]);
+       
 
          return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
                 
