@@ -38,8 +38,6 @@ class PartidoController extends Controller
         
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
     }
-<<<<<<< HEAD
-=======
     public function index_fechas()
     {
         $partidos = Partido::all();
@@ -60,7 +58,7 @@ class PartidoController extends Controller
 
     }
 
->>>>>>> master
+
     public function search($search){
         $search = urldecode($search);
         $club = Club::select()
@@ -206,19 +204,9 @@ class PartidoController extends Controller
                     ->get();
                     //sdd($plantilla);
                      #   dd($jugador_partido);
-<<<<<<< HEAD
-;
+
+
          return view('partido.show',['contador2'=>$contador2,'gol_jugador'=>$gol_jugador,'contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
-=======
-
-
-
-
-
-       
-
-         return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
->>>>>>> master
                 
     }
 //---------------------FUNCION BUSCADOR----------------------------------------------------------------------------
