@@ -13,6 +13,7 @@ use App\DirectorTecnico;
 use App\Ciudad;
 use App\Pais;
 use App\Torneo;
+use App\Partido;
 
 
 
@@ -121,10 +122,27 @@ class ClubController extends Controller
         $torneos = Torneo::all();
         $estadios = Estadio::all();
         $ciudades = Ciudad::all();
+        $partidos = Partido::all();
         $jugadores = Jugador::orderBy('posicionJugador')->get();
+        $allclubs = Club::all();
+
+        $partidos_historial = array(array('local','visita','goles_local','goles_visita'));
+        /*$contador = 0;
+        foreach ($todospartidos as $todos) {
+            if ($todos->clubLocalPartido == $partidos->clubLocalPartido && $todos->clubVisitaPartido==$partidos->clubVisitaPartido || $todos->clubLocalPartido == $partidos->clubVisitaPartido && $todos->clubVisitaPartido == $partidos->clubLocalPartido ) {
+                $partidos_historial[$contador]['local'] =$todos->clubLocalPartido;
+                $partidos_historial[$contador]['visita'] =$todos->clubVisitaPartido;
+                $partidos_historial[$contador]['goles_local'] =$todos->golesLocalPartido;
+                $partidos_historial[$contador]['goles_visita'] =$todos->golesVisitaPartido;
+                $contador = $contador + 1;
+            }
+            # code...
+        }
+        $contador = $contador;
+        */
         //dd($jugadores);
 
-        return view('club.show',['clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'ciudades' => $ciudades, 'paises' => $paises,  'jugadores'=>$jugadores]);
+        return view('club.show',['clubes' => $clubes, 'allclubs' => $allclubs, 'partidos' => $partidos, 'partidos_historial' => $partidos_historial, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'ciudades' => $ciudades, 'paises' => $paises,  'jugadores'=>$jugadores]);
     }
 
 
