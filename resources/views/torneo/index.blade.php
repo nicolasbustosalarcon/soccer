@@ -50,7 +50,7 @@
 					   	<a class="nav-link text-muted" href="#tab1default" data-toggle="tab">TORNEO</a>
 					</li>
 					<li class="nav-item">
-					   	<a class="nav-link text-muted" href="#tab2default" data-toggle="tab">DETALLES</a>
+					   	<a class="nav-link text-muted" href="#tab2default" data-toggle="tab">HISTORIA</a>
 					</li>
 					<li class="nav-item">
 					   	<a class="nav-link text-muted" href="#tab3default" data-toggle="tab">NOTICIAS</a>
@@ -130,7 +130,57 @@
 							</div>	
                         </div>
                 		<div class="tab-pane fade show active" id="tab2default">
-                			
+                			<div class="row">
+                        		<div class="col">
+                        			<p></p>
+                        			<div class="card text-white bg-secondary mb-3" >
+									  	<div class="card-header">
+									  		<h5>Historia UEFA<img class="float-right" src="{{asset('images/torneos/200px-Uefa_2013.png')}}" width="40" height="20"></h5>
+									  	</div>
+									  	<div class="card-body">
+								  			<h6 class="text-justify-center">Fundada en Basilea el 15 de junio de 1954, la UEFA se ha convertido en el guardián del fútbol en Europa al trabajar estrechamente con sus federaciones miembro y otras partes interesadas para promover, proteger y fomentar el deporte en todos los niveles.</h6>
+								  			<img class="text-justify-center" src="https://img.uefa.com//MultimediaFiles/Photo/uefa/KeyTopics/79/95/21//799521_w1.jpg" width="250" height="125">
+								  			<div class="row">
+								  				<a href="https://es.uefa.com/insideuefa/about-uefa/history/">...Más Historia</a>	
+								  			</div>
+									    </div>
+									</div>
+								</div>
+								<div class="col">
+                        			<p></p>
+                        			<div class="card text-white bg-secondary mb-3" >
+									  	<div class="card-header">
+									  		<h5>Historia Conmebol<img class="float-right" src="{{asset('images/torneos/iconos/600px-conmebol_logo.svg_.png')}}" width="35" height="35"></h5>
+									  	</div>
+									  	<div class="card-body">
+								  			<h6>
+								  				En América del Sur los partidos oficiales entre clubes de distintos países nacieron en 1900, cuando Francis Chevallier Boutell asumió la presidencia de la Asociación del Fútbol Argentino (AFA). Creó la Copa Competencia y donó el trofeo para ser disputado entre los clubes de Buenos Aires, Rosario y Montevideo que se inscribieran para participar.
+								  			</h6>
+								  			<img src="http://www.conmebol.com/sites/default/files/userimagnes/alberto_spencer.jpg"width="250" height="125">
+								  			<div class="row">
+								  				<a href="http://www.conmebol.com/es/historia-copa-libertadores">...Más Historia</a>	
+								  			</div>
+									    </div>
+									</div>
+								</div>
+								<div class="col">
+                        			<p></p>
+                        			<div class="card text-white bg-secondary mb-3" >
+									  	<div class="card-header">
+									  		<h5>Supercopa y mundial de clubes<img class="float-right" src="{{asset('images/torneos/iconos/internacional.png')}}" width="42" height="42"></h5>
+									  	</div>
+									  	<div class="card-body">
+								  			<h6>
+								  				La Supercopa de Campeones Intercontinentales, Recopa de Campeones Intercontinentales, Recopa Mundial o Recopa Intercontinental es una competición internacional extinta, oficializada por la CONMEBOL desde septiembre de 2005, que enfrentaba a los campeones de la Copa Intercontinental, iniciada 7 años antes. Tenía una recepción muy buena del público, pero se disputaron solo dos ediciones: la de 1968 y 1969.
+								  			</h6>
+								  			<div class="row">
+								  				<a href="https://es.wikipedia.org/wiki/Supercopa_de_Campeones_Intercontinentales">...Más Historia</a>	
+								  			</div>
+
+									    </div>
+									</div>
+								</div> 
+							</div>	
                 		</div>
                     	<div class="tab-pane fade show active" id="tab3default">
                     		
