@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-sacle=1.0, maximum.scale=1.0, minimum-scale=1.0"> <!--Para que se vea bien en dispositivos moviles -->
+
+	<title>Ejemplo Formularios</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+
+
+
+<!--********* INICIO PPROYECTO ***********-->
+
+
+	<div class="container">	
+		<div clas="row">
+			<div class="col">
+				<h1>Formulario</h1>
+				<form action="proceso.php" method="post" >
+					<label for="nombre">Nombre</label><input type="text" id="nombre" class="form-control">
+					<label for="apellido">Apellido</label><input type="text" id="apellido" class="form-control">
+					<label for="email">Email</label><input type="email" id="email" class="form-control">
+					<label for="tiempo">Tiempo</label><input type="datetime" id="ciudad" class="form-control">
+					<label for="color">Color</label><input type="color" id="nombre" class="form-control">
+					<label for="contrasena">Pass</label><input type="password" id="contrasena" class="form-control">
+				
+					<label class="radio-inline"><input type="radio" name="gusto">Televisión</label>
+					<label class="radio-inline"><input type="radio" name="gusto">Radio</label>
+					<label class="radio-inline"><input type="radio" name="gusto">Internet</label><br>
+
+					<select name="dias">
+						<option value="lunes">Lunes</option>
+						<option value="martes">Martes</option>
+						<option value="miercoles">Miercoles</option>
+
+					</select>
+
+				<div class="form-check">
+					<label for="dos" class="form-check-label">
+						<input type="checkbox" class="form-check-input"value="">Opción 1
+					</label>
+				</div>
+				<div class="form-check">
+					<label for="dos" class="form-check-label">
+						<input type="checkbox" class="form-check-input"value="">Opción 2
+					</label>
+				</div>
+				<div class="form-check">
+					<label for="dos" class="form-check-label">
+						<input type="checkbox" class="form-check-input"value="">Opción 3
+					</label>
+				</div>
+					<input type="submit" value="ENVIAR" class="btn btn-primary">
+
+				</form>
+			
+
+
+
+			</div>
+					
+		
+
+		</div>
+
+
+	</div>
+		
+
+
+<!-- **************TERMINA PROYECTO ***********-->
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
