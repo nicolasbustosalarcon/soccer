@@ -163,6 +163,7 @@ class PartidoController extends Controller
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
         $todospartidos=Partido::all();
+        $historial=Historial::all();
 
         $mes = date("m");
         $dia = date("d");
@@ -187,8 +188,20 @@ class PartidoController extends Controller
 
        // dd($partidos);
         //$jugadorHistorial = $historiales['idJugador'];
-
-
+        $gol_jugador = array(array('jugador','gol','minutos_jugados'));
+        $contador2 = 0;
+        foreach ($historial as $his) {
+            if ($his->idPartido == $id) {
+                foreach ($jugadores as $jug) {
+                    if ($his->idJugador == $jug->idJugador) {
+                        $gol_jugador[$contador2]['jugador'] = $jug->nombreJugador;//Se le puede mandar solo el id tambien
+                        $gol_jugador[$contador2]['gol'] = $his->golJugador;
+                        $gol_jugador[$contador2]['minutos_jugados'] = $his->minutosJugador;
+                        $contador2 = $contador2 + 1;
+                    }
+                }
+            }
+        }
         $jugadorclublocal = DB::table('Jugadores')
                     ->join('Partidos', 'Partidos.clubLocalPartido','=','Jugadores.idClub')
                     ->get();
@@ -217,11 +230,9 @@ class PartidoController extends Controller
 
 
 
+;
 
-
-        return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla]);
-
-         return view('partido.show',['contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
+         return view('partido.show',['contador2'=>$contador2,'gol_jugador'=>$gol_jugador,'contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
                 
     }
 
