@@ -37,7 +37,7 @@
 						<div class="col-3 text-center">
 							<div class="row"   style="height:45px;">
 								<div class="col align-self-end">
-									<span class="text-light font-weight-bold">DD/MM</span>
+									<span class="text-light font-weight-bold">{{ $partidos['fechaPartido'] }}</span>
 								</div>
 							</div>
 							<div class="row" style="height:30px;">
@@ -187,7 +187,22 @@
 									  		<h5>Estadísticas <img class="float-right" src="https://image.flaticon.com/icons/png/512/20/20803.png" width="42" height="42"></h5>
 									  	</div>
 								  		<div class="card-body">
-								  			
+								  			<!--------------------CAMBIAR-------------------------------->
+								  			@foreach($historiales as $hist)
+								  				@if($partidos->idPartido === $hist->idPartido)
+								  					<div class="row">
+								  						<!-----Estadisticas local--->
+								  						<div class="col-6">
+								  						@foreach($jugadorclublocal as $juglocal)
+								  							@if($partidos->clubLocalPartido === $juglocal->idJugador)
+								  								<span> {{ $juglocal->nombreJugador}}</span>
+								  							@endif
+							  							@endforeach
+								  						</div>
+								  						<!--------------------------->
+								  					</div>
+								  				@endif
+								  			@endforeach
 								  		</div>
 									</div>
                         			
@@ -203,11 +218,13 @@
 								  		<div class="card-body">
 								  			<div class="row justify-content-center">
 								  				<div class="col">
-								  				@foreach($todospartidos as $todos)
-									  				@if((($todos->clubLocalPartido === $partidos->clubLocalPartido)&&($todos->clubVisitaPartido === $partidos->clubVisitaPartido)))
+								  				<?php ?>
+								  				@for($i=0; $i < $contador; $i++)
 									  				<div class="row justify-content-center">
+									  					<div class="align-self-center">
+															</div>
 									  					@foreach($clubes as $club)
-															@if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
+															@if (strcmp($partidos_historial[$i]['local'], $club->idClub) === 0)
 																<div class="col-3 text-right">
 																	<div>
 													       			 <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
@@ -216,10 +233,10 @@
 															@endif
 														@endforeach
 															<div class="align-self-center">
-																<span class="text-light font-weight-bold">{{ $todos['golesLocalPartido'] }}-{{ $todos['golesVisitaPartido'] }}</span>
+																<span class="text-light font-weight-bold">{{ $partidos_historial[$i]['goles_local'] }}-{{ $partidos_historial[$i]['goles_visita'] }}</span>
 															</div>
 														@foreach($clubes as $club)	
-															@if($partidos->clubVisitaPartido === $club->idClub)
+															@if($partidos_historial[$i]['visita'] === $club->idClub)
 																<div class="col-3 text-left">
 																	<div>
 															        <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
@@ -228,13 +245,10 @@
 															@endif
 														@endforeach
 														</div>
-								  					@endif
+														@endfor
 								  					</div>
-								  					@if((($todos->clubLocalPartido === $partidos->clubVisitaPartido)&&($todos->clubVisitaPartido === $partidos->clubLocalPartido)))
-									  					<!--- EL IF HAY Q ARREGLARLO PARA BUSCAR LOS PARTIDOS EN QUE FUE LOCAL EL QUE AHORA ES VISITA, Y VICEVERSA--->
-								  					@endif
+								  					
 									    			
-								    			@endforeach
 								    			</div>
 							    			
 								  		</div>
