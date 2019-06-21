@@ -125,7 +125,7 @@ class ClubController extends Controller
         $partidos = Partido::all();
         $jugadores = Jugador::orderBy('posicionJugador')->get();
         $allclubs = Club::all();
-
+       
         $partidos_historial = array(array('local','visita','goles_local','goles_visita'));
         /*$contador = 0;
         foreach ($todospartidos as $todos) {

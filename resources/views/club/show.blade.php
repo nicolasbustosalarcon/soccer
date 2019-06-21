@@ -196,58 +196,68 @@
 											</div>
 											<div class="card-body text-center">
 												<div class="thumbnail">
-													@foreach($partidos as $part)
-														@if($part->clubLocalPartido === $clubes->idClub)
-														<div class="row">
-															<div class="col">
-																<span class="text-light font-weight-bold">{{ $part->fechaPartido }}</span>
-																<div>
-														  			<a href="{{ route('club.show', $clubes->idClub)}}">
+													<div class="row">
+															
+														@foreach($partidos as $part)
+															@if($part->clubLocalPartido === $clubes->idClub)
+															<?php 
+																$fecha_como_entero = strtotime($part->fechaPartido);
+																$mes = date("m", $fecha_como_entero);
+																$dia = date("d", $fecha_como_entero);
+																?>
+																<div class="col">
+																	<p class="text-light font-weight-bold">{{$mes}}-{{$dia}}</p>
+																	<p>
+														  				<a href="{{ route('club.show', $clubes->idClub)}}">
 													      				<img class="img-responsive float-sm text-left" src="{{asset('images/club/' .$clubes->imagenClub)}}" width="35" height="35">
-													      			</a>
-													      			<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>
-													      			@foreach($allclubs as $club)
-																    	@if($club->idClub === $part->clubVisitaPartido)						
-															       			<a href="{{ route('club.show', $part->clubVisitaPartido)}}">					<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35">
-															       			</a>
-																		@endif
-																   	@endforeach
-															 		<div style="height:45px;">
-																		<div class="col align-self-start">
-																			<button type="button" class="btn btn-sm btn-primary text-white" disabled>{{$part->estadoPartido}}</button>
+													      				</a>
+													      				<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>
+													      				@foreach($allclubs as $club)
+																    		@if($club->idClub === $part->clubVisitaPartido)						
+															       				<a href="{{ route('club.show', $part->clubVisitaPartido)}}">					<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"></a>
+																			@endif
+																   		@endforeach
+															   		</p>
+															 		<p>	
+															 			<div style="height:45px;">
+																			<div class="col align-self-start">
+																				<button type="button" class="btn btn-sm btn-primary text-white" disabled>{{$part->estadoPartido}}</button>
+																			</div>
 																		</div>
-																	</div>
-													      		</div>
-														    <div class="caption">
-														    				<p>
-														    				</p>
-													        				
-												  						</div>
-												  				@endif
-												  			@endforeach
-														</div>
-											  		</div>
+													      			</p>
+													      		</div>									    
+											  				@endif
+											  			@endforeach
+														
+											  			
+											  		
 											  		@foreach($partidos as $part)
 														@if($part->clubVisitaPartido === $clubes->idClub)
 															@foreach($allclubs as $club)
-																@if($club->idClub === $part->clubLocalPartido)						
-																<div class="row">
+																@if($club->idClub === $part->clubLocalPartido)
+																<?php 
+																$fecha_como_entero = strtotime($part->fechaPartido);
+																$mes = date("m", $fecha_como_entero);
+																$dia = date("d", $fecha_como_entero);
+																?>
 																	<div class="col text-center">
-																		<span class="text-light font-weight-bold">{{ $part->fechaPartido }}</span>
+																		<p class="text-light font-weight-bold">{{$mes}}-{{$dia
+																		}}</p>
 																			<div>
-																	  			<a href="{{ route('club.show', $club->idClub)}}">
+																	  			<p><a href="{{ route('club.show', $club->idClub)}}">
 																      				<img class="img-responsive float-sm text-left" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35">
 																      			</a>
 																      			<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>			      				
 																		       	<a href="{{ route('club.show', $part->clubVisitaPartido)}}">
 																		       		<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$clubes->imagenClub)}}" width="35" height="35">
 																		       	</a>
-																@endif
-														   	@endforeach
+																				</p>
 																				<div style="height:45px;">
+																					<p>
 																					<div class="col align-self-start">
 																						<button type="button" class="btn btn-sm btn-primary text-white" disabled>{{$part->estadoPartido}}</button>
 																					</div>
+																					</p>
 																				</div>
 														      				</div>
 															    <div class="caption">
@@ -258,7 +268,10 @@
 													  	@endif
 													@endforeach
 																	</div>
-											  					</div>
+											  					
+											  					@endif
+														   	@endforeach
+														   	</div>
 											  	</div>
 													
 											</div>
