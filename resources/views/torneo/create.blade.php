@@ -13,6 +13,11 @@
 			<input type="text" name="nombreTorneo" class="form-control" required>
 			<label for="">Edición</label>
 			<input type="text" name="edicion" class="form-control">
+
+            <div class="form-group text-light">
+                <label for="imagenTorneo">Imagen</label>
+                <input type="file" name="imagenTorneo" class="form-control">
+            </div>
 			
 			<label>Asociación</label>
     			<select name="idAsociacion" class="form-control">

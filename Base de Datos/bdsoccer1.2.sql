@@ -331,6 +331,7 @@ CREATE TABLE `Partidos` (
 CREATE TABLE `Torneos` (
   `idTorneo` int(11) NOT NULL,
   `nombreTorneo` varchar(45) NOT NULL,
+  `imagenTorneo` longblob NOT NULL,
   `edicion` int(11) NOT NULL,
   `idConfederacion` int(11) DEFAULT NULL,
   `idAsociacion` int(11) DEFAULT NULL,
@@ -374,7 +375,7 @@ CREATE TABLE `TrayectoriasJugadores` (
 -- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `users` (
+/*CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
@@ -383,7 +384,7 @@ CREATE TABLE `users` (
   `created_at` datetime DEFAULT NULL,
   `update_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+*/
 --
 -- Índices para tablas volcadas
 --

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 
 use App\Club;
 use App\Asociacion;
@@ -61,13 +62,19 @@ class TorneoController extends Controller
         $torneo = new Torneo();
         $torneo->nombreTorneo = $request->input('nombreTorneo');
         $torneo->idClubCampeon = $request->input('idClubCampeon');
+        if(Input::hasfile('imagenTorneo')){
+            $file=Input::file('imagenTorneo');
+            $file->move(public_path().'/images/torneos/',$file->getClientOriginalName());
+            $torneo->imagenTorneo=$file->getClientOriginalName();
+        }
         $torneo->edicion = $request->input('edicion');
         $torneo->idConfederacion = $request->input('idConfederacion');
         $torneo->idAsociacion = $request->input('idAsociacion');
+        
+
         $torneo->save();
 
         return Redirect::to('admin');
-
     }
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -126,7 +133,11 @@ class TorneoController extends Controller
         $torneo->edicion = $request->input('edicion');
         $torneo->idConfederacion = $request->input('idConfederacion');
         $torneo->idAsociacion = $request->input('idAsociacion');
-  
+        if(Input::hasfile('imagenTorneo')){
+                    $file=Input::file('imagenTorneo');
+                    $file->move(public_path().'/images/torneos/',$file->getClientOriginalName());
+                    $torneo->imagenTorneo=$file->getClientOriginalName();
+        }
         $torneo->update();
 
         return Redirect::to('admin');
