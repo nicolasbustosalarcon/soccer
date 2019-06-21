@@ -19,6 +19,7 @@
     <link href="css/fontawesome.css" rel="stylesheet">
     <link href="css/brands.css" rel="stylesheet">
     <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
