@@ -13,7 +13,7 @@ use App\Torneo;
 use DateTime;
 use Auth;
 use DB;
-
+use pdf;
 use Carbon\Carbon;
 
 class JugadorController extends Controller
@@ -132,7 +132,8 @@ class JugadorController extends Controller
         //    ->orderBy('a.idanuncio','asc')
         //    ->paginate(3);
         //dd($trayectorias);
-
+        //$pdf = \PDF::loadView('jugador.show');
+        //return $pdf->download('ejemplo.pdf');
         return view('jugador.show',['clubes' => $clubes, 'paises' => $paises,  'jugadores' => $jugadores, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
     }
 

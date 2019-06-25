@@ -30,6 +30,9 @@ Route::get('prueba ', 'TestController@prueba');
 Route::get('/inicio', 'IndexController@index')->name('inicio.index');
 
 
+Route::get('imprimir/reporte/{id}',[
+	'uses' =>'ReporteController@invoice',
+	'as' => 'imprimir.reporte']);
 
 //--------------Rutas de Club---------------//
 Route::resource('club','ClubController');

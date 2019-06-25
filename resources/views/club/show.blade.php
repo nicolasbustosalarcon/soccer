@@ -137,7 +137,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://images.vexels.com/media/users/3/132247/isolated/preview/a7d5804976d548749c83aeaefdbce085-silueta-de-jugador-de-f-tbol-7-by-vexels.png" style="width:30px !important; height:30px !important"> {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
