@@ -10,6 +10,7 @@
 		<div class="card bg-dark text-white">
   			<img class="card-img" src="https://image.freepik.com/vector-gratis/luces-estadio-sobre-fondo-oscuro_57258-298.jpg" alt="Card image" height="">
   			<div class="card-img-overlay">
+  				<a href="{{ route('imprimir.reporte_club', $clubes->idClub)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
 	    		<div class="card-text">
 	    			<div class="row">
 	    				<div class="col">
@@ -137,7 +138,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://images.vexels.com/media/users/3/132247/isolated/preview/a7d5804976d548749c83aeaefdbce085-silueta-de-jugador-de-f-tbol-7-by-vexels.png" style="width:30px !important; height:30px !important"> {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
@@ -175,7 +176,35 @@
 															  	@endif
 															@endif
 														@endforeach
-													  		
+														@foreach($jugadores as $jug)
+															@if($jug->idClub === $clubes->idClub)
+																@if($jug->posicionJugador === 'Delantero')
+																	<div class="col-sm-6 col-md-3">
+															    		<div class="thumbnail">
+															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
+															      			<div class="caption">
+															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p><img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_960_720.png" style="width:30px !important; height:30px !important">  {{$jug->posicionJugador}}</p>
+										  						      		</div>
+																    	</div>
+															  		</div>
+															  	@endif
+															@endif
+														@endforeach
+
+														@foreach($dt as $d)
+															@if($d->idDirectorTecnico === $clubes->idDirectorTecnico)
+																	<div class="col-sm-6 col-md-3">
+															    		<div class="thumbnail">
+															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
+															      			<div class="caption">
+															        			<p><a href="{{ route('directortecnico.show', $d->idDirectorTecnico)}}">{{ $d['nombreDirectorTecnico'] }} {{ $d['apellidosDirectorTecnico'] }}</a></p>
+															        			<p><img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_960_720.png" style="width:30px !important; height:30px !important">  dt</p>
+										  						      		</div>
+																    	</div>
+															  		</div>
+															@endif
+														@endforeach
 
 													</div>
 												</div>

@@ -20,6 +20,7 @@
 							@endif
 						@endforeach
 					</div>
+					<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
 	    			<div class="row justify-content-center">
 						<!--Equipo Local-->
 						@foreach($clubes as $club)
