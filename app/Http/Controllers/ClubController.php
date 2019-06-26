@@ -14,6 +14,7 @@ use App\Ciudad;
 use App\Pais;
 use App\Torneo;
 use App\Partido;
+use DB;
 
 
 
@@ -116,7 +117,7 @@ class ClubController extends Controller
     public function show($id)
     {
         $clubes = Club::findOrFail($id);
-       
+        $dt=DirectorTecnico::all();
         $paises = Pais::all();
         $asociaciones = Asociacion::all();
         $torneos = Torneo::all();
@@ -142,7 +143,7 @@ class ClubController extends Controller
         */
         //dd($jugadores);
 
-        return view('club.show',['clubes' => $clubes, 'allclubs' => $allclubs, 'partidos' => $partidos, 'partidos_historial' => $partidos_historial, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'ciudades' => $ciudades, 'paises' => $paises,  'jugadores'=>$jugadores]);
+        return view('club.show',['dt'=> $dt, 'clubes' => $clubes, 'allclubs' => $allclubs, 'partidos' => $partidos, 'partidos_historial' => $partidos_historial, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'ciudades' => $ciudades, 'paises' => $paises,  'jugadores'=>$jugadores]);
     }
 
 
