@@ -38,24 +38,29 @@ class PartidoController extends Controller
         
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
     }
+
     public function index_fechas()
     {
         $partidos = Partido::all();
         $clubes=Club::all();
+        $torneos=Torneo::all(); 
+
+        return view('partido.calendario',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos]);
+    }
+
+    public function fechas(Request $request)
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
         $torneos=Torneo::all();
+
+        $listado =  DB::table('partidos')
+                    ->select('idPartido', 'clubLocalPartido', 'clubVisitaPartido', 'golesLocalPartido', 'golesVisitaPartido')
+                    ->where('partidos.fechaPartido', '=', $request->fechaPartidos)
+                    ->get();
+        $hoy = $request->fechaPartidos;
         
-        //Ordenar los partidos por dia
-        $hoy = getdate();
-        $dia = $hoy['mday'];
-        $mes = $hoy['mon'];
-        $year = $hoy['year'];
-        $fecha = "$year"."-"."$mes"."-"."$dia";
-        
-
-
-
-        return view('partido.calendario',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
-
+        return view('partido.fecha',  ['partidos' => $partidos,'hoy' => $hoy, 'clubes' => $clubes, 'listado' => $listado, 'torneos' => $torneos]);
     }
 
 
