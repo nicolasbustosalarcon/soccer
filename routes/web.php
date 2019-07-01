@@ -128,6 +128,7 @@ Route::get('directortecnico/{idDirectorTecnico}/destroy',[
 Route::group(['middleware' =>'auth'], function(){
 Route::resource('partido','PartidoController');
 Route::get('/calendario', 'PartidoController@index_fechas')->name('calendario.fechas');
+Route::post('/fecha', 'PartidoController@fechas')->name('fecha');
 Route::get('partido/{idPartido}/destroy',[
 	'uses'	=>	'PartidoController@destroy',
 	'as'	=>	'partido.destroy'
