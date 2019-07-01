@@ -107,7 +107,7 @@
             <div class="col">
                 @if(auth()->user()->authorizeRolesLogin('admin')) 
                     <a href="{{ route('trayectoriajugador.create', $jugadores->idJugador)}}" class="btn btn-default text-white">Crear Trayectoria</a>
-
+                    <a href="{{ route('imprimir.reporte', $jugadores->idJugador)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
                 @endif
             </div>
         </div>
