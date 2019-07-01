@@ -10,6 +10,8 @@ use App\Club;
 use App\Asociacion;
 use App\Torneo;
 use App\Confederacion;
+use App\Posicion;
+use DB;
 
 class TorneoController extends Controller
 {
@@ -88,10 +90,16 @@ class TorneoController extends Controller
     {
         $torneos = Torneo::findOrFail($id);
         $clubes = Club::all();
-       //dd($clubes);
+        $posiciones = Posicion::select()
+                ->where('idTorneo', '=', $id)
+                ->orderBy('Puntos', 'desc')
+                ->get();
+        $varnum = count($posiciones);
+
+       //dd($posiciones);
         
 
-        return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes]);
+        return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
     }
 
 
@@ -109,6 +117,7 @@ class TorneoController extends Controller
         $asociaciones=Asociacion::all();
         $clubes=Club::all();
         $confederaciones=Confederacion::all();
+
         
         return view('torneo.edit', ['torneos' => $torneos,'asociaciones' => $asociaciones, 'clubes' => $clubes, 'confederaciones' => $confederaciones]);
     }
