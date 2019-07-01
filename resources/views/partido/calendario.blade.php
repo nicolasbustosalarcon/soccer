@@ -4,79 +4,99 @@
 
 @section ('content')
 
-
-<div class="container">
-    <div class="row">
-        <div class="span12">
-            <table class="table-condensed table-bordered table-striped">
-                <thead>
-                    <tr>
-                      <th colspan="7" >
-                        <a class="btn"><i class="icon-chevron-left"></i></a>
-                        <a class="btn">Enero</a>
-                        <a class="btn"><i class="icon-chevron-right"></i></a>
-                      </th>
-                    </tr>
-                    <tr>
-                        <th>Lu</th>
-                        <th>Ma</th>
-                        <th>Mi</th>
-                        <th>Ju</th>
-                        <th>Vi</th>
-                        <th>Sa</th>
-                        <th>Do</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="muted">29</td>
-                        <td class="muted">30</td>
-                        <td class="muted">31</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td><strong>20</strong></td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td class="muted">1</td>
-                        <td class="muted">2</td>
-                        <td class="muted">3</td>
-                    </tr>
-                </tbody>
-            </table>    
+<div class="row">
+    <div class="col">
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="{{asset('images/torneos/iconos/calendario_fondo.jpg')}}" alt="Card image" width="1100" height="300">
         </div>
     </div>
 </div>
-@endsection
+    <div class="row">
+    <div class="col">
+         <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link text-muted" href="#tab2default" data-toggle="tab">Partidos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab2default">
+                            <div class="row">
+                                <div class="col">
+                                    <p></p>
+                                    <div class="card text-white bg-secondary mb-3" >
+                                        <div class="card-header">
+                                            <h5>Todos los Partidos<img class="float-right" src="{{asset('images/torneos/iconos/partidos.png')}}" width="40" height="40"></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <div class="row">
+                                                    <div class="row">
+                                                        @foreach($partidos as $parti)
+                                                            @foreach($clubes as $club)
+                                                                @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
+                                                                    <div class="col-2">
+                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach
+                                                            <div class="col-2"> 
+                                                                    <p>
+                                                                        <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
+                                                                    </p>
+                                                            </div>    
+                                                            @foreach($clubes as $club)
+                                                                @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
+                                                                    <div class="col-2">
+                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach
+                                                        @endforeach
+                                                    </div>  
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p></p>
+                                    <div class="card text-white bg-secondary mb-3" >
+                                        <div class="card-header">
+                                            <h5>Calendario<img class="float-right" src="{{asset('images/torneos/iconos/calendario.png')}}" width="35" height="35"></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="col">
+                                                <form class="form-group" method="POST" action="fecha"> 
+                                                    @csrf
+                                                    <div class="col-6">
+                                                        <input type="date" name="fechaPartidos" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="submit" class="btn btn-primary">Ver Partidos</button>
+                                                    </div>
+                                                </form>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <p>.</p>
+</div>
 
+<div class="row">
+    <div class="col">
+            <a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
+    </div>
+</div>
+</div>
+@endsection
