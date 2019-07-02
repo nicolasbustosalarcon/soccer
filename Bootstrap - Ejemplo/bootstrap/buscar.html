@@ -1,0 +1,115 @@
+<div class="buscador">
+<form style="margin:0px;" action="buscador.php" method="get">
+    <input name="nombre"/>
+    <input type="submit" name="buscador" value="Buscar"/>
+</form><br />
+</div>
+
+<?php
+if ( isset( $_REQUEST['nombre']) )
+{
+    // Tomamos el valor ingresado
+    $nombre = trim( $_REQUEST['nombre'] );
+}
+
+// Si está vacío, lo informamos, si no, realizamos la búsqueda
+if(empty($nombre))
+{
+    echo "No se ha ingresado Nombre o Apellido";
+}else{
+    // Conexión a la base de datos y seleccion de registros
+    $con = mysql_connect("localhost","root","contraseña");
+    mysql_select_db("NombreBD", $con);
+
+    $_pagi_sql = "SELECT
+    Apellido,
+    Nombre,
+    DATE_FORMAT(Nacimiento,'%d-%m-%Y')AS Nacimiento,
+    DATE_FORMAT(Fallecimiento,'%d-%m-%Y')AS Fallecimiento,
+    (YEAR(fallecimiento) - YEAR(nacimiento)) - (RIGHT(fallecimiento,5) < RIGHT(nacimiento,5)) AS Edadfallece,
+    (YEAR(CURRENT_DATE) - YEAR(Fallecimiento)) - (RIGHT(CURRENT_DATE,0) < RIGHT(Fallecimiento,0)) AS Tiempofallece,
+    (YEAR(CURRENT_DATE) - YEAR(nacimiento)) - (RIGHT(CURRENT_DATE,5) < RIGHT(nacimiento,5)) AS Edadhoy,
+    Url
+    FROM listape WHERE Apellido like '%$nombre%' OR Nombre like '%$nombre%' ORDER BY apellido,nombre ASC";
+
+
+    //cantidad de resultados por página (opcional, por defecto 20)
+    $_pagi_cuantos = 20;
+
+    //Incluimos el script de paginación. Éste ya ejecuta la consulta automáticamente
+    include("../../estilo/paginator.inc.php");
+
+    //Propagamos la variable $nombre
+    $_pagi_propagar = array('nombre');
+
+    // Tomamos el total de los resultados
+    // Imprimimos los resultados
+    if ( $_pagi_totalReg >= 1 )
+    {
+        echo "Usted buscó: $nombre";
+    ?>
+
+    <table class="listape" summary="Tabla pagina Lista Apellidos">
+        <caption>Listado de la Búsqueda</caption>
+        <thead>
+        <tr>
+            <th>APELLIDO</th>
+            <th>NOMBRE</th>
+            <th>NACE</th>
+            <th>FALLECE</th>
+            <th>EDAD</th>
+            <th>AÑOS</th>
+            <th>EDAD HOY</th>
+            <th>Info</th>
+        </tr>
+        </thead>
+        <tbody>
+
+    <?php
+    //Leemos y escribimos los registros de la página actual
+    while($row = mysql_fetch_array($_pagi_result))
+    {
+        printf("
+        <tr>
+            <th>%s</th>
+            <td>%s</td>
+            <td>%s</td>
+            <td>%s</td>
+            <td>%s</td>
+            <td>%s</td>
+            <td>%s</td>
+            <td>%s</td>
+        </tr>
+              ",
+        $row["Apellido"],
+        $row["Nombre"],
+        $row["Nacimiento"],
+        $row["Fallecimiento"],
+        $row["Edadfallece"],
+        $row["Tiempofallece"],
+        $row["Edadhoy"],
+        $row["Url"]
+        );
+       }
+       mysql_free_result($_pagi_result);
+       mysql_close($link);
+    ?>
+        </tbody>
+    </table>
+
+    <?php
+    echo"Mostrando resultados ".$_pagi_info;
+    ?>
+    <div class="paginator">
+    <?php
+    //Incluimos la barra de navegación
+    echo"".$_pagi_navegacion."";
+    ?>
+    </div>
+    <?php
+    } else {
+        // En caso de no encontrar resultados
+        echo "No se encontraron resultados para: $nombre";
+    }
+}
+?>

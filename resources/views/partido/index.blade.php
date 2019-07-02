@@ -29,7 +29,7 @@
 							</div>
 							<div class="col-1 text-light" align="center">
 								@if($part->estadoPartido === 'Proximo')
-									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span> {{ $part['horaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Suspendido')
 									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span> {{ $part['estadoPartido'] }}</span></a>	

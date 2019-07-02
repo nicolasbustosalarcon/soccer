@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-
+use Illuminate\Support\Facades\Input;
+use App\Jugador;
 use App\Club;
+use App\Asociacion;
+use App\Estadio;
 use App\DirectorTecnico;
+use App\Ciudad;
 use App\Pais;
-
+use App\Torneo;
+use App\Partido;
+use DB;
 class DirectorTecnicoController extends Controller
 {
 //--------Función que retorna lo que se mostrará en el index--------------------------------------------------------
@@ -79,7 +85,17 @@ class DirectorTecnicoController extends Controller
      */
     public function show($id)
     {
-        //
+        $directortecnico = DirectorTecnico::findOrFail($id);
+        $paises = Pais::all();
+        $clubes = Club::all();
+        $trayectorias = DB::table('TrayectoriasDirectoresTecnicos as tj')
+        ->join('clubes as c','tj.idClub','=','c.idClub')
+        ->join('directorestecnicos as dt','tj.idDirectorTecnico','=','dt.idDirectorTecnico')
+        ->select('c.nombreClub as nombreClub','c.imagenClub as imagen','dt.nombreDirectorTecnico as nombredt')
+        ->where('tj.idDirectorTecnico','=',$id)
+        ->get();
+        $torneos = Torneo::all();
+        return view('directortecnico.show',['directortecnico' => $directortecnico, 'clubes' => $clubes, 'paises' => $paises, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
     }
 
 
