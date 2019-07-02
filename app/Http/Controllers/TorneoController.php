@@ -104,7 +104,8 @@ class TorneoController extends Controller
                 ->orderBy('Puntos', 'desc')
                 ->get();
         $varnum = count($posiciones);
-        $agregar_equipo=DB::table('posiciones')->get();
+        
+        /*$agregar_equipo=DB::table('posiciones')->get();
                 $ciclo = '1';
                 $nuevoequipo=new Posicion;
                 foreach($partidos as $part){
@@ -148,8 +149,8 @@ class TorneoController extends Controller
                         }
                                 
                     }
-                }
-    }
+                }*/
+    
 
        //dd($posiciones);
         return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
