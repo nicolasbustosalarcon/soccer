@@ -82,7 +82,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-5">
                                     <p></p>
                                     <div class="card text-white bg-secondary mb-3" >
                                         <div class="card-header">
@@ -90,6 +90,62 @@
                                         </div>
                                         <div class="card-body">
                                             
+
+                                            <div class="row">
+                                                <div class="col">
+
+
+                                                 
+
+                                                  <div class="row header-calendar">
+
+                                                    <div class="col" style="display: flex; justify-content: space-between; padding: 10px;">
+                                                      <a  href="" style="margin:10px;">
+                                                        <i class="fas fa-chevron-circle-left" style="font-size:30px;color:white;"></i>
+                                                      </a>
+                                                      <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?> <small><?= $data['year']; ?></small></h2>
+                                                      <a  href="" style="margin:10px;">
+                                                        <i class="fas fa-chevron-circle-right" style="font-size:30px;color:white;"></i>
+                                                      </a>
+                                                    </div>
+
+                                                  </div>
+                                                  <div class="row">
+
+                                                    <div class="col header-col">L</div>
+                                                    <div class="col header-col">M</div>
+                                                    <div class="col header-col">Mi</div>
+                                                    <div class="col header-col">J</div>
+                                                    <div class="col header-col">V</div>
+                                                    <div class="col header-col">S</div>
+                                                    <div class="col header-col">D</div>
+                                                  </div>
+                                                  <!-- inicio de semana -->
+                                                  <!-- inicio de semana -->
+                                                      @foreach ($data['calendar'] as $weekdata)
+                                                        <div class="row">
+                                                          <!-- ciclo de dia por semana -->
+                                                          @foreach  ($weekdata['datos'] as $dayweek)
+
+                                                          @if  ($dayweek['mes']==$mes)
+                                                            <div class="col box-day">
+                                                              {{ $dayweek['dia']  }}
+                                                            </div>
+                                                          @else
+                                                          <div class="col box-dayoff">
+                                                          </div>
+                                                          @endif
+
+
+                                                          @endforeach
+                                                        </div>
+                                                      @endforeach
+                                                    
+                                                </div>
+
+</div>
+
+                                                <!--
                                                 <form class="form-group-center" method="POST" action="fecha"> 
                                                     @csrf
                                                     <div class="row">
@@ -100,7 +156,7 @@
                                                         <button type="submit" class="btn btn-primary">Ver Partidos</button>
                                                     </div>
                                                 </form>
-                                                                                       
+                                                -->                                      
                                         </div>
                                     </div>
                                 </div>

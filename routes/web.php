@@ -227,9 +227,10 @@ Route::get('/admin', 'AdminController@index')->name('admin.index');
 
 
 
+//Calnedario
 
-
-
+Route::get('calendario/{mes}','PartidoController@index_month');
+Route::get('partido/calendario','PartidoController@index_fechas');
 
 
 
