@@ -30,7 +30,22 @@ Route::get('prueba ', 'TestController@prueba');
 Route::get('/inicio', 'IndexController@index')->name('inicio.index');
 
 
+Route::get('imprimir/reporte/{id}',[
+	'uses' =>'ReporteController@invoice',
+	'as' => 'imprimir.reporte']);
 
+Route::get('imprimir/reporte_partido/{id}',[
+    'uses' =>'ReporteController@informe_partido',
+    'as' => 'imprimir.reporte_partido']);
+
+
+Route::get('imprimir/reporte_club/{id}',[
+    'uses' =>'ReporteController@informe_club',
+    'as' => 'imprimir.reporte_club']);
+
+Route::get('imprimir/reporte_dt/{id}',[
+    'uses' =>'ReporteController@informe_dt',
+    'as' => 'imprimir.reporte_dt']);
 //--------------Rutas de Club---------------//
 Route::resource('club','ClubController');
 Route::get('club/{idClub}/destroy',[
@@ -122,12 +137,15 @@ Route::get('directortecnico/{idDirectorTecnico}/destroy',[
 	'uses'	=>	'DirectorTecnicoController@destroy',
 	'as'	=>	'directortecnico.destroy'
 ]);
-
-
+Route::get('directortecnico/{id}/show',[
+	'uses'	=>	'DirectorTecnicoController@show',
+	'as'	=>	'directortecnico.show'
+]);
 //--------------Rutas de Partido---------------//
 Route::group(['middleware' =>'auth'], function(){
 Route::resource('partido','PartidoController');
 Route::get('/calendario', 'PartidoController@index_fechas')->name('calendario.fechas');
+Route::post('/fecha', 'PartidoController@fechas')->name('fecha');
 Route::get('partido/{idPartido}/destroy',[
 	'uses'	=>	'PartidoController@destroy',
 	'as'	=>	'partido.destroy'
