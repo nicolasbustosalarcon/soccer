@@ -30,8 +30,10 @@ class ClubController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
+
         $clubes = Club::orderBy('idPais', 'ASC')->paginate(1000);
         $paises = Pais::all();
         $asociaciones = Asociacion::all();
@@ -49,8 +51,10 @@ class ClubController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
+        $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
+
         $asociaciones=Asociacion::all();
         $directorestecnicos=DirectorTecnico::all();
         $ciudades=Ciudad::all();

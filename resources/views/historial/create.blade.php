@@ -1,125 +1,299 @@
 
 @extends ('layouts.app')
 
-@section ('titulo', 'Historial Create -' .$partidos->idPartido)
+@section ('titulo', 'Hisotiral create' .$partidos->idPartido) <!--CAMBIAR TITULO-->
 
 @section ('content')
-    
-
-        <div class="row border justify-content-center">
-            @foreach($clubes as $club)
-                @if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
-
-                    <div class="col-4">
-        
-
-                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:90px !important; height:90px !important"></td> {{ $club['nombreClub'] }}</p>
-                    </div>
-                @endif
-            @endforeach
-                    <div class="col-2 align-self-center">
-                        <p> <h3>{{ $partidos['golesLocalPartido'] }} - {{ $partidos['golesVisitaPartido'] }}</h3></p>
-                    </div>
-            @foreach($clubes as $club)  
-                @if($partidos->clubVisitaPartido === $club->idClub)
-                    <div class="col-4">
-                        <p>{{ $club['nombreClub'] }} <td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:90px !important; height:90px !important"></td></p>
-                        
-                    </div>
-                @endif
-            @endforeach
-        
-        </div>
-
-        <div class="row border justify-content-center">
-            <h1>INFO</h1>
-            <div class="col">
-                @foreach($torneos as $tor)
-                    @foreach($estadios as $est)
-                        @if (strcmp($partidos->idTorneo, $tor->idTorneo) === 0)
-                            @if (strcmp($partidos->idEstadio, $est->idEstadio) === 0)
 
 
-                                <p> Competición {{ $tor['nombreTorneo'] }}</p>
-                                
-                                <p> Fecha {{ $partidos['fechaPartido'] }}</p>
-                                <p> Hora {{ $partidos['horaPartido'] }}</p>
+<!-- FONDO FOTO -->
+<div class="row">
+	<div class="col">
+		<div class="card bg-dark text-white">
+  			<img class="card-img" src="{{asset('images/torneos/fondo.png')}}" alt="Card image" height="180">
+  			<div class="card-img-overlay">
+	    		<div class="card-text">
+	    			<div class="row">
+						@foreach($torneos as $tor)
+							@if($partidos->idTorneo === $tor->idTorneo)
+								<div class="mx-auto text-light font-weight-bold">{{ $tor['nombreTorneo'] }}</div>
+							@endif
+						@endforeach
+					</div>
+	    			<div class="row justify-content-center">
+						<!--Equipo Local-->
+						@foreach($clubes as $club)
+							@if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
+								<div class="col-3 text-center">
+									<div>
+					       			 <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+					    			</div>
+								</div>
+							@endif
+						@endforeach
+						<!----------------->
 
-                                <p> Estadio {{ $est['nombreEstadio'] }}</p>
-                                <p> Estado {{ $partidos['estadoPartido'] }}</p>
-                        @endif
-                        @endif
-                    @endforeach
-                @endforeach
+						<!--Marcador-->
+						<div class="col-3 text-center">
+							<div class="row"   style="height:45px;">
+								<div class="col align-self-end">
+									<span class="text-light font-weight-bold">{{ $dia }}/{{ $mes }}</span>
+								</div>
+							</div>
+							<div class="row" style="height:30px;">
+								<div class="col align-self-center">
+									<h3 class="text-light font-weight-bold">{{ $partidos['golesLocalPartido'] }}-{{ $partidos['golesVisitaPartido'] }}</h3>
+								</div>
+							</div>
+							<div class="row" style="height:45px;">
+								<div class="col align-self-start">
+									<button type="button" class="btn btn-sm btn-primary text-dark" disabled>{{$partidos['estadoPartido']}}</button>
+								</div>
+							</div>
+						</div>
+						<!----------------->
 
-            </div>
-        </div>
+						<!--Equipo Visita-->
+						@foreach($clubes as $club)	
+							@if($partidos->clubVisitaPartido === $club->idClub)
+								<div class="col-3 text-center">
+									<div>
+							        <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+							    </div>
+								</div>
+							@endif
+						@endforeach
+					</div>
 
 
-   
 
-    
-            <!-- Valida para que no se muestren jugadores si se suspendió el partido o no se ha jugado-->
+				</div>
+  			</div>
+		</div>
+	</div>
+</div>
+<!--------------------->
 
-            <div class="row border justify-content-center">
 
-                <h1>Plantillas</h1>
-                
 
-            </div>
 
-            <div class="col">
-                <div class="row justify-content-around">
 
-                    <!------------Ingresar Plantilla Local------------------------>
-                    <div class="col-4">
-                        <form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
-                        @csrf
-
-                        <input type="hidden" name="idPartido" value="{{$partidos->idPartido}}" class="form-control">
-                        
-                        <label>Club Local</label>
-                            <select name="idJugador" class="form-control">
-                                <option disabled selected value>Seleciona un Jugador...</option>
-                                @foreach ($jugadorclub as $jc)
-                                    @if($jc->idClub === $partidos->clubLocalPartido)
-                                        <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
-                                    @endif
-                                @endforeach
-                            </select>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-
-                        </form>    
-                    </div>
-
-                     
-                    <!----------------------------------------------------->
-                    
-                                    
-                    <!-----------Plantilla Visita--------------------------->
-                    <div class="col-4" align="right">
-                        <form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
-                        @csrf
-                         <input type="hidden" name="idPartido" value="{{$partidos->idPartido}}" class="form-control">
-
-                        <label>Club Visita</label>
-                            <select name="idJugador" class="form-control">
-                            <option disabled selected value>Seleciona un Jugador...</option>
-                            @foreach ($jugadorclub as $jc)
-                                @if($jc->idClub === $partidos->clubVisitaPartido)
-                                    <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
-                                @endif
-                            @endforeach
-                            </select>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                             </form>  
-                    </div>
-                    <!----------------------------------------------------->
-
+<div class="row">
+	<div class="col">
+		 <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+						<li class="nav-item active">
+					    	<a class="nav-link text-muted" href="#tab1default" data-toggle="tab">PARTIDO  <img width="24" height="24" src="https://image.flaticon.com/icons/png/512/33/33736.png"></a>
+					  	</li>
+					  	<!--li class="nav-item">
+					    	<a class="nav-link text-muted" href="#tab2default" data-toggle="tab">ESTADIO <img width="27" height="27" src="https://www.futbolchileno.com/wp-content/uploads/2016/05/stadium.svg"></a>
+					  	</li-->
+					  	<li class="nav-item">
+					    	<a class="nav-link text-muted" href="#tab3default" data-toggle="tab">ALINEACIONES <img width="81" height="27" src="https://image.flaticon.com/icons/svg/55/55448.svg"></a>
+					  	</li>
+  					</ul>
                 </div>
-                    </div>
-           
-            
-    
+                <div class="panel-body">
+                    <div class="tab-content">
+
+                    	<
+
+                        <!------ESTADIO-------------------------
+                        <div class="tab-pane fade" id="tab2default">
+                        	<p></p>
+                        	<div class="row">
+                        		<div class="col">
+                        			<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">Secondary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+                        		</div>
+                        	</div>
+                        </div>--->
+                        <!--------Alineaciones------>
+                        <div class="tab-pane fade" id="tab3default">
+                        <div class="row">
+                        	<div class="col-3">
+                        		
+                        	</div>
+                        	<div class="col-9">
+                        		<div class="row justify-content-center">
+		                        		<div class="col-6">
+		                        			<p></p>
+		                        			<div class="panel with-nav-tabs panel-default">
+								                <div class="panel-heading border bg-secondary">
+								                        <ul class="nav nav-pills nav-fill" id="myTab2" role="tablist">
+								                            <li class="nav-item actived">
+								                            	<a class="nav-link text-light " href="#local" data-toggle="tab">LOCAL</a>
+								                            </li>
+								                            <li class="nav-item">
+								                            	<a class="nav-link text-light" href="#visita" data-toggle="tab">VISITA</a>
+								                            </li>
+								                            
+								                           
+								                        </ul>
+								                </div>
+						               		</div>
+					               		</div>
+				               		</div>
+                        	</div>
+                        </div>
+                        <!--------ALINEACIONES--------------------->
+                        
+                        	<div class="row">
+                        		
+                        		<!--div class="col-9">
+		                        	
+			               		
+				               		<div class="row justify-content-center">
+						                <div class="col-10">
+						                	<div class="panel with-nav-tabs panel-default">
+								                <div class="panel-body">
+								                    <div class="tab-content">
+								                        <div class="tab-pane fade  show active" id="local">
+								                        	<div class="card bg-dark text-white">
+																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
+															  	<div class="card-img-overlay">
+															    	<div class="row justify-content-center"  style="height: 420px">
+															    		<!-----Arquero--->
+															    		<div class="col-3 align-self-center text-center ">
+															    			<div class="float-sm-left">
+
+	
+	<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
+		@csrf
+
+		<input type="hidden" name="idPartido" value="{{$partidos->idPartido}}" class="form-control">
+
+		<p>Ingresar Arquero</p>
+		    <select name="idJugador" class="form-control">
+		        <option disabled selected value>Seleciona un Jugador...</option>
+		        @foreach ($jugadorclub as $jc)
+		            @if($jc->idClub === $partidos->clubLocalPartido)
+		            	@if($jc->posicionJugador === 'Arquero')
+		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+		                @endif
+		            @endif
+		        @endforeach
+		    </select>
+		    <button type="submit" class="btn btn-primary">Guardar</button>
+
+    </form>   
+															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+
+															    		<!--------------->
+															    		<!-----Defensas---->
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-left">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		<!--------------->
+															    		<!-----Mediocampistas---->
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-left">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		<!--------------->
+															    		<!-----denaltnero---->
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-left">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    	</div>
+															    	
+															    	
+															  	</div>
+															</div>
+								                        </div>
+
+								                        <div class="tab-pane fade" id="visita">
+								                        	<div class="card bg-dark text-white">
+																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
+															  	<div class="card-img-overlay">
+															    	<div class="row justify-content-center"  style="height: 420px">
+															    		<!-----denaltnero---->
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-right">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		
+
+															    		<!--------------->
+															    		<!-----Mediocampistas---->
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-right">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		<!--------------->
+															    		<!-----Defensas---->
+															    		
+															    		<div class="col-3 align-self-center text-center">
+															    			<div class="float-sm-right">
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		<!--------------->
+															    		<!-----Arquero--->
+															    		<div class="col-3 align-self-center text-center ">
+															    			<div class="float-sm-right">
+															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			</div>
+															    		</div>
+															    		
+															    	</div>
+															    	
+															    	
+															  	</div>
+															</div>
+
+								                        </div>
+								                        
+								                    </div>
+								                </div>
+								            </div>	
+
+		                        		</div>
+		                        	</div>
+	                        	</div-->
+                        	</div>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+
+<p>.</p>
+<p>.</p>
+
+		
+
+  	
+</div>
+
 
 @endsection
