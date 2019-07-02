@@ -100,14 +100,14 @@
                                                   <div class="row header-calendar">
 
                                                     <div class="col" style="display: flex; justify-content: space-between; padding: 10px;">
-                                                      <a  href="" style="margin:10px;">
-                                                        <i class="fas fa-chevron-circle-left" style="font-size:30px;color:white;"></i>
-                                                      </a>
-                                                      <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?> <small><?= $data['year']; ?></small></h2>
-                                                      <a  href="" style="margin:10px;">
-                                                        <i class="fas fa-chevron-circle-right" style="font-size:30px;color:white;"></i>
-                                                      </a>
-                                                    </div>
+          <a  href="{{ asset('calendario/') }}/<?= $data['last']; ?>" style="margin:10px;">
+            <i class="fas fa-chevron-circle-left" style="font-size:30px;color:white;"></i>
+          </a>
+          <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?> <small><?= $data['year']; ?></small></h2>
+          <a  href="{{ asset('calendario/') }}/<?= $data['next']; ?>" style="margin:10px;">
+            <i class="fas fa-chevron-circle-right" style="font-size:30px;color:white;"></i>
+          </a>
+        </div>
 
                                                   </div>
                                                   <div class="row">

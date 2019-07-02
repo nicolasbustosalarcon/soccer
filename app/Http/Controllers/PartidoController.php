@@ -58,16 +58,19 @@ class PartidoController extends Controller
 
     public function index_month($month){
 
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all(); 
       $data = $this->calendar_month($month);
       $mes = $data['month'];
       // obtener mes en espanol
       $mespanish = $this->spanish_month($mes);
       $mes = $data['month'];
 
-      return view("index",[
+      return view("partido.calendario",[
         'data' => $data,
         'mes' => $mes,
-        'mespanish' => $mespanish
+        'mespanish' => $mespanish, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos
       ]);
 
     }
