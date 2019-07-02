@@ -195,22 +195,28 @@ class PartidoController extends Controller
 
 
 
-    public function fechas($anho, $mes, $dia)
+    public function fechas($anho, $month, $dia)
     {
         $partidos = Partido::all();
         $clubes=Club::all();
         $torneos=Torneo::all();
-        $month = date("Y-m");
+        //dd($month);        
         $data = $this->calendar_month($month);
+        //dd($data);
         $mes = $data['month'];
+        //dd($mes);
         // obtener mes en espanol
         $mespanish = $this->spanish_month($mes);
+        //dd($mespanish);
         $mes = $data['month'];
+        //dd($mes);
         $hoy = "$anho"."-"."$mes"."-"."$dia";
-        $fecha = date("Y-m-d", strtotime($hoy));
+        $hoy = date("Y-m-d", strtotime($hoy));
+        //dd($fecha);
+        //dd($hoy);
         $listado =  DB::table('partidos')
                     ->select('idPartido', 'clubLocalPartido', 'clubVisitaPartido', 'golesLocalPartido', 'golesVisitaPartido')
-                    ->where('partidos.fechaPartido', '=', $fecha)
+                    ->where('partidos.fechaPartido', '=', $hoy)
                     ->get();
         //dd($fecha);
         
