@@ -81,6 +81,7 @@
                                                     <div class="col-6">
                                                         <input type="date" name="fechaPartidos" class="form-control" required>
                                                     </div>
+                                                    <p></p>
                                                     <div class="col-6">
                                                         <button type="submit" class="btn btn-primary">Ver Partidos</button>
                                                     </div>

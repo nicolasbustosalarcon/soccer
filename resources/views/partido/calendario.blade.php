@@ -35,27 +35,33 @@
                                             <p class="card-text">
                                                 <div class="row">
                                                     <div class="row">
+                                                        <div class="col">  
+                                                        </div>
                                                         @foreach($partidos as $parti)
                                                             @foreach($clubes as $club)
                                                                 @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
-                                                                    <div class="col-2">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
                                                                     </div>
+                                                                </div>
                                                                 @endif
                                                             @endforeach
-                                                            <div class="col-2"> 
-                                                                    <p>
-                                                                        <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
-                                                                    </p>
+                                                            <div class="row"> 
+                                                                 <p>
+                                                                    <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
+                                                                </p>     
                                                             </div>    
                                                             @foreach($clubes as $club)
                                                                 @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
-                                                                    <div class="col-2">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
+                                                                    <div class="col">
+                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
                                                                     </div>
                                                                 @endif
                                                             @endforeach
                                                         @endforeach
+                                                        <div class="col">  
+                                                        </div>
                                                     </div>  
                                                 </div>
                                             </p>
@@ -66,20 +72,32 @@
                                     <p></p>
                                     <div class="card text-white bg-secondary mb-3" >
                                         <div class="card-header">
+                                            <h5>Toda la información de partidos la encuentras aquí<img class="float-right" src="imagenes/inicio/escudoinicio.png" width="30" height="30"></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="card-img" src="{{asset('images/torneos/iconos/Pitana.jpg')}}" alt="Card image" width="100" height="500">                                               
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p></p>
+                                    <div class="card text-white bg-secondary mb-3" >
+                                        <div class="card-header">
                                             <h5>Calendario<img class="float-right" src="{{asset('images/torneos/iconos/calendario.png')}}" width="35" height="35"></h5>
                                         </div>
                                         <div class="card-body">
-                                            <div class="col">
-                                                <form class="form-group" method="POST" action="fecha"> 
+                                            
+                                                <form class="form-group-center" method="POST" action="fecha"> 
                                                     @csrf
-                                                    <div class="col-6">
+                                                    <div class="row">
                                                         <input type="date" name="fechaPartidos" class="form-control" required>
                                                     </div>
-                                                    <div class="col-6">
+                                                    <p></p>
+                                                    <div class="row">
                                                         <button type="submit" class="btn btn-primary">Ver Partidos</button>
                                                     </div>
                                                 </form>
-                                            </div>                                            
+                                                                                       
                                         </div>
                                     </div>
                                 </div>
