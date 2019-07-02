@@ -104,59 +104,112 @@ class TorneoController extends Controller
                 ->orderBy('Puntos', 'desc')
                 ->get();
         $varnum = count($posiciones);
-        
-        /*$agregar_equipo=DB::table('posiciones')->get();
-                $ciclo = '1';
-                $nuevoequipo=new Posicion;
-                foreach($partidos as $part){
-                    foreach($agregar_equipo as $agr) {
-                        if($part->leido == '0'){
-                            if($ciclo == '1'){
-                                if (strcasecmp($id, $agr->idTorneo) == '0') {
-                                    if (strcasecmp($part->clubLocalPartido, $agr->idClub) == '0') {
-                                            $equipo_actualizar=Posicion::findOrFail($agr->idClub);
-                                            if ($part->golesLocalPartido > $part->golesVisitaPartido) {
-                                                $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
-                                            }
-                                            else{
-                                                if($part->golesVisitaPartido > $part->golesLocalPartido) {
-                                                    $equipo_actualizar->PP = $equipo_actualizar->PP + 1;
-                                                }
-                                                else{
-                                                    $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
-                                                }
-                                            }
-                                            $equipo_actualizar->update();
-                                            $ciclo = '0';
-                                            $partido_actualizar = Partido::findOrFail($part->idPartido);
-                                            $partido_actualizar->leido = '1';
-                                            $partido_actualizar->update();
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if($ciclo == '1'){//Si el ciclo no se cerró, no se encontro coincidencia por lo que se agrega a la BD
-                    foreach($partidos as $part){
-                        if($part->idTorneo == $id){
-                            if($part->leido == '0'){
-                                $nuevoequipo->idTorneo = $id;
-                                $nuevoequipo->idClub = $part->clubLocalPartido ;
-                                $nuevoequipo->save();
-                            }
-                        }
-                                
-                    }
-                }*/
-    
 
        //dd($posiciones);
         return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
     }
  
+    public function posiciones($id)
+    {
+        $torneos = Torneo::findOrFail($id);
+        $clubes = Club::all();
+        $partidos = Partido::all();
+
+        $numclubs = Club::select()
+                ->where('idTorneo', '=', $id)
+                ->get();
+        $cant_club = count($numclubs);
+        $posiciones = Posicion::select()
+                        ->where('idTorneo', '=', $id)
+                        ->orderBy('Puntos', 'desc')
+                        ->get();
+        $varnum = count($posiciones);
+
+        $agregar_equipo = Posicion::all();
+
+
+        $ciclo = '1';
         
+
+        $nuevoequipo=new Posicion;
+        foreach ($partidos as $p) {
+            if ($p->idTorneo == $id) {
+                foreach ($agregar_equipo as $ag) {
+                    if($p->leido == '3'){
+                        if ($ag->idClub == $p->clubLocalPartido) {
+                            if ($p->golesLocalPartido > $p->golesVisitaPartido) {
+                                $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
+                                $equipo_actualizar->update();
+
+                            }
+                            if ($p->golesLocalPartido == $p->golesVisitaPartido) {
+                                $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
+                                $equipo_actualizar->update();
+                            }
+                            if ($p->golesLocalPartido < $p->golesVisitaPartido) {
+                                $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                $equipo_actualizar->PP = $equipo_actualizar->PP + 1;                                
+                                $equipo_actualizar->update();
+                            }
+                            $partido_actualizar = Partido::findOrFail($p->idPartido);
+                            $partido_actualizar->leido = '4';
+                            $partido_actualizar->update();
+                        }
+                    }
+                    else{
+                        if($p->leido == '4'){
+                            if ($ag->idClub == $p->clubVisitaPartido) {
+                                if ($p->golesLocalPartido > $p->golesVisitaPartido) {
+                                    $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                    $equipo_actualizar->PP = $equipo_actualizar->PP + 1;
+                                    $equipo_actualizar->update();
+                                }
+                                if ($p->golesLocalPartido == $p->golesVisitaPartido) {
+                                    $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                    $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
+                                    $equipo_actualizar->update();
+                                }
+                                if ($p->golesLocalPartido < $p->golesVisitaPartido) {
+                                    $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
+                                    $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
+                                    $equipo_actualizar->update();
+                                }
+                            }
+                        }
+                        $partido_actualizar = Partido::findOrFail($p->idPartido);
+                        $partido_actualizar->leido = '5';
+                        $partido_actualizar->update();
+                    }
+                }
+            }
+        }
+        if($ciclo == '1'){//Si el ciclo no se cerró, no se encontro coincidencia por lo que se agrega a la BD
+            foreach($partidos as $part){
+                if($part->idTorneo == $id){
+                    if($part->leido == '0'){
+                        $partido_actualizar = Partido::findOrFail($part->idPartido);
+                        $partido_actualizar->leido = '1';
+                        $partido_actualizar->update();
+                        $nuevoequipo->idTorneo = $id;
+                        $nuevoequipo->idClub = $part->clubLocalPartido ;
+                        $nuevoequipo->save();
+                    }
+                    if($part->leido == '1'){
+                        $partido_actualizar = Partido::findOrFail($part->idPartido);
+                        $partido_actualizar->leido = '3';
+                        $partido_actualizar->update();
+                        $nuevoequipo->idTorneo = $id;
+                        $nuevoequipo->idClub = $part->clubVisitaPartido ;
+                        $nuevoequipo->save();
+                        
+                    }
+                }                    
+            }
+        }
+        return view('torneo.posiciones',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
+    }
 
 //---------------------------------Funcion que retorna las variables para el edit--------------------------------    
     /**
