@@ -34,35 +34,38 @@
                                         <div class="card-body">
                                             <p class="card-text">
                                                 <div class="row">
-                                                    <div class="row">
-                                                        <div class="col">  
-                                                        </div>
+                                                    <div class="col">
+                                                    
+                                                        
                                                         @foreach($partidos as $parti)
-                                                            @foreach($clubes as $club)
-                                                                @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
-                                                                <div class="row">
+                                                            <div class="row">
+                                                                @foreach($clubes as $club)
+                                                                    @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
+                                                                    
+                                                                        <div class="col ">
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:60px !important; height:60px !important"></td></p>
+                                                                        </div>
+                                                                   
+                                                                    @endif
+                                                                @endforeach
+                                                                <div class="row"> 
                                                                     <div class="col">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
-                                                                    </div>
-                                                                </div>
-                                                                @endif
-                                                            @endforeach
-                                                            <div class="row"> 
-                                                                 <p>
-                                                                    <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
-                                                                </p>     
-                                                            </div>    
-                                                            @foreach($clubes as $club)
-                                                                @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
-                                                                    <div class="col">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
-                                                                    </div>
-                                                                @endif
-                                                            @endforeach
+                                                                     <p>
+                                                                        <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
+                                                                    </p>  
+                                                                    </div>   
+                                                                </div>    
+                                                                @foreach($clubes as $club)
+                                                                    @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
+                                                                        <div class="col">
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
+                                                                        </div>
+                                                                    @endif
+                                                                @endforeach
+                                                            </div>
                                                         @endforeach
-                                                        <div class="col">  
-                                                        </div>
-                                                    </div>  
+                                                        
+                                                    </div>
                                                 </div>
                                             </p>
                                         </div>
