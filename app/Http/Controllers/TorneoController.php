@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
+use App\Partido;
 
 use App\Club;
 use App\Asociacion;
@@ -90,19 +91,71 @@ class TorneoController extends Controller
     {
         $torneos = Torneo::findOrFail($id);
         $clubes = Club::all();
+        $partidos = Partido::all();
+
+        $numclubs = Club::select()
+                ->where('idTorneo', '=', $id)
+                ->get();
+        $cant_club = count($numclubs);
+
+
         $posiciones = Posicion::select()
                 ->where('idTorneo', '=', $id)
                 ->orderBy('Puntos', 'desc')
                 ->get();
         $varnum = count($posiciones);
+        $agregar_equipo=DB::table('posiciones')->get();
+                $ciclo = '1';
+                $nuevoequipo=new Posicion;
+                foreach($partidos as $part){
+                    foreach($agregar_equipo as $agr) {
+                        if($part->leido == '0'){
+                            if($ciclo == '1'){
+                                if (strcasecmp($id, $agr->idTorneo) == '0') {
+                                    if (strcasecmp($part->clubLocalPartido, $agr->idClub) == '0') {
+                                            $equipo_actualizar=Posicion::findOrFail($agr->idClub);
+                                            if ($part->golesLocalPartido > $part->golesVisitaPartido) {
+                                                $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
+                                            }
+                                            else{
+                                                if($part->golesVisitaPartido > $part->golesLocalPartido) {
+                                                    $equipo_actualizar->PP = $equipo_actualizar->PP + 1;
+                                                }
+                                                else{
+                                                    $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
+                                                }
+                                            }
+                                            $equipo_actualizar->update();
+                                            $ciclo = '0';
+                                            $partido_actualizar = Partido::findOrFail($part->idPartido);
+                                            $partido_actualizar->leido = '1';
+                                            $partido_actualizar->update();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
-       //dd($posiciones);
-        
-
-        return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
+                if($ciclo == '1'){//Si el ciclo no se cerró, no se encontro coincidencia por lo que se agrega a la BD
+                    foreach($partidos as $part){
+                        if($part->idTorneo == $id){
+                            if($part->leido == '0'){
+                                $nuevoequipo->idTorneo = $id;
+                                $nuevoequipo->idClub = $part->clubLocalPartido ;
+                                $nuevoequipo->save();
+                            }
+                        }
+                                
+                    }
+                }
     }
 
-
+       //dd($posiciones);
+        return view('torneo.show',['torneos' => $torneos, 'clubes' => $clubes, 'posiciones' => $posiciones, 'varnum' => $varnum]);
+    }
+ 
+        
 
 //---------------------------------Funcion que retorna las variables para el edit--------------------------------    
     /**

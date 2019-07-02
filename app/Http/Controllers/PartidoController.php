@@ -132,6 +132,7 @@ class PartidoController extends Controller
         $partido->idArbitroAsistente1 = $request->input('idArbitroAsistente1');
         $partido->idArbitroAsistente2 = $request->input('idArbitroAsistente2');
         $partido->idCuartoArbitro = $request->input('idCuartoArbitro');
+        $partido->leido = 0;
         
         $partido->save();
         return Redirect::to('partido');
