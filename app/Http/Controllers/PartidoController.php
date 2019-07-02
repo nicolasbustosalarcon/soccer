@@ -51,6 +51,7 @@ class PartidoController extends Controller
         $mespanish = $this->spanish_month($mes);
         $mes = $data['month'];
 
+
         return view('partido.calendario',  ['data' => $data,
         'mes' => $mes,
         'mespanish' => $mespanish, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos]);
@@ -66,6 +67,10 @@ class PartidoController extends Controller
       // obtener mes en espanol
       $mespanish = $this->spanish_month($mes);
       $mes = $data['month'];
+      $info_partidos =  DB::table('partidos')
+                        ->select('idPartido', 'clubLocalPartido', 'clubVisitaPartido', 'golesLocalPartido', 'golesVisitaPartido', 'fechaPartido')
+                        ->get();
+
 
       return view("partido.calendario",[
         'data' => $data,
@@ -190,19 +195,26 @@ class PartidoController extends Controller
 
 
 
-    public function fechas(Request $request)
+    public function fechas($anho, $mes, $dia)
     {
         $partidos = Partido::all();
         $clubes=Club::all();
         $torneos=Torneo::all();
-
+        $month = date("Y-m");
+        $data = $this->calendar_month($month);
+        $mes = $data['month'];
+        // obtener mes en espanol
+        $mespanish = $this->spanish_month($mes);
+        $mes = $data['month'];
+        $hoy = "$anho"."-"."$mes"."-"."$dia";
+        $fecha = date("Y-m-d", strtotime($hoy));
         $listado =  DB::table('partidos')
                     ->select('idPartido', 'clubLocalPartido', 'clubVisitaPartido', 'golesLocalPartido', 'golesVisitaPartido')
-                    ->where('partidos.fechaPartido', '=', $request->fechaPartidos)
+                    ->where('partidos.fechaPartido', '=', $fecha)
                     ->get();
-        $hoy = $request->fechaPartidos;
+        //dd($fecha);
         
-        return view('partido.fecha',  ['partidos' => $partidos,'hoy' => $hoy, 'clubes' => $clubes, 'listado' => $listado, 'torneos' => $torneos]);
+        return view('partido.fecha',['data' => $data, 'mes' => $mes, 'mespanish' => $mespanish,'partidos' => $partidos, 'hoy' => $hoy, 'clubes' => $clubes, 'listado' => $listado, 'torneos' => $torneos]);
     }
 
 

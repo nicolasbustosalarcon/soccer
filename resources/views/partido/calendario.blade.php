@@ -43,7 +43,7 @@
                                                                     @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
                                                                     
                                                                         <div class="col ">
-                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:60px !important; height:60px !important"></td></p>
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p>
                                                                         </div>
                                                                    
                                                                     @endif
@@ -58,7 +58,7 @@
                                                                 @foreach($clubes as $club)
                                                                     @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
                                                                         <div class="col">
-                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></td></p>
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p>
                                                                         </div>
                                                                     @endif
                                                                 @endforeach
@@ -71,18 +71,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <p></p>
-                                    <div class="card text-white bg-secondary mb-3" >
-                                        <div class="card-header">
-                                            <h5>Toda la información de partidos la encuentras aquí<img class="float-right" src="imagenes/inicio/escudoinicio.png" width="30" height="30"></h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <img class="card-img" src="{{asset('images/torneos/iconos/Pitana.jpg')}}" alt="Card image" width="100" height="500">                                               
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-5">
+                                <div class="col-7">
                                     <p></p>
                                     <div class="card text-white bg-secondary mb-3" >
                                         <div class="card-header">
@@ -129,7 +118,10 @@
 
                                                           @if  ($dayweek['mes']==$mes)
                                                             <div class="col box-day">
-                                                              {{ $dayweek['dia']  }}
+                                                                <a href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
+                                                                    {{$dayweek['dia']}}
+                                                                </a>
+            
                                                             </div>
                                                           @else
                                                           <div class="col box-dayoff">
@@ -145,8 +137,8 @@
 
 </div>
 
-                                                <!--
-                                                <form class="form-group-center" method="POST" action="fecha"> 
+                                               
+                                                <!--<form class="form-group-center" method="POST" action="fecha"> 
                                                     @csrf
                                                     <div class="row">
                                                         <input type="date" name="fechaPartidos" class="form-control" required>
@@ -155,8 +147,8 @@
                                                     <div class="row">
                                                         <button type="submit" class="btn btn-primary">Ver Partidos</button>
                                                     </div>
-                                                </form>
-                                                -->                                      
+                                                </form>-->
+                                                                                     
                                         </div>
                                     </div>
                                 </div>
