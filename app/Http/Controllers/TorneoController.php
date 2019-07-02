@@ -129,12 +129,16 @@ class TorneoController extends Controller
         $agregar_equipo = Posicion::all();
         
       
-        $nuevoequipo=new Posicion;
+        
         foreach($clubes as $club){
             if($id == $club->idTorneo){
                 if($club->leido == '0'){
+                    $nuevoequipo=new Posicion();
                     $nuevoequipo->idTorneo = $id;
                     $nuevoequipo->idClub = $club->idClub;
+                    $nuevoequipo->PP = 0;
+                    $nuevoequipo->PE = 0;
+                    $nuevoequipo->PG = 0;
                     $nuevoequipo->save();   
                 }
                 $club_actualizar = Club::findOrFail($club->idClub);
