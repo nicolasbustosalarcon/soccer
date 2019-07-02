@@ -35,7 +35,6 @@
                                             <p class="card-text">
                                                 <div class="row">
                                                     <div class="col">
-
                                                         @foreach($listado as $list)
                                                         <div class="row">
                                                             @foreach($clubes as $club)
@@ -59,11 +58,13 @@
                                                              
                                                             @foreach($clubes as $club)
                                                             	@if($list->clubVisitaPartido === $club->idClub)
-	                                                                   
-	                                                                   		<div class="col">
-	                                                                        	<p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p>
-	                                                                        </div>	
-	                                       
+	                                                                <div class="col">
+	                                                                    <p>
+                                                                            <td>
+                                                                                <img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important">
+                                                                            </td>
+                                                                        </p>
+	                                                                </div>	
 	                                                            @endif
                                                             @endforeach
                                                         </div>
@@ -118,10 +119,12 @@
                                                           @foreach  ($weekdata['datos'] as $dayweek)
 
                                                           @if  ($dayweek['mes']==$mes)
-                                                            <div class="col box-day">
-                                                                <a href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
-                                                                    {{$dayweek['dia']}}
-                                                                </a>
+                                                            <div class="col box-day text-white">
+                                                                <p class="text-white">
+                                                                    <a class ="text-white" href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>" >
+                                                                    {{$dayweek['dia']}} 
+                                                                    </a>
+                                                                </p>
             
                                                             </div>
                                                           @else

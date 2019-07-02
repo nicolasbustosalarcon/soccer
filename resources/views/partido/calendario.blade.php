@@ -118,7 +118,7 @@
 
                                                           @if  ($dayweek['mes']==$mes)
                                                             <div class="col box-day">
-                                                                <a href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
+                                                                <a class ="text-white"  href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
                                                                     {{$dayweek['dia']}}
                                                                 </a>
             
