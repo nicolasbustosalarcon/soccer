@@ -145,7 +145,7 @@ Route::get('directortecnico/{id}/show',[
 Route::group(['middleware' =>'auth'], function(){
 Route::resource('partido','PartidoController');
 Route::get('/calendario', 'PartidoController@index_fechas')->name('calendario.fechas');
-Route::post('/fecha', 'PartidoController@fechas')->name('fecha');
+Route::get('/fecha/{anho}/{mes}/{dia}', 'PartidoController@fechas')->name('fecha');
 Route::get('partido/{idPartido}/destroy',[
 	'uses'	=>	'PartidoController@destroy',
 	'as'	=>	'partido.destroy'
@@ -231,9 +231,10 @@ Route::get('/admin', 'AdminController@index')->name('admin.index');
 
 
 
+//Calnedario
 
-
-
+Route::get('calendario/{mes}','PartidoController@index_month');
+Route::get('partido/calendario','PartidoController@index_fechas');
 
 
 

@@ -4,6 +4,9 @@
 @section ('title', 'Torneos')
 
 @section ('content')
+<div class="row">
+	<div class="col">
+		
 
 <div class="row">
 	<div class="col">
@@ -45,15 +48,12 @@
 	<div class="col">
 		 <div class="panel with-nav-tabs panel-default">
             <div class="panel-heading">
-                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                <url class="nav nav-tabs nav-fill" id="myTab" role="tablist">
 					<li class="nav-item active">
 					   	<a class="nav-link text-muted" href="#tab1default" data-toggle="tab">TORNEO</a>
 					</li>
 					<li class="nav-item">
 					   	<a class="nav-link text-muted" href="#tab2default" data-toggle="tab">HISTORIA</a>
-					</li>
-					<li class="nav-item">
-					   	<a class="nav-link text-muted" href="#tab3default" data-toggle="tab">NOTICIAS</a>
 					</li>
   				</ul>
             </div>
@@ -124,7 +124,7 @@
 									  		<h5>Momentos<img class="float-right" src="{{asset('images/torneos/iconos/videos.png')}}" width="42" height="42"></h5>
 									  	</div>
 									  	<div class="card-body">
-								  			<iframe width="400" height="180" src="https://www.youtube.com/embed/20Q9316qhzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  			<iframe width="400" height="180" src="https://www.youtube.com/embed/cZky8BgubYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									    </div>
 									</div>
 								</div> 
@@ -132,7 +132,7 @@
                         </div>
                 		<div class="tab-pane fade show active" id="tab2default">
                 			<div class="row">
-                        		<div class="col">
+                        		
                         			<p></p>
                         			<div class="card text-white bg-secondary mb-3" >
 									  	<div class="card-header">
@@ -146,7 +146,7 @@
 								  			</div>
 									    </div>
 									</div>
-								</div>
+								
 								<div class="col">
                         			<p></p>
                         			<div class="card text-white bg-secondary mb-3" >
@@ -171,7 +171,7 @@
 									  		<h5>Supercopa y mundial de clubes<img class="float-right" src="{{asset('images/torneos/iconos/internacional.png')}}" width="42" height="42"></h5>
 									  	</div>
 									  	<div class="card-body">
-								  			<h6>
+								  			<h6 class="text-justify-center">
 								  				La Supercopa de Campeones Intercontinentales, Recopa de Campeones Intercontinentales, Recopa Mundial o Recopa Intercontinental es una competición internacional extinta, oficializada por la CONMEBOL desde septiembre de 2005, que enfrentaba a los campeones de la Copa Intercontinental, iniciada 7 años antes. Tenía una recepción muy buena del público, pero se disputaron solo dos ediciones: la de 1968 y 1969.
 								  			</h6>
 								  			<div class="row">
@@ -183,9 +183,6 @@
 								</div> 
 							</div>	
                 		</div>
-                    	<div class="tab-pane fade show active" id="tab3default">
-                    		
-                    	</div>
                 </div>
             </div>           
         </div>
@@ -201,7 +198,8 @@
   
  
 	<!--<iframe width="1100" height="0.1" src="https://www.youtube.com/embed/UbjnIJ4LB30?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
- 
+ 	</div>
+</div>	
 @endsection
 
 

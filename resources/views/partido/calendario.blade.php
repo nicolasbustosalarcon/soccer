@@ -34,52 +34,127 @@
                                         <div class="card-body">
                                             <p class="card-text">
                                                 <div class="row">
-                                                    <div class="row">
+                                                    <div class="col">
+                                                    
+                                                        
                                                         @foreach($partidos as $parti)
-                                                            @foreach($clubes as $club)
-                                                                @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
-                                                                    <div class="col-2">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
-                                                                    </div>
-                                                                @endif
-                                                            @endforeach
-                                                            <div class="col-2"> 
-                                                                    <p>
-                                                                        <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
-                                                                    </p>
-                                                            </div>    
-                                                            @foreach($clubes as $club)
-                                                                @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
-                                                                    <div class="col-2">
-                                                                        <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:40px !important; height:40px !important"></td></p>
-                                                                    </div>
-                                                                @endif
-                                                            @endforeach
+                                                            <div class="row">
+                                                                @foreach($clubes as $club)
+                                                                    @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
+                                                                    
+                                                                        <div class="col ">
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p>
+                                                                        </div>
+                                                                   
+                                                                    @endif
+                                                                @endforeach
+                                                                <div class="row"> 
+                                                                    <div class="col">
+                                                                     <p>
+                                                                        <h3>
+                                                                            @if($parti->golesLocalPartido === null or $parti->golesVisitaPartido === null)
+                                                                                P.P
+                                                                            @else
+                                                                                {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
+                                                                            @endif
+                                                                        </h3>  
+                                                                    </p>  
+                                                                    </div>   
+                                                                </div>    
+                                                                @foreach($clubes as $club)
+                                                                    @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
+                                                                        <div class="col">
+                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p>
+                                                                        </div>
+                                                                    @endif
+                                                                @endforeach
+                                                            </div>
                                                         @endforeach
-                                                    </div>  
+                                                        
+                                                    </div>
                                                 </div>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-5">
                                     <p></p>
                                     <div class="card text-white bg-secondary mb-3" >
                                         <div class="card-header">
                                             <h5>Calendario<img class="float-right" src="{{asset('images/torneos/iconos/calendario.png')}}" width="35" height="35"></h5>
                                         </div>
                                         <div class="card-body">
-                                            <div class="col">
-                                                <form class="form-group" method="POST" action="fecha"> 
+                                            
+
+                                            <div class="row">
+                                                <div class="col">
+
+
+                                                 
+
+                                                  <div class="row header-calendar">
+
+                                                    <div class="col" style="display: flex; justify-content: space-between; padding: 10px;">
+          <a  href="{{ asset('calendario/') }}/<?= $data['last']; ?>" style="margin:10px;">
+            <i class="fas fa-chevron-circle-left" style="font-size:30px;color:white;"></i>
+          </a>
+          <h2 style="font-weight:bold;margin:10px;"><?= $mespanish; ?> <small><?= $data['year']; ?></small></h2>
+          <a  href="{{ asset('calendario/') }}/<?= $data['next']; ?>" style="margin:10px;">
+            <i class="fas fa-chevron-circle-right" style="font-size:30px;color:white;"></i>
+          </a>
+        </div>
+
+                                                  </div>
+                                                  <div class="row">
+
+                                                    <div class="col header-col">L</div>
+                                                    <div class="col header-col">M</div>
+                                                    <div class="col header-col">Mi</div>
+                                                    <div class="col header-col">J</div>
+                                                    <div class="col header-col">V</div>
+                                                    <div class="col header-col">S</div>
+                                                    <div class="col header-col">D</div>
+                                                  </div>
+                                                  <!-- inicio de semana -->
+                                                  <!-- inicio de semana -->
+                                                      @foreach ($data['calendar'] as $weekdata)
+                                                        <div class="row">
+                                                          <!-- ciclo de dia por semana -->
+                                                          @foreach  ($weekdata['datos'] as $dayweek)
+
+                                                          @if  ($dayweek['mes']==$mes)
+                                                            <div class="col box-day">
+                                                                <a class ="text-white"  href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
+                                                                    {{$dayweek['dia']}}
+                                                                </a>
+            
+                                                            </div>
+                                                          @else
+                                                          <div class="col box-dayoff">
+                                                          </div>
+                                                          @endif
+
+
+                                                          @endforeach
+                                                        </div>
+                                                      @endforeach
+                                                    
+                                                </div>
+
+</div>
+
+                                               
+                                                <!--<form class="form-group-center" method="POST" action="fecha"> 
                                                     @csrf
-                                                    <div class="col-6">
+                                                    <div class="row">
                                                         <input type="date" name="fechaPartidos" class="form-control" required>
                                                     </div>
-                                                    <div class="col-6">
+                                                    <p></p>
+                                                    <div class="row">
                                                         <button type="submit" class="btn btn-primary">Ver Partidos</button>
                                                     </div>
-                                                </form>
-                                            </div>                                            
+                                                </form>-->
+                                                                                     
                                         </div>
                                     </div>
                                 </div>
