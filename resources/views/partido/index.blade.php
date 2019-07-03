@@ -12,7 +12,8 @@
 		@foreach($torneos as $tor) 
 		<div class="">
 			@if($tor->idConfederacion === NULL)
-				<h3 class="row justify-content-center text-warning">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay -->
+				<a href="{{ route('torneo.show', $tor->idTorneo)}}" class="text-light">
+					<h3 class="row justify-content-center text-warning">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay --></a>
 				@foreach($partidos as $part)
 
 					@if($part->idTorneo === $tor->idTorneo)
@@ -32,13 +33,13 @@
 									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Suspendido')
-									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span> {{ $part['estadoPartido'] }}</span></a>	
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['estadoPartido'] }}</span></a>	
 								@endif				
 								@if($part->estadoPartido === 'En curso')
-									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 								@if($part->estadoPartido === 'Expirado')
-									<!--<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light">--><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
+									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span>{{ $part['golesLocalPartido'] }} - {{ $part['golesVisitaPartido'] }}</span></a>
 								@endif
 							</div>
 							<div class="col-4 " align="left">	

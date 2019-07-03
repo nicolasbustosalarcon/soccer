@@ -123,7 +123,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://images.vexels.com/media/users/3/132207/isolated/preview/cdcfa6ff97b6c9aa17d8adce3268395d-silueta-de-portero-de-f-tbol-1-by-vexels.png" style="width:30px !important; height:30px !important"> {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
@@ -138,7 +138,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
+															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://images.vexels.com/media/users/3/132247/isolated/preview/a7d5804976d548749c83aeaefdbce085-silueta-de-jugador-de-f-tbol-7-by-vexels.png" style="width:30px !important; height:30px !important"> {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
@@ -153,7 +153,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p><a href="{{ route('jugador.show', $jug->idJugador)}}"class="text-white">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://images.vexels.com/media/users/3/132205/isolated/preview/9df3f702bd3e0fbecce1abc61aa0e517-pelota-de-futbol-pateando-silueta-by-vexels.png" style="width:30px !important; height:30px !important">  {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
@@ -168,7 +168,7 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
+															        			<p ><a href="{{ route('jugador.show', $jug->idJugador)}}" class="text-white">{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</a></p>
 															        			<p><img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_960_720.png" style="width:30px !important; height:30px !important">  {{$jug->posicionJugador}}</p>
 										  						      		</div>
 																    	</div>
@@ -176,21 +176,7 @@
 															  	@endif
 															@endif
 														@endforeach
-														@foreach($jugadores as $jug)
-															@if($jug->idClub === $clubes->idClub)
-																@if($jug->posicionJugador === 'Delantero')
-																	<div class="col-sm-6 col-md-3">
-															    		<div class="thumbnail">
-															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
-															      			<div class="caption">
-															        			<p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
-															        			<p><img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_960_720.png" style="width:30px !important; height:30px !important">  {{$jug->posicionJugador}}</p>
-										  						      		</div>
-																    	</div>
-															  		</div>
-															  	@endif
-															@endif
-														@endforeach
+													
 
 														@foreach($dt as $d)
 															@if($d->idDirectorTecnico === $clubes->idDirectorTecnico)
@@ -198,8 +184,8 @@
 															    		<div class="thumbnail">
 															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
-															        			<p><a href="{{ route('directortecnico.show', $d->idDirectorTecnico)}}">{{ $d['nombreDirectorTecnico'] }} {{ $d['apellidosDirectorTecnico'] }}</a></p>
-															        			<p><img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_960_720.png" style="width:30px !important; height:30px !important">  dt</p>
+															        			<p><a href="{{ route('directortecnico.show', $d->idDirectorTecnico)}}" class="text-white">{{ $d['nombreDirectorTecnico'] }} {{ $d['apellidosDirectorTecnico'] }}</a></p>
+															        			<p><img src="https://static1.squarespace.com/static/550ccbdde4b079aa9844df40/56b4661037013b0f50de26ff/56b4664127d4bd06b90968b8/1454663235064/dt.png" style="width:30px !important; height:30px !important">  dt</p>
 										  						      		</div>
 																    	</div>
 															  		</div>
@@ -240,7 +226,7 @@
 														  				<a href="{{ route('club.show', $clubes->idClub)}}">
 													      				<img class="img-responsive float-sm text-left" src="{{asset('images/club/' .$clubes->imagenClub)}}" width="35" height="35">
 													      				</a>
-													      				<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>
+													      				<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>
 													      				@foreach($allclubs as $club)
 																    		@if($club->idClub === $part->clubVisitaPartido)						
 															       				<a href="{{ route('club.show', $part->clubVisitaPartido)}}">					<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"></a>
@@ -276,7 +262,7 @@
 																	  			<p><a href="{{ route('club.show', $club->idClub)}}">
 																      				<img class="img-responsive float-sm text-left" src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35">
 																      			</a>
-																      			<a class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>			      				
+																      			<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light font-weight-bold"> {{ $part->golesLocalPartido }} - {{  $part->golesVisitaPartido }} </a>			      				
 																		       	<a href="{{ route('club.show', $part->clubVisitaPartido)}}">
 																		       		<img class="img-responsive float-sm text-center" src="{{asset('images/club/' .$clubes->imagenClub)}}" width="35" height="35">
 																		       	</a>
