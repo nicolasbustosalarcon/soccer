@@ -224,7 +224,7 @@
 								  		<div class="card-body">
 								  			<div class="row justify-content-center">
 								  				<div class="col">
-								  				<?php ?>
+								  				
 								  				@for($i=0; $i < $contador; $i++)
 									  				<div class="row justify-content-center">
 									  					<div class="align-self-center">
@@ -252,10 +252,7 @@
 														@endforeach
 														</div>
 														@endfor
-														@for($i=0; $i < $contador2; $i++)
-														<span class="text-light font-weight-bold">jugador:{{ $gol_jugador[$i]['jugador'] }} minutos jugados: {{ $gol_jugador[$i]['minutos_jugados'] }} 
-														goles: {{$gol_jugador[$i]['gol'] }}</span>
-														@endfor
+														
 								  					</div>
 								  					
 									    			
@@ -326,21 +323,76 @@
 									  	</div>
 								  		<div class="card-body">
 								  			<!--------------------CAMBIAR-------------------------------->
-								  			@foreach($historiales as $hist)
-								  				@if($partidos->idPartido === $hist->idPartido)
+								  					<div class="row">
+								  						<div class="col-6">
+								  							@foreach($clubes as $club)
+								  									@if($club->idClub === $partidos->clubLocalPartido)
+								  										<img src="{{asset('images/club/' .$club->imagenClub)}}" width="30" height="30">
+							  										@endif
+					  										@endforeach
+								  						</div>
+								  						<div class="col-6">
+								  							@foreach($clubes as $club)
+								  									@if($club->idClub === $partidos->clubVisitaPartido)
+								  										<img  class="float-sm-right" src="{{asset('images/club/' .$club->imagenClub)}}" width="30" height="30">
+							  										@endif
+					  										@endforeach
+								  						</div>
+								  					</div>
 								  					<div class="row">
 								  						<!-----Estadisticas local--->
 								  						<div class="col-6">
-								  						@foreach($jugadorclublocal as $juglocal)
-								  							@if($partidos->clubLocalPartido === $juglocal->idJugador)
-								  								<span> {{ $juglocal->nombreJugador}}</span>
-								  							@endif
-							  							@endforeach
+							  							
+								  						@for($i=0; $i < $contador2; $i++)
+								  						<div class="row">
+								  							<div class="col">
+								  								
+								  								<span> 
+								  								@foreach($clubes as $club)
+								  									@if($club->idClub === $partidos->clubLocalPartido)
+								  									@if($gol_jugador[$i]['club'] === $club->idClub)
+								  									{{ $gol_jugador[$i]['jugador'] }} 
+								  								{{ $gol_jugador[$i]['apellido'] }} {{$gol_jugador[$i]['gol'] }}
+								  									 
+								  									 @endif
+								  									 @endif
+						  									 	@endforeach
+							  									</span>
+								  							</div>
+
+								  						</div>
+														
+														@endfor
+														
+								  						</div>
+								  						<!--------------------------->
+								  						<!---------Estadisticas Visita------>
+								  						<div class="col-6">
+							  							
+								  						@for($i=0; $i < $contador2; $i++)
+								  						<div class="row">
+								  							<div class="col">
+								  								
+								  								<span> 
+								  								@foreach($clubes as $club)
+								  									@if($club->idClub === $partidos->clubVisitaPartido)
+								  									@if($gol_jugador[$i]['club'] === $club->idClub)
+								  									{{ $gol_jugador[$i]['jugador'] }} 
+								  								{{ $gol_jugador[$i]['apellido'] }} {{$gol_jugador[$i]['gol'] }}
+								  									 
+								  									 @endif
+								  									 @endif
+						  									 	@endforeach
+							  									</span>
+								  							</div>
+								  						</div>
+														
+														@endfor
+														
 								  						</div>
 								  						<!--------------------------->
 								  					</div>
-								  				@endif
-								  			@endforeach
+								  				
 								  		</div>
 									</div>
                         			

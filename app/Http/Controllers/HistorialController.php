@@ -53,6 +53,8 @@ class HistorialController extends Controller
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
+        $mes = date("m");
+        $dia = date("d");
 
 
         $jugadores = Jugador::all();
@@ -62,7 +64,7 @@ class HistorialController extends Controller
        // dd($partidos);
         //$jugadorHistorial = $historiales['idJugador'];
 
-
+        //  dd($jugadorHistorial);
 
 
        
@@ -85,7 +87,7 @@ class HistorialController extends Controller
 
 
 
-        return view('historial.create',['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclub' => $jugadorclub]);
+        return view('historial.create',['mes' => $mes, 'dia' => $dia, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclub' => $jugadorclub]);
         /*---------PRUEBA 2----------------
         $jugadores=Jugador::all();
         $clubes=Club::all();

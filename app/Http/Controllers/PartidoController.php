@@ -178,13 +178,16 @@ class PartidoController extends Controller
         $historiales = DB::table('Historiales')->get();
        // dd($partidos);
         //$jugadorHistorial = $historiales['idJugador'];
-        $gol_jugador = array(array('jugador','gol','minutos_jugados'));
+        $gol_jugador = array(array('jugador', 'apellido', 'club','gol','minutos_jugados'));
         $contador2 = 0;
         foreach ($historial as $his) {
             if ($his->idPartido == $id) {
                 foreach ($jugadores as $jug) {
                     if ($his->idJugador == $jug->idJugador) {
                         $gol_jugador[$contador2]['jugador'] = $jug->nombreJugador;//Se le puede mandar solo el id tambien
+                        $gol_jugador[$contador2]['apellido'] = $jug->apellidosJugador;
+                        $gol_jugador[$contador2]['club'] = $jug->idClub;
+
                         $gol_jugador[$contador2]['gol'] = $his->golJugador;
                         $gol_jugador[$contador2]['minutos_jugados'] = $his->minutosJugador;
                         $contador2 = $contador2 + 1;
