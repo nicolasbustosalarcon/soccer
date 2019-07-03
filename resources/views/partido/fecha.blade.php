@@ -144,7 +144,9 @@
                                                 </div>
 
 
+
 </div>
+
                                             <!--<div class="col">
                                                 <form class="form-group-center" method="POST" action="fecha"> 
                                                     @csrf
@@ -158,7 +160,13 @@
                                                 </form>
                                             </div>-->                                            
                                         </div>
+
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                        <a href="../../../partido"><button class='btn btn-danger'>Atrás</button></a>
                                 </div>
                             </div>  
                         </div>
@@ -170,10 +178,5 @@
     <p>.</p>
 </div>
 
-<div class="row">
-    <div class="col">
-            <a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
-    </div>
-</div>
 </div>
 @endsection

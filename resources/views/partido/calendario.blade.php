@@ -158,8 +158,29 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>  
                         </div>
+                        <div class="row">
+                                <div class="col">
+                                        <a href="../../../partido"><button class='btn btn-danger'>Atrás</button></a>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                    <p>
+                                        
+                                    </p>
+                                </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>           
@@ -168,10 +189,6 @@
     <p>.</p>
 </div>
 
-<div class="row">
-    <div class="col">
-            <a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
-    </div>
-</div>
+
 </div>
 @endsection

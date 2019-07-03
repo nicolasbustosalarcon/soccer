@@ -33,9 +33,14 @@
 				@foreach($posiciones as $pos)
 					@foreach($clubes as $club)
 						@if($club->idClub === $pos->idClub)
-						    <tr class="table-success">
+							@if($contador == 1)						
+							    <tr class="table-success">
+							@endif
+							@if($contador == 2 || $contador == 3)
+							    <tr class="table-warning">
+							@endif
 								<th scope="row">{{$contador}}</th>
-								<td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:25px !important; height:25px !important">{{ $club->nombreClub }}</td>
+								<td><strong><a href="{{ route('club.show', $pos->idClub)}}" class="text-dark"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:25px !important; height:25px !important"> {{ $club->nombreClub }}</td></a></strong>
 								<td>{{ $pos->PG+$pos->PE+$pos->PP }}</td>
 								<td>{{ $pos->PG}}</td>
 								<td>{{ $pos->PE}}</td>
@@ -47,12 +52,22 @@
 								<?php 
 									$contador=$contador + 1;
 								 ?>
+							</tr>
 						@endif
 					@endforeach			    
 				@endforeach
-				    		</tr>
+				    		
 			
 				</tbody>
 		</table>
-
+		<div class="col">
+			<div class="row">
+				<div class="alert alert-success">Campeón y CHILE 1: clasifica directo a CONMEBOL Libertadores</div>				
+			</div>
+		</div>
+		<div class="col">
+			<div class="row">
+				<div class="alert alert-warning">CHILE 2 y 3: clasifica directo a CONMEBOL Libertadores</div>				
+			</div>
+		</div>
 @endsection
