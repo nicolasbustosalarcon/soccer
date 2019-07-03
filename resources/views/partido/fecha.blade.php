@@ -40,17 +40,23 @@
                                                             @foreach($clubes as $club)
                                                        			@if($list->clubLocalPartido === $club->idClub)
 	                                                                <div class="col">
-	                                                                    <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p>
+	                                                                    <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p>
 	                                                                </div>
 	                                                            @endif    
                                                             @endforeach
                                                             <div class="row">
                                                                 <div class="col"> 
                                                                 	@foreach($partidos as $parti)
-                                                                		@if($parti->idPartido === $list->idPartido)                         
-                                                                			<p>
-    		                                                                	<h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
-    		                                                            	</p>
+                                                                		@if($parti->idPartido === $list->idPartido)           
+                                                                        <p>
+                                                                            <h3>
+                                                                                @if($parti->golesLocalPartido === null or $parti->golesVisitaPartido === null)
+                                                                                    P.P
+                                                                                @else
+                                                                                    {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
+                                                                                @endif
+                                                                            </h3>  
+                                                                        </p> 
     		                                                            @endif
     		                                                        @endforeach  
                                                                 </div> 
@@ -119,12 +125,10 @@
                                                           @foreach  ($weekdata['datos'] as $dayweek)
 
                                                           @if  ($dayweek['mes']==$mes)
-                                                            <div class="col box-day text-white">
-                                                                <p class="text-white">
-                                                                    <a class ="text-white" href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>" >
-                                                                    {{$dayweek['dia']}} 
-                                                                    </a>
-                                                                </p>
+                                                            <div class="col box-day">
+                                                                <a class ="text-white"  href="{{ asset('fecha') }}/<?= $data['year']; ?>/<?= $data['month']; ?>/<?= $dayweek['dia']; ?>">
+                                                                    {{$dayweek['dia']}}
+                                                                </a>
             
                                                             </div>
                                                           @else
@@ -138,6 +142,7 @@
                                                       @endforeach
                                                     
                                                 </div>
+
 
 </div>
                                             <!--<div class="col">

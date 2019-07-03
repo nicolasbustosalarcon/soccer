@@ -51,7 +51,13 @@
                                                                 <div class="row"> 
                                                                     <div class="col">
                                                                      <p>
-                                                                        <h3>{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</h3>  
+                                                                        <h3>
+                                                                            @if($parti->golesLocalPartido === null or $parti->golesVisitaPartido === null)
+                                                                                P.P
+                                                                            @else
+                                                                                {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
+                                                                            @endif
+                                                                        </h3>  
                                                                     </p>  
                                                                     </div>   
                                                                 </div>    
@@ -71,7 +77,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-7">
+                                <div class="col-5">
                                     <p></p>
                                     <div class="card text-white bg-secondary mb-3" >
                                         <div class="card-header">
