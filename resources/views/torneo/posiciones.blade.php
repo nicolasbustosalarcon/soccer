@@ -42,7 +42,7 @@
 								<td>{{ $pos->PP}}</td>
 								<td>{{ $pos->GolesFavor}}</td>
 								<td>{{ $pos->GolesContra}}</td>
-								<td>{{ $pos->GolesFavor-$pos->GolesContra}}</td>
+								<td>{{ $pos->Diferencia}}</td>
 								<td>{{ $pos->Puntos}}</td>
 								<?php 
 									$contador=$contador + 1;
