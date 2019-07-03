@@ -33,7 +33,7 @@
 						</div>
 					</div>
 
-				</div>
+				
 				<div class="row">
 					<p></p>
 					<p></p>
@@ -182,10 +182,10 @@
 															@if($d->idDirectorTecnico === $clubes->idDirectorTecnico)
 																	<div class="col-sm-6 col-md-3">
 															    		<div class="thumbnail">
-															      			<img src="{{asset('images/jugador/' .$jug->imagenJugador)}}" style="width:70px !important; height:70px !important">
+															      			<img src="{{asset('images/directortecnico/' .$d->imagenDirectorTecnico)}}" style="width:70px !important; height:70px !important">
 															      			<div class="caption">
 															        			<p><a href="{{ route('directortecnico.show', $d->idDirectorTecnico)}}" class="text-white">{{ $d['nombreDirectorTecnico'] }} {{ $d['apellidosDirectorTecnico'] }}</a></p>
-															        			<p><img src="https://static1.squarespace.com/static/550ccbdde4b079aa9844df40/56b4661037013b0f50de26ff/56b4664127d4bd06b90968b8/1454663235064/dt.png" style="width:30px !important; height:30px !important">  dt</p>
+															        			<p><img src="https://static1.squarespace.com/static/550ccbdde4b079aa9844df40/56b4661037013b0f50de26ff/56b4664127d4bd06b90968b8/1454663235064/dt.png" style="width:30px !important; height:30px !important">Director Técnico</p>
 										  						      		</div>
 																    	</div>
 															  		</div>
@@ -297,6 +297,7 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
