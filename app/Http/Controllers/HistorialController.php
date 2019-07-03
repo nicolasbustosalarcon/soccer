@@ -64,7 +64,7 @@ class HistorialController extends Controller
        // dd($partidos);
         //$jugadorHistorial = $historiales['idJugador'];
 
-
+        //  dd($jugadorHistorial);
 
 
        

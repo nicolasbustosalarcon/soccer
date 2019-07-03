@@ -80,220 +80,642 @@
 
 <div class="row">
 	<div class="col">
-		 <div class="panel with-nav-tabs panel-default">
-                <div class="panel-heading">
-                    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-						<li class="nav-item active">
-					    	<a class="nav-link text-muted" href="#tab1default" data-toggle="tab">PARTIDO  <img width="24" height="24" src="https://image.flaticon.com/icons/png/512/33/33736.png"></a>
-					  	</li>
-					  	<!--li class="nav-item">
-					    	<a class="nav-link text-muted" href="#tab2default" data-toggle="tab">ESTADIO <img width="27" height="27" src="https://www.futbolchileno.com/wp-content/uploads/2016/05/stadium.svg"></a>
-					  	</li-->
-					  	<li class="nav-item">
-					    	<a class="nav-link text-muted" href="#tab3default" data-toggle="tab">ALINEACIONES <img width="81" height="27" src="https://image.flaticon.com/icons/svg/55/55448.svg"></a>
-					  	</li>
-  					</ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-
-                    	<
-
-                        <!------ESTADIO-------------------------
-                        <div class="tab-pane fade" id="tab2default">
-                        	<p></p>
-                        	<div class="row">
-                        		<div class="col">
-                        			<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
+		
+		<div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+				
+				   	<li class="nav-item">
+				    	<a class="nav-link text-muted" href="" data-toggle="tab">ALINEACIONES <img width="81" height="27" src="https://image.flaticon.com/icons/svg/55/55448.svg"></a>
+				  	</li>
+					</ul>
+            </div>
+        </div>
+    </div>
 </div>
-                        		</div>
-                        	</div>
-                        </div>--->
-                        <!--------Alineaciones------>
-                        <div class="tab-pane fade" id="tab3default">
-                        <div class="row">
-                        	<div class="col-3">
-                        		
-                        	</div>
-                        	<div class="col-9">
-                        		<div class="row justify-content-center">
-		                        		<div class="col-6">
-		                        			<p></p>
-		                        			<div class="panel with-nav-tabs panel-default">
-								                <div class="panel-heading border bg-secondary">
-								                        <ul class="nav nav-pills nav-fill" id="myTab2" role="tablist">
-								                            <li class="nav-item actived">
+
+<div class="row">
+	<div class="col">
+		<div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading border bg-secondary">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+				
+				   	<li class="nav-item actived">
 								                            	<a class="nav-link text-light " href="#local" data-toggle="tab">LOCAL</a>
 								                            </li>
-								                            <li class="nav-item">
+				  	<li class="nav-item">
 								                            	<a class="nav-link text-light" href="#visita" data-toggle="tab">VISITA</a>
 								                            </li>
-								                            
-								                           
-								                        </ul>
-								                </div>
-						               		</div>
-					               		</div>
-				               		</div>
-                        	</div>
-                        </div>
+					</ul>
+            </div>
+        
+		
+	
+            <div class="panel-body">
+                <div class="tab-content">
+
+                    <!--------Alineaciones------>
+                    <div class="tab-pane fade" id="local">
                         <!--------ALINEACIONES--------------------->
                         
-                        	<div class="row">
+                    	<div class="row">
                         		
-                        		<!--div class="col-9">
-		                        	
-			               		
-				               		<div class="row justify-content-center">
-						                <div class="col-10">
-						                	<div class="panel with-nav-tabs panel-default">
-								                <div class="panel-body">
-								                    <div class="tab-content">
-								                        <div class="tab-pane fade  show active" id="local">
-								                        	<div class="card bg-dark text-white">
-																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
-															  	<div class="card-img-overlay">
-															    	<div class="row justify-content-center"  style="height: 420px">
-															    		<!-----Arquero--->
-															    		<div class="col-3 align-self-center text-center ">
-															    			<div class="float-sm-left">
+                        		
+				    		<!-----Arquero--->
+				    		<div class="col-3 align-self-center text-center ">
+				    			<div class="float-sm-left">
 
-	
-	<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
-		@csrf
 
-		<input type="hidden" name="idPartido" value="{{$partidos->idPartido}}" class="form-control">
+									<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
+										@csrf
 
-		<p>Ingresar Arquero</p>
-		    <select name="idJugador" class="form-control">
-		        <option disabled selected value>Seleciona un Jugador...</option>
-		        @foreach ($jugadorclub as $jc)
-		            @if($jc->idClub === $partidos->clubLocalPartido)
-		            	@if($jc->posicionJugador === 'Arquero')
-		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
-		                @endif
-		            @endif
-		        @endforeach
-		    </select>
-		    <button type="submit" class="btn btn-primary">Guardar</button>
+										<input type="hidden" name="idJugador" value="{{$partidos->idJugador}}" class="form-control">
 
-    </form>   
-															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
+										<p>Ingresar Arquero</p>
 
-															    		<!--------------->
-															    		<!-----Defensas---->
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		<!--------------->
-															    		<!-----Mediocampistas---->
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		<!--------------->
-															    		<!-----denaltnero---->
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    	</div>
-															    	
-															    	
-															  	</div>
-															</div>
-								                        </div>
+										    <p><select name="idJugador" class="form-control">
+										        <option disabled selected value>Seleciona un Jugador...</option>
+										        @foreach ($jugadorclub as $jc)
+										            @if($jc->idClub === $partidos->clubLocalPartido)
+										            	@if($jc->posicionJugador === 'Arquero')
+										                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+										                @endif
+										            @endif
+										        @endforeach
+										    </select></p>
+										    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
 
-								                        <div class="tab-pane fade" id="visita">
-								                        	<div class="card bg-dark text-white">
-																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
-															  	<div class="card-img-overlay">
-															    	<div class="row justify-content-center"  style="height: 420px">
-															    		<!-----denaltnero---->
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		
+								    </form>   
+				    				
+				    			</div>
+				    		</div>
 
-															    		<!--------------->
-															    		<!-----Mediocampistas---->
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		<!--------------->
-															    		<!-----Defensas---->
-															    		
-															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		<!--------------->
-															    		<!-----Arquero--->
-															    		<div class="col-3 align-self-center text-center ">
-															    			<div class="float-sm-right">
-															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-															    			</div>
-															    		</div>
-															    		
-															    	</div>
-															    	
-															    	
-															  	</div>
-															</div>
+				    		<!--------------->
+				    		<!-----Defensas---->
+				    		<div class="col-3 align-self-center text-center">
+				    			<div class="float-sm-left">
+					    			<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
+										@csrf
 
-								                        </div>
+										<input type="hidden" name="idJugador" value="{{$partidos->idJugador}}" class="form-control">
+
+										<p>Ingresar Defensas</p>
+										<!---cantidad de defensas------->
+											<div class="row">
+												<div class="col">
+													<div class="panel with-nav-tabs panel-default">
+										                <div class="panel-heading">
+										                        <ul class="nav nav-tabs">
+										                            <li class="active"><a href="#tresdef" data-toggle="tab">3</a></li>
+										                            <li><a href="#cuatrodef" data-toggle="tab">4</a></li>
+										                            <li><a href="#cincodef" data-toggle="tab">5</a></li>
+										                            
+										                        </ul>
+										                </div>
+										                <div class="panel-body">
+										                    <div class="tab-content">
+										                        <div class="tab-pane fade in active" id="tresdef">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                   		</div>
+										                        <div class="tab-pane fade" id="cuatrodef">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        <div class="tab-pane fade" id="cincodef">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        
+										                    </div>
+										                </div>
+										            </div>
+												</div>
+											</div>
+										    
+
+								    </form>  
+				    			</div>
+				    		</div>
+				    		<!--------------->
+				    		<!-----Mediocampistas---->
+				    		<div class="col-3 align-self-center text-center">
+				    			<div class="float-sm-left">
+					    			<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
+										@csrf
+
+										<input type="hidden" name="idJugador" value="{{$partidos->idJugador}}" class="form-control">
+
+										<p>Ingresar Mediocampistas</p>
+										<!---cantidad de medio------->
+											<div class="row">
+												<div class="col">
+													<div class="panel with-nav-tabs panel-default">
+										                <div class="panel-heading">
+										                        <ul class="nav nav-tabs">
+										                            <li class="active"><a href="#tresmc" data-toggle="tab">3</a></li>
+										                            <li><a href="#cuatromc" data-toggle="tab">4</a></li>
+										                            <li><a href="#cincomc" data-toggle="tab">5</a></li>
+										                            
+										                        </ul>
+										                </div>
+										                <div class="panel-body">
+										                    <div class="tab-content">
+										                        <div class="tab-pane fade in active" id="tresmc">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                   		</div>
+										                        <div class="tab-pane fade" id="cuatromc">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        <div class="tab-pane fade" id="cincomc">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        
+										                    </div>
+										                </div>
+										            </div>
+												</div>
+											</div>
+										    
+
+								    </form>
+				    			</div>
+				    		</div>
+				    		<!--------------->
+				    		<!-----denaltnero---->
+				    		<div class="col-3 align-self-center text-center">
+				    			<div class="float-sm-left">
+					    			<form class="form-group" method="POST" action="/historial" enctype="multipart/form-data"> 
+										@csrf
+
+										<input type="hidden" name="idJugador" value="{{$partidos->idJugador}}" class="form-control">
+
+										<p>Ingresar Delanteros</p>
+										<!---cantidad de delanteros------->
+											<div class="row">
+												<div class="col">
+													<div class="panel with-nav-tabs panel-default">
+										                <div class="panel-heading">
+										                        <ul class="nav nav-tabs">
+										                            <li class="active"><a href="#undel" data-toggle="tab">1</a></li>
+										                            <li><a href="#dosdel" data-toggle="tab">2</a></li>
+										                            <li><a href="#tresdel" data-toggle="tab">3</a></li>
+										                            
+										                        </ul>
+										                </div>
+										                <div class="panel-body">
+										                    <div class="tab-content">
+										                        <div class="tab-pane fade in active" id="undel">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    
+
+																		   
+										                        		</div>
+										                        	</div>
+										                   		</div>
+										                        <div class="tab-pane fade" id="dosdel">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			<p><select name="idJugador" class="form-control">
+																	        <option disabled selected value>Seleciona un Jugador...</option>
+																	        @foreach ($jugadorclub as $jc)
+																	            @if($jc->idClub === $partidos->clubLocalPartido)
+																	            	@if($jc->posicionJugador === 'Defensa')
+																	                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																	                @endif
+																	            @endif
+																	        @endforeach
+																	    	</select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		   
+
+																		    
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        <div class="tab-pane fade" id="tresdel">
+										                        	<div class="row">
+										                        		<div class="col">
+										                        			
+
+																		    
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+
+																		    <p><select name="idJugador" class="form-control">
+																		        <option disabled selected value>Seleciona un Jugador...</option>
+																		        @foreach ($jugadorclub as $jc)
+																		            @if($jc->idClub === $partidos->clubLocalPartido)
+																		            	@if($jc->posicionJugador === 'Defensa')
+																		                <option value="{{$jc->idJugador}}">{{$jc->nombreJugador}} {{$jc->apellidosJugador}}</option>
+																		                @endif
+																		            @endif
+																		        @endforeach
+																		    </select></p>
+																		    <p><button type="submit" class="btn btn-primary">Guardar</button></p>
+										                        		</div>
+										                        	</div>
+										                        </div>
+										                        
+										                    </div>
+										                </div>
+										            </div>
+												</div>
+											</div>
+										    
+
+								    </form>
+				    			</div>
+				    		</div>
+				    	</div>
+						
+
+
+
+
+				    	
+				  	</div>
+				</div>
+       		</div>
+
+        	<div class="tab-pane fade" id="visita">
+        	<div class="card bg-dark text-white">
+				  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
+			  	<div class="card-img-overlay">
+			    	<div class="row justify-content-center"  style="height: 420px">
+			    		
+
+
+
+
+
+
+
+
+			    		
+			    		
+			    	</div>
+			    	
+			    	
+			  	</div>
+			</div>
+
+        	</div>
 								                        
-								                    </div>
-								                </div>
-								            </div>	
-
-		                        		</div>
-		                        	</div>
-	                        	</div-->
-                        	</div>
-                        </div>
-                    
-                    
-                </div>
-            </div>
+     	</div>
+	</div>
+</div>	                        	
 
 <p>.</p>
 <p>.</p>
 
 		
 
-  	
-</div>
+
 
 
 @endsection
