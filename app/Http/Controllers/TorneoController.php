@@ -123,7 +123,9 @@ class TorneoController extends Controller
         $posiciones = Posicion::select()
                         ->where('idTorneo', '=', $id)
                         ->orderBy('Puntos', 'desc')
+                        ->orderBy('Diferencia','desc')
                         ->get();
+        //dd($posiciones);
         $varnum = count($posiciones);
 
         $agregar_equipo = Posicion::all();
@@ -155,17 +157,28 @@ class TorneoController extends Controller
                             if ($p->golesLocalPartido > $p->golesVisitaPartido) {
                                 $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
                                 $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
+                                $equipo_actualizar->Puntos = $equipo_actualizar->Puntos + 3;
+                                $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesLocalPartido;
+                                $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesVisitaPartido;
+                                $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;
                                 $equipo_actualizar->update();
 
                             }
                             if ($p->golesLocalPartido == $p->golesVisitaPartido) {
                                 $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
                                 $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
+                                $equipo_actualizar->Puntos = $equipo_actualizar->Puntos + 1;
+                                $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesLocalPartido;
+                                $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesVisitaPartido;
+                                $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;                                
                                 $equipo_actualizar->update();
                             }
                             if ($p->golesLocalPartido < $p->golesVisitaPartido) {
                                 $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
-                                $equipo_actualizar->PP = $equipo_actualizar->PP + 1;                                
+                                $equipo_actualizar->PP = $equipo_actualizar->PP + 1;
+                                $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesLocalPartido;
+                                $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesVisitaPartido;
+                                $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;                                
                                 $equipo_actualizar->update();
                             }
                             $partido_actualizar = Partido::findOrFail($p->idPartido);
@@ -179,16 +192,27 @@ class TorneoController extends Controller
                                 if ($p->golesLocalPartido > $p->golesVisitaPartido) {
                                     $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
                                     $equipo_actualizar->PP = $equipo_actualizar->PP + 1;
+                                    $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesVisitaPartido;
+                                    $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesLocalPartido;
+                                    $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;                                            
                                     $equipo_actualizar->update();
                                 }
                                 if ($p->golesLocalPartido == $p->golesVisitaPartido) {
                                     $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
                                     $equipo_actualizar->PE = $equipo_actualizar->PE + 1;
+                                    $equipo_actualizar->Puntos = $equipo_actualizar->Puntos + 1;
+                                    $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesVisitaPartido;
+                                    $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesLocalPartido;
+                                    $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;                                
                                     $equipo_actualizar->update();
                                 }
                                 if ($p->golesLocalPartido < $p->golesVisitaPartido) {
                                     $equipo_actualizar=Posicion::findOrFail($ag->idPosicion);
                                     $equipo_actualizar->PG = $equipo_actualizar->PG + 1;
+                                    $equipo_actualizar->Puntos = $equipo_actualizar->Puntos + 3;
+                                    $equipo_actualizar->GolesFavor = $equipo_actualizar->GolesFavor + $p->golesVisitaPartido;
+                                    $equipo_actualizar->GolesContra = $equipo_actualizar->GolesContra + $p->golesLocalPartido;
+                                    $equipo_actualizar->Diferencia = $equipo_actualizar->GolesFavor - $equipo_actualizar->GolesContra;
                                     $equipo_actualizar->update();
                                 }
                             }
