@@ -175,6 +175,10 @@ Route::get('torneo/{idTorneo}/show',[
 	'uses'	=>	'TorneoController@show',
 	'as'	=>	'torneo.show'
 ]);
+Route::get('torneo/{idTorneo}/posiciones',[
+	'uses'	=>	'TorneoController@posiciones',
+	'as'	=>	'torneo.posicion'
+]);
 
 
 //--------------Rutas de Historial---------------//
