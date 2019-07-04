@@ -420,9 +420,11 @@
 															    				<p class="card-text ">
 
 															    					@foreach($plantilla as $plan)
+															    					@if($plan->idPartido === $partidos->idPartido)
 															    						@if($plan->Titular === 'GK-L')
 															    							<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
 															    						@endif
+														    						@endif
 															    					@endforeach
 															    				</p>
 															    			</div>
@@ -433,6 +435,7 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-center">
 															    				@foreach($plantilla as $plan)
+															    				@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Defensa')
 																		    			@if($plan->Titular === 'DFI-L')
 																		    			<p class="card-text ">
@@ -460,6 +463,7 @@
 																	    				</p>
 																	    				@endif
 																	    			@endif
+																	    		@endif
 																    			@endforeach
 															    			</div>
 															    		</div>
@@ -468,6 +472,7 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-center">
 																    			@foreach($plantilla as $plan)
+																    			@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Mediocampista')
 																		    			
 																		    			@if($plan->Titular === 'MC-1-L')
@@ -496,6 +501,7 @@
 																	    				</p>
 																	    				@endif
 																	    			@endif
+																    			@endif
 																    			@endforeach
 															    			</div>
 															    		</div>
@@ -504,6 +510,7 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-center">
 																    			@foreach($plantilla as $plan)
+																    			@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Delantero')
 																		    			
 																		    			@if($plan->Titular === 'DC-1-L')
@@ -521,6 +528,7 @@
 																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
 																	    				</p>
 																	    				@endif		
+																	    			@endif
 																	    			@endif
 																    			@endforeach
 															    			</div>
@@ -541,6 +549,8 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
 																    			@foreach($plantilla as $plan)
+
+																    				@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Delantero')
 																		    			
 																		    			@if($plan->Titular === 'DC-1')
@@ -559,6 +569,7 @@
 																	    				</p>
 																	    				@endif		
 																	    			@endif
+																	    			@endif
 																    			@endforeach
 															    			</div>
 															    		</div>
@@ -569,6 +580,7 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
 																    			@foreach($plantilla as $plan)
+																    			@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Mediocampista')
 																		    			
 																		    			@if($plan->Titular === 'MC-1')
@@ -597,6 +609,7 @@
 																	    				</p>
 																	    				@endif
 																	    			@endif
+																	    			@endif
 																    			@endforeach
 															    			</div>
 															    		</div>
@@ -605,6 +618,7 @@
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
 															    				@foreach($plantilla as $plan)
+															    				@if($plan->idPartido === $partidos->idPartido)
 																    				@if($plan->posicionJugador === 'Defensa')
 																		    			@if($plan->Titular === 'DFI')
 																		    			<p class="card-text ">
@@ -632,6 +646,7 @@
 																	    				</p>
 																	    				@endif
 																	    			@endif
+																	    			@endif
 																    			@endforeach
 															    			</div>
 															    		</div>
@@ -642,8 +657,10 @@
 															    				<p class="card-text ">
 
 															    					@foreach($plantilla as $plan)
+															    					@if($plan->idPartido === $partidos->idPartido)
 															    						@if($plan->Titular === 'GK')
 															    							<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+															    						@endif
 															    						@endif
 															    					@endforeach
 															    				</p>
