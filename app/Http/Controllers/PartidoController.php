@@ -28,7 +28,6 @@ class PartidoController extends Controller
         $partidos = Partido::all();
         $clubes=Club::all();
         $torneos=Torneo::all();
-        
         //Ordenar los partidos por dia
         $hoy = getdate();
         $dia = $hoy['mday'];
