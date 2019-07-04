@@ -77,17 +77,20 @@
       @endif
       @endforeach
     </p>
-    </p>
     <p>
         trayectoria:
      @foreach($trayectorias as $t)
      {{$t->nombreClub}}
      @endforeach
     </p>
-    <p style="page-break-before: always;">
-    Podemos romper la página en cualquier momento...</p>
-    </p><p>
-    Praesent pharetra enim sit amet...
+    <p>
+      Posición:{{$jugador->posicionJugador}}
+    </p>
+    <p>
+      Altura:{{$jugador->alturaJugador}}mts
+    </p>
+    <p>
+      Peso:{{$jugador->pesoJugador}}kg
     </p>
   </div>
 </body>
