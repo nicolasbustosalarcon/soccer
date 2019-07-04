@@ -302,6 +302,27 @@
 			</div>
 		</div>
 	<a href="../../partido"><button class='btn btn-danger'>Atrás</button>
+		<div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 
 	</div>
 </div>
