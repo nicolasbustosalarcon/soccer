@@ -247,7 +247,7 @@
 															</div>
 														@foreach($clubes as $club)	
 															@if($partidos_historial[$i]['visita'] === $club->idClub)
-																<div class="col-3 text-left">
+																<div class="col-3 text-center">
 																	<div>
 															        <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
 															    </div>
@@ -290,10 +290,8 @@
                         <!--------Alineaciones------>
                         <div class="tab-pane fade" id="tab3default">
                         <div class="row">
-                        	<div class="col-3">
-                        		
-                        	</div>
-                        	<div class="col-9">
+                        	
+                        	<div class="col">
                         		<div class="row justify-content-center">
 		                        		<div class="col-6">
 		                        			<p></p>
@@ -317,7 +315,7 @@
                         </div>
                         <!--------ALINEACIONES--------------------->
                         
-                        	<div class="row">
+                        	<!--div class="row">
                         		<div class="col-3 ">
                         			
                         			
@@ -326,7 +324,7 @@
 									  		<h5>Estadísticas <img class="float-right" src="https://image.flaticon.com/icons/png/512/20/20803.png" width="42" height="42"></h5>
 									  	</div>
 								  		<div class="card-body">
-								  			<!--------------------CAMBIAR-------------------------------->
+								  			-------------------CAMBIAR-------------------------------
 								  					<div class="row">
 								  						<div class="col-6">
 								  							@foreach($clubes as $club)
@@ -344,7 +342,7 @@
 								  						</div>
 								  					</div>
 								  					<div class="row">
-								  						<!-----Estadisticas local--->
+								  						----Estadisticas local--
 								  						<div class="col-6">
 							  							
 								  						@for($i=0; $i < $contador2; $i++)
@@ -369,8 +367,8 @@
 														@endfor
 														
 								  						</div>
-								  						<!--------------------------->
-								  						<!---------Estadisticas Visita------>
+								  						--------------------------
+								  						---------Estadisticas Visita-----
 								  						<div class="col-6">
 							  							
 								  						@for($i=0; $i < $contador2; $i++)
@@ -394,65 +392,137 @@
 														@endfor
 														
 								  						</div>
-								  						<!--------------------------->
+								  						--------------------------
 								  					</div>
 								  				
 								  		</div>
 
 									</div>
-                        			<div class="row">
-						            	<div class="col">
-						            		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Generar reporte del partido</a>
-						            	</div>
-				           			</div>
+                        			
                         		
-                        		</div>
-                        		<div class="col-9">
+                        		</div-->
+                        		<div class="col-12">
 		                        	
 			               		
 				               		<div class="row justify-content-center">
-						                <div class="col-10">
+						                <div class="col-12">
 						                	<div class="panel with-nav-tabs panel-default">
 								                <div class="panel-body">
 								                    <div class="tab-content">
 								                        <div class="tab-pane fade  show active" id="local">
 								                        	<div class="card bg-dark text-white">
-																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
+																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image" style="height: 450px">
 															  	<div class="card-img-overlay">
-															    	<div class="row justify-content-center"  style="height: 420px">
+															    	<div class="row justify-content-center"  style="height: 450px">
 															    		<!-----Arquero--->
 															    		<div class="col-3 align-self-center text-center ">
-															    			<div class="float-sm-left">
-															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			<div class="float-sm-center">
+															    				<p class="card-text ">
+
+															    					@foreach($plantilla as $plan)
+															    						@if($plan->Titular === 'GK-L')
+															    							<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+															    						@endif
+															    					@endforeach
+															    				</p>
 															    			</div>
 															    		</div>
 
 															    		<!--------------->
 															    		<!-----Defensas---->
 															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			<div class="float-sm-center">
+															    				@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Defensa')
+																		    			@if($plan->Titular === 'DFI-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-1-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-2-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-3-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'DFD-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    		<!--------------->
 															    		<!-----Mediocampistas---->
 															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			<div class="float-sm-center">
+																    			@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Mediocampista')
+																		    			
+																		    			@if($plan->Titular === 'MC-1-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'MC-2-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'MC-3-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'MC-4-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'MC-5-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    		<!--------------->
 															    		<!-----denaltnero---->
 															    		<div class="col-3 align-self-center text-center">
-															    			<div class="float-sm-left">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			<div class="float-sm-center">
+																    			@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Delantero')
+																		    			
+																		    			@if($plan->Titular === 'DC-1-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DC-2-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DC-3-L')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif		
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    	</div>
@@ -464,14 +534,32 @@
 
 								                        <div class="tab-pane fade" id="visita">
 								                        	<div class="card bg-dark text-white">
-																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image">
+																  <img class="card-img" src="https://3.bp.blogspot.com/-er26tiHGyy4/WuCqTWJm6-I/AAAAAAAABu0/4An4Cxp7bFAnRqqGQE26fVMVtG3NrkhOwCLcBGAs/s1600/Cancha%2Bde%2Bf%25C3%25BAtbol%2Balfombra.jpg" alt="Card image" style="height: 460px">
 															  	<div class="card-img-overlay">
-															    	<div class="row justify-content-center"  style="height: 420px">
+															    	<div class="row justify-content-center"  style="height: 460px">
 															    		<!-----denaltnero---->
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Delantero')
+																		    			
+																		    			@if($plan->Titular === 'DC-1')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DC-2')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DC-3')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif		
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    		
@@ -480,28 +568,85 @@
 															    		<!-----Mediocampistas---->
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+																    			@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Mediocampista')
+																		    			
+																		    			@if($plan->Titular === 'MC-1')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'MC-2')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'MC-3')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'MC-4')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'MC-5')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    		<!--------------->
 															    		<!-----Defensas---->
-															    		
 															    		<div class="col-3 align-self-center text-center">
 															    			<div class="float-sm-right">
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
-																    			<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    				@foreach($plantilla as $plan)
+																    				@if($plan->posicionJugador === 'Defensa')
+																		    			@if($plan->Titular === 'DFI')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-1')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-2')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																		    			@if($plan->Titular === 'DFC-3')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    				@if($plan->Titular === 'DFD')
+																		    			<p class="card-text ">
+																		    				<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+																	    				</p>
+																	    				@endif
+																	    			@endif
+																    			@endforeach
 															    			</div>
 															    		</div>
 															    		<!--------------->
 															    		<!-----Arquero--->
 															    		<div class="col-3 align-self-center text-center ">
-															    			<div class="float-sm-right">
-															    				<p class="card-text "><a href="/jugadores" ><img src="{{asset('imagenes/inicio/perfil.png')}}" width="50" height="50"><p class="text-light">Arquero</p></a></p>
+															    			<div class="float-sm-center">
+															    				<p class="card-text ">
+
+															    					@foreach($plantilla as $plan)
+															    						@if($plan->Titular === 'GK')
+															    							<a  class="" data-toggle="tooltip" data-placement="bottom" title="{{$plan->nombreJugador}} {{$plan->apellidosJugador}}"><img src="{{asset('images/jugador/' .$plan->imagenJugador)}}" width="60" height="60"><p class="text-light"></p></a>
+															    						@endif
+															    					@endforeach
+															    				</p>
 															    			</div>
 															    		</div>
 															    		

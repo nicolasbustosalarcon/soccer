@@ -151,7 +151,7 @@
 
 														   
 																
-																<input type="text" value="GK" style="visibility:hidden" name="Titular14" class="form-control">
+																<input type="text" value="GK-L" style="visibility:hidden" name="Titular14" class="form-control">
 
 
 																<input type="text" value="{{$partidos->idPartido}}" style="visibility:hidden" name="idPartido" class="form-control">
@@ -212,7 +212,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular15" class="form-control">
+																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular15" class="form-control">
 
 																									    <p><select name="idJugador16" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -225,7 +225,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular16" class="form-control">
+																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -238,7 +238,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular17" class="form-control">
+																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    
 																											
@@ -275,7 +275,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular15" class="form-control">
+																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
 
 																									    <p><select name="idJugador16" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -288,7 +288,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular16" class="form-control">
+																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -301,7 +301,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular17" class="form-control">
+																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    <p><select name="idJugador18" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -313,7 +313,7 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular18" class="form-control" >
+																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular18" class="form-control" >
 
 																									    
 																											
@@ -350,7 +350,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular15" class="form-control">
+																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
 
 																									    <p><select name="idJugador16" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -363,7 +363,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular16" class="form-control">
+																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -376,7 +376,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular17" class="form-control">
+																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    <p><select name="idJugador18" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -388,7 +388,7 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular18" class="form-control" >
+																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular18" class="form-control" >
 
 																									    <p><select name="idJugador19" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -401,7 +401,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular19" class="form-control">
+																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular19" class="form-control">
 
 																									    
 																											
@@ -475,7 +475,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular20" class="form-control">
+																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -488,7 +488,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular21" class="form-control">
+																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -501,7 +501,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular22" class="form-control">
+																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    
 																											
@@ -538,7 +538,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular20" class="form-control">
+																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -551,7 +551,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular21" class="form-control">
+																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -564,7 +564,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular22" class="form-control">
+																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    <p><select name="idJugador23" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -577,7 +577,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular23" class="form-control">
+																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
 
 																									    
 																											
@@ -614,7 +614,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular20" class="form-control">
+																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -627,7 +627,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular21" class="form-control">
+																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -640,7 +640,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular22" class="form-control">
+																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    <p><select name="idJugador23" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -653,7 +653,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular23" class="form-control">
+																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
 
 																									    <p><select name="idJugador24" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -666,7 +666,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="MC-5" style="visibility:hidden" name="Titular24" class="form-control">
+																									    <input type="text" value="MC-5-L" style="visibility:hidden" name="Titular24" class="form-control">
 
 																									    
 																											
@@ -743,7 +743,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC" style="visibility:hidden" name="Titular25" class="form-control">
+																									    <input type="text" value="DC-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    
 																											
@@ -783,7 +783,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular25" class="form-control">
+																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    <p><select name="idJugador26" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -796,7 +796,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular26" class="form-control">
+																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
 
 																									    
 																											
@@ -836,7 +836,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular25" class="form-control">
+																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    <p><select name="idJugador26" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -849,7 +849,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular26" class="form-control">
+																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
 
 																									    <p><select name="idJugador27" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -862,7 +862,7 @@
 																									        @endforeach
 																									    </select></p>
 
-																									    <input type="text" value="DC-3" style="visibility:hidden" name="Titular27" class="form-control">
+																									    <input type="text" value="DC-3-L" style="visibility:hidden" name="Titular27" class="form-control">
 
 																									    
 																											
