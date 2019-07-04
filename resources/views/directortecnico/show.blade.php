@@ -25,10 +25,10 @@
                             <li class="origin">Edad: <span>{{$directortecnico->edadDirectorTecnico}}</span><br>                            
                             </li>
                             @foreach($paises as $pais)
-                            @if($directortecnico->idPais === $pais->idPais)
-                            <li class="country">Nacionalidad:  <span>{{$pais->nombrePais}}</span><br>
-                               
-                            </li>
+                                @if($directortecnico->idPais === $pais->idPais)
+                                <li class="country">Nacionalidad:  <span>{{$pais->nombrePais}}</span><br>
+                        
+                                </li>
                             @endif
                             @endforeach
                         </ul>
