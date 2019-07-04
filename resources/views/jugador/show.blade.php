@@ -1,9 +1,16 @@
 
-@extends ('layouts.jugadores')
+@extends ('layouts.app')
 
 @section ('titulo', 'Jugador' .$jugadores->idJugador)
 
 @section ('content')
+<div class="col">
+    <div class="row">
+        @if(auth()->user()->authorizeRolesLogin('admin')) 
+            <a href="{{ route('imprimir.reporte', $jugadores->idJugador)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
+        @endif
+    </div>
+</div>
 
 <section id="player" class="container">
     <div class="row">
@@ -29,26 +36,26 @@
                         @endif
                         @endforeach
                         <h1>{{$jugadores->nombreJugador}} {{$jugadores->apellidosJugador}}</h1>
-                        <h2>{{$jugadores->posicionJugador}}</h2>
+                        <h2>Posición: {{$jugadores->posicionJugador}}</h2>
                     </div>
                     <div class="row">
                     	<ul class="player-list text-white">
-                    		<li class="b-day">Fecha de Nacimiento<br>
-                    			<span>{{$jugadores->nacimientoJugador}}</span>
+                    		<li class="b-day">Fecha de Nacimiento: <span>{{$jugadores->nacimientoJugador}}</span><br>
+                    			
                     		</li>
-                    		<li class="weight">Peso<br>
-                    			<span>{{$jugadores->pesoJugador}}kg.</span>
+                    		<li class="weight">Peso: <span>{{$jugadores->pesoJugador}}kg.</span><br>
+                    			
                     		</li>
-                    		<li class="height">Altura<br>
-                    			<span>{{$jugadores->alturaJugador}}Mt.</span>
+                    		<li class="height">Altura: <span>{{$jugadores->alturaJugador}}Mt.</span><br>
+                    			
                     		</li>
-                    		<li class="origin">Edad<br>
-                    			<span>{{$jugadores->edadJugador}}</span>
+                    		<li class="origin">Edad: <span>{{$jugadores->edadJugador}}</span><br>
+                    			
                     		</li>
                     		@foreach($paises as $pais)
                     		@if($jugadores->idPais === $pais->idPais)
-                    		<li class="country">Nacionalidad<br>
-                    			<span>{{$pais->nombrePais}}</span>
+                    		<li class="country">Nacionalidad: <span>{{$pais->nombrePais}}</span><br>
+                    			
                     		</li>
                     		@endif
                     		@endforeach
@@ -61,18 +68,20 @@
     </div>
     <div class="row">
         <div class="related col-md-8 text-white">
-            <h2>Contenidos sobre {{$jugadores->nombreJugador}} {{$jugadores->apellidosJugador}}</h2>
             <div class="row">
             	<div class="container">
-            		<h4>Trayectoria</h4>
+            		<h2>Trayectoria</h2>
+                    <div class="col">
+                    @if(auth()->user()->authorizeRolesLogin('admin')) 
+                        <a href="{{ route('trayectoriajugador.create', $jugadores->idJugador)}}" class="btn btn-outline-info my-2 my-sm-0">Crear Trayectoria</a>
+                    @endif
+                </div>
             	</div>
             	<div class="container">
             		<div class="row">
             			@foreach($trayectorias as $t)
             			<div class="col-sm">
-            				<th>{{$t->nombreClub}}</th>
-            				<th><img src="{{asset('images/club/' .$t->imagen)}}" class="img-responsive" style="width:21px !important; height:21px !important">
-            				</th>
+            				<th><a class="text-white" href="{{ route('club.show', $t->idClub)}}"><img src="{{asset('images/club/' .$t->imagen)}}" class="img-responsive" style="width:21px !important; height:21px !important">  {{$t->nombreClub}}</th></a>            	
             			</div>
             			@endforeach
             		</div>
@@ -104,12 +113,7 @@
                 </article>
             </div>-->
             <div class="row">
-            <div class="col">
-                @if(auth()->user()->authorizeRolesLogin('admin')) 
-                    <a href="{{ route('trayectoriajugador.create', $jugadores->idJugador)}}" class="btn btn-default text-white">Crear Trayectoria</a>
-                    <a href="{{ route('imprimir.reporte', $jugadores->idJugador)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
-                @endif
-            </div>
+            
         </div>
         </div>
     </div>
