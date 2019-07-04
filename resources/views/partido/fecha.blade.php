@@ -36,11 +36,15 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         @foreach($listado as $list)
-                                                        <div class="row">
+                                                        <div class="row" href="">
                                                             @foreach($clubes as $club)
                                                        			@if($list->clubLocalPartido === $club->idClub)
 	                                                                <div class="col">
-	                                                                    <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p>
+	                                                                    <p>
+                                                                            <td>
+                                                                                <a  href="../../../partido/{{$list->idPartido}}/show"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right text-white" style="width:70px !important; height:70px !important"></a>
+                                                                            </td>
+                                                                        </p>
 	                                                                </div>
 	                                                            @endif    
                                                             @endforeach
@@ -50,11 +54,7 @@
                                                                 		@if($parti->idPartido === $list->idPartido)           
                                                                         <p>
                                                                             <h3>
-                                                                                @if($parti->golesLocalPartido === null or $parti->golesVisitaPartido === null)
-                                                                                    P.P
-                                                                                @else
                                                                                     {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
-                                                                                @endif
                                                                             </h3>  
                                                                         </p> 
     		                                                            @endif
@@ -67,7 +67,7 @@
 	                                                                <div class="col">
 	                                                                    <p>
                                                                             <td>
-                                                                                <img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important">
+                                                                                <a href="../../../partido/{{$list->idPartido}}/show"><img src="{{asset('images/club/' .$club->imagenClub)}}" src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></a>
                                                                             </td>
                                                                         </p>
 	                                                                </div>	
@@ -75,6 +75,13 @@
                                                             @endforeach
                                                         </div>
                                                         @endforeach
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="mx-auto" style="width: 130px">
+                                                                    {{ $partidos->links() }} 
+                                                                </div> 
+                                                            </div>
+                                                        </div>
                                                     </div>  
                                                 </div>
                                             </p>

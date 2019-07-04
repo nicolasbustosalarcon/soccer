@@ -28,7 +28,6 @@ class PartidoController extends Controller
         $partidos = Partido::all();
         $clubes=Club::all();
         $torneos=Torneo::all();
-        
         //Ordenar los partidos por dia
         $hoy = getdate();
         $dia = $hoy['mday'];
@@ -41,7 +40,7 @@ class PartidoController extends Controller
 
     public function index_fechas()
     {
-        $partidos = Partido::all();
+        $partidos = Partido::select()->paginate(4);
         $clubes=Club::all();
         $torneos=Torneo::all(); 
         $month = date("Y-m");
@@ -59,7 +58,7 @@ class PartidoController extends Controller
 
     public function index_month($month){
 
-        $partidos = Partido::all();
+        $partidos = Partido::select()->paginate(4);
         $clubes=Club::all();
         $torneos=Torneo::all(); 
       $data = $this->calendar_month($month);
@@ -197,7 +196,7 @@ class PartidoController extends Controller
 
     public function fechas($anho, $month, $dia)
     {
-        $partidos = Partido::all();
+        $partidos = Partido::select()->paginate(4);
         $clubes=Club::all();
         $torneos=Torneo::all();
         //dd($month);        
@@ -219,6 +218,7 @@ class PartidoController extends Controller
                     ->where('partidos.fechaPartido', '=', $hoy)
                     ->get();
         //dd($fecha);
+        $partidos->withPath('custom/url');
         
         return view('partido.fecha',['data' => $data, 'mes' => $mes, 'mespanish' => $mespanish,'partidos' => $partidos, 'hoy' => $hoy, 'clubes' => $clubes, 'listado' => $listado, 'torneos' => $torneos]);
     }

@@ -112,4 +112,26 @@
 	</form>
 		<a href="../../partido" class='btn btn-danger'>Atrás</button></a>
 
+        <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+
 @endsection

@@ -27,7 +27,7 @@
 							@if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
 								<div class="col-3 text-center">
 									<div>
-					       			 <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+					       			 <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
 					    			</div>
 								</div>
 							@endif
@@ -59,7 +59,7 @@
 							@if($partidos->clubVisitaPartido === $club->idClub)
 								<div class="col-3 text-center">
 									<div>
-							        <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+							        <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
 							    </div>
 								</div>
 							@endif
@@ -233,19 +233,19 @@
 															@if (strcmp($partidos_historial[$i]['local'], $club->idClub) === 0)
 																<div class="col-3 text-right">
 																	<div>
-													       			 <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
+													       			 <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
 													    			</div>
 																</div>
 															@endif
 														@endforeach
 															<div class="align-self-center">
-																<span class="text-light font-weight-bold">{{ $partidos_historial[$i]['goles_local'] }}-{{ $partidos_historial[$i]['goles_visita'] }}</span>
+																<span class="text-light font-weight-bold">{{ $partidos_historial[$i]['goles_local'] }}  -  {{ $partidos_historial[$i]['goles_visita'] }}</span>
 															</div>
 														@foreach($clubes as $club)	
 															@if($partidos_historial[$i]['visita'] === $club->idClub)
 																<div class="col-3 text-left">
 																	<div>
-															        <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
+															        <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="35" height="35"><p class="text-light font-weight-bold"></p></a>
 															    </div>
 																</div>
 															@endif

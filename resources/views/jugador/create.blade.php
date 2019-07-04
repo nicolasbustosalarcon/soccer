@@ -42,6 +42,12 @@
 					<option value="1985">1985</option>
 					<option value="1984">1984</option>
 					<option value="1983">1983</option>
+					<option value="1983">1982</option>
+					<option value="1983">1981</option>
+					<option value="1983">1980</option>
+					<option value="1983">1979</option>
+					<option value="1983">1978</option>
+
 				</select>
 			</div>
 		</div>
@@ -177,4 +183,26 @@
 	<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">  
 		<a href="../../admin"><button class='btn btn-danger'>Atrás</button></a>
     </div>
+
+    <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 @endsection

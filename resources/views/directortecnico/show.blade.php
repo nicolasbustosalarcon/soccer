@@ -9,7 +9,7 @@
         <div class="player col-sm-9">
             <div class="row">
                 <div class="player-image col-sm-5">
-                    <img src="{{asset('images/jugador/' .$directortecnico->imagenDirectorTecnic)}}" class="border border-warning" height="353x" width="320px">
+                    <img src="{{asset('images/directortecnico/' .$directortecnico->imagenDirectorTecnico)}}" class="border border-warning" height="353x" width="320px">
                     <span class="gradient" ></span>
                 </div>
                 <div class="col-sm-7 border border-warning">
@@ -19,17 +19,16 @@
                     </div>
                     <div class="row">
                         <ul class="player-list text-white">
-                            <li class="b-day">Fecha de Nacimiento<br>
-                                <span>{{$directortecnico->nacimientoDirectorTecnico}}</span>
+                            <li class="b-day">Fecha de Nacimiento: <span>{{$directortecnico->nacimientoDirectorTecnico}}</span><br>
+                                
                             </li>
-                            <li class="origin">Edad<br>
-                                <span>{{$directortecnico->edadDirectorTecnico}}</span>
+                            <li class="origin">Edad: <span>{{$directortecnico->edadDirectorTecnico}}</span><br>                            
                             </li>
                             @foreach($paises as $pais)
-                            @if($directortecnico->idPais === $pais->idPais)
-                            <li class="country">Nacionalidad<br>
-                                <span>{{$pais->nombrePais}}</span>
-                            </li>
+                                @if($directortecnico->idPais === $pais->idPais)
+                                <li class="country">Nacionalidad:  <span>{{$pais->nombrePais}}</span><br>
+                        
+                                </li>
                             @endif
                             @endforeach
                         </ul>

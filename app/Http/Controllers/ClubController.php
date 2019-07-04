@@ -35,7 +35,7 @@ class ClubController extends Controller
     {
         $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
 
-        $clubes = Club::orderBy('idPais', 'ASC')->paginate(1000);
+        $clubes = Club::select()->paginate(2);
         $paises = Pais::all();
         $asociaciones = Asociacion::all();
         $torneos = Torneo::all();

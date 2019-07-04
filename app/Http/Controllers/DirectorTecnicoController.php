@@ -64,7 +64,11 @@ class DirectorTecnicoController extends Controller
         $directortecnico->apellidosDirectorTecnico = $request->input('apellidosDirectorTecnico');
         $directortecnico->nacimientoDirectorTecnico = $request->input('nacimientoDirectorTecnico');
         $directortecnico->edadDirectorTecnico = $request->input('edadDirectorTecnico');
-        $directortecnico->imagenDirectorTecnico = $request->input('imagenDirectorTecnico');
+        if(Input::hasfile('imagenDirectorTecnico')){
+            $file=Input::file('imagenDirectorTecnico');
+            $file->move(public_path().'/images/directortecnico/',$file->getClientOriginalName());
+            $directortecnico->imagenDirectorTecnico=$file->getClientOriginalName();
+        }
         $directortecnico->idPais = $request->input('idPais');        
         
         $directortecnico->save();

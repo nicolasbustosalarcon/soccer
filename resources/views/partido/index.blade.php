@@ -27,6 +27,7 @@
 										<img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important"></a>
 									@endif
 								@endforeach
+								
 							</div>
 							<div class="col-1 text-light" align="center">
 								@if($part->estadoPartido === 'Proximo')

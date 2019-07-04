@@ -60,14 +60,22 @@
 			
 				</tbody>
 		</table>
-		<div class="col">
-			<div class="row">
-				<div class="alert alert-success">Campeón y CHILE 1: clasifica directo a CONMEBOL Libertadores</div>				
+		@if($torneos->idTorneo === 1)
+			<div class="col">
+				<div class="row">
+					<div class="alert alert-success">Campeón y CHILE 1: clasifica directo a CONMEBOL Libertadores</div>				
+				</div>
 			</div>
-		</div>
-		<div class="col">
-			<div class="row">
-				<div class="alert alert-warning">CHILE 2 y 3: clasifica directo a CONMEBOL Libertadores</div>				
+			<div class="col">
+				<div class="row">
+					<div class="alert alert-warning">CHILE 2 y 3: clasifica directo a CONMEBOL Libertadores</div>				
+				</div>
 			</div>
-		</div>
+		@endif
+		<div class="row">
+            <div class="col">
+                <a href="../{{($torneos->idTorneo)}}/show"><button class='btn btn-danger'>Atrás</button></a>
+            </div>
+        </div>
+
 @endsection

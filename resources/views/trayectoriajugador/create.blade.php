@@ -8,36 +8,35 @@
 
     
         <div class="row">
-            <div class="col">
+            <div class="col text-white">
                 <h1>Ficha</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row text-white">
             <div class="col">
                 <img src="{{asset('images/jugador/' .$jugadores->imagenJugador)}}" class="img-responsive float-sm-right align-self-start" style="width:15% !important">
-                <p><b>Nombre</b>    {{$jugadores->nombreJugador}}</p>
-                <p><b>Apellidos</b> {{$jugadores->apellidosJugador}}</p>
+                <p><b>Nombre Completo:</b>    {{$jugadores->nombreJugador}} {{$jugadores->apellidosJugador}}</p>
                 @foreach($paises as $pais)
                     @if($jugadores->idPais === $pais->idPais)
-                        <p><b>Nacionalidad</b>      {{$pais->nombrePais}}</p>
+                        <p><b>Nacionalidad: </b>      {{$pais->nombrePais}}</p>
                     @endif
                 @endforeach
-                <p><b>Edad</b>      {{$jugadores->edadJugador}}</p>
-                <p><b>Fecha de Nacimiento</b>   {{$jugadores->nacimientoJugador}}</p>
+                <p><b>Edad: </b>      {{$jugadores->edadJugador}}</p>
+                <p><b>Fecha de Nacimiento: </b>   {{$jugadores->nacimientoJugador}}</p>
 
-                <p><b>Posición</b>  {{$jugadores->posicionJugador}}</p>
-                <p><b>Altura</b>    {{$jugadores->alturaJugador}} cm.</p>
-                <p><b>Peso</b>      {{$jugadores->pesoJugador}} kg.</p>
-                <p><b>Pie</b>       {{$jugadores->pieJugador}}</p>
+                <p><b>Posición: </b>  {{$jugadores->posicionJugador}}</p>
+                <p><b>Altura: </b>    {{$jugadores->alturaJugador}} cm.</p>
+                <p><b>Peso: </b>      {{$jugadores->pesoJugador}} kg.</p>
+                <p><b>Pie: </b>       {{$jugadores->pieJugador}}</p>
 
 
             </div>
         </div>
 
-        <div class="row">
+        <div class="row text-white">
             <div class="col">
                 <div class="col-4">
-                <form class="form-group" method="POST" action="/trayectoriajugador" enctype="multipart/form-data">
+                <form class="form-group text-white" method="POST" action="/trayectoriajugador" enctype="multipart/form-data">
                     @csrf
                 
                         <h3>Agregar Trayectoria</h3>
@@ -79,15 +78,15 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col text-white">
                 <h1>Trayectoria</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="col text-white">
                 
-                        <table class="table table-striped">
+                        <table class="table table-striped text-white">
 
                             <thead>
                                 <td>Año</td>
@@ -101,13 +100,13 @@
                                         @foreach($torneos as $tor)
                                              @if($tra->idTorneo === $tor->idTorneo)
                                                 <td>{{$tor->edicion}}</td>
-                                                <td><a href="{{ route('torneo.show', $tor->idTorneo)}}" class="text-dark">{{$tor->nombreTorneo}}</a></td>
+                                                <td><a href="{{ route('torneo.show', $tor->idTorneo)}}" class="text-white">{{$tor->nombreTorneo}}</a></td>
                                             @endif
                                         @endforeach
 
                                         @foreach($clubes as $club)
                                             @if($tra->idClub === $club->idClub)
-                                                <td><a href="{{ route('club.show', $club->idClub)}}" class="text-dark">{{$club->nombreClub}}</a></td>
+                                                <td><a href="{{ route('club.show', $club->idClub)}}" class="text-white">{{$club->nombreClub}}</a></td>
                                             @endif
                                         @endforeach
                                         <td>{{$tra->camisetaJugador}}</td>      
@@ -115,6 +114,49 @@
                                 @endif
                             @endforeach
                         </table>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+
 
                
             </div>

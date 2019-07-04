@@ -39,5 +39,26 @@
 		</div>
 	</form>
 		<a href="../../admin"><button class='btn btn-danger'>Atrás</button>
+			<div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 
 @endsection

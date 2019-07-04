@@ -135,7 +135,28 @@
 			</div>
 			
 			<button type="submit" class="btn btn-primary">Guardar</button>
+			
 	</form>
 	
-
+	<div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 @endsection

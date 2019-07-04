@@ -46,9 +46,11 @@
 							@endforeach
 					</table>
 					<div>
-						<p></p>
-							<a href="{{ route('torneo.posicion', $torneos->idTorneo)}}"><button class="btn-success">Ver Tabla de Posiciones</button></a>
-						<p>	</p>
+						@if($torneos->idTorneo != 5)
+							<p></p>
+								<a href="{{ route('torneo.posicion', $torneos->idTorneo)}}"><button class="btn-success">Ver Tabla de Posiciones</button></a>
+							<p>	</p>
+						@endif
 				</div>
 				
 		</div>
