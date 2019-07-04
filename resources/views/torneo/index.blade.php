@@ -142,7 +142,7 @@
 							  			<h6 class="text-justify-center">Fundada en Basilea el 15 de junio de 1954, la UEFA se ha convertido en el guardián del fútbol en Europa al trabajar estrechamente con sus federaciones miembro y otras partes interesadas para promover, proteger y fomentar el deporte en todos los niveles.</h6>
 							  			<img class="text-justify-center" src="https://img.uefa.com//MultimediaFiles/Photo/uefa/KeyTopics/79/95/21//799521_w1.jpg" width="250" height="125">
 							  			<div class="row">
-							  				<a href="https://es.uefa.com/insideuefa/about-uefa/history/">...Más Historia</a>	
+							  				<strong><a class ="text-white" href="https://es.uefa.com/insideuefa/about-uefa/history/">... Más Historia</a></strong>	
 							  			</div>
 								    </div>
 								</div>
@@ -159,7 +159,7 @@
 							  			</h6>
 							  			<img src="http://www.conmebol.com/sites/default/files/userimagnes/alberto_spencer.jpg"width="250" height="125">
 							  			<div class="row">
-							  				<a href="http://www.conmebol.com/es/historia-copa-libertadores">...Más Historia</a>	
+							  				<strong><a class="text-white" href="http://www.conmebol.com/es/historia-copa-libertadores">... Más Historia</a>	</strong>
 							  			</div>
 								    </div>
 								</div>
@@ -175,7 +175,7 @@
 							  				La Supercopa de Campeones Intercontinentales, Recopa de Campeones Intercontinentales, Recopa Mundial o Recopa Intercontinental es una competición internacional extinta, oficializada por la CONMEBOL desde septiembre de 2005, que enfrentaba a los campeones de la Copa Intercontinental, iniciada 7 años antes. Tenía una recepción muy buena del público, pero se disputaron solo dos ediciones: la de 1968 y 1969.
 							  			</h6>
 							  			<div class="row">
-							  				<a href="https://es.wikipedia.org/wiki/Supercopa_de_Campeones_Intercontinentales">...Más Historia</a>	
+							  				<strong><a class="text-white" href="https://es.wikipedia.org/wiki/Supercopa_de_Campeones_Intercontinentales">... Más Historia</a>	</strong>
 							  			</div>
 
 								    </div>
@@ -197,6 +197,48 @@
 	</div>
 </div>
   
+
+<div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div><div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
  
 	<!--<iframe width="1100" height="0.1" src="https://www.youtube.com/embed/UbjnIJ4LB30?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 

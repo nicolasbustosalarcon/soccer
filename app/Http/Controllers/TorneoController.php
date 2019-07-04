@@ -90,7 +90,7 @@ class TorneoController extends Controller
     public function show($id)
     {
         $torneos = Torneo::findOrFail($id);
-        $clubes = Club::all();
+        $clubes = Club::orderBy('nombreClub','asc')->get();
         $partidos = Partido::all();
 
         $numclubs = Club::select()
