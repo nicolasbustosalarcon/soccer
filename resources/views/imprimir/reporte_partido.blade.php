@@ -47,14 +47,14 @@
     <h1>
       @foreach($clubes as $club)
       @if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
-      {{ $club['nombreClub'] }}
+      {{ $club['nombreClub'] }} {{$partidos->golesLocalPartido}}
       @endif
       @endforeach
     </h1>
     <h3>vs</h3>
     <h2>@foreach($clubes as $club)
         @if($club->idClub === $partidos->clubVisitaPartido)
-            {{$club->nombreClub}}
+            {{$club->nombreClub}} {{$partidos->golesLocalPartido}}
         @endif
         @endforeach</h2>
   </header>
@@ -86,17 +86,19 @@
       @foreach($estadios as $est)
       @if($partidos->idEstadio === $est->idEstadio)
       {{$est->nombreEstadio}}
-      publico presente: {{$est->publicoPresente}}
       @endif
       @endforeach
     </p>
+      publico presente: {{$partidos->publicoPresente}}
     </p>
     <p>
+      Fecha:{{$partidos->fechaPartido}}
     </p>
-    <p style="page-break-before: always;">
-    Podemos romper la página en cualquier momento...</p>
-    </p><p>
-    Praesent pharetra enim sit amet...
+    <p>
+      Hora:{{$partidos->horaPartido}}
+    </p>
+    <p>
+      
     </p>
   </div>
 </body>

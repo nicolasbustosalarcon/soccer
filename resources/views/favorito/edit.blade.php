@@ -15,7 +15,7 @@
 		@endforeach
 	</select>
 	<button type="submit" class="btn btn-primary">Cambiar</button>
-    <a href="favorito" class='btn btn-danger'>Atrás</a>
+    <a href="/../favorito" class='btn btn-danger'>Atrás</a>
 
 </form>
 @endsection
