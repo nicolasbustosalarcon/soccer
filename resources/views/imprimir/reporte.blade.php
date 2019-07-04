@@ -79,7 +79,7 @@
     </p>
     <p>
         trayectoria:
-     @foreach($Trayectorias as $t)
+     @foreach($trayectorias as $t)
      {{$t->nombreClub}}
      @endforeach
     </p>
