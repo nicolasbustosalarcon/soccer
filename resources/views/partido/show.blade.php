@@ -20,7 +20,7 @@
 							@endif
 						@endforeach
 					</div>
-					<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0">Generar reporte</a>
+					
 	    			<div class="row justify-content-center">
 						<!--Equipo Local-->
 						@foreach($clubes as $club)
@@ -51,6 +51,8 @@
 									<button type="button" class="btn btn-sm btn-primary text-dark" disabled>{{$partidos['estadoPartido']}}</button>
 								</div>
 							</div>
+
+
 						</div>
 						<!----------------->
 
@@ -64,6 +66,8 @@
 								</div>
 							@endif
 						@endforeach
+
+
 					</div>
 
 
@@ -394,8 +398,13 @@
 								  					</div>
 								  				
 								  		</div>
+
 									</div>
-                        			
+                        			<div class="row">
+						            	<div class="col">
+						            		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Generar reporte del partido</a>
+						            	</div>
+				           			</div>
                         		
                         		</div>
                         		<div class="col-9">
@@ -507,7 +516,15 @@
 								                    </div>
 								                </div>
 								            </div>	
+								            <div class="row">
+								                        	<div class="col">
+								                        		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Reporte del partido</a>
+								                        		@if(auth()->user()->authorizeRolesLogin('user'))
+								                        		<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
+								                        		@endif
 
+								                        	</div>
+								                        </div>
 		                        		</div>
 		                        	</div>
 	                        	</div>
@@ -517,6 +534,8 @@
                     
                 </div>
             </div>
+
+            
 
 <p>.</p>
 <p>.</p>
