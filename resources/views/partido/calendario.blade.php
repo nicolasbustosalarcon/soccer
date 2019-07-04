@@ -43,7 +43,7 @@
                                                                     @if (strcmp($parti->clubLocalPartido, $club->idClub) === 0)
                                                                     
                                                                         <div class="col ">
-                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p>
+                                                                            <p><td><a href="partido/{{$parti->idPartido}}/show"><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive float-sm-right" style="width:70px !important; height:70px !important"></td></p></a>
                                                                         </div>
                                                                    
                                                                     @endif
@@ -53,9 +53,9 @@
                                                                      <p>
                                                                         <h3>
                                                                             @if($parti->golesLocalPartido === null or $parti->golesVisitaPartido === null)
-                                                                                P.P
+                                                                                <a class ="text-white" href="partido/{{$parti->idPartido}}/show">P.P</a>
                                                                             @else
-                                                                                {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
+                                                                                <a class ="text-white" href="partido/{{$parti->idPartido}}/show">{{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}</a>
                                                                             @endif
                                                                         </h3>  
                                                                     </p>  
@@ -64,13 +64,19 @@
                                                                 @foreach($clubes as $club)
                                                                     @if (strcmp($parti->clubVisitaPartido, $club->idClub) === 0)
                                                                         <div class="col">
-                                                                            <p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p>
+                                                                            <a href="partido/{{$parti->idPartido}}/show"><p><td><img src="{{asset('images/club/' .$club->imagenClub)}}" class="img-responsive" style="width:70px !important; height:70px !important"></td></p></a>
                                                                         </div>
                                                                     @endif
                                                                 @endforeach
                                                             </div>
                                                         @endforeach
-                                                        
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="mx-auto" style="width: 130px">
+                                                                    {{ $partidos->links() }} 
+                                                                </div> 
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </p>
@@ -158,29 +164,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>  
                         </div>
-                        <div class="row">
-                                <div class="col">
-                                        <a href="../../../partido"><button class='btn btn-danger'>Atrás</button></a>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col">
-                                    <p>
-                                        
-                                    </p>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col">
-                                    <p>
-                                        
-                                    </p>
-                                </div>
-                        </div>
-                        
                     </div>
                 </div>
             </div>           
@@ -189,6 +174,10 @@
     <p>.</p>
 </div>
 
-
+<div class="row">
+    <div class="col">
+            <a href="../../partido"><button class='btn btn-danger'>Atrás</button></a>
+    </div>
+</div>
 </div>
 @endsection
