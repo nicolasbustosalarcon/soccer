@@ -4,9 +4,20 @@
 @section ('titulo', 'Partidos')
 
 @section ('content')
+@if($existe === 0)
 <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">
 			<a href="{{ route('favorito.create')}}" class="btn btn-primary">Mi Equipo Favorito</a>
 </div>
+@endif
+@if($existe === 1)
+<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">
+	@foreach($club_favorito as $club)
+	@if($club->idusuario === $id_u)
+	<a href="/favorito/{{$club->idusuarioClub}}/edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Editar mi club Favorito</span></a>
+	@endif
+	@endforeach
+</div>
+@endif
 @foreach($club_favorito as $club)
 @if($club->idusuario === $id_u)
 @foreach($clubes as $c)

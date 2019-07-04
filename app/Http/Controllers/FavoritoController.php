@@ -52,8 +52,13 @@ class FavoritoController extends Controller
         $mes = $hoy['mon'];
         $year = $hoy['year'];
         $fecha = "$year"."-"."$mes"."-"."$dia";
-        
-        return view('favorito.index',  ['entro' =>$entro,'id_u' => $id_u,'club_favorito' => $club_favorito,'partidos_visita' => $partidos_visita,'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
+        $existe = 0;
+        foreach($club_favorito as $club){
+        	if($club->idusuario === $id_u){
+        		$existe = 1;
+        	}
+        }
+        return view('favorito.index',  ['existe' => $existe,'entro' =>$entro,'id_u' => $id_u,'club_favorito' => $club_favorito,'partidos_visita' => $partidos_visita,'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
     }
     public function create(Request $request)
     {
@@ -70,6 +75,20 @@ class FavoritoController extends Controller
         $favorito->idusuario = Auth::user()->id;
         $favorito->idClub = $request->input('club');
         $favorito->save();
+        return Redirect::to('favorito');
+    }
+    public function edit($id)
+    {
+    	$favorito = Favorito::findOrFail($id);
+    	$clubes = Club::all();
+        return view("favorito.edit",['clubes' =>$clubes,'favorito' => $favorito]);
+    }
+    public function update(Request $request,$id)
+    {
+        $favorito=Favorito::findOrFail($id);//Se actualiza la categoria que selecciono el administrador por medio del id
+        $favorito->idusuario=Auth::user()->id;
+        $favorito->idClub=$request->get('club');
+        $favorito->update();
         return Redirect::to('favorito');
     }
 }
