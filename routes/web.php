@@ -110,7 +110,7 @@ Route::get('ciudad/{idCiudad}/destroy',[
 	'as'	=>	'ciudad.destroy'
 ]);
 
-
+Route::resource('favorito','FavoritoController');
 //--------------Rutas de Arbitro---------------//
 Route::resource('arbitro','ArbitroController');
 Route::get('arbitro/{idArbitro}/destroy',[

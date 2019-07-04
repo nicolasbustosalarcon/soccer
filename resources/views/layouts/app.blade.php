@@ -64,6 +64,7 @@
                 
                 <a class="navbar-brand text-white" href="{{ route('admin.index')}}">Datos</a>
                 <a class="navbar-brand text-white" href="{{ route('calendario.fechas')}}">Calendario</a>
+                <a class="navbar-brand text-white" href="{{ route('favorito.index')}}">Mi Equipo</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
