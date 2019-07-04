@@ -41,16 +41,16 @@ class AdminController extends Controller
         $asociaciones=Asociacion::all();
         $paises=Pais::all();
         $federaciones=Federacion::all();
-        $ciudades = Ciudad::all();
-        $clubes = Club::all();
+        $ciudades = Ciudad::select()->paginate(10);
+        $clubes = Club::select()->paginate(10);
         $torneos = Torneo::all();
         $confederaciones = Confederacion::all();
         $continentes=Continente::all();
         $directorestecnicos = DirectorTecnico::all();
         $estadios = Estadio::all();
-        $jugadores = Jugador::all();
+        $jugadores = Jugador::select()->paginate(5);
         $users = User::all();
-        $partido = Partido::all();
+        $partido = Partido::select()->paginate(5);
         /*if ($request)
         {
             $query=trim($request->get('searchText'));//Se obtiene la busqueda por parte del usuario

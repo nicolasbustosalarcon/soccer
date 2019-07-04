@@ -9,34 +9,34 @@
 		@method('PUT')
 		@csrf
 		<div class="form-group">
-			<label for="">Nombre</label>
+			<label class="text-white" for="">Nombre</label>
 			<input type="text" name="nombreClub" class="form-control " value="{{$clubes->nombreClub}}" required>
-			<label for="">Imagen</label>
+			<label class="text-white" for="">Imagen</label>
 			<input type="file" name="imagenClub" class="form-control" value="{{$clubes->imagenClub}}">
-			<label for="">Fundación</label>
+			<label class="text-white" for="">Fundación</label>
 			<input type="date" name="fundacionClub" class="form-control" value="{{$clubes->fundacionClub}}" required>
-			<label for="">Sede</label>
+			<label class="text-white" for="">Sede</label>
 			<input type="text" name="sedeClub" class="form-control" value="{{$clubes->sedeClub}}" required>
-			<label for="">Correo</label>
+			<label class="text-white" for="">Correo</label>
 			<input type="text" name="correoClub" class="form-control" value="{{$clubes->correoClub}}">
-			<label for="">Teléfono</label>
+			<label class="text-white" for="">Teléfono</label>
 			<input type="text" name="telefonoClub" class="form-control" value="{{$clubes->telefonoClub}}">
 			
-			<label>Estadio</label>
-    			<select name="idEstadio" class="form-control" required>
+			<label class="text-white">Estadio</label>
+    			<select name="idEstadio" class="form-control">
    					<option value="{{$clubes->idEstadio}}" >Seleciona una opción...</option>
     				@foreach ($estadios as $est)
     					<option value="{{$est['idEstadio']}}">{{$est['nombreEstadio']}}</option>
     				@endforeach
     			</select>
-    		<label>País</label>
+    		<label class="text-white">País</label>
     			<select name="idPais" class="form-control" required>
     				<option value="{{$clubes->idPais}}">Seleciona una opción...</option>
     				@foreach ($paises as $ps)
     					<option value="{{$ps['idPais']}}">{{$ps['nombrePais']}}</option>
     				@endforeach
     			</select>
-			<label>Ciudad</label>
+			<label class="text-white">Ciudad</label>
     			<select name="idCiudad" class="form-control" required>
     				<option value="{{$clubes->idCiudad}}">Seleciona una opción...</option>
     				@foreach ($ciudades as $cd)
@@ -44,14 +44,14 @@
     				@endforeach
     			</select>
 			
-			<label>Director Técnico</label>
+			<label class="text-white">Director Técnico</label>
     			<select name="idDirectorTecnico" class="form-control" required>
     				<option value="{{$clubes->idDirectorTecnico}}">Seleciona una opción...</option>
     				@foreach ($directorestecnicos as $dts)
     					<option value="{{$dts['idDirectorTecnico']}}">{{$dts['nombreDirectorTecnico']}} {{$dts['apellidosDirectorTecnico']}}</option>
     				@endforeach
     			</select>
-			<label>Asociación</label>
+			<label class="text-white">Asociación</label>
     			<select name="idAsociacion" class="form-control" required>
     				<option value="{{$clubes->idAsociacion}}">Seleciona una opción...</option>
     				@foreach ($asociaciones as $asoc)
@@ -59,7 +59,7 @@
     				@endforeach
     			</select>
 
-            <label>Torneo</label>
+            <label class="text-white">Torneo</label>
                 <select name="idTorneo" class="form-control" required>
                     <option value="{{$clubes->idTorneo}}">Seleciona una opción...</option>
                     @foreach ($torneos as $tor)
@@ -74,5 +74,26 @@
 
 		</div>
 	</form>
+    <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 
 @endsection

@@ -189,4 +189,26 @@
 	<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2">  
 		<a href="../../admin"><button class='btn btn-danger'>Atrás</button></a>
     </div>
+
+    <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 @endsection

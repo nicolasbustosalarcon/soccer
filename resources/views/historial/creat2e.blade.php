@@ -120,6 +120,26 @@
                     </div>
            
             
-    
+    <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
 
 @endsection

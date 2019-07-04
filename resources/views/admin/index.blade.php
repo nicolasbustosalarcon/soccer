@@ -110,7 +110,7 @@
 								<td>{{ $arb['gradoArbitro'] }}</td>
 
 								<td>
-									<div class="row"><a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-primary my-2 my-sm-0"><span class="glyphicon glyphicon-wrench " aria-hidden="true"></span>Editar</a>
+									<div class="row"><a href="/arbitro/{{$arb->idArbitro}}/edit" class="btn btn-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench " aria-hidden="true"></span>Editar</a>
 									<a href=""> .</a>
 									<a href="{{ route('arbitro.destroy', $arb->idArbitro)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el árbitro?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a></div>
 
@@ -212,6 +212,9 @@
 						@endforeach
 					</tbody>
 				</table>
+				<div class="mx-auto" style="width: 130px">
+                        {{ $ciudades->links() }} 
+        </div>
 				
 			</div>
 		</div>
@@ -250,11 +253,12 @@
 							<td><img src="images/club/{{ $club['imagenClub']}}" class="img-responsive" style="width:45px !important; height:45px !important"></td>
 							<td>
 								<a href="/club/{{$club->idClub}}/edit" class="btn btn-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-								<a href="{{ route('club.destroy', $club->idClub)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el club?')" class="btn btn-danger my-2 my-sm-0">Borrar</a>
+								<a href="{{ route('club.destroy', $club->idClub)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el club?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a>
 								</td>
 						</tr>
 					@endforeach
 				</tbody>
+																 
 			</table>
 			<!--@foreach($clubes as $club)
 				<div class="col-sm">
@@ -273,6 +277,31 @@
 				
 
 		</div>
+		<div class="mx-auto" style="width: 130px">
+                        {{ $clubes->links() }} 
+        </div>
+        <div class="row">
+        	<div class="col">
+        		<p>
+        			
+        		</p>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col">
+        		<p>
+        			
+        		</p>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col">
+        		<p>
+        			
+        		</p>
+        	</div>
+        </div>
+
 	</div>
 	
 
@@ -527,8 +556,7 @@
 								
 								<td>
 									<div class="row">
-									<a href="/jugador/{{$jug->idJugador}}/edit" class="btn btn-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>
-								
+									<a href="/jugador/{{$jug->idJugador}}/edit" class="btn btn-info my-2 my-sm-0"><span class="glyphicon glyphicon-wrench">Editar</span></a>								
 									<a href="{{ route('jugador.destroy', $jug->idJugador)}}" onclick="return confirm('¿Estás seguro que deseas eliminar el jugador?')" class="btn btn-danger my-2 my-sm-0">Eliminar</a>
 									</div>
 								<td>
@@ -536,6 +564,9 @@
 						@endforeach
 					</tbody>
 				</table>
+				<div class="mx-auto" style="width: 130px">
+                        {{ $jugadores->links() }} 
+        		</div>
 
 			</div>
 		</div>
@@ -699,7 +730,7 @@
 					<tr>
 						<td>{{$parti['idPartido']}}</td>
 						@foreach($clubes as $club)
-							@if($club->idClub === $parti->clubLocalPartido)
+							@if($parti->clubLocalPartido === $club->idClub)
 								<td>{{ $club['nombreClub'] }}</td>
 							@endif
 						@endforeach
@@ -723,6 +754,9 @@
 				@endforeach
 			</tbody>
 		</table>
+		<div class="mx-auto" style="width: 130px">
+                        {{ $partido->links() }} 
+        </div>
 	</div>
 
 			</div>
