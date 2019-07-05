@@ -263,7 +263,8 @@ class PartidoController extends Controller
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
-        return view('partido.create', ['asociaciones' => $asociaciones->toArray(), 'ciudades' => $ciudades->toArray(), 'clubes' => $clubes->toArray(), 'estadios' => $estadios->toArray(), 'paises' => $paises->toArray(), 'torneos' => $torneos->toArray(), 'arbitros' => $arbitros->toArray()]);
+        //dd($arbitros);
+        return view('partido.create', ['asociaciones' => $asociaciones->toArray(), 'ciudades' => $ciudades->toArray(), 'clubes' => $clubes->toArray(), 'estadios' => $estadios->toArray(), 'paises' => $paises->toArray(), 'torneos' => $torneos->toArray(), 'arbitros' => $arbitros]);
     }
 //------------------------------------------------------------------------------------------------------------------
 //----------------Función para guardar un nuevo dato-----------------------------------------------------------------
@@ -369,7 +370,6 @@ class PartidoController extends Controller
         $plantilla = DB::table('Historiales')
                     ->join('Jugadores', 'Historiales.idJugador','=','Jugadores.idJugador')
                     ->join('Partidos', 'Historiales.idPartido', '=', 'Partidos.idPartido')
-                    ->join('TrayectoriasJugadores', 'Jugadores.idJugador', '=', 'TrayectoriasJugadores.idJugador')
                     ->get();
                     //sdd($plantilla);
                      #   dd($jugador_partido);

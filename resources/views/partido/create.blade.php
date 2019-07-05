@@ -74,15 +74,20 @@
     			<select name="idArbitroCentral" class="form-control" required>
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($arbitros as $arc)
-    					<option value="{{$arc['idArbitro']}}">{{$arc['nombreArbitro']}} {{$arc['apellidosArbitro']}}</option>
-    				@endforeach
+                        @if($arc->tipoArbitro === 'arbitroCentral')
+    					   <option value="{{$arc['idArbitro']}}">{{$arc['nombreArbitro']}} {{$arc['apellidosArbitro']}}</option>
+    				    @endif
+                    @endforeach
     			</select>
 
     		<label>Arbitro Asistente número 1</label>
     			<select name="idArbitroAsistente1" class="form-control">
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($arbitros as $aa1)
+                        @if($aa1->tipoArbitro === 'arbitroAsistente1')
+
     					<option value="{{$aa1['idArbitro']}}">{{$aa1['nombreArbitro']}} {{$aa1['apellidosArbitro']}}</option>
+                        @endif
     				@endforeach
     			</select>
 
@@ -90,15 +95,22 @@
     			<select name="idArbitroAsistente2" class="form-control">
     				<option disabled selected value>Seleciona una opción...</option>
     				@foreach ($arbitros as $aa2)
+                        @if($aa2->tipoArbitro === 'arbitroAsistente2')
+
     					<option value="{{$aa2['idArbitro']}}">{{$aa2['nombreArbitro']}} {{$aa2['apellidosArbitro']}}</option>
+                        @endif
     				@endforeach
     			</select>
 
     		<label>Cuarto Arbitro</label>
     			<select name="idCuartoArbitro" class="form-control">
     				<option disabled selected value>Seleciona una opción...</option>
+
     				@foreach ($arbitros as $car)
+                        @if($car->tipoArbitro === 'arbitroCentral')
+
     					<option value="{{$car['idArbitro']}}">{{$car['nombreArbitro']}} {{$car['apellidosArbitro']}}</option>
+                        @endif
     				@endforeach
     			</select>
 			
