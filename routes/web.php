@@ -242,8 +242,6 @@ Route::get('partido/calendario','PartidoController@index_fechas');
 
 
 
-
-
 /*Route::get('continentes', [
 	'as' =>  'continentes',
 	'uses' => 'UserController@index'
