@@ -18,4 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
  Route::get('partido','PartidoController@indexApi');
  Route::get('jugadores','JugadorController@indexApi');
- Route::get('clubes','ClubController@indexApi');
+ Route::resource('clubes','ClubesApiController');
+ Route::resource('paises','PaisesApiController');
+ Route::resource('directores','DirTecApiController');
+ Route::resource('ciudades','CiudadApiController');
+ Route::resource('asociaciones','AsociacionApiController');
