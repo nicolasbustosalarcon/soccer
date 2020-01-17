@@ -21,10 +21,6 @@ class ClubesApiController extends Controller
     public function index()
     {
         $clubes = Club::all();
-        $paises = Pais::all();
-        $asociaciones = Asociacion::all();
-        $torneos = Torneo::all();
-        
         return response()->json($clubes,200);
 
     }
@@ -47,8 +43,9 @@ class ClubesApiController extends Controller
         $club->idAsociacion = $request->input('asociacion');
         $club->telefonoClub = 0;
         $club->idDirectorTecnico =$request->input('directortecnico');
-        $club->idEstadio = 2;
-        $club->idTorneo = 2;
+        $club->idEstadio =  $request->input('estadio');
+        $club->idTorneo =  $request->input('torneo');
+        $club->telefonoClub = $request->input('telefono');
         $club->save();
     }
     public function show($id)
@@ -58,26 +55,24 @@ class ClubesApiController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $club = Club::findOrFail($id);
-        $club->nombreClub = $request->input('nombreClub');
+        $club = Club::findOrFail($request->input('id'));
+        $club->nombreClub = $request->input('name');
         if(Input::hasfile('imagenClub')){
             $file=Input::file('imagenClub');
             $file->move(public_path().'/images/club/',$file->getClientOriginalName());
             $club->imagenClub=$file->getClientOriginalName();
         }
-        $club->fundacionClub = $request->input('fundacionClub');
-        $club->sedeClub = $request->input('sedeClub');
-        $club->idCiudad = $request->input('idCiudad');
-        $club->idPais = $request->input('idPais');        
-        $club->correoClub = $request->input('correoClub');
-        $club->telefonoClub = $request->input('telefonoClub');
-        $club->idAsociacion = $request->input('idAsociacion');
-        $club->idDirectorTecnico = $request->input('idDirectorTecnico');
-        $club->idEstadio = $request->input('idEstadio');
-  
+        $club->fundacionClub = $request->input('fundacion');
+        $club->sedeClub = $request->input('sede');
+        $club->idCiudad = $request->input('ciudad');
+        $club->idPais = $request->input('pais');        
+        $club->correoClub = $request->input('correo');
+        $club->telefonoClub = $request->input('telefono');
+        $club->idAsociacion = $request->input('asociacion');
+        $club->idDirectorTecnico = $request->input('directortecnico');
+        $club->idEstadio =  $request->input('estadio');
+        $club->idTorneo =  $request->input('torneo');
         $club->update();
-
-        return response()->json($clubes,200);
 
     }
 
