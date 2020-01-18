@@ -239,8 +239,13 @@ Route::get('partido/calendario','PartidoController@index_fechas');
 
 
 
+Route::get('partido/{fecha}/fechas',[
+	'uses'	=>	'PartidoController@partidoDia',
+	'as'	=>	'partido.fechas']);
 
-
+Route::get('partido/{fecha}/fechasAtras',[
+	'uses'	=>	'PartidoController@partidoDiaAtras',
+	'as'	=>	'partido.fechasAtras']);
 
 /*Route::get('continentes', [
 	'as' =>  'continentes',

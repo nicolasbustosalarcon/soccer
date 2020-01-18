@@ -33,8 +33,35 @@ class PartidoController extends Controller
         $dia = $hoy['mday'];
         $mes = $hoy['mon'];
         $year = $hoy['year'];
+        if ($dia < 10) {
+          $dia = "0"."$dia";
+        }
+        if ($mes < 10) {
+          $mes = "0"."$mes";
+        }
         $fecha = "$year"."-"."$mes"."-"."$dia";
+
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
+    }
+    public function partidoDia($fecha)
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        //Ordenar los partidos por dia
+        $nuevaFecha = date("Y-m-d",strtotime($fecha."+ 1 days"));
+
+        return view('partido.fechas',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'nuevaFecha' =>$nuevaFecha]);
+    }
+    public function partidoDiaAtras($fecha)
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        //Ordenar los partidos por dia
+        $nuevaFecha = date("Y-m-d",strtotime($fecha."- 1 days"));
+
+        return view('partido.fechas',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'nuevaFecha' =>$nuevaFecha]);
     }
     public function indexApi()
     {
