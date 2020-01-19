@@ -62,16 +62,13 @@
 		@endforeach	
 	</div>
 
-
-	<!--------------------BUSCADOR POR FECHA-----------------------------
-	
-			<div class="col-2">
-				<label for="">Fecha</label>
-					<input type="date" name="fecha" class="form-control">
-					<a href="">Ver partidos</a>
-
-			</div>
-			------------->
+	<!--
+	<div class="col-3">
+		@foreach($partidoVivo as $pV) 
+			<div class="panel-body">{{ $pV->match }}</div>
+		@endforeach	
+	</div>
+	-->
 	
 </div>
 
