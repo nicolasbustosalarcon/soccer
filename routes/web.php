@@ -11,7 +11,16 @@
 |
 */
 
+use  GuzzleHttp \ Client ;
 Route::get('/', function () {
+	$client = new Client([ 
+    // Base URI se usa con solicitudes relativas 
+    'base_uri' => 'http://www.apiclient.resultados-futbol.com/' , 
+    // Puede establecer cualquier cantidad de opciones de solicitud predeterminadas. 
+    'timeout' => 2.0 ,]);
+
+	$response =  $client ->request('GET' ,'scripts/api/api.php?key=4630fa98fc6a1ee1f91c965d69eae01c&tz=Europe/Madrid&format=xml&req=matchsday&date=2020-1-19');
+	dd($response->getBody()->getContents());
     return view('welcome');
 });
 
