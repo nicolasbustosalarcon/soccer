@@ -64,9 +64,6 @@
 
 	<!--
 	<div class="col-3">
-		@foreach($partidoVivo as $pV) 
-			<div class="panel-body">{{ $pV->match }}</div>
-		@endforeach	
 	</div>
 	-->
 	
