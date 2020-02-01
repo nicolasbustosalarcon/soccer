@@ -25,3 +25,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  Route::resource('asociaciones','AsociacionApiController');
  Route::resource('estadios','EstadioApiController');
  Route::resource('torneos','TorneoApiController');
+ Route::resource('usuarios','RegistroApiController');
