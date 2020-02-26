@@ -48,12 +48,12 @@ class PartidoController extends Controller
         // Puede establecer cualquier cantidad de opciones de solicitud predeterminadas. 
         'timeout' => 2.0 ,]);
 
-        $partidosVivo =  $client->request('GET' ,'scripts/api/api.php?key=4630fa98fc6a1ee1f91c965d69eae01c&tz=Europe/Madrid&format=json&req=matchsday&date=2020-1-19');
-        $partidoVivo = $partidosVivo->getBody()->getContents();
+        //$partidosVivo =  $client->request('GET' ,'scripts/api/api.php?key=4630fa98fc6a1ee1f91c965d69eae01c&tz=Europe/Madrid&format=json&req=matchsday&date=2020-1-19');
+        //$partidoVivo = $partidosVivo->getBody()->getContents();
 
         //dd($partidoVivo);
 
-        return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha, 'partidoVivo'=> $partidoVivo]);
+        return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
     }
     public function partidoDia($fecha)
     {

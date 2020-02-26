@@ -62,10 +62,18 @@
 		@endforeach	
 	</div>
 
-	<!--
 	<div class="col-3">
-	</div>
-	-->
+		<div class="card" style="width: 15rem;">
+  			<div class="card-body">
+    			<h5 class="card-title">Estadísticas Generales</h5>
+    			<h6 class="card-subtitle mb-2 text-muted">Tarjetas Amarillas</h6>
+    			<p class="card-text">Aquí podemos poner la info por torneo</p>
+    			<h6 class="card-subtitle mb-2 text-muted">Tarjetas Rojas</h6>
+    			<p class="card-text">No sirve de nada, pero podemos hacer un informe de la weá</p>
+    		<a href="#" class="card-link">Descargar Informe</a>
+  			</div>
+		</div>
+	</div>	
 	
 </div>
 
