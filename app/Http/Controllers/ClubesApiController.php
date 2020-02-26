@@ -20,7 +20,14 @@ class ClubesApiController extends Controller
 {
     public function index()
     {
-        $clubes = Club::all();
+        $clubes = Club::all();//Agregar un if que compruebe si hay un archivo en el directorio
+        /*foreach ($clubes as $club) {
+            if ($club->imagenClub != NULL) {
+                copy(public_path().'/images/club/'.$club->imagenClub,'/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub);
+                //$file=$club->imagenClub;
+                //$file->move(public_path().'../../AppMoviles/',$file->getClientOriginalName());
+            }
+        }*/
         return response()->json($clubes,200);
 
     }
@@ -57,8 +64,8 @@ class ClubesApiController extends Controller
     {
         $club = Club::findOrFail($request->input('id'));
         $club->nombreClub = $request->input('name');
-        if(Input::hasfile('imagenClub')){
-            $file=Input::file('imagenClub');
+        if(Input::hasfile('image')){
+            $file=Input::file('image');
             $file->move(public_path().'/images/club/',$file->getClientOriginalName());
             $club->imagenClub=$file->getClientOriginalName();
         }
