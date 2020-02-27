@@ -682,7 +682,10 @@
 								                        	<div class="col">
 								                        		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Reporte del partido</a>
 								                        		@if(auth()->user()->authorizeRolesLogin('user'))
-								                        			<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla y estadisticas</a>
+								                        			<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
+								                        		@endif
+								                        		@if(auth()->user()->authorizeRolesLogin('user'))
+								                        			<a href="/historial/{{$partidos->idPartido}}/create_stats" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar Estadísticas</a>
 								                        		@endif
 								                        		<button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-auto border" data-toggle="modal" data-target="#statsModal">
   																	Ver Estadísticas

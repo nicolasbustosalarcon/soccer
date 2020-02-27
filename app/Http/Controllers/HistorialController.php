@@ -509,6 +509,44 @@ class HistorialController extends Controller
 
         return Redirect::to('historial');
     }
+
+    public function create_stats($id)
+    {
+        $partidos = Partido::findOrFail($id);
+        $asociaciones=Asociacion::all();
+        $clubes=Club::all();
+        $ciudades=Ciudad::all();
+        $estadios=Estadio::all();
+        $paises=Pais::all();
+        $torneos=Torneo::all();
+        $arbitros=Arbitro::all();
+        $mes = date("m");
+        $dia = date("d");
+
+        $jugadores = Jugador::all();
+        $trayectoriasjugadores = TrayectoriaJugador::all();
+        $historiales = DB::table('Historiales')->get();
+        //dd($partidos);
+        //$jugadorHistorial = $historiales['idJugador'];
+        //dd($jugadorHistorial);
+        $jugador_partido =DB::table('Jugadores')
+                        ->join('TrayectoriasJugadores', 'TrayectoriasJugadores.idJugador', '=','Jugadores.idJugador')
+                        ->get();
+        //dd($jugador_partido);
+        $jugadorclub = DB::table('Clubes')
+                        ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
+                        ->get();
+       //dd($jugadorclub);
+        $jugadorclublocal = DB::table('Clubes')
+                        ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
+                        ->join('Partidos','Clubes.idClub', '=','Partidos.clubLocalPartido')                    
+                        ->get();
+       //dd($jugadorclublocal);
+        
+
+        return view('historial.create_stats',['mes' => $mes, 'dia' => $dia, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclub' => $jugadorclub]);
+
+    }
     /**
      * Display the specified resource.
      *

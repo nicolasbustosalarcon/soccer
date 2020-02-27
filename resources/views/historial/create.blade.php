@@ -1710,8 +1710,9 @@
 						</div>
 					</div>
 	        	</div>
+	        	<p></p>
+            	<p></p>
 	        	<button type="submit" class="btn btn-primary">Guardar</button>
-
 			</form>					                        
      	</div>
 	</div>

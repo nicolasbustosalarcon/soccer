@@ -194,6 +194,12 @@ Route::get('historial/{idPartido}/create',[
 	'uses'	=>	'HistorialController@create',
 	'as'	=>	'historial.create']);
 });
+Route::group(['middleware' =>'auth'], function(){
+Route::get('historial/{idPartido}/create_stats',[
+	'uses'	=>	'HistorialController@create_stats',
+	'as'	=>	'historial.create_stats']);
+});
+
 ///////////////////////////////////////////////////////////
 
 //------------------Rutas de TrayectoriaJugador-----------//
