@@ -44,4 +44,9 @@ class CiudadApiController extends Controller
         $ciudad->update();
 
     }
+    public function destroy($id)
+    {
+        $ciudades = Ciudad::find($id);
+        $ciudades->delete();
+    }
 }

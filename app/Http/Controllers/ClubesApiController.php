@@ -20,14 +20,14 @@ class ClubesApiController extends Controller
 {
     public function index()
     {
-        $clubes = Club::all();//Agregar un if que compruebe si hay un archivo en el directorio
-        /*foreach ($clubes as $club) {
+        $clubes = Club::all();
+        foreach ($clubes as $club) {
             if ($club->imagenClub != NULL) {
-                copy(public_path().'/images/club/'.$club->imagenClub,'/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub);
-                //$file=$club->imagenClub;
-                //$file->move(public_path().'../../AppMoviles/',$file->getClientOriginalName());
+                if(file_exists('/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub)== FALSE){
+                    copy(public_path().'/images/club/'.$club->imagenClub,'/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub);
+                }
             }
-        }*/
+        }
         return response()->json($clubes,200);
 
     }
@@ -82,5 +82,12 @@ class ClubesApiController extends Controller
         $club->update();
 
     }
+    public function destroy($id)
+    {
+        $clubes = Club::find($id);
+        $clubes->delete();
 
+
+
+    }
 }
