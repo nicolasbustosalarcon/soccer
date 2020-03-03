@@ -513,6 +513,7 @@ class HistorialController extends Controller
     public function create_stats($id)
     {
         $partidos = Partido::findOrFail($id);
+       
         $asociaciones=Asociacion::all();
         $clubes=Club::all();
         $ciudades=Ciudad::all();
@@ -520,32 +521,66 @@ class HistorialController extends Controller
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
+        $todospartidos=Partido::all();
+        $historial=Historial::all();
         $mes = date("m");
         $dia = date("d");
-
+        //dd($mes);
+        $partidos_historial = array(array('local','visita','goles_local','goles_visita'));
+        $contador = 0;
+        foreach ($todospartidos as $todos) {
+            if ($todos->clubLocalPartido == $partidos->clubLocalPartido && $todos->clubVisitaPartido==$partidos->clubVisitaPartido || $todos->clubLocalPartido == $partidos->clubVisitaPartido && $todos->clubVisitaPartido == $partidos->clubLocalPartido ) {
+                $partidos_historial[$contador]['local'] =$todos->clubLocalPartido;
+                $partidos_historial[$contador]['visita'] =$todos->clubVisitaPartido;
+                $partidos_historial[$contador]['goles_local'] =$todos->golesLocalPartido;
+                $partidos_historial[$contador]['goles_visita'] =$todos->golesVisitaPartido;
+                $contador = $contador + 1;
+            }
+            # code...
+        }
+        $contador = $contador;
         $jugadores = Jugador::all();
         $trayectoriasjugadores = TrayectoriaJugador::all();
         $historiales = DB::table('Historiales')->get();
-        //dd($partidos);
+       // dd($partidos);
         //$jugadorHistorial = $historiales['idJugador'];
-        //dd($jugadorHistorial);
+        $gol_jugador = array(array('jugador', 'apellido', 'club','gol','minutos_jugados'));
+        $contador2 = 0;
+        foreach ($historial as $his) {
+            if ($his->idPartido == $id) {
+                foreach ($jugadores as $jug) {
+                    if ($his->idJugador == $jug->idJugador) {
+                        $gol_jugador[$contador2]['jugador'] = $jug->nombreJugador;//Se le puede mandar solo el id tambien
+                        $gol_jugador[$contador2]['apellido'] = $jug->apellidosJugador;
+                        $gol_jugador[$contador2]['club'] = $jug->idClub;
+
+                        $gol_jugador[$contador2]['gol'] = $his->golJugador;
+                        $gol_jugador[$contador2]['minutos_jugados'] = $his->minutosJugador;
+                        $contador2 = $contador2 + 1;
+                    }
+                }
+            }
+        }
+        $jugadorclublocal = DB::table('Jugadores')
+                    ->join('Partidos', 'Partidos.clubLocalPartido','=','Jugadores.idClub')
+                    ->get();
+               // dd($jugadorclublocal);
+        $jugadorclubvisita = DB::table('Jugadores')
+                    ->join('Partidos', 'Partidos.clubVisitaPartido','=','Jugadores.idClub')
+                    ->get();
+       
         $jugador_partido =DB::table('Jugadores')
                         ->join('TrayectoriasJugadores', 'TrayectoriasJugadores.idJugador', '=','Jugadores.idJugador')
                         ->get();
-        //dd($jugador_partido);
-        $jugadorclub = DB::table('Clubes')
-                        ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
-                        ->get();
-        //dd($jugadorclub);
-        $jugadorclublocal = DB::table('Clubes')
-                        ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
-                        ->join('Partidos','Clubes.idClub', '=','Partidos.clubLocalPartido')                    
-                        ->get();
-       //dd($jugadorclublocal);
-        
+        $plantilla = DB::table('Historiales')
+                    ->join('Jugadores', 'Historiales.idJugador','=','Jugadores.idJugador')
+                    ->join('Partidos', 'Historiales.idPartido', '=', 'Partidos.idPartido')
+                    ->get();
+                    //sdd($plantilla);
+                     #   dd($jugador_partido);
 
-        return view('historial.create_stats',['mes' => $mes, 'dia' => $dia, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclub' => $jugadorclub]);
 
+         return view('historial.create_stats',['contador2'=>$contador2,'gol_jugador'=>$gol_jugador,'contador'=>$contador,'partidos_historial'=>$partidos_historial,'todospartidos' => $todospartidos, 'paises' => $paises,'arbitros' => $arbitros, 'partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'id' => $id, 'estadios' => $estadios, 'jugadores' => $jugadores, 'trayectoriasjugadores' => $trayectoriasjugadores, 'historiales' => $historiales, 'jugador_partido' => $jugador_partido, 'jugadorclublocal' => $jugadorclublocal, 'jugadorclubvisita' => $jugadorclubvisita, 'plantilla' => $plantilla, 'mes' => $mes, 'dia' => $dia]);
     }
     /**
      * Display the specified resource.

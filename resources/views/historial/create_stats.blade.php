@@ -73,45 +73,46 @@
 	</div>
 </div>
 <!--------------------->                        	
-<p>.</p>
-<p>.</p>
-			
-			<div class="col">
-                <div class="row">
-                    <p>
-                        <div class="card" style="width: 18rem;">
-  							<img class="card-img-top" src="" alt="Card image cap">
-  							<div class="card-body">
-    							<h5 class="card-title">NOMBRE JUGADOR LOCAL</h5>
-    							<option value="">Tarjeta Amarilla</option>
-    							<option value="">Tarjeta Roja</option>
-    							<a href="#" class="btn btn-primary">Actualizar estadisticas</a>
-  							</div>
-						</div>
-                    </p>
-                </div>
-            </div>
+<p></p>
 
-            <p></p>
+<div class="col">
+    <div class="row">
+    	@foreach($plantilla as $plan)
+		@if($plan->idPartido === $partidos->idPartido)
+            <div class="card" style="width: 9.3rem;">
+					<img class="card-img-top" src="{{asset('images/jugador/' .$plan->imagenJugador)}}" alt="Card image cap">
+					<div class="card-body">
+					<h5 class="card-title">{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</h5>
+					<a href="#" class="btn btn-primary">Estadísticas</a>
+					</div>
+			</div>
+			<div class=""></div>
+			<p></p>
+        @endif
+		@endforeach
+    </div>
+</div>
 
-            
-			<div class="col">
-                <div class="row">
-                    <p>
-                        <div class="card" style="width: 18rem;">
-  							<img class="card-img-top" src="" alt="Card image cap">
-  							<div class="card-body">
-    							<h5 class="card-title">NOMBRE JUGADOR VISITA</h5>
-    							<option value="">Tarjeta Amarilla</option>
-    							<option value="">Tarjeta Roja</option>
-    							<a href="#" class="btn btn-primary">Actualizar estadisticas</a>
-  							</div>
-						</div>
-                    </p>
-                </div>
-            </div>
+<p></p>
 
-																    			
+
+<div class="col">
+    <div class="row">
+    	@foreach($plantilla as $plan)
+		@if($plan->idPartido === $partidos->idPartido)
+            <div class="card" style="width: 9.3rem;">
+					<img class="card-img-top" src="{{asset('images/jugador/' .$plan->imagenJugador)}}" alt="Card image cap">
+					<div class="card-body">
+					<h5 class="card-title">{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</h5>
+					<a href="#" class="btn btn-primary">Estadísticas</a>
+					</div>
+			</div>
+			<div class=""></div>
+		@endif
+		@endforeach	
+    </div>
+</div>
+												    			
 																    				
 																		    			
 																		    			
