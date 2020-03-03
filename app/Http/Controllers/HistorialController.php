@@ -536,7 +536,7 @@ class HistorialController extends Controller
         $jugadorclub = DB::table('Clubes')
                         ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
                         ->get();
-       //dd($jugadorclub);
+        //dd($jugadorclub);
         $jugadorclublocal = DB::table('Clubes')
                         ->join('Jugadores','Clubes.idClub','=','Jugadores.idClub')
                         ->join('Partidos','Clubes.idClub', '=','Partidos.clubLocalPartido')                    

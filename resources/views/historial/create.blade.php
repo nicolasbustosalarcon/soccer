@@ -26,7 +26,7 @@
 							@if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
 								<div class="col-3 text-center">
 									<div>
-					       			 <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+					       			 <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
 					    			</div>
 								</div>
 							@endif
@@ -58,7 +58,7 @@
 							@if($partidos->clubVisitaPartido === $club->idClub)
 								<div class="col-3 text-center">
 									<div>
-							        <a href="http://www.conmebol.com/es/copa-libertadores-2019" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
+							        <a href="{{ route('club.show', $club->idClub)}}" ><img src="{{asset('images/club/' .$club->imagenClub)}}" width="90" height="90"><p class="text-light font-weight-bold"> {{ $club['nombreClub'] }}</p></a>
 							    </div>
 								</div>
 							@endif
