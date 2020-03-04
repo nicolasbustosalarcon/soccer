@@ -79,11 +79,23 @@
     <div class="row">
     	@foreach($plantilla as $plan)
 		@if($plan->idPartido === $partidos->idPartido)
-            <div class="card" style="width: 9.3rem;">
+            <div class="card" style="width: 11rem;">
 					<img class="card-img-top" src="{{asset('images/jugador/' .$plan->imagenJugador)}}" alt="Card image cap">
 					<div class="card-body">
 					<h5 class="card-title">{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</h5>
-					<a href="#" class="btn btn-primary">Estadísticas</a>
+					<div class="form-check">
+  					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  					<label class="form-check-label" for="defaultCheck1">
+   						Tarjeta Amarilla 
+  					</label>
+  					<p></p>
+  					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  					<label class="form-check-label" for="defaultCheck1">
+   						Tarjeta Roja
+  					</label>
+  					<p></p>
+					</div>
+					<a href="#" type="submit" class="btn btn-primary">Estadísticas</a>
 					</div>
 			</div>
 			<div class=""></div>
@@ -96,22 +108,6 @@
 <p></p>
 
 
-<div class="col">
-    <div class="row">
-    	@foreach($plantilla as $plan)
-		@if($plan->idPartido === $partidos->idPartido)
-            <div class="card" style="width: 9.3rem;">
-					<img class="card-img-top" src="{{asset('images/jugador/' .$plan->imagenJugador)}}" alt="Card image cap">
-					<div class="card-body">
-					<h5 class="card-title">{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</h5>
-					<a href="#" class="btn btn-primary">Estadísticas</a>
-					</div>
-			</div>
-			<div class=""></div>
-		@endif
-		@endforeach	
-    </div>
-</div>
 												    			
 																    				
 																		    			
