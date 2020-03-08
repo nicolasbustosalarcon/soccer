@@ -24,4 +24,25 @@ class PartidosApiController extends Controller
         return response()->json($partidos,200);
 
     }
+    public function store(Request $request)
+    {
+    	$partidos = new Partido();
+        $partidos->save();
+    }
+    public function show($id)
+    {
+        $partidos = Partido::findOrFail($id);
+        return response()->json($partidos,200);
+    }
+    public function update(Request $request, $id)
+    {
+        $partidos = Club::findOrFail($request->input('id'));
+        $partidos->update();
+
+    }
+    public function destroy($id)
+    {
+        $partidos = Club::find($id);
+        $partidos->delete();
+    }
 }
