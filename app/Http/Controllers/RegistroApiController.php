@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Hash;
 use App\Role;
+use App\RoleUser;
 use DB;
 
 class RegistroApiController extends Controller
@@ -31,14 +32,14 @@ class RegistroApiController extends Controller
         	}else {
         		foreach ($query as $q) {
         			if (password_verify($request['password'], $q->password)) {
-        				
         				$datauser = array(
         					'user_id' => $q->id,
         					'username' => $q->email,
         					'name' => $q->name,
         					'password' => $q->password
         				);
-        				$result = json_encode(array('success' => true, 'result' => $datauser));
+                        $tipo = RoleUser::where('user_id',$datauser['user_id'])->first();
+        				$result = json_encode(array('success' => true, 'result' => $datauser,'tipo' => $tipo->role_id));
         				$pas = 1;
         			}
         		}
