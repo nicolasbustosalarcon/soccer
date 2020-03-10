@@ -16,7 +16,7 @@
 					<h3 class="row justify-content-center text-warning">{{ $tor['nombreTorneo'] }}</h3><!-- Muestra los torneos que hay --></a>
 				@foreach($partidos as $part)
 
-					@if($part->idTorneo === $tor->idTorneo)
+					@if($part->idTorneo === $tor->idTorneo && $part->fechaPartido == $fecha)
 					<div class="">
 						<div class="row justify-content-center" >
 							<div class="col-4 " align="right">	
@@ -62,16 +62,18 @@
 		@endforeach	
 	</div>
 
-
-	<!--------------------BUSCADOR POR FECHA-----------------------------
-	
-			<div class="col-2">
-				<label for="">Fecha</label>
-					<input type="date" name="fecha" class="form-control">
-					<a href="">Ver partidos</a>
-
-			</div>
-			------------->
+	<div class="col-3">
+		<div class="card" style="width: 15rem;">
+  			<div class="card-body">
+    			<h5 class="card-title">Estadísticas Generales</h5>
+    			<h6 class="card-subtitle mb-2 text-muted">Tarjetas Amarillas</h6>
+    			<p class="card-text">Aquí podemos poner la info por torneo</p>
+    			<h6 class="card-subtitle mb-2 text-muted">Tarjetas Rojas</h6>
+    			<p class="card-text">No sirve de nada, pero podemos hacer un informe de la weá</p>
+    		<a href="#" class="card-link">Descargar Informe</a>
+  			</div>
+		</div>
+	</div>	
 	
 </div>
 
@@ -83,13 +85,22 @@
 	<div class="row justify-content-center" style="height:200px"> 
 		<ul class="row justify-content-center" role="" style="width: 90px;"> 
 			<li class="row justify-content-center"  role="" aria-hidden="" style="width: 200px; height: 90px; margin-right: 0px;"> 
-				<a href="torneo" class="row justify-content-center" > 
+				<a href="{{ route('torneo.index')}}"  class="row justify-content-center" > 
 					<img class="row justify-content-center" width="200" height="90" alt="UEFA" src="images/torneos/200px-Uefa_2013.png"> 
 				</a> 
 			</li>
 		</ul>
 	</div>
+	<?php
+	$fechaSig = date("m-d",strtotime($fecha."+ 1 days"));
+    $fechaAnt = date("m-d",strtotime($fecha."- 1 days"));
+	?>
+	<div >
+		<a href="/partido/{{$fecha}}/fechasAtras" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Dia Anterior {{$fechaAnt}}</span></a>
+		<a href="/partido/{{$fecha}}/fechas" class="btn btn-warning"><span class="glyphicon glyphicon-wrench">Dia Siguiente {{$fechaSig}}</span></a>
+	</div>
 </div>
+
 
 <!--------------------------------------------------------------------------------------------------------
 	<a href="/partido/create" class="btn btn-default">Crear Partido</a>

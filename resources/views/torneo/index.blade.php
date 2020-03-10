@@ -124,7 +124,7 @@
 								  		<h5>Momentos<img class="float-right" src="{{asset('images/torneos/iconos/videos.png')}}" width="42" height="42"></h5>
 								  	</div>
 								  	<div class="card-body">
-							  			<iframe width="400" height="180" src="https://www.youtube.com/embed/cZky8BgubYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							  			<iframe width="480" height="200" src="https://www.youtube.com/embed/fkN34foFr0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								    </div>
 								</div>
 							</div> 
