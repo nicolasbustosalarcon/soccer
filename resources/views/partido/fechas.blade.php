@@ -77,7 +77,9 @@
 
 <div>
 	<div class="row justify-content-center text-warning">
-		<h2> Torneos Internacionales </h2>
+		<a href="{{ route('torneo.index')}}"class="row justify-content-center" > 
+			<h2> Torneos Internacionales </h2>
+		</a>
 	</div>
 
 	<div class="row justify-content-center" style="height:200px"> 
