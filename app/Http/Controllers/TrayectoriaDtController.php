@@ -4,6 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
+use App\Partido;
+use App\Club;
+use App\Asociacion;
+use App\Estadio;
+use App\Ciudad;
+use App\Pais;
+use App\Torneo;
+use App\Arbitro;
+use App\Jugador;
+use App\TrayectoriaJugador;
+use App\Historial;
+use App\DirectorTecnico;
+use App\TrayectoriaDirectorTecnico;
+use DB;
+
 class TrayectoriaDtController extends Controller
 {
     /**
@@ -23,15 +40,15 @@ class TrayectoriaDtController extends Controller
      */
     public function create($id)
     {
-        $jugadores = Jugador::findOrFail($id);
+        $dts = DirectorTecnico::findOrFail($id);
        
         $paises         = Pais::all();
         $clubes         = Club::all();
-       $trayectorias    = TrayectoriaJugador::all();
+       $trayectorias    = TrayectoriaDirectorTecnico::all();
        $torneos         = Torneo::all();
         //dd($trayectorias);
 
-        return view('trayectoriajugador.create',['clubes' => $clubes, 'paises' => $paises,  'jugadores' => $jugadores, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
+        return view('trayectoriajugador.create',['clubes' => $clubes, 'paises' => $paises,  'dts' => $dts, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
     }
 
     /**

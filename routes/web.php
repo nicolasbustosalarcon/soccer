@@ -211,6 +211,22 @@ Route::get('trayectoriajugador/{idJugador}/create',[
 	'as'	=>	'trayectoriajugador.create']);
 });
 
+//-----------_RUtas DT trayectoria----------------_//
+
+Route::group(['middleware' =>'auth'], function(){
+Route::resource('trayectoriadt','TrayectoriaDtController');
+Route::get('trayectoriadt/{idDirectorTecnico}/destroy',[
+	'uses'	=>	'TrayectoriaDtController@destroy',
+	'as'	=>	'trayectoriadt.destroy'
+]);
+});
+//esta ruta le pasa el id del jugador para crear la trayectoria
+Route::group(['middleware' =>'auth'], function(){
+Route::get('trayectoriadt/{idDirectorTecnico}/create',[
+	'uses'	=>	'TrayectoriaDtController@create',
+	'as'	=>	'trayectoriadt.create']);
+});
+
 //**********************************************************/
 
 //--------------Rutas de User---------------//
