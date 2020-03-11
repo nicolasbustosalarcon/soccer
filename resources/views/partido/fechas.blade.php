@@ -84,7 +84,7 @@
 		<ul class="row justify-content-center" role="" style="width: 90px;"> 
 			<li class="row justify-content-center"  role="" aria-hidden="" style="width: 200px; height: 90px; margin-right: 0px;"> 
 				<a href="{{ route('torneo.index')}}"class="row justify-content-center" > 
-					<img class="row justify-content-center" width="200" height="90" alt="UEFA" src="images/torneos/200px-Uefa_2013.png"> 
+					<img class="row justify-content-center" width="200" height="90" alt="UEFA" src="{{asset('images/torneos/200px-Uefa_2013.png')}}"> 
 				</a> 
 			</li>
 		</ul>
