@@ -44,6 +44,17 @@ class ClubController extends Controller
     }
 //-------------------------------------------------------------------------------------------------------------------
 
+public function indexApi()
+    {
+        $clubes = Club::all();
+        $paises = Pais::all();
+        $asociaciones = Asociacion::all();
+        $torneos = Torneo::all();
+        
+        return response()->json($clubes,200);
+
+    }
+
 
 //------Función que retorna las variables para la vista create-------------------------------------------------------
  

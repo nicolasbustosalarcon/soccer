@@ -54,15 +54,12 @@
 
                         <label>Torneo</label>
                             <select name="idTorneo" class="form-control">
-                                <option disabled selected value>Seleciona un Club...</option>
-                                @foreach ($clubes as $club)
+                                <option disabled selected value>Seleciona un Torneo...</option>
                                     @foreach($torneos as $tor)
-                                        @if($club->idTorneo === $tor->idTorneo)
                                         <option value="{{$tor->idTorneo}}">{{$tor->nombreTorneo}}</option>
-                                        @endif
                                     @endforeach
                                     
-                                @endforeach
+                                
                             </select>
 
                         <label>Número Camiseta</label>

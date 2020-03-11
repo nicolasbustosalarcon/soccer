@@ -32,12 +32,18 @@ class JugadorController extends Controller
         $jugadores = Jugador::all();
         $paises=Pais::all();
         $clubes=Club::all();
-
+        return response()->json($jugadores,200);
         return view('jugador.index', ['paises' => $paises, 'jugadores' => $jugadores, 'clubes' => $clubes]);
 
     }
 //-------------------------------------------------------------------------------------------------------------------
-
+ public function indexApi()
+    {
+        $jugadores = Jugador::all();
+        $paises=Pais::all();
+        $clubes=Club::all();
+        return response()->json($jugadores,200);
+    }
 
 //------Función que retorna las variables para la vista create-------------------------------------------------------
     /**

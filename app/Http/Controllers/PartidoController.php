@@ -15,6 +15,7 @@ use App\Jugador;
 use App\TrayectoriaJugador;
 use App\Historial;
 use DB;
+use GuzzleHttp\Client ;
 class PartidoController extends Controller
 {
 //--------Función que retorna lo que se mostrará en el index--------------------------------------------------------
@@ -33,9 +34,67 @@ class PartidoController extends Controller
         $dia = $hoy['mday'];
         $mes = $hoy['mon'];
         $year = $hoy['year'];
+        if ($dia < 10) {
+          $dia = "0"."$dia";
+        }
+        if ($mes < 10) {
+          $mes = "0"."$mes";
+        }
         $fecha = "$year"."-"."$mes"."-"."$dia";
-        
+
+        $client = new Client([ 
+        // Base URI se usa con solicitudes relativas 
+        'base_uri' => 'http://apiclient.resultados-futbol.com/' , 
+        // Puede establecer cualquier cantidad de opciones de solicitud predeterminadas. 
+        'timeout' => 2.0 ,]);
+
+        //$partidosVivo =  $client->request('GET' ,'scripts/api/api.php?key=4630fa98fc6a1ee1f91c965d69eae01c&tz=Europe/Madrid&format=json&req=matchsday&date=2020-1-19');
+        //$partidoVivo = $partidosVivo->getBody()->getContents();
+
+        //dd($partidoVivo);
+
         return view('partido.index',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'fecha' =>$fecha]);
+    }
+    public function partidoDia($fecha)
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        //Ordenar los partidos por dia
+        $nuevaFecha = date("Y-m-d",strtotime($fecha."+ 1 days"));
+
+        return view('partido.fechas',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'nuevaFecha' =>$nuevaFecha]);
+    }
+    public function partidoDiaAtras($fecha)
+    {
+        $partidos = Partido::all();
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        //Ordenar los partidos por dia
+        $nuevaFecha = date("Y-m-d",strtotime($fecha."- 1 days"));
+
+        return view('partido.fechas',  ['partidos' => $partidos, 'clubes' => $clubes, 'torneos' => $torneos, 'nuevaFecha' =>$nuevaFecha]);
+    }
+    public function indexApi()
+    {
+  
+        
+        $clubes=Club::all();
+        $torneos=Torneo::all();
+        //Ordenar los partidos por dia
+
+        $hoy = getdate();
+        $dia = $hoy['mday'];
+        $mes = $hoy['mon'];
+        $year = $hoy['year'];
+        $fecha = "$year"."-"."$mes"."-"."$dia";
+        $partidos=DB::table('partidos as p')//Se obtienen los anuncios para la vista
+            ->join('clubes as c','p.clubLocalPartido','=','c.idClub')//Se sincroniza cada anuncio con su clave foranea
+            ->join('clubes as cl','p.clubVisitaPartido','=','cl.idClub')
+            ->join('torneos as t','p.idTorneo','=','t.idTorneo')
+            ->select('p.idPartido','c.nombreClub as clubLocal','t.nombreTorneo as nombreTorneo','p.fechaPartido','cl.nombreClub as clubVisita','c.imagenClub as imagenLocal','cl.imagenClub as imagenVisita','p.clubLocalPartido','p.clubVisitaPartido')
+            ->get();
+        return response()->json($partidos,200);
     }
 
     public function index_fechas()
@@ -263,7 +322,8 @@ class PartidoController extends Controller
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
-        return view('partido.create', ['asociaciones' => $asociaciones->toArray(), 'ciudades' => $ciudades->toArray(), 'clubes' => $clubes->toArray(), 'estadios' => $estadios->toArray(), 'paises' => $paises->toArray(), 'torneos' => $torneos->toArray(), 'arbitros' => $arbitros->toArray()]);
+        //dd($arbitros);
+        return view('partido.create', ['asociaciones' => $asociaciones->toArray(), 'ciudades' => $ciudades->toArray(), 'clubes' => $clubes->toArray(), 'estadios' => $estadios->toArray(), 'paises' => $paises->toArray(), 'torneos' => $torneos->toArray(), 'arbitros' => $arbitros]);
     }
 //------------------------------------------------------------------------------------------------------------------
 //----------------Función para guardar un nuevo dato-----------------------------------------------------------------
@@ -369,7 +429,6 @@ class PartidoController extends Controller
         $plantilla = DB::table('Historiales')
                     ->join('Jugadores', 'Historiales.idJugador','=','Jugadores.idJugador')
                     ->join('Partidos', 'Historiales.idPartido', '=', 'Partidos.idPartido')
-                    ->join('TrayectoriasJugadores', 'Jugadores.idJugador', '=', 'TrayectoriasJugadores.idJugador')
                     ->get();
                     //sdd($plantilla);
                      #   dd($jugador_partido);

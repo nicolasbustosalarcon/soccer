@@ -49,16 +49,12 @@
 	                                                            @endif    
                                                             @endforeach
                                                             <div class="row">
-                                                                <div class="col"> 
-                                                                	@foreach($partidos as $parti)
-                                                                		@if($parti->idPartido === $list->idPartido)           
-                                                                        <p>
-                                                                            <h3>
-                                                                                    {{ $parti['golesLocalPartido'] }} - {{ $parti['golesVisitaPartido'] }}
-                                                                            </h3>  
-                                                                        </p> 
-    		                                                            @endif
-    		                                                        @endforeach  
+                                                                <div class="col align-self-center"> 
+                                                                		@if($list->golesLocalPartido === null or $list->golesVisitaPartido === null)
+                                                                                <a class ="text-white" href="../../../partido/{{$list->idPartido}}/show">P.P</a>
+                                                                            @else
+                                                                                <a class ="text-white" href="../../../partido/{{$list->idPartido}}/show">{{ $list->golesLocalPartido }} - {{ $list->golesVisitaPartido }}</a>
+                                                                            @endif
                                                                 </div> 
                                                             </div> 
                                                              
@@ -75,13 +71,13 @@
                                                             @endforeach
                                                         </div>
                                                         @endforeach
-                                                        <div class="row">
+                                                        <!--div class="row">
                                                             <div class="col">
                                                                 <div class="mx-auto" style="width: 130px">
                                                                     {{ $partidos->links() }} 
                                                                 </div> 
                                                             </div>
-                                                        </div>
+                                                        </div-->
                                                     </div>  
                                                 </div>
                                             </p>

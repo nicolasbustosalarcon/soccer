@@ -55,7 +55,7 @@
       <tr>
         <td>
             <p class="izq">
-                coas
+                4-4-2 
             </p>
         </td>
         <td>
@@ -79,43 +79,49 @@
       {{ $pais['nombrePais'] }}
       @endif
       @endforeach
-      <p> Contacto: {{ $clubes['correoClub'] }} // {{ $clubes['telefonoClub'] }} </p>
-    </p>
+      
     <p>
-      Arqueros:
+      <h2>Plantel</h2>
+      <h3>Arqueros:</h3>
       @foreach($jugadores as $jug)
       @if($jug->idClub === $clubes->idClub)
       @if($jug->posicionJugador === 'Arquero')
-      {{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}
+      <p>
+        {{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}
+      </p>
       @endif
       @endif
       @endforeach
     </p>
     <p>
-      Defensas:
+      <h3>Defensas:</h3>
       @foreach($jugadores as $jug)
       @if($jug->idClub === $clubes->idClub)
       @if($jug->posicionJugador === 'Defensa')
-      {{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}
+      <p>{{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}</p>
       @endif
       @endif
       @endforeach
     </p>
     <p>
-      Mediocampistas:
+      <h3>Mediocampistas:</h3>
       @foreach($jugadores as $jug)
       @if($jug->idClub === $clubes->idClub)
       @if($jug->posicionJugador === 'Mediocampista')
+     <p> 
       {{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}
+      </p>
       @endif
       @endif
       @endforeach
     </p>
-      Delanteros:
+     <h3>Delanteros:</h3> 
       @foreach($jugadores as $jug)
       @if($jug->idClub === $clubes->idClub)
       @if($jug->posicionJugador === 'Delantero')
+     <p> 
       {{ $jug['nombreJugador'] }} {{ $jug['apellidosJugador'] }}
+      </p>
       @endif
       @endif
       @endforeach

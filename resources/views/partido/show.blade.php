@@ -203,7 +203,7 @@
 								  						@foreach($paises as $pais)
 								  							@if($pais->idPais === $est->idPais)
 								  								<p> {{ $est->nombreEstadio}} ({{ $pais->nombrePais}})</p>
-								  								<p> Publico presente: {{ $partidos->publicoPresente}} personas</p>
+								  								
 
 
 								  							@endif

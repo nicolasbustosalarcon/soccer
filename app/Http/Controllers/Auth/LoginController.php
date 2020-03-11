@@ -42,13 +42,13 @@ class LoginController extends Controller
     public function redirectPath()
     {
         if(auth()->user()->authorizeRolesLogin('user')){
-         return '/inicio';
+         return '/partido';
        }
         if(auth()->user()->authorizeRolesLogin('admin')){
          return '/admin';
        }
        if(auth()->user()->authorizeRolesLogin('comentarista')){
-         return '/inicio';
+         return '/partido';
        }
 
     }

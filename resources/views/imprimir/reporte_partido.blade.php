@@ -54,7 +54,7 @@
     <h3>vs</h3>
     <h2>@foreach($clubes as $club)
         @if($club->idClub === $partidos->clubVisitaPartido)
-            {{$club->nombreClub}} {{$partidos->golesLocalPartido}}
+            {{$club->nombreClub}} {{$partidos->golesVisitaPartido}}
         @endif
         @endforeach</h2>
   </header>
@@ -89,7 +89,7 @@
       @endif
       @endforeach
     </p>
-      publico presente: {{$partidos->publicoPresente}}
+    
     </p>
     <p>
       Fecha:{{$partidos->fechaPartido}}

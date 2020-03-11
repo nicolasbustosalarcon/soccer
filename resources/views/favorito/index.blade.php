@@ -22,7 +22,12 @@
 @if($club->idusuario === $id_u)
 @foreach($clubes as $c)
 @if($club->idClub === $c->idClub)
-<span class="float-right text-light">{{$c->nombreClub}}<img src="{{asset('images/club/' .$c->imagenClub)}}" class="img-responsive" style="width:21px !important; height:21px !important"></a></span>
+<div class="row justify-content-center">
+	<div class="col text-center">
+		<h2 class=" text-light">{{$c->nombreClub}} <img src="{{asset('images/club/' .$c->imagenClub)}}" class="img-responsive" style="width:60px !important; height:60px !important"></a></h2>
+	</div>
+</div>
+
 @endif
 @endforeach
 @endif
@@ -45,7 +50,7 @@
 									@endif
 								@endforeach
 							</div>
-							<div class="col-1 text-light" align="center">
+							<div class="col-2 text-light" align="center">
 								@if($part->estadoPartido === 'Proximo')
 									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif
@@ -92,7 +97,7 @@
 									@endif
 								@endforeach
 							</div>
-							<div class="col-1 text-light" align="center">
+							<div class="col-2 text-light" align="center">
 								@if($part->estadoPartido === 'Proximo')
 									<a href="{{ route('partido.show', $part->idPartido)}}" class="text-light"><span> {{ $part['horaPartido'] }}</span></a>
 								@endif

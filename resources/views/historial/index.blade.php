@@ -4,8 +4,9 @@
 @section ('titulo', 'Historiales')
 
 @section ('content')
-	<h2>Jugador ingresado correctamente</h2>
-	<a href="/partido" class="btn btn-default">Ver Partidos</a>
+	<div class="text-white">
+	<h2>Jugador ingresado correctamente</h2></div>
+	<a href="/partido" class="btn btn-info text-white">Ver Partidos</a>
 	
 	
 
