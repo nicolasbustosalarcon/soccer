@@ -85,8 +85,8 @@
 
 <div class="row">
 	<div class="col">
-		 <div class="panel with-nav-tabs panel-default">
-                <div class="panel-heading">
+		<div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
                     <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
 						<li class="nav-item active">
 					    	<a class="nav-link text-muted" href="#tab1default" data-toggle="tab">PARTIDO  <img width="24" height="24" src="https://image.flaticon.com/icons/png/512/33/33736.png"></a>
@@ -98,8 +98,8 @@
 					    	<a class="nav-link text-muted" href="#tab3default" data-toggle="tab">ALINEACIONES <img width="81" height="27" src="https://image.flaticon.com/icons/svg/55/55448.svg"></a>
 					  	</li>
   					</ul>
-                </div>
-                <div class="panel-body">
+            </div>
+            <div class="panel-body">
                     <div class="tab-content">
 
                     	<!--------------PARTIDO----------------------->
@@ -278,41 +278,41 @@
                         	<div class="row">
                         		<div class="col">
                         			<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
+									  <div class="card-header">Header</div>
+									  <div class="card-body">
+									    <h5 class="card-title">Secondary card title</h5>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									</div>
                         		</div>
                         	</div>
                         </div>--->
                         <!--------Alineaciones------>
                         <div class="tab-pane fade" id="tab3default">
-                        <div class="row">
-                        	
-                        	<div class="col">
-                        		<div class="row justify-content-center">
-		                        		<div class="col-6">
-		                        			<p></p>
-		                        			<div class="panel with-nav-tabs panel-default">
-								                <div class="panel-heading border bg-secondary">
-								                        <ul class="nav nav-pills nav-fill" id="myTab2" role="tablist">
-								                            <li class="nav-item actived">
-								                            	<a class="nav-link text-light " href="#local" data-toggle="tab">LOCAL</a>
-								                            </li>
-								                            <li class="nav-item">
-								                            	<a class="nav-link text-light" href="#visita" data-toggle="tab">VISITA</a>
-								                            </li>
-								                            
-								                           
-								                        </ul>
-								                </div>
+	                        <div class="row">
+	                        	
+	                        	<div class="col">
+	                        		<div class="row justify-content-center">
+			                        		<div class="col-6">
+			                        			<p></p>
+			                        			<div class="panel with-nav-tabs panel-default">
+									                <div class="panel-heading border bg-secondary">
+									                        <ul class="nav nav-pills nav-fill" id="myTab2" role="tablist">
+									                            <li class="nav-item actived">
+									                            	<a class="nav-link text-light " href="#local" data-toggle="tab">LOCAL</a>
+									                            </li>
+									                            <li class="nav-item">
+									                            	<a class="nav-link text-light" href="#visita" data-toggle="tab">VISITA</a>
+									                            </li>
+									                            
+									                           
+									                        </ul>
+									                </div>
+							               		</div>
 						               		</div>
 					               		</div>
-				               		</div>
-                        	</div>
-                        </div>
+	                        	</div>
+	                        </div>
                         <!--------ALINEACIONES--------------------->
                         
                         	<!--div class="row">
@@ -335,7 +335,7 @@
 								  						</div>
 								  						<div class="col-6">
 								  							@foreach($clubes as $club)
-								  									@if($club->idClub === $partidos->clubVisitaPartido)
+								  									@if($club->idClub === $partidos->partidos)
 								  										<img  class="float-sm-right" src="{{asset('images/club/' .$club->imagenClub)}}" width="30" height="30">
 							  										@endif
 					  										@endforeach
@@ -377,7 +377,7 @@
 								  								
 								  								<span> 
 								  								@foreach($clubes as $club)
-								  									@if($club->idClub === $partidos->clubVisitaPartido)
+								  									@if($club->idClub === $partidos->partidos)
 								  									@if($gol_jugador[$i]['club'] === $club->idClub)
 								  									{{ $gol_jugador[$i]['jugador'] }} 
 								  								{{ $gol_jugador[$i]['apellido'] }} {{$gol_jugador[$i]['gol'] }}
@@ -679,14 +679,83 @@
 								                </div>
 								            </div>	
 								            <div class="row">
-								                        	<div class="col">
-								                        		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Reporte del partido</a>
-								                        		@if(auth()->user()->authorizeRolesLogin('user'))
-								                        		<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
-								                        		@endif
+					                        	<div class="col">
+					                        		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Reporte del partido</a>
+					                        		@if(auth()->user()->authorizeRolesLogin('user'))
+					                        		<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
+					                        		@endif
 
-								                        	</div>
-								                        </div>
+					                        	</div>
+					                        </div>
+
+					                        <div class="row">
+					                        	<div class="col-6">
+					                        		<table class="table table-sm table-dark">
+													  <thead>
+													    <tr>
+													      <th scope="col">#</th>
+													      <th scope="col">First</th>
+													      <th scope="col">Last</th>
+													      <th scope="col">Handle</th>
+													    </tr>
+													  </thead>
+													  <tbody>
+													    <tr>
+													      <th scope="row">1</th>
+													      <td>Mark</td>
+													      <td>Otto</td>
+													      <td>@mdo</td>
+													    </tr>
+													    <tr>
+													      <th scope="row">2</th>
+													      <td>Jacob</td>
+													      <td>Thornton</td>
+													      <td>@fat</td>
+													    </tr>
+													    <tr>
+													      <th scope="row">3</th>
+													      <td colspan="2">Larry the Bird</td>
+													      <td>@twitter</td>
+													    </tr>
+													  </tbody>
+													</table>
+					                        	</div>
+					                        	<div class="col-6">
+					                        		<table class="table table-sm table-dark">
+													<!--TITULO LISTA ALINEACION VISITA-->
+													  <thead>
+													    <tr>
+													     
+													      <th scope="col">Nombre</th>
+													      <th scope="col">TA</th>
+													      <th scope="col">TR</th>
+													      <th scope="col">gol</th>
+													      <th scope="col">minutos</th>
+													    </tr>
+													  </thead>
+												  	<!---------------------------->
+													  <tbody>
+													  @foreach($plantilla as $plan)
+								    					@if($plan->idPartido === $partidos->idPartido)
+															    @if ($plan->idClub === $partidos->clubVisitaPartido)
+													  	
+													    <tr>
+													      <!--th scope="row">1</th-->
+													      <td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
+													      
+													      <td>{{$plan->amarillaJugador}}</td>
+													      <td>{{$plan->rojaJugador}}</td>
+													      <td>{{$plan->golJugador}}</td>
+													      <td>{{$plan->minutosJugador}}</td>
+													    </tr>
+													     @endif					
+													    @endif
+													    @endforeach
+													    
+													  </tbody>
+													</table>
+					                        	</div>
+					                        </div>
 		                        		</div>
 		                        	</div>
 	                        	</div>
@@ -694,8 +763,8 @@
                         </div>
                     
                     
-                </div>
             </div>
+        </div>
 
             
 
@@ -703,7 +772,7 @@
 <p>.</p>
 
 		
-
+</div>
   	
 </div>
 

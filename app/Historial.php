@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Historial extends Model
 {
-    protected $table = "Historiales";
+    protected $table = "historiales";
 
     protected $primaryKey='idHistorial';
 

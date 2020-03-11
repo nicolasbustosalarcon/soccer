@@ -39,6 +39,7 @@
     35 => 'App\\Providers\\RouteServiceProvider',
     36 => 'Collective\\Html\\HtmlServiceProvider',
     37 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    38 => 'Barryvdh\\Cors\\ServiceProvider',
   ),
   'eager' => 
   array (
@@ -64,6 +65,7 @@
     19 => 'App\\Providers\\EventServiceProvider',
     20 => 'App\\Providers\\RouteServiceProvider',
     21 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    22 => 'Barryvdh\\Cors\\ServiceProvider',
   ),
   'deferred' => 
   array (
