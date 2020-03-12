@@ -1974,13 +1974,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador14" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador14" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2004,13 +2004,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2034,13 +2034,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador16" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador16" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2064,13 +2064,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2094,13 +2094,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2124,13 +2124,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador5" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador5" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2154,13 +2154,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2184,13 +2184,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador18" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador18" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2214,13 +2214,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2244,13 +2244,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador16" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador16" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2274,13 +2274,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2304,13 +2304,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador18" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador18" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2334,13 +2334,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador19" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador19" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2364,13 +2364,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2394,13 +2394,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2424,13 +2424,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2454,13 +2454,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2484,13 +2484,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2514,13 +2514,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2544,13 +2544,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador23" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador23" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2574,13 +2574,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2604,13 +2604,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2634,13 +2634,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2664,13 +2664,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador23" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador23" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2694,13 +2694,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador24" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador24" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2724,13 +2724,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2754,13 +2754,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2784,13 +2784,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador26" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador26" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2814,13 +2814,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2844,13 +2844,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador26" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador26" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2874,13 +2874,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador27" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador27" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2904,13 +2904,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador0" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador0" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2934,13 +2934,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2964,13 +2964,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -2994,13 +2994,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3024,13 +3024,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3054,13 +3054,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3084,13 +3084,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3114,13 +3114,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador4" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador4" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3144,13 +3144,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3174,13 +3174,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3204,13 +3204,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3234,13 +3234,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador4" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador4" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3264,13 +3264,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador5" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador5" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3294,13 +3294,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3324,13 +3324,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3354,13 +3354,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3384,13 +3384,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3414,13 +3414,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3444,13 +3444,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3474,13 +3474,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador9" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador9" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3504,13 +3504,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3534,13 +3534,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3564,13 +3564,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3594,13 +3594,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador9" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador9" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3624,13 +3624,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador10" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador10" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3654,13 +3654,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3684,13 +3684,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3714,13 +3714,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador12" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador12" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3744,13 +3744,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3763,7 +3763,7 @@ Add Stats!
   </div>
 </div>
 		<!-- Modal -->
-<div class="modal fade" id="modalQuintoDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalQuintoDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -3774,13 +3774,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador12" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador12" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
@@ -3804,13 +3804,13 @@ Add Stats!
       </div>
       <div class="modal-body">
         <div class="form-check">
-		  <input class="form-check-input" name="amarillaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="amarillaJugador13" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Amarilla
 		  </label>
 		</div>
 		<div class="form-check">
-		  <input class="form-check-input" name="rojaJugador" type="checkbox" value="1" id="defaultCheck1">
+		  <input class="form-check-input" name="rojaJugador13" type="checkbox" value="1" id="defaultCheck1">
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
