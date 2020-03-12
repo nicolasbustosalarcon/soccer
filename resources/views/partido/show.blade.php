@@ -731,6 +731,11 @@
 													      <th scope="col">TR</th>
 													      <th scope="col">gol</th>
 													      <th scope="col">minutos</th>
+													      @if(auth()->user()->authorizeRolesLogin('user'))
+					                        				<th>
+					                        					<a href="/historial/{{$partidos->idPartido}}/create" class="">Editar</a>
+				                        					</th>
+				                        				@endif
 													    </tr>
 													  </thead>
 												  	<!---------------------------->
