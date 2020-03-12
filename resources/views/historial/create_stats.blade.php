@@ -94,6 +94,11 @@
    						Tarjeta Roja
   					</label>
   					<p></p>
+  					<div class="form-group">
+    					<label for="formControlRange">Minutos Jugados</label>
+    					<input type="range" class="form-control-range" id="formControlRange">
+  					</div>
+  					<p></p>
 					</div>
 					<a href="#" type="submit" class="btn btn-primary">Estadísticas</a>
 					</div>
