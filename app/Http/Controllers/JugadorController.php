@@ -124,10 +124,11 @@ class JugadorController extends Controller
         $clubes = Club::all();
         $trayectorias = DB::table('TrayectoriasJugadores as tj')
         ->join('clubes as c','tj.idClub','=','c.idClub')
-        ->select('tj.camisetaJugador','c.nombreClub as nombreClub','c.imagenClub as imagen','tj.idClub')
+        ->select('tj.camisetaJugador','c.nombreClub as nombreClub','c.imagenClub as imagen','tj.idClub', 'tj.idTorneo')
         ->where('tj.idJugador','=',$id)
         ->get();
         $torneos = Torneo::all();
+       // dd($trayectorias);
         return view('jugador.show',['clubes' => $clubes, 'paises' => $paises,  'jugadores' => $jugadores, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
     }
 
