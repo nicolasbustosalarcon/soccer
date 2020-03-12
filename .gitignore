@@ -2876,4 +2876,8 @@ vendor/webmozart/assert/LICENSE
 OBOBOBvendor/webmozart/assert/README.md
 vendor/webmozart/assert/composer.json
 vendor/webmozart/assert/src/Assert.php
+bootstrap/cache/services.php
+bootstrap/cache/services.php
+storage/logs/laravel.log
+
 
