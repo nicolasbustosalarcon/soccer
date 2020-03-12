@@ -693,32 +693,36 @@
 					                        <div class="row">
 					                        	<div class="col-6">
 					                        		<table class="table table-sm table-dark">
+													<!--TITULO LISTA ALINEACION VISITA-->
 													  <thead>
 													    <tr>
-													      <th scope="col">#</th>
-													      <th scope="col">First</th>
-													      <th scope="col">Last</th>
-													      <th scope="col">Handle</th>
+													     
+													      <th scope="col">Nombre</th>
+													      <th scope="col">TA</th>
+													      <th scope="col">TR</th>
+													      <th scope="col">gol</th>
+													      <th scope="col">minutos</th>
 													    </tr>
 													  </thead>
+												  	<!---------------------------->
 													  <tbody>
+													  @foreach($plantilla as $plan)
+								    					@if($plan->idPartido === $partidos->idPartido)
+															    @if ($plan->idClub === $partidos->clubLocalPartido)
+													  	
 													    <tr>
-													      <th scope="row">1</th>
-													      <td>Mark</td>
-													      <td>Otto</td>
-													      <td>@mdo</td>
+													      <!--th scope="row">1</th-->
+													      <td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
+													      
+													      <td>{{$plan->amarillaJugador}}</td>
+													      <td>{{$plan->rojaJugador}}</td>
+													      <td>{{$plan->golJugador}}</td>
+													      <td>{{$plan->minutosJugador}}</td>
 													    </tr>
-													    <tr>
-													      <th scope="row">2</th>
-													      <td>Jacob</td>
-													      <td>Thornton</td>
-													      <td>@fat</td>
-													    </tr>
-													    <tr>
-													      <th scope="row">3</th>
-													      <td colspan="2">Larry the Bird</td>
-													      <td>@twitter</td>
-													    </tr>
+													     @endif					
+													    @endif
+													    @endforeach
+													    
 													  </tbody>
 													</table>
 					                        	</div>
