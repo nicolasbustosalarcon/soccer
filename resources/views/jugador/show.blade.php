@@ -259,6 +259,40 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>
+                         <div class="row">
+                                    <div class="col-12 text-secondary">
+                                        <small>Temporada</small>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                        <td>
+                         <div class="row">
+                                    <div class="col-12 text-secondary">
+                                        <small>Club</small>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                        <td>
+                         <div class="row">
+                                    <div class="col-12 text-secondary">
+                                        <small>Torneo</small>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                        <td>
+                         <div class="row">
+                                    <div class="col-12 text-secondary">
+                                        <small>Camiseta</small>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                    </tr>
                 @foreach ($trayectorias as $t)
                     
                 
@@ -267,9 +301,7 @@
                              @foreach ($torneos as $tor)
                                 @if ($t->idTorneo === $tor->idTorneo)
                                 <div class="row">
-                                    <div class="col-12 text-secondary">
-                                        <small>Temporada</small>
-                                    </div>
+                                  
                                     <div class="col-12">
                                         {{$tor->edicion}} 
                                     </div>
@@ -282,9 +314,7 @@
                                 @if ($t->idClub === $club->idClub)
                                     
                             <div class="row">
-                                <div class="col-12 text-secondary">
-                                    <small>Club</small>
-                                </div>
+                                
                                 <div class="col-12">
                                     {{$club->nombreClub}} 
                                 </div>
@@ -297,9 +327,7 @@
                              @foreach ($torneos as $tor)
                                 @if ($t->idTorneo === $tor->idTorneo)
                                 <div class="row">
-                                    <div class="col-12 text-secondary">
-                                        <small>Torneo</small>
-                                    </div>
+                                    
                                     <div class="col-12">
                                         {{$tor->nombreTorneo}} 
                                     </div>
@@ -310,9 +338,7 @@
 
                         <td>
                             <div class="row">
-                                <div class="col-12 text-secondary">
-                                    <small>Camiseta</small>
-                                </div>
+                                
                                 <div class="col-12">
                                    # {{$t->camisetaJugador}} 
                                 </div>
