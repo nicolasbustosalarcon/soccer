@@ -1926,12 +1926,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador14" id="customRange2">
+			<label for="customRange0">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador14" id="customRange0">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -1971,12 +1973,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+			<label for="customRange1">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange1">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2022,6 +2026,8 @@
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2061,12 +2067,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+			<label for="customRange3">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange3">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2106,12 +2114,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+			<label for="customRange4">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange4">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2151,12 +2161,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+			<label for="customRange5">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange5>
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2196,12 +2208,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+			<label for="customRange6">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange6">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2241,12 +2255,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+			<label for="customRange7">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange7">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2286,12 +2302,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+			<label for="customRange8">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange8">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2331,12 +2349,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+			<label for="customRange9">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange9">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2376,12 +2396,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+			<label for="customRange10">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange10">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2421,12 +2443,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+			<label for="customRange11">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange11">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2466,12 +2490,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador19" id="customRange2">
+			<label for="customRange12">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador19" id="customRange12">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2511,12 +2537,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+			<label for="customRange13">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange13">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2556,12 +2584,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+			<label for="customRange14">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange14">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2601,12 +2631,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+			<label for="customRange15">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange15">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2646,12 +2678,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+			<label for="customRange16">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange16">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2691,12 +2725,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+			<label for="customRange17">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange17">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2736,12 +2772,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+			<label for="customRange18">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange18">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2781,12 +2819,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+			<label for="customRange19">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange19">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2826,12 +2866,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+			<label for="customRange20">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange20">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2871,12 +2913,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+			<label for="customRange21">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange21">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2916,12 +2960,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+			<label for="customRange22">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange22">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -2961,12 +3007,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+			<label for="customRange23">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange23">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3006,12 +3054,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador24" id="customRange2">
+			<label for="customRange24">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador24" id="customRange24">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3051,12 +3101,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+			<label for="customRange25">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange25">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3096,12 +3148,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+			<label for="customRange26">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange26">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3141,12 +3195,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+			<label for="customRange27">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange27">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3186,12 +3242,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+			<label for="customRange28">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange28">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3231,12 +3289,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+			<label for="customRange29">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange29">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3276,12 +3336,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador27" id="customRange2">
+			<label for="customRange30">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador27" id="customRange30">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3321,12 +3383,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador0" id="customRange2">
+			<label for="customRange31">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador0" id="customRange31>
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3366,12 +3430,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+			<label for="customRange32">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange32">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3411,12 +3477,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+			<label for="customRange33">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange33">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3456,12 +3524,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+			<label for="customRange34">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange34">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3501,12 +3571,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+			<label for="customRange35">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange35">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3546,12 +3618,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+			<label for="customRange36">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange36">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3591,12 +3665,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+			<label for="customRange37">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange37">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3636,12 +3712,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+			<label for="customRange38">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange38">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3681,12 +3759,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+			<label for="customRange39">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange39">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3726,12 +3806,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+			<label for="customRange40">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange40">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3771,12 +3853,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+			<label for="customRange41">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange41">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3816,12 +3900,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+			<label for="customRange42">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange42">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3861,12 +3947,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+			<label for="customRange43">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange43">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3906,12 +3994,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+			<label for="customRange44">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange44">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3951,12 +4041,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+			<label for="customRange45">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange45">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -3996,12 +4088,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+			<label for="customRange46">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange46">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4041,12 +4135,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+			<label for="customRange47">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange47">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4086,12 +4182,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+			<label for="customRange48">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange48">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4131,12 +4229,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+			<label for="customRange49">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange49">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4176,12 +4276,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+			<label for="customRange50">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange50">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4221,12 +4323,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+			<label for="customRange51">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange51">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4266,12 +4370,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+			<label for="customRange52">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange52">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4311,12 +4417,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+			<label for="customRange53">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange53">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4356,12 +4464,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+			<label for="customRange54">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange54">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4401,12 +4511,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador10" id="customRange2">
+			<label for="customRange55">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador10" id="customRang55">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4446,12 +4558,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+			<label for="customRange56">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange56">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4491,12 +4605,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+			<label for="customRange57">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange57">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4536,12 +4652,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+			<label for="customRange58">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange58">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4581,12 +4699,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+			<label for="customRange59">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange59">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4626,12 +4746,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+			<label for="customRange60">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange60">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
@@ -4671,12 +4793,14 @@
 		</div>
 		<p></p>
 		<div>
-			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador13" id="customRange2">
+			<label for="customRange61">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador13" id="customRange61">
 		</div>
 		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect1">
+		      
+		      <option>0</option>
 		      <option>1</option>
 		      <option>2</option>
 		      <option>3</option>
