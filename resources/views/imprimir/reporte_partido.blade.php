@@ -82,6 +82,7 @@
       @endif
       @endforeach
     </p>
+    
     <p>
       @foreach($estadios as $est)
       @if($partidos->idEstadio === $est->idEstadio)
@@ -97,8 +98,44 @@
     <p>
       Hora:{{$partidos->horaPartido}}
     </p>
+    <h2>Alineaciones</h2>
     <p>
       
+      <?php
+      $local = false;
+      $visita = false;
+      ?>
+      @foreach($historial as $his)
+      @if($partidos->idPartido === $his->idPartido)
+      @foreach($jugadores as $jug)
+      @if($jug->idJugador === $his->idJugador)
+      <?php
+      $pos = strpos($his->Titular, 'L');
+      ?>
+      @if($pos === false)
+      @if($visita === false)
+      <h3>Visita</h3>
+      @endif
+      <?php
+      $visita = true;
+      ?>
+      <p>{{$jug->nombreJugador}} {{$jug->apellidosJugador}} 
+      </p>
+      @endif
+      @if($pos != false)
+      @if($local === false)
+      <h3>Local</h3>
+      @endif
+      <?php
+      $local = true;
+      ?>
+      <p>{{$jug->nombreJugador}} {{$jug->apellidosJugador}}
+      </p>
+      @endif
+      @endif
+      @endforeach
+      @endif
+      @endforeach
     </p>
   </div>
 </body>

@@ -684,39 +684,45 @@
 					                        		@if(auth()->user()->authorizeRolesLogin('user'))
 					                        		<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
 					                        		@endif
-
+					                        		<button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-auto border" data-toggle="modal" data-target="#statsModal">
+					                        		Ver Estadísticas
+					                        	</button>
 					                        	</div>
 					                        </div>
 
 					                        <div class="row">
 					                        	<div class="col-6">
 					                        		<table class="table table-sm table-dark">
+													<!--TITULO LISTA ALINEACION VISITA-->
 													  <thead>
 													    <tr>
-													      <th scope="col">#</th>
-													      <th scope="col">First</th>
-													      <th scope="col">Last</th>
-													      <th scope="col">Handle</th>
+													     
+													      <th scope="col">Nombre</th>
+													      <th scope="col">TA</th>
+													      <th scope="col">TR</th>
+													      <th scope="col">gol</th>
+													      <th scope="col">minutos</th>
 													    </tr>
 													  </thead>
+												  	<!---------------------------->
 													  <tbody>
+													  @foreach($plantilla as $plan)
+								    					@if($plan->idPartido === $partidos->idPartido)
+															    @if ($plan->idClub === $partidos->clubLocalPartido)
+													  	
 													    <tr>
-													      <th scope="row">1</th>
-													      <td>Mark</td>
-													      <td>Otto</td>
-													      <td>@mdo</td>
+													      <!--th scope="row">1</th-->
+													      <td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
+													      
+													      <td>{{$plan->amarillaJugador}}</td>
+													      <td>{{$plan->rojaJugador}}</td>
+													      <td>{{$plan->golJugador}}</td>
+													      <td>{{$plan->minutosJugador}}</td>
 													    </tr>
-													    <tr>
-													      <th scope="row">2</th>
-													      <td>Jacob</td>
-													      <td>Thornton</td>
-													      <td>@fat</td>
-													    </tr>
-													    <tr>
-													      <th scope="row">3</th>
-													      <td colspan="2">Larry the Bird</td>
-													      <td>@twitter</td>
-													    </tr>
+													     @endif					
+													    @endif
+													    @endforeach
+													    
 													  </tbody>
 													</table>
 					                        	</div>
@@ -778,6 +784,67 @@
 
 		
 </div>
+  	
+</div>
+
+
+
+
+								                       
+
+            
+
+<p>.</p>
+<p>.</p>
+
+	<!-- Modal -->
+	<div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Estadísticas del Partido</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="col-12">
+	      		<table class="table table-sm table-dark">
+	      			<!--TITULO LISTA ALINEACION VISITA-->
+	      			<thead>
+	      				<tr>
+	      					<th scope="col">Nombre</th>
+	      					<th scope="col">TA</th>
+	      					<th scope="col">TR</th>
+	      					<th scope="col">gol</th>
+	      					<th scope="col">minutos</th>
+	      				</tr>
+	      			</thead>
+	      			<tbody>
+	      				@foreach($plantilla as $plan)
+	      				@if($plan->idPartido === $partidos->idPartido)
+	      				@if ($plan->idClub === $partidos->clubVisitaPartido)
+	      				<tr>
+	      					<td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
+	      					<td>{{$plan->amarillaJugador}}</td>
+	      					<td>{{$plan->rojaJugador}}</td>
+	      					<td>{{$plan->golJugador}}</td>
+	      					<td>{{$plan->minutosJugador}}</td>
+	      				</tr>
+	      				@endif
+	      				@endif
+	      				@endforeach
+	      			</tbody>
+	      		</table>
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>		
+
   	
 </div>
 

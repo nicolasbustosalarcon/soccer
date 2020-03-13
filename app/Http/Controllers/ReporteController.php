@@ -47,13 +47,14 @@ class ReporteController extends Controller
         $asociaciones=Asociacion::all();
         $clubes=Club::all();
         $ciudades=Ciudad::all();
+        $jugadores=Jugador::all();
         $estadios=Estadio::all();
         $paises=Pais::all();
         $torneos=Torneo::all();
         $arbitros=Arbitro::all();
         $todospartidos=Partido::all();
         $historial=Historial::all();
-        $pdf = PDF::loadView('imprimir.reporte_partido', compact('paises','partidos','clubes','asociaciones','torneos','arbitros','todospartidos','historial','estadios'));
+        $pdf = PDF::loadView('imprimir.reporte_partido', compact('paises','jugadores','partidos','clubes','asociaciones','torneos','arbitros','todospartidos','historial','estadios'));
         return $pdf->download('reporte_partido.pdf');
     }
 
