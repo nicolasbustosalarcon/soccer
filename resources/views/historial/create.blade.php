@@ -1975,7 +1975,6 @@
 		</div>
 		    <label for="exampleFormControlSelect">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect">
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2022,7 +2021,6 @@
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2068,7 +2066,6 @@
 		</div>
 		    <label for="exampleFormControlSelect2">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect2">
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2115,7 +2112,6 @@
 		    <label for="exampleFormControlSelect3">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect3">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2162,7 +2158,6 @@
 		    <label for="exampleFormControlSelect4">Goles Jugador</label>
 		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect4">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2209,7 +2204,6 @@
 		    <label for="exampleFormControlSelect5">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect5">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2256,7 +2250,6 @@
 		    <label for="exampleFormControlSelect6">Goles Jugador</label>
 		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect6">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2303,7 +2296,6 @@
 		    <label for="exampleFormControlSelect7">Goles Jugador</label>
 		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect7">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2350,7 +2342,6 @@
 		    <label for="exampleFormControlSelect9">Goles Jugador</label>
 		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect9">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2397,7 +2388,6 @@
 		    <label for="exampleFormControlSelect9">Goles Jugador</label>
 		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect9">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2444,7 +2434,6 @@
 		    <label for="exampleFormControlSelect10">Goles Jugador</label>
 		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect10">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2491,7 +2480,6 @@
 		    <label for="exampleFormControlSelect11">Goles Jugador</label>
 		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect11">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2538,7 +2526,6 @@
 		    <label for="exampleFormControlSelect12">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect12">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2585,7 +2572,6 @@
 		    <label for="exampleFormControlSelect13">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect13">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2632,7 +2618,6 @@
 		    <label for="exampleFormControlSelect14">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect14">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2679,7 +2664,6 @@
 		    <label for="exampleFormControlSelect15">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect15">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2726,7 +2710,6 @@
 		    <label for="exampleFormControlSelect16">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect16">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2773,7 +2756,6 @@
 		    <label for="exampleFormControlSelect17">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect17">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2820,7 +2802,6 @@
 		    <label for="exampleFormControlSelect18">Goles Jugador</label>
 		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect18">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2867,7 +2848,6 @@
 		    <label for="exampleFormControlSelect19">Goles Jugador</label>
 		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect19">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2914,7 +2894,6 @@
 		    <label for="exampleFormControlSelect20">Goles Jugador</label>
 		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect20">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -2961,7 +2940,6 @@
 		    <label for="exampleFormControlSelect21">Goles Jugador</label>
 		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect21">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3008,7 +2986,6 @@
 		    <label for="exampleFormControlSelect22">Goles Jugador</label>
 		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect22">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3055,7 +3032,6 @@
 		    <label for="exampleFormControlSelect23">Goles Jugador</label>
 		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect23">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3102,7 +3078,6 @@
 		    <label for="exampleFormControlSelect24">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect24">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3149,7 +3124,6 @@
 		    <label for="exampleFormControlSelect25">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect25">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3196,7 +3170,6 @@
 		    <label for="exampleFormControlSelect26">Goles Jugador</label>
 		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect26">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3243,7 +3216,6 @@
 		    <label for="exampleFormControlSelect27">Goles Jugador</label>
 		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect27">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3289,7 +3261,6 @@
 		</div>
 		    <label for="exampleFormControlSelect29">Goles Jugador</label>
 		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect29">
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3336,7 +3307,6 @@
 		    <label for="exampleFormControlSelect30">Goles Jugador</label>
 		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect30">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3430,7 +3400,6 @@
 		    <label for="exampleFormControlSelect32">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect32">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3477,7 +3446,6 @@
 		    <label for="exampleFormControlSelect33">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect33">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3524,7 +3492,6 @@
 		    <label for="exampleFormControlSelect34">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect34">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3571,7 +3538,6 @@
 		    <label for="exampleFormControlSelect35">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect35">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3618,7 +3584,6 @@
 		    <label for="exampleFormControlSelect36">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect36">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3665,7 +3630,6 @@
 		    <label for="exampleFormControlSelect37">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect37">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3712,7 +3676,6 @@
 		    <label for="exampleFormControlSelect38">Goles Jugador</label>
 		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect38">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3759,7 +3722,6 @@
 		    <label for="exampleFormControlSelect39">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect39">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3806,7 +3768,6 @@
 		    <label for="exampleFormControlSelect40">Goles Jugador</label>
 		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect40">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3853,7 +3814,6 @@
 		    <label for="exampleFormControlSelect41">Goles Jugador</label>
 		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect41">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3900,7 +3860,6 @@
 		    <label for="exampleFormControlSelect42">Goles Jugador</label>
 		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect42">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3947,7 +3906,6 @@
 		    <label for="exampleFormControlSelect43">Goles Jugador</label>
 		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect43">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -3994,7 +3952,6 @@
 		    <label for="exampleFormControlSelect44">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect44">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4041,7 +3998,6 @@
 		    <label for="exampleFormControlSelect45">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect45">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4088,7 +4044,6 @@
 		    <label for="exampleFormControlSelect46">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect46">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4135,7 +4090,6 @@
 		    <label for="exampleFormControlSelect47">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect47">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4182,7 +4136,6 @@
 		    <label for="exampleFormControlSelect48">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect48">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4229,7 +4182,6 @@
 		    <label for="exampleFormControlSelect49">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect49">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4276,7 +4228,6 @@
 		    <label for="exampleFormControlSelect50">Goles Jugador</label>
 		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect50">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4323,7 +4274,6 @@
 		    <label for="exampleFormControlSelect51">Goles Jugador</label>
 		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect51">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4370,7 +4320,6 @@
 		    <label for="exampleFormControlSelect52">Goles Jugador</label>
 		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect52">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4417,7 +4366,6 @@
 		    <label for="exampleFormControlSelect53">Goles Jugador</label>
 		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect53">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4464,7 +4412,6 @@
 		    <label for="exampleFormControlSelect54">Goles Jugador</label>
 		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect54">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4511,7 +4458,6 @@
 		    <label for="exampleFormControlSelect55">Goles Jugador</label>
 		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect55">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4558,7 +4504,6 @@
 		    <label for="exampleFormControlSelect56">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect56">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4605,7 +4550,6 @@
 		    <label for="exampleFormControlSelect57">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect57">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4652,7 +4596,6 @@
 		    <label for="exampleFormControlSelect58">Goles Jugador</label>
 		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect58">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4699,7 +4642,6 @@
 		    <label for="exampleFormControlSelect59">Goles Jugador</label>
 		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect59">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4746,7 +4688,6 @@
 		    <label for="exampleFormControlSelect60">Goles Jugador</label>
 		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect60">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
@@ -4793,7 +4734,6 @@
 		    <label for="exampleFormControlSelect61">Goles Jugador</label>
 		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect61">
 		      
-		      <option value="10">-</option>
 		      <option value="0">0</option>
 		      <option value="1">1</option>
 		      <option value="2">2</option>
