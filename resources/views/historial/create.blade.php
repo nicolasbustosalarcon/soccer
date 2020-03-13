@@ -215,8 +215,7 @@
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular15" class="form-control">
@@ -233,8 +232,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular16" class="form-control">
@@ -250,8 +248,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular17" class="form-control">
@@ -291,8 +288,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
@@ -308,8 +304,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
@@ -325,8 +320,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
@@ -342,8 +336,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSeptimoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular18" class="form-control" >
@@ -383,8 +376,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOctavoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
@@ -400,8 +392,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalNovenoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
@@ -417,8 +408,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDecimoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
@@ -434,8 +424,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOnceavoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular18" class="form-control" >
@@ -451,8 +440,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDoceavoDefensa">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoDefensa">
 </button>
 <p></p>
 																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular19" class="form-control">
@@ -529,8 +517,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
@@ -546,8 +533,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
@@ -563,8 +549,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
@@ -604,8 +589,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
@@ -621,8 +605,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
@@ -638,8 +621,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
@@ -655,8 +637,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSeptimoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
@@ -696,8 +677,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOctavoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
@@ -713,8 +693,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalNovenoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
@@ -730,8 +709,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDecimoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
@@ -747,8 +725,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOnceavoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
@@ -764,8 +741,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDoceavoMediocampo">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoMediocampo">
 </button>
 <p></p>
 																									    <input type="text" value="MC-5-L" style="visibility:hidden" name="Titular24" class="form-control">
@@ -845,8 +821,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-L" style="visibility:hidden" name="Titular25" class="form-control">
@@ -889,8 +864,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
@@ -906,8 +880,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
@@ -950,8 +923,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
@@ -967,8 +939,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
@@ -984,8 +955,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoDelantero">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDelantero">
 </button>
 <p></p>
 																									    <input type="text" value="DC-3-L" style="visibility:hidden" name="Titular27" class="form-control">
@@ -1075,8 +1045,7 @@ Add Stats!
 															        @endforeach
 															    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalArquero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalArquero1">
 </button>
 <p></p>
 														   
@@ -1142,8 +1111,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular1" class="form-control">
@@ -1159,8 +1127,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular2" class="form-control">
@@ -1176,8 +1143,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular3" class="form-control">
@@ -1217,8 +1183,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular1" class="form-control">
@@ -1234,8 +1199,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular2" class="form-control">
@@ -1251,8 +1215,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular3" class="form-control">
@@ -1268,8 +1231,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSeptimoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular4" class="form-control" >
@@ -1309,8 +1271,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOctavoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular1" class="form-control">
@@ -1326,8 +1287,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalNovenoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular2" class="form-control">
@@ -1343,8 +1303,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDecimoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular3" class="form-control">
@@ -1360,8 +1319,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOnceavoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular4" class="form-control" >
@@ -1377,8 +1335,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDoceavoDefensa1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoDefensa1">
 </button>
 <p></p>
 																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular5" class="form-control">
@@ -1455,8 +1412,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
@@ -1472,8 +1428,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
@@ -1489,8 +1444,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
@@ -1530,8 +1484,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
@@ -1547,8 +1500,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
@@ -1564,8 +1516,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
@@ -1581,8 +1532,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSeptimoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular9" class="form-control">
@@ -1622,8 +1572,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOctavoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
@@ -1639,8 +1588,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalNovenoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
@@ -1656,8 +1604,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDecimoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
@@ -1673,8 +1620,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalOnceavoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular9" class="form-control">
@@ -1690,8 +1636,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalDoceavoMediocampo1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoMediocampo1">
 </button>
 <p></p>
 																									    <input type="text" value="MC-5" style="visibility:hidden" name="Titular10" class="form-control">
@@ -1771,8 +1716,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPrimerDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC" style="visibility:hidden" name="Titular11" class="form-control">
@@ -1815,8 +1759,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSegundoDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular11" class="form-control">
@@ -1832,8 +1775,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalTercerDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular12" class="form-control">
@@ -1876,8 +1818,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCuartoDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular11" class="form-control">
@@ -1893,8 +1834,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalQuintoDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular12" class="form-control">
@@ -1910,8 +1850,7 @@ Add Stats!
 																									        @endforeach
 																									    </select></p>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalSextoDelantero1">
-Add Stats!
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDelantero1">
 </button>
 <p></p>
 																									    <input type="text" value="DC-3" style="visibility:hidden" name="Titular13" class="form-control">
@@ -1985,6 +1924,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador14" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2014,6 +1968,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2045,6 +2014,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2074,6 +2058,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2105,6 +2104,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2134,6 +2148,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2165,6 +2194,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2194,6 +2238,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2225,6 +2284,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2254,6 +2328,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2285,6 +2374,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2314,6 +2418,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2345,6 +2464,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador19" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2374,6 +2508,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2405,6 +2554,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2434,6 +2598,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2465,6 +2644,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2494,6 +2688,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2525,6 +2734,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2554,6 +2778,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2585,6 +2824,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2614,6 +2868,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2645,6 +2914,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2674,6 +2958,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2705,6 +3004,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador24" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2734,6 +3048,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2765,6 +3094,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2794,6 +3138,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2825,6 +3184,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2854,6 +3228,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2885,6 +3274,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador27" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2914,6 +3318,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador0" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -2945,6 +3364,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2974,6 +3408,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3005,6 +3454,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3034,6 +3498,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3065,6 +3544,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3094,6 +3588,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3125,6 +3634,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3154,6 +3678,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3185,6 +3724,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3214,6 +3768,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3245,6 +3814,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3274,6 +3858,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3305,6 +3904,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3334,6 +3948,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3365,6 +3994,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3394,6 +4038,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3425,6 +4084,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3454,6 +4128,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3485,6 +4174,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3514,6 +4218,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3545,6 +4264,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3574,6 +4308,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3605,6 +4354,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3634,6 +4398,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador10" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3665,6 +4444,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3694,6 +4488,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3725,6 +4534,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3754,6 +4578,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
@@ -3785,6 +4624,21 @@ Add Stats!
 		    Tarjeta Roja
 		  </label>
 		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3814,6 +4668,21 @@ Add Stats!
 		  <label class="form-check-label" for="defaultCheck1">
 		    Tarjeta Roja
 		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador13" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
 		</div>
       </div>
       <div class="modal-footer">
