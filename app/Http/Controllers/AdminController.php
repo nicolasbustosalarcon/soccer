@@ -37,19 +37,19 @@ class AdminController extends Controller
         
         $request->user()->authorizeRoles('admin'); //Se valida que el usuario que verá estos datos sea de tipo administrador
 
-        $arbitros = Arbitro::all();
-        $asociaciones=Asociacion::all();
-        $paises=Pais::all();
-        $federaciones=Federacion::all();
-        $ciudades = Ciudad::select()->paginate(10);
-        $clubes = Club::select()->paginate(10);
-        $torneos = Torneo::all();
-        $confederaciones = Confederacion::all();
-        $continentes=Continente::all();
-        $directorestecnicos = DirectorTecnico::all();
-        $estadios = Estadio::all();
+        $arbitros = Arbitro::select()->paginate(5);
+        $asociaciones=Asociacion::select()->paginate(5);
+        $paises=Pais::select()->paginate(5);
+        $federaciones=Federacion::select()->paginate(5);
+        $ciudades = Ciudad::select()->paginate(5);
+        $clubes = Club::select()->paginate(5);
+        $torneos = Torneo::select()->paginate(5);
+        $confederaciones = Confederacion::select()->paginate(5);
+        $continentes=Continente::select()->paginate(5);
+        $directorestecnicos = DirectorTecnico::select()->paginate(5);
+        $estadios = Estadio::select()->paginate(5);
         $jugadores = Jugador::select()->paginate(5);
-        $users = User::all();
+        $users = User::select()->paginate(5);
         $partido = Partido::select()->paginate(5);
         /*if ($request)
         {
