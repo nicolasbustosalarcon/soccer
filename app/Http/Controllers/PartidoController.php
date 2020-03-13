@@ -422,7 +422,7 @@ class PartidoController extends Controller
         $jugadorclubvisita = DB::table('Jugadores')
                     ->join('Partidos', 'Partidos.clubVisitaPartido','=','Jugadores.idClub')
                     ->get();
-       
+                 // dd($jugadorclubvisita);
         $jugador_partido =DB::table('Jugadores')
                         ->join('TrayectoriasJugadores', 'TrayectoriasJugadores.idJugador', '=','Jugadores.idJugador')
                         ->get();
@@ -430,7 +430,7 @@ class PartidoController extends Controller
                     ->join('Jugadores', 'Historiales.idJugador','=','Jugadores.idJugador')
                     ->join('Partidos', 'Historiales.idPartido', '=', 'Partidos.idPartido')
                     ->get();
-                    //sdd($plantilla);
+                    //dd($plantilla);
                      #   dd($jugador_partido);
 
 
@@ -536,8 +536,8 @@ class PartidoController extends Controller
         $arbitros=Arbitro::all();
         return view('partido.plantillacreate', ['asociaciones' => $asociaciones->toArray(), 'ciudades' => $ciudades->toArray(), 'clubes' => $clubes->toArray(), 'estadios' => $estadios->toArray(), 'paises' => $paises->toArray(), 'torneos' => $torneos->toArray(), 'arbitros' => $arbitros->toArray()]);
     }
-    public function editplantilla (Request $request, $id){
-        $request->user()->authorizeRoles('admin');
+    public function plantillaedit (Request $request, $id){
+        $request->user()->authorizeRoles('user');
     }
     public function updateplantilla(Request $request, $id)
     {   

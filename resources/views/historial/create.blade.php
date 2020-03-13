@@ -148,7 +148,10 @@
 															            @endif
 															        @endforeach
 															    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button"  class="fas fa-edit" data-toggle="modal" data-target="#modalArquero">
+</button>
+<p></p>
 														   
 																
 																<input type="text" value="GK-L" style="visibility:hidden" name="Titular14" class="form-control">
@@ -211,8 +214,12 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular15" class="form-control">
+
 
 																									    <p><select name="idJugador16" class="form-control">
 																									        <option disabled selected value>Seleciona un Jugador...</option>
@@ -224,7 +231,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
@@ -237,7 +247,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    
@@ -274,7 +287,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
 
 																									    <p><select name="idJugador16" class="form-control">
@@ -287,7 +303,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
@@ -300,7 +319,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    <p><select name="idJugador18" class="form-control">
@@ -313,6 +335,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular18" class="form-control" >
 
 																									    
@@ -349,7 +375,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFI-L" style="visibility:hidden" name="Titular15" class="form-control">
 
 																									    <p><select name="idJugador16" class="form-control">
@@ -362,7 +391,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1-L" style="visibility:hidden" name="Titular16" class="form-control">
 
 																									    <p><select name="idJugador17" class="form-control">
@@ -375,7 +407,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2-L" style="visibility:hidden" name="Titular17" class="form-control">
 
 																									    <p><select name="idJugador18" class="form-control">
@@ -388,6 +423,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-3-L" style="visibility:hidden" name="Titular18" class="form-control" >
 
 																									    <p><select name="idJugador19" class="form-control">
@@ -400,7 +439,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoDefensa">
+</button>
+<p></p>
 																									    <input type="text" value="DFD-L" style="visibility:hidden" name="Titular19" class="form-control">
 
 																									    
@@ -474,7 +516,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
@@ -487,7 +532,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
@@ -500,7 +548,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    
@@ -537,7 +588,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
@@ -550,7 +604,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
@@ -563,7 +620,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    <p><select name="idJugador23" class="form-control">
@@ -576,7 +636,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
 
 																									    
@@ -613,7 +676,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1-L" style="visibility:hidden" name="Titular20" class="form-control">
 
 																									    <p><select name="idJugador21" class="form-control">
@@ -626,7 +692,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2-L" style="visibility:hidden" name="Titular21" class="form-control">
 
 																									    <p><select name="idJugador22" class="form-control">
@@ -639,7 +708,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3-L" style="visibility:hidden" name="Titular22" class="form-control">
 
 																									    <p><select name="idJugador23" class="form-control">
@@ -652,7 +724,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-4-L" style="visibility:hidden" name="Titular23" class="form-control">
 
 																									    <p><select name="idJugador24" class="form-control">
@@ -665,7 +740,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoMediocampo">
+</button>
+<p></p>
 																									    <input type="text" value="MC-5-L" style="visibility:hidden" name="Titular24" class="form-control">
 
 																									    
@@ -742,7 +820,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    
@@ -782,7 +863,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    <p><select name="idJugador26" class="form-control">
@@ -795,7 +879,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
 
 																									    
@@ -835,7 +922,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-1-L" style="visibility:hidden" name="Titular25" class="form-control">
 
 																									    <p><select name="idJugador26" class="form-control">
@@ -848,7 +938,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-2-L" style="visibility:hidden" name="Titular26" class="form-control">
 
 																									    <p><select name="idJugador27" class="form-control">
@@ -861,7 +954,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDelantero">
+</button>
+<p></p>
 																									    <input type="text" value="DC-3-L" style="visibility:hidden" name="Titular27" class="form-control">
 
 																									    
@@ -948,7 +1044,10 @@
 															            @endif
 															        @endforeach
 															    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalArquero1">
+</button>
+<p></p>
 														   
 																
 																<input type="text" value="GK" style="visibility:hidden" name="Titular0" class="form-control">
@@ -1011,7 +1110,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular1" class="form-control">
 
 																									    <p><select name="idJugador2" class="form-control">
@@ -1024,7 +1126,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular2" class="form-control">
 
 																									    <p><select name="idJugador3" class="form-control">
@@ -1037,7 +1142,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular3" class="form-control">
 
 																									    
@@ -1074,7 +1182,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular1" class="form-control">
 
 																									    <p><select name="idJugador2" class="form-control">
@@ -1087,7 +1198,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular2" class="form-control">
 
 																									    <p><select name="idJugador3" class="form-control">
@@ -1100,7 +1214,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular3" class="form-control">
 
 																									    <p><select name="idJugador4" class="form-control">
@@ -1113,6 +1230,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular4" class="form-control" >
 
 																									    
@@ -1149,7 +1270,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFI" style="visibility:hidden" name="Titular1" class="form-control">
 
 																									    <p><select name="idJugador2" class="form-control">
@@ -1162,7 +1286,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-1" style="visibility:hidden" name="Titular2" class="form-control">
 
 																									    <p><select name="idJugador3" class="form-control">
@@ -1175,7 +1302,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-2" style="visibility:hidden" name="Titular3" class="form-control">
 
 																									    <p><select name="idJugador4" class="form-control">
@@ -1188,6 +1318,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFC-3" style="visibility:hidden" name="Titular4" class="form-control" >
 
 																									    <p><select name="idJugador5" class="form-control">
@@ -1200,7 +1334,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoDefensa1">
+</button>
+<p></p>
 																									    <input type="text" value="DFD" style="visibility:hidden" name="Titular5" class="form-control">
 
 																									    
@@ -1274,7 +1411,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
 
 																									    <p><select name="idJugador7" class="form-control">
@@ -1287,7 +1427,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
 
 																									    <p><select name="idJugador8" class="form-control">
@@ -1300,7 +1443,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
 
 																									    
@@ -1337,7 +1483,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
 
 																									    <p><select name="idJugador7" class="form-control">
@@ -1350,7 +1499,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
 
 																									    <p><select name="idJugador8" class="form-control">
@@ -1363,7 +1515,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
 
 																									    <p><select name="idJugador9" class="form-control">
@@ -1376,7 +1531,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSeptimoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular9" class="form-control">
 
 																									    
@@ -1413,7 +1571,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOctavoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-1" style="visibility:hidden" name="Titular6" class="form-control">
 
 																									    <p><select name="idJugador7" class="form-control">
@@ -1426,7 +1587,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalNovenoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-2" style="visibility:hidden" name="Titular7" class="form-control">
 
 																									    <p><select name="idJugador8" class="form-control">
@@ -1439,7 +1603,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDecimoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-3" style="visibility:hidden" name="Titular8" class="form-control">
 
 																									    <p><select name="idJugador9" class="form-control">
@@ -1452,7 +1619,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalOnceavoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-4" style="visibility:hidden" name="Titular9" class="form-control">
 
 																									    <p><select name="idJugador10" class="form-control">
@@ -1465,7 +1635,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalDoceavoMediocampo1">
+</button>
+<p></p>
 																									    <input type="text" value="MC-5" style="visibility:hidden" name="Titular10" class="form-control">
 
 																									    
@@ -1542,7 +1715,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalPrimerDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC" style="visibility:hidden" name="Titular11" class="form-control">
 
 																									    
@@ -1582,7 +1758,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSegundoDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular11" class="form-control">
 
 																									    <p><select name="idJugador12" class="form-control">
@@ -1595,7 +1774,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalTercerDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular12" class="form-control">
 
 																									    
@@ -1635,7 +1817,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalCuartoDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC-1" style="visibility:hidden" name="Titular11" class="form-control">
 
 																									    <p><select name="idJugador12" class="form-control">
@@ -1648,7 +1833,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalQuintoDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC-2" style="visibility:hidden" name="Titular12" class="form-control">
 
 																									    <p><select name="idJugador13" class="form-control">
@@ -1661,7 +1849,10 @@
 																									            @endif
 																									        @endforeach
 																									    </select></p>
-
+<!-- Button trigger modal -->
+<button type="button" class="fas fa-edit" data-toggle="modal" data-target="#modalSextoDelantero1">
+</button>
+<p></p>
 																									    <input type="text" value="DC-3" style="visibility:hidden" name="Titular13" class="form-control">
 
 																									    
@@ -1710,6 +1901,2797 @@
 						</div>
 					</div>
 	        	</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalArquero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador14" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador14" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador14" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador16" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador16" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador5" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador5" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSeptimoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador18" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador18" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOctavoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador15" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalNovenoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador16" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador16" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDecimoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador17" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOnceavoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador18" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador18" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDoceavoDefensa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador19" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador19" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador19" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSeptimoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador23" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador23" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOctavoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador20" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalNovenoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador21" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDecimoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador22" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOnceavoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador23" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador23" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDoceavoMediocampo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador24" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador24" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador24" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador26" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador26" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador25" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador26" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador26" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoDelantero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador27" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador27" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador27" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalArquero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador0" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador0" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador0" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSeptimoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador4" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador4" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOctavoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador1" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalNovenoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador2" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDecimoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador3" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOnceavoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador4" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador4" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDoceavoDefensa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador5" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador5" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSeptimoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador9" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador9" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOctavoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador6" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalNovenoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador7" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDecimoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador8" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalOnceavoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador9" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador9" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalDoceavoMediocampo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador10" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador10" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador10" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalPrimerDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSegundoDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalTercerDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador12" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador12" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalCuartoDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador11" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalQuintoDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador12" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador12" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- Modal -->
+<div class="modal fade" id="modalSextoDelantero1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selecciona los Valores para las Estadísticas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+		  <input class="form-check-input" name="amarillaJugador13" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Amarilla
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" name="rojaJugador13" type="checkbox" value="1" id="defaultCheck1">
+		  <label class="form-check-label" for="defaultCheck1">
+		    Tarjeta Roja
+		  </label>
+		</div>
+		<p></p>
+		<div>
+			<label for="customRange2">Minutos Jugados</label>
+			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador13" id="customRange2">
+		</div>
+		<div class="form-group">
+		    <label for="exampleFormControlSelect1">Goles Jugador</label>
+		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect1">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 	        	<button type="submit" class="btn btn-primary">Guardar</button>
 
 			</form>					                        
@@ -1719,6 +4701,7 @@
 
 <p>.</p>
 <p>.</p>
+
 
 		<div class="col">
                 <div class="row">
