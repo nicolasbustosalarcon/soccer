@@ -685,87 +685,16 @@
 					                        		<a href="/historial/{{$partidos->idPartido}}/create" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Ingresar plantilla</a>
 					                        		@endif
 					                        		<button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-auto border" data-toggle="modal" data-target="#statsModal">
-					                        		Ver Estadísticas
+					                        		Estadísticas Visita
+					                        	</button>
+					                        	<button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-auto border" data-toggle="modal" data-target="#statsModal2">
+					                        		Estadísticas Local
 					                        	</button>
 					                        	</div>
 					                        </div>
 
-					                        <div class="row">
-					                        	<div class="col-6">
-					                        		<table class="table table-sm table-dark">
-													<!--TITULO LISTA ALINEACION VISITA-->
-													  <thead>
-													    <tr>
-													     
-													      <th scope="col">Nombre</th>
-													      <th scope="col">TA</th>
-													      <th scope="col">TR</th>
-													      <th scope="col">gol</th>
-													      <th scope="col">minutos</th>
-													    </tr>
-													  </thead>
-												  	<!---------------------------->
-													  <tbody>
-													  @foreach($plantilla as $plan)
-								    					@if($plan->idPartido === $partidos->idPartido)
-															    @if ($plan->idClub === $partidos->clubLocalPartido)
-													  	
-													    <tr>
-													      <!--th scope="row">1</th-->
-													      <td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
-													      
-													      <td>{{$plan->amarillaJugador}}</td>
-													      <td>{{$plan->rojaJugador}}</td>
-													      <td>{{$plan->golJugador}}</td>
-													      <td>{{$plan->minutosJugador}}</td>
-													    </tr>
-													     @endif					
-													    @endif
-													    @endforeach
-													    
-													  </tbody>
-													</table>
-					                        	</div>
-					                        	<div class="col-6">
-					                        		<table class="table table-sm table-dark">
-													<!--TITULO LISTA ALINEACION VISITA-->
-													  <thead>
-													    <tr>
-													     
-													      <th scope="col">Nombre</th>
-													      <th scope="col">TA</th>
-													      <th scope="col">TR</th>
-													      <th scope="col">gol</th>
-													      <th scope="col">minutos</th>
-													      @if(auth()->user()->authorizeRolesLogin('user'))
-					                        				<th>
-					                        					<a href="/historial/{{$partidos->idPartido}}/create" class="">Editar</a>
-				                        					</th>
-				                        				@endif
-													    </tr>
-													  </thead>
-												  	<!---------------------------->
-													  <tbody>
-													  @foreach($plantilla as $plan)
-								    					@if($plan->idPartido === $partidos->idPartido)
-															    @if ($plan->idClub === $partidos->clubVisitaPartido)
-													  	
-													    <tr>
-													      <!--th scope="row">1</th-->
-													      <td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
-													      
-													      <td>{{$plan->amarillaJugador}}</td>
-													      <td>{{$plan->rojaJugador}}</td>
-													      <td>{{$plan->golJugador}}</td>
-													      <td>{{$plan->minutosJugador}}</td>
-													    </tr>
-													     @endif					
-													    @endif
-													    @endforeach
-													    
-													  </tbody>
-													</table>
-					                        	</div>
+					                        
+					                        	
 					                        </div>
 		                        		</div>
 		                        	</div>
@@ -845,6 +774,52 @@
 	  </div>
 	</div>		
 
+	<div class="modal fade" id="statsModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Estadísticas del Partido</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="col-12">
+	      		<table class="table table-sm table-dark">
+	      			<!--TITULO LISTA ALINEACION VISITA-->
+	      			<thead>
+	      				<tr>
+	      					<th scope="col">Nombre</th>
+	      					<th scope="col">TA</th>
+	      					<th scope="col">TR</th>
+	      					<th scope="col">gol</th>
+	      					<th scope="col">minutos</th>
+	      				</tr>
+	      			</thead>
+	      			<tbody>
+	      				@foreach($plantilla as $plan)
+	      				@if($plan->idPartido === $partidos->idPartido)
+	      				@if ($plan->idClub === $partidos->clubLocalPartido)
+	      				<tr>
+	      					<td>{{$plan->nombreJugador}} {{$plan->apellidosJugador}}</td>
+	      					<td>{{$plan->amarillaJugador}}</td>
+	      					<td>{{$plan->rojaJugador}}</td>
+	      					<td>{{$plan->golJugador}}</td>
+	      					<td>{{$plan->minutosJugador}}</td>
+	      				</tr>
+	      				@endif
+	      				@endif
+	      				@endforeach
+	      			</tbody>
+	      		</table>
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
   	
 </div>
 
