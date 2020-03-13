@@ -184,7 +184,7 @@
                     @foreach($trayectorias as $t)
                         @if ($t->idClub === $jugadores->idClub)
                             
-                          <h5><strong><img src="{{asset('images/club/' .$t->imagen)}}" class="img-responsive" style="width:40px !important; height:40px !important"></strong></h5>
+                          <h5><strong><img src="{{asset('images/club/' .$jugadores->imagenJugador)}}" class="img-responsive" style="width:40px !important; height:40px !important"></strong></h5>
                         @endif
                     @endforeach
                 </div>
