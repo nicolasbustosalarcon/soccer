@@ -1927,20 +1927,17 @@
 		<p></p>
 		<div>
 			<label for="customRange0">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador14" id="customRange0">
+			<input type="range" min="0" max="90" class="custom-range" value="90"  name="minutosJugador14" id="customRange0">
 		</div>
-		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
-		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		    <select class="form-control" name="golJugador14" id="exampleFormControlSelect1">
+			      <option class="text" value="0">0</option>
+			      <option class="text" value="1">1</option>
+			      <option class="text" value="2">2</option>
+			      <option class="text" value="3">3</option>
+			      <option class="text" value="4">4</option>
+			      <option class="text" value="5">5</option>
 		    </select>
-		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -1974,20 +1971,19 @@
 		<p></p>
 		<div>
 			<label for="customRange1">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange1">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador15" id="customRange1">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
-		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		    <label for="exampleFormControlSelect">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect">
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2021,20 +2017,20 @@
 		<p></p>
 		<div>
 			<label for="customRange2">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange2">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador16" id="customRange2">
 		</div>
-		<div class="form-group">
 		    <label for="exampleFormControlSelect1">Goles Jugador</label>
 		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2068,20 +2064,19 @@
 		<p></p>
 		<div>
 			<label for="customRange3">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange3">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador17" id="customRange3">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
-		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		    <label for="exampleFormControlSelect2">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect2">
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2115,20 +2110,20 @@
 		<p></p>
 		<div>
 			<label for="customRange4">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange4">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador15" id="customRange4">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect3">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect3">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2162,20 +2157,20 @@
 		<p></p>
 		<div>
 			<label for="customRange5">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange5>
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador5" id="customRange5">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect4">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect4">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2209,20 +2204,20 @@
 		<p></p>
 		<div>
 			<label for="customRange6">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange6">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador17" id="customRange6">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect5">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect5">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2256,20 +2251,20 @@
 		<p></p>
 		<div>
 			<label for="customRange7">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange7">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador18" id="customRange7">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect6">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect6">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2303,20 +2298,20 @@
 		<p></p>
 		<div>
 			<label for="customRange8">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador15" id="customRange8">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador15" id="customRange8">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect7">Goles Jugador</label>
+		    <select class="form-control" name="golJugador15" id="exampleFormControlSelect7">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2350,20 +2345,20 @@
 		<p></p>
 		<div>
 			<label for="customRange9">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador16" id="customRange9">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador16" id="customRange9">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect9">Goles Jugador</label>
+		    <select class="form-control" name="golJugador16" id="exampleFormControlSelect9">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2397,20 +2392,20 @@
 		<p></p>
 		<div>
 			<label for="customRange10">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador17" id="customRange10">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador17" id="customRange10">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect9">Goles Jugador</label>
+		    <select class="form-control" name="golJugador17" id="exampleFormControlSelect9">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2444,20 +2439,20 @@
 		<p></p>
 		<div>
 			<label for="customRange11">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador18" id="customRange11">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador18" id="customRange11">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect10">Goles Jugador</label>
+		    <select class="form-control" name="golJugador18" id="exampleFormControlSelect10">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2491,20 +2486,20 @@
 		<p></p>
 		<div>
 			<label for="customRange12">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador19" id="customRange12">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador19" id="customRange12">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect11">Goles Jugador</label>
+		    <select class="form-control" name="golJugador19" id="exampleFormControlSelect11">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2538,20 +2533,20 @@
 		<p></p>
 		<div>
 			<label for="customRange13">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange13">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador20" id="customRange13">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect12">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect12">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2585,20 +2580,20 @@
 		<p></p>
 		<div>
 			<label for="customRange14">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange14">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador21" id="customRange14">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect13">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect13">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2632,20 +2627,20 @@
 		<p></p>
 		<div>
 			<label for="customRange15">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange15">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador22" id="customRange15">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect14">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect14">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2679,20 +2674,20 @@
 		<p></p>
 		<div>
 			<label for="customRange16">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange16">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador20" id="customRange16">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect15">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect15">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2726,20 +2721,20 @@
 		<p></p>
 		<div>
 			<label for="customRange17">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange17">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador21" id="customRange17">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect16">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect16">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2773,20 +2768,20 @@
 		<p></p>
 		<div>
 			<label for="customRange18">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange18">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador22" id="customRange18">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect17">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect17">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2820,20 +2815,20 @@
 		<p></p>
 		<div>
 			<label for="customRange19">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange19">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador23" id="customRange19">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect18">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect18">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2867,20 +2862,20 @@
 		<p></p>
 		<div>
 			<label for="customRange20">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador20" id="customRange20">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador20" id="customRange20">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect19">Goles Jugador</label>
+		    <select class="form-control" name="golJugador20" id="exampleFormControlSelect19">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2914,20 +2909,20 @@
 		<p></p>
 		<div>
 			<label for="customRange21">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador21" id="customRange21">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador21" id="customRange21">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect20">Goles Jugador</label>
+		    <select class="form-control" name="golJugador21" id="exampleFormControlSelect20">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -2961,20 +2956,20 @@
 		<p></p>
 		<div>
 			<label for="customRange22">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador22" id="customRange22">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador22" id="customRange22">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect21">Goles Jugador</label>
+		    <select class="form-control" name="golJugador22" id="exampleFormControlSelect21">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3008,20 +3003,20 @@
 		<p></p>
 		<div>
 			<label for="customRange23">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador23" id="customRange23">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador23" id="customRange23">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect22">Goles Jugador</label>
+		    <select class="form-control" name="golJugador23" id="exampleFormControlSelect22">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3055,20 +3050,20 @@
 		<p></p>
 		<div>
 			<label for="customRange24">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador24" id="customRange24">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador24" id="customRange24">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect23">Goles Jugador</label>
+		    <select class="form-control" name="golJugador24" id="exampleFormControlSelect23">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3102,20 +3097,20 @@
 		<p></p>
 		<div>
 			<label for="customRange25">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange25">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador25" id="customRange25">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect24">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect24">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3149,20 +3144,20 @@
 		<p></p>
 		<div>
 			<label for="customRange26">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange26">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador25" id="customRange26">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect25">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect25">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3196,20 +3191,20 @@
 		<p></p>
 		<div>
 			<label for="customRange27">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange27">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador26" id="customRange27">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect26">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect26">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3243,20 +3238,20 @@
 		<p></p>
 		<div>
 			<label for="customRange28">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador25" id="customRange28">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador25" id="customRange28">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect27">Goles Jugador</label>
+		    <select class="form-control" name="golJugador25" id="exampleFormControlSelect27">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3290,20 +3285,19 @@
 		<p></p>
 		<div>
 			<label for="customRange29">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador26" id="customRange29">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador26" id="customRange29">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect1">
-		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		    <label for="exampleFormControlSelect29">Goles Jugador</label>
+		    <select class="form-control" name="golJugador26" id="exampleFormControlSelect29">
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3337,20 +3331,20 @@
 		<p></p>
 		<div>
 			<label for="customRange30">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador27" id="customRange30">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador27" id="customRange30">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect30">Goles Jugador</label>
+		    <select class="form-control" name="golJugador27" id="exampleFormControlSelect30">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3384,20 +3378,21 @@
 		<p></p>
 		<div>
 			<label for="customRange31">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador0" id="customRange31>
+			<input type="range" min="0" max="90" class="custom-range" value="90" value="90" name="minutosJugador0" id="customRange31">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect31">Goles Jugador</label>
+		    <select class="form-control" name="golJugador0" id="exampleFormControlSelect31>
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option value="10">-</select>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3431,20 +3426,20 @@
 		<p></p>
 		<div>
 			<label for="customRange32">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange32">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador1" id="customRange32">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect32">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect32">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3478,20 +3473,20 @@
 		<p></p>
 		<div>
 			<label for="customRange33">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange33">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador2" id="customRange33">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect33">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect33">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3525,20 +3520,20 @@
 		<p></p>
 		<div>
 			<label for="customRange34">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange34">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador3" id="customRange34">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect34">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect34">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3572,20 +3567,20 @@
 		<p></p>
 		<div>
 			<label for="customRange35">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange35">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador1" id="customRange35">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect35">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect35">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3619,20 +3614,20 @@
 		<p></p>
 		<div>
 			<label for="customRange36">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange36">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador2" id="customRange36">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect36">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect36">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3666,20 +3661,20 @@
 		<p></p>
 		<div>
 			<label for="customRange37">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange37">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador3" id="customRange37">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect37">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect37">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3713,20 +3708,20 @@
 		<p></p>
 		<div>
 			<label for="customRange38">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange38">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador4" id="customRange38">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect38">Goles Jugador</label>
+		    <select class="form-control" name="golJugador4" id="exampleFormControlSelect38">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3760,20 +3755,20 @@
 		<p></p>
 		<div>
 			<label for="customRange39">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador1" id="customRange39">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador1" id="customRange39">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect39">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect39">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3807,20 +3802,20 @@
 		<p></p>
 		<div>
 			<label for="customRange40">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador2" id="customRange40">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador2" id="customRange40">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect40">Goles Jugador</label>
+		    <select class="form-control" name="golJugador2" id="exampleFormControlSelect40">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3854,20 +3849,20 @@
 		<p></p>
 		<div>
 			<label for="customRange41">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador3" id="customRange41">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador3" id="customRange41">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect41">Goles Jugador</label>
+		    <select class="form-control" name="golJugador3" id="exampleFormControlSelect41">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3901,20 +3896,20 @@
 		<p></p>
 		<div>
 			<label for="customRange42">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador4" id="customRange42">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador4" id="customRange42">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect42">Goles Jugador</label>
+		    <select class="form-control" name="golJugador1" id="exampleFormControlSelect42">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3948,20 +3943,20 @@
 		<p></p>
 		<div>
 			<label for="customRange43">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador5" id="customRange43">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador5" id="customRange43">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect43">Goles Jugador</label>
+		    <select class="form-control" name="golJugador5" id="exampleFormControlSelect43">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -3995,20 +3990,20 @@
 		<p></p>
 		<div>
 			<label for="customRange44">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange44">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador6" id="customRange44">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect44">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect44">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4042,20 +4037,20 @@
 		<p></p>
 		<div>
 			<label for="customRange45">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange45">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador7" id="customRange45">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect45">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect45">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4089,20 +4084,20 @@
 		<p></p>
 		<div>
 			<label for="customRange46">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange46">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador8" id="customRange46">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect46">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect46">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4136,20 +4131,20 @@
 		<p></p>
 		<div>
 			<label for="customRange47">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange47">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador6" id="customRange47">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect47">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect47">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4183,20 +4178,20 @@
 		<p></p>
 		<div>
 			<label for="customRange48">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange48">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador7" id="customRange48">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect48">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect48">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4230,20 +4225,20 @@
 		<p></p>
 		<div>
 			<label for="customRange49">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange49">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador8" id="customRange49">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect49">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect49">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4277,20 +4272,20 @@
 		<p></p>
 		<div>
 			<label for="customRange50">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange50">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador9" id="customRange50">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect50">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect50">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4324,20 +4319,20 @@
 		<p></p>
 		<div>
 			<label for="customRange51">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador6" id="customRange51">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador6" id="customRange51">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect51">Goles Jugador</label>
+		    <select class="form-control" name="golJugador6" id="exampleFormControlSelect51">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4371,20 +4366,20 @@
 		<p></p>
 		<div>
 			<label for="customRange52">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador7" id="customRange52">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador7" id="customRange52">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect52">Goles Jugador</label>
+		    <select class="form-control" name="golJugador7" id="exampleFormControlSelect52">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4418,20 +4413,20 @@
 		<p></p>
 		<div>
 			<label for="customRange53">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador8" id="customRange53">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador8" id="customRange53">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect53">Goles Jugador</label>
+		    <select class="form-control" name="golJugador8" id="exampleFormControlSelect53">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4465,20 +4460,20 @@
 		<p></p>
 		<div>
 			<label for="customRange54">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador9" id="customRange54">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador9" id="customRange54">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect54">Goles Jugador</label>
+		    <select class="form-control" name="golJugador9" id="exampleFormControlSelect54">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4512,20 +4507,20 @@
 		<p></p>
 		<div>
 			<label for="customRange55">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador10" id="customRang55">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador10" id="customRange55">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect55">Goles Jugador</label>
+		    <select class="form-control" name="golJugador10" id="exampleFormControlSelect55">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4559,20 +4554,20 @@
 		<p></p>
 		<div>
 			<label for="customRange56">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange56">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador11" id="customRange56">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect56">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect56">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4606,20 +4601,20 @@
 		<p></p>
 		<div>
 			<label for="customRange57">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange57">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador11" id="customRange57">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect57">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect57">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4653,20 +4648,20 @@
 		<p></p>
 		<div>
 			<label for="customRange58">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange58">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador12" id="customRange58">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect58">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect58">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4700,20 +4695,20 @@
 		<p></p>
 		<div>
 			<label for="customRange59">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador11" id="customRange59">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador11" id="customRange59">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect59">Goles Jugador</label>
+		    <select class="form-control" name="golJugador11" id="exampleFormControlSelect59">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4747,20 +4742,20 @@
 		<p></p>
 		<div>
 			<label for="customRange60">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador12" id="customRange60">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador12" id="customRange60">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect60">Goles Jugador</label>
+		    <select class="form-control" name="golJugador12" id="exampleFormControlSelect60">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -4794,20 +4789,20 @@
 		<p></p>
 		<div>
 			<label for="customRange61">Minutos Jugados</label>
-			<input type="range" min="0" max="90" class="custom-range" name="minutosJugador13" id="customRange61">
+			<input type="range" min="0" max="90" class="custom-range" value="90" name="minutosJugador13" id="customRange61">
 		</div>
-		<div class="form-group">
-		    <label for="exampleFormControlSelect1">Goles Jugador</label>
-		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect1">
+		    <label for="exampleFormControlSelect61">Goles Jugador</label>
+		    <select class="form-control" name="golJugador13" id="exampleFormControlSelect61">
 		      
-		      <option>0</option>
-		      <option>1</option>
-		      <option>2</option>
-		      <option>3</option>
-		      <option>4</option>
-		      <option>5</option>
+		      <option> Seleccione una cantidad de goles</option>
+		      <option value="0">0</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
 		    </select>
-		</div>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
