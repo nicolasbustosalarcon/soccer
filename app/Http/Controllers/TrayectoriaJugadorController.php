@@ -11,6 +11,8 @@ use App\Club;
 use App\Jugador;
 use App\TrayectoriaJugador;
 use App\Torneo;
+use DB;
+
 
 class TrayectoriaJugadorController extends Controller
 {
@@ -35,8 +37,13 @@ class TrayectoriaJugadorController extends Controller
        
         $paises         = Pais::all();
         $clubes         = Club::all();
-       $trayectorias    = TrayectoriaJugador::all();
+       $trayectorias = DB::table('TrayectoriasJugadores as tj')
+        ->join('clubes as c','tj.idClub','=','c.idClub')
+        //->select('tj.camisetaJugador','c.nombreClub as nombreClub','c.imagenClub as imagen','tj.idClub', 'tj.idTorneo')
+        ->where('tj.idJugador','=',$id)
+        ->get();
        $torneos         = Torneo::all();
+        
         //dd($trayectorias);
 
         return view('trayectoriajugador.create',['clubes' => $clubes, 'paises' => $paises,  'jugadores' => $jugadores, 'trayectorias' => $trayectorias, 'torneos' => $torneos]);
