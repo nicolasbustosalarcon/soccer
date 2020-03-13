@@ -679,6 +679,7 @@
 								                </div>
 								            </div>	
 								            <div class="row">
+
 					                        	<div class="col">
 					                        		<a href="{{ route('imprimir.reporte_partido', $partidos->idPartido)}}" class="btn btn-outline-success my-2 my-sm-0 mx-auto border">Reporte del partido</a>
 					                        		@if(auth()->user()->authorizeRolesLogin('user'))
@@ -696,6 +697,7 @@
 					                        
 					                        	
 					                        </div>
+
 		                        		</div>
 		                        	</div>
 	                        	</div>
@@ -725,6 +727,7 @@
 
 <p>.</p>
 <p>.</p>
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="statsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

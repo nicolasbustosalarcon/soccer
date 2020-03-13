@@ -534,7 +534,11 @@
 							</tr>
 						@endforeach
 					</tbody>
+
 				</table>
+				<div class="mx-auto" style="width: 130px">
+                        {{ $clubes->links() }} 
+        		</div>
 
 			</div>
 		</div>
@@ -579,6 +583,9 @@
 						@endforeach
 					</tbody>
 				</table>
+				<div class="mx-auto" style="width: 130px">
+                        {{ $clubes->links() }} 
+        		</div>
 
 			</div>
 		</div>
@@ -694,7 +701,10 @@
 							@endforeach
 						</tbody>
 					</table>
-<div class="col">
+
+					<div class="mx-auto" style="width: 130px">
+                        {{ $clubes->links() }} 
+        		</div><div class="col">
                 <div class="row">
                     <p>
                         
@@ -776,6 +786,7 @@
 						@endforeach
 					</tbody>
 				</table>
+
 				<div class="col">
                 <div class="row">
                     <p>
@@ -783,6 +794,9 @@
                     </p>
                 </div>
             </div>
+            <div class="mx-auto" style="width: 130px">
+                        {{ $clubes->links() }} 
+        		</div>
             <div class="col">
                 <div class="row">
                     <p>
