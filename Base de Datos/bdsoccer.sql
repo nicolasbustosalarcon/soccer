@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-03-2020 a las 03:50:32
+-- Tiempo de generación: 13-03-2020 a las 06:19:39
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.3
 
@@ -413,7 +413,24 @@ INSERT INTO `jugadores` (`idJugador`, `nombreJugador`, `apellidosJugador`, `naci
 (7, 'Jean', 'Beausejour', '1984-06-01', 35, 'Defensa', 178, 83, 'izquierdo', 13, NULL, NULL, NULL, NULL, 0x6a65616e2e706e67, 1),
 (8, 'Lucas', 'Aveldaño', '1985-07-19', 33, 'Defensa', 185, 82, 'derecho', 13, NULL, NULL, NULL, NULL, 0x6c756361732e706e67, 2),
 (9, 'Sergio', 'Vittor', '1989-06-09', 30, 'Defensa', 189, 86, 'derecho', 13, NULL, NULL, NULL, NULL, 0x766974746f722e706e67, 2),
-(10, 'Matías', 'Rodriguez', '1986-04-14', 33, 'Defensa', 178, 71, 'derecho', 13, NULL, NULL, NULL, NULL, 0x6d617469726f6472696775657a2e706e67, 2);
+(10, 'Matías', 'Rodriguez', '1986-04-14', 33, 'Defensa', 178, 71, 'derecho', 13, NULL, NULL, NULL, NULL, 0x6d617469726f6472696775657a2e706e67, 2),
+(11, 'Jorge', 'Deschamps', '1984-05-13', 35, 'Arquero', 182, 77, 'izquierdo', 41, NULL, NULL, NULL, NULL, 0x6465736368616d70732e706e67, 1),
+(12, 'Felipe', 'Saavedra', '1996-09-26', 23, 'Defensa', 172, 67, 'izquierdo', 41, NULL, NULL, NULL, NULL, 0x32373931312e706e67, 1),
+(13, 'Mario', 'Parra', '1993-01-09', 27, 'Defensa', 184, 78, 'derecho', 41, NULL, NULL, NULL, NULL, 0x33353234332e706e67, 1),
+(14, 'Yerson', 'Opazo', '1984-12-24', 35, 'Defensa', 174, 79, 'derecho', 41, NULL, NULL, NULL, NULL, 0x32373232312e706e67, 1),
+(15, 'Daniel', 'Franco', '1991-07-15', 28, 'Defensa', 184, 76, 'derecho', 41, NULL, NULL, NULL, NULL, 0x44616e69656c2d4672616e636f2e706e67, 2),
+(16, 'Carlos', 'Espinosa', '1983-11-22', 36, 'Mediocampista', 172, 71, 'izquierdo', 41, NULL, NULL, NULL, NULL, 0x32373237362e706e67, 1),
+(17, 'Franco', 'Bechtholdt', '1993-08-15', 26, 'Mediocampista', 184, 70, 'izquierdo', 41, NULL, NULL, NULL, NULL, 0x3137303435352e706e67, 2),
+(18, 'Carlos', 'Suárez', '1992-04-26', 27, 'Mediocampista', 170, 68, 'derecho', 41, NULL, NULL, NULL, NULL, 0x33343533322e706e67, 6),
+(19, 'Mauro', 'Quiroga', '1989-12-07', 30, 'Delantero', 190, 81, 'derecho', 41, NULL, NULL, NULL, NULL, 0x31393237372e6a7067, 2),
+(20, 'Diego', 'Vallejos', '1990-03-16', 29, 'Delantero', 173, 78, 'derecho', 41, NULL, NULL, NULL, NULL, 0x32373138352e706e67, 1),
+(21, 'Sebastían', 'Jaime', '1987-01-30', 33, 'Delantero', 176, 70, 'derecho', 41, NULL, NULL, NULL, NULL, 0x33323934342e706e67, 2),
+(22, 'Camilo', 'Moya', '1998-02-19', 22, 'Mediocampista', 169, 65, 'derecho', 13, NULL, NULL, NULL, NULL, 0x33333830382e706e67, 1),
+(23, 'Gonzalo', 'Espinoza', '1988-10-20', 31, 'Mediocampista', 178, 79, 'derecho', 13, NULL, NULL, NULL, NULL, 0x32373039392e706e67, 1),
+(24, 'Walter', 'Montillo', '1984-04-14', 35, 'Mediocampista', 175, 70, 'derecho', 13, NULL, NULL, NULL, NULL, 0x556e6976657273696461645f64655f4368696c655f765f556e69c3b36e5f4c615f43616c6572615f32303230303232375f30342e6a7067, 1),
+(25, 'Angelo', 'Henriquez', '1994-04-13', 25, 'Delantero', 177, 73, 'derecho', 13, NULL, NULL, NULL, NULL, 0x32323432332e6a7067, 1),
+(26, 'Nicolas', 'Guerra', '1999-01-09', 21, 'Delantero', 176, 76, 'derecho', 13, NULL, NULL, NULL, NULL, 0x33393232342e706e67, 1),
+(27, 'Jonathan', 'Zacaria', '1990-02-06', 30, 'Delantero', 175, 68, 'izquierdo', 13, NULL, NULL, NULL, NULL, 0x33313536392e706e67, 2);
 
 -- --------------------------------------------------------
 
@@ -689,7 +706,8 @@ INSERT INTO `trayectoriasjugadores` (`idTrayectoriaJugador`, `idJugador`, `idClu
 (8, 7, 13, 1, 4),
 (9, 8, 2, 1, 2),
 (11, 9, 2, 3, 3),
-(12, 10, 12, 2, 3);
+(12, 10, 12, 2, 3),
+(13, 11, 50, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -713,8 +731,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'User', 'user@mail.com', NULL, '$2y$10$lwcFgR0xXpbWli4BRSNKue2PfMghwQaia4G0Jpo37gzJcujXn12/u', 'Yvb76gvepJw4em2nIW4YE6N0O3kBbVVa83HiCcZRnCM0Y0L2Wkv1ve310bKM', NULL, NULL),
-(2, 'Admin', 'admin@mail.com', NULL, '$2y$10$Fh1lNM0vxQaXVfxGu5gEx.MY.UvT7OGaggAylSmJmh568LN/W8FHG', 'jTat0cueL8OKnrpgZWDiAgUx5OlxPzI8IT4kmhSvOlV8YMIEIjaelf5jVLzQ', NULL, NULL),
+(1, 'User', 'user@mail.com', NULL, '$2y$10$lwcFgR0xXpbWli4BRSNKue2PfMghwQaia4G0Jpo37gzJcujXn12/u', 'pRHVTg7TgIa7M3JvwUKtGBovlqHNV5esIJS6qtkEs1xIbhrhPIVbdq8AMxAA', NULL, NULL),
+(2, 'Admin', 'admin@mail.com', NULL, '$2y$10$Fh1lNM0vxQaXVfxGu5gEx.MY.UvT7OGaggAylSmJmh568LN/W8FHG', 'ZIaeHORVJ2CwJPGKxugVOPVL83dZRb1Ib5IG4OSV3Qv36Or8QaAoRdn3nGWU', NULL, NULL),
 (3, 'juano2', 'juano2@mail.com', NULL, '$2y$10$YEquybii2XXnTj6pUTCy8edncp5EQ18i7FaeefbpMfizybSkxXzCO', 'A9yB8EFOe50ma8AesYgqF0jNKAr9p9F656Xtoz3STGvqGX2a5HiJ2OAsP14f', NULL, NULL),
 (4, 'juano3', 'juano3@mail.com', NULL, '$2y$10$9NoRjoWfcKA1bsc7x6sfh.1fpddHKI8y2zDOa12xxmctxJw7eA05K', 'Y2fwQOhTFuoz2EK7EPbIs9vfHg6hmmtFE43Pemojs5h2kb7BFZZtE9OIHcfx', NULL, NULL),
 (5, 'Luis', 'luisfuenzalidalizana@gmail.com', NULL, '$2y$10$whvadb3I90bKFdKpzGYwWurTfDP28gv6j3QFnwLh4uxYUBrRycwpi', 'IgRhXzQoqbgzlVfTFBVVvRcBKj6OzLclpklQQwlL7tUko0NRrXEGqAnecKxV', NULL, NULL),
@@ -989,7 +1007,7 @@ ALTER TABLE `historiales`
 -- AUTO_INCREMENT de la tabla `jugadores`
 --
 ALTER TABLE `jugadores`
-  MODIFY `idJugador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idJugador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `migrations`
@@ -1043,7 +1061,7 @@ ALTER TABLE `trayectoriasdirectorestecnicos`
 -- AUTO_INCREMENT de la tabla `trayectoriasjugadores`
 --
 ALTER TABLE `trayectoriasjugadores`
-  MODIFY `idTrayectoriaJugador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idTrayectoriaJugador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
