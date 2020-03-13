@@ -11,7 +11,7 @@
       left: 0px;
       top: -160px;
       right: 0px;
-      height: 100px;
+      height: 130px;
       background-color: #ddd;
       text-align: center;
     }
@@ -42,28 +42,32 @@
       text-align: left;
     }
   </style>
+
+
 <body>
   <header>
-    <h1>
+    <h2>
       @foreach($clubes as $club)
-      @if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
-      {{ $club['nombreClub'] }} {{$partidos->golesLocalPartido}}
-      @endif
-      @endforeach
-    </h1>
-    <h3>vs</h3>
-    <h2>@foreach($clubes as $club)
-        @if($club->idClub === $partidos->clubVisitaPartido)
-            {{$club->nombreClub}} {{$partidos->golesVisitaPartido}}
+       @if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
+         {{ $club['nombreClub'] }} {{$partidos->golesLocalPartido}}
         @endif
-        @endforeach</h2>
+      @endforeach
+    </h2>
+    <h3>vs</h3>
+    <h2>
+      @foreach($clubes as $club)
+        @if($club->idClub === $partidos->clubVisitaPartido)
+          {{$club->nombreClub}} {{$partidos->golesVisitaPartido}}
+        @endif
+      @endforeach
+    </h2>
   </header>
   <footer>
     <table>
       <tr>
         <td>
             <p class="izq">
-                coas
+                4-4-2
             </p>
         </td>
         <td>
@@ -75,31 +79,83 @@
     </table>
   </footer>
   <div id="content">
+    <h2>
+      Datos del Partido
+    </h2>
     <p>
       @foreach($arbitros as $arb)
       @if($partidos->idArbitroCentral === $arb->idArbitro)
-      Arbitro central: {{ $arb['nombreArbitro'] }}  {{ $arb['apellidosArbitro'] }}
+      <b>Arbitro central:</b> {{ $arb['nombreArbitro'] }}  {{ $arb['apellidosArbitro'] }}
       @endif
       @endforeach
     </p>
+    
     <p>
       @foreach($estadios as $est)
       @if($partidos->idEstadio === $est->idEstadio)
-      {{$est->nombreEstadio}}
+      <b>Estadio:</b> {{$est->nombreEstadio}}
       @endif
       @endforeach
     </p>
     
     </p>
     <p>
-      Fecha:{{$partidos->fechaPartido}}
+      <b>Fecha:</b> {{$partidos->fechaPartido}}
     </p>
     <p>
-      Hora:{{$partidos->horaPartido}}
+      <b>Hora:</b> {{$partidos->horaPartido}}
     </p>
+    <br>
+    <h2>Alineaciones</h2>
     <p>
       
+      <?php
+      $local = false;
+      $visita = false;
+      ?>
+      @foreach($historial as $his)
+      @if($partidos->idPartido === $his->idPartido)
+      @foreach($jugadores as $jug)
+      @if($jug->idJugador === $his->idJugador)
+      <?php
+      $pos = strpos($his->Titular, 'L');
+      ?>
+      @if($pos === false)
+      @if($visita === false)
+      <h3>
+        @foreach($clubes as $club)
+       @if (strcmp($partidos->clubLocalPartido, $club->idClub) === 0)
+         {{ $club['nombreClub'] }} {{$partidos->golesLocalPartido}}
+        @endif
+      @endforeach
+      </h3>
+      @endif
+      <?php
+      $visita = true;
+      ?>
+      <p>{{$jug->nombreJugador}} {{$jug->apellidosJugador}} 
+      </p>
+      @endif
+      @if($pos != false)
+      @if($local === false)
+      <h3>@foreach($clubes as $club)
+        @if($club->idClub === $partidos->clubVisitaPartido)
+          {{$club->nombreClub}} {{$partidos->golesVisitaPartido}}
+        @endif
+      @endforeach</h3>
+      @endif
+      <?php
+      $local = true;
+      ?>
+      <p>{{$jug->nombreJugador}} {{$jug->apellidosJugador}}
+      </p>
+      @endif
+      @endif
+      @endforeach
+      @endif
+      @endforeach
     </p>
   </div>
+  
 </body>
 </html>
