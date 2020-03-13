@@ -390,60 +390,61 @@
                         </td>
                     </tr>
                 @endforeach
-                    <tr class="bg-success">
-                        <td>
-                            <div class="row alg">
-                                <div class="col">
-                                    <h6 class="text-white ">Ingresar nuevo Equipo</h6>
-                                </div>
-                            </div>
-                         </td>
-                            <form class="form-group text-white" method="POST" action="/trayectoriajugador" enctype="multipart/form-data">
-                            @csrf
-                
-                        
-                             <input type="hidden" name="idJugador" value="{{$jugadores->idJugador}}" class="form-control">
-                       
-                                <td>
-                                    <select name="idClub" class="form-control">
-                                        <option disabled selected value>Seleciona un Club...</option>
-                                        @foreach ($clubes as $club)
-                                            
-                                                <option value="{{$club->idClub}}">{{$club->nombreClub}}</option>
-                                            
-                                        @endforeach
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="idTorneo" class="form-control">
-                                        <option disabled selected value>Seleciona un Torneo...</option>
-                                            @foreach($torneos as $tor)
-                                                <option value="{{$tor->idTorneo}}">{{$tor->nombreTorneo}}</option>
-                                            @endforeach
-                                            
-                                        
-                                    </select>
-                                </td>
-                                <td>
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <input type="text" name="camisetaJugador" placeholder="Número de Camiseta" class="form-control">
-
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="submit" class="btn btn-primary">OK</button>
-
-                                        </div>
-                                    </div>
-                                </td>
-                            </form>
-                        
-                    </tr>
+                   
                 </tbody>
             </table>
+            
     </div>
+
+    
 </div>
 
+
+        <form class="form-group text-white" method="POST" action="/trayectoriajugador" enctype="multipart/form-data">
+            @csrf
+            <div class="row">
+                
+                <div class="col">
+                    <h6 class="text-white ">Ingresar nuevo Equipo</h6>
+                </div>
+        
+                <input type="hidden" name="idJugador" value="{{$jugadores->idJugador}}" class="form-control">
+       
+                <div class="col">
+                    <select name="idClub" class="form-control">
+                        <option disabled selected value>Seleciona un Club...</option>
+                        @foreach ($clubes as $club)
+                            
+                                <option value="{{$club->idClub}}">{{$club->nombreClub}}</option>
+                            
+                        @endforeach
+                    </select>
+                </div>
+                <div class="col">
+                    <select name="idTorneo" class="form-control">
+                        <option disabled selected value>Seleciona un Torneo...</option>
+                            @foreach($torneos as $tor)
+                                <option value="{{$tor->idTorneo}}">{{$tor->nombreTorneo}}</option>
+                            @endforeach
+                            
+                        
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="text" name="camisetaJugador" placeholder="Número de Camiseta" class="form-control">
+
+                        </div>
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-success">OK</button>
+
+                        </div>
+                    </div>
+                    </div>
+</div>
+
+            </form>
 
 
 
