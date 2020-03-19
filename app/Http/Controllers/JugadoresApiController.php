@@ -23,11 +23,12 @@ class JugadoresApiController extends Controller
     {
     	$jugadores = Jugador::all();
     	foreach ($jugadores as $jugador) {
-            if ($jugador->imagenJugador != NULL) {
+           $jugador['imagenJugador'] = mb_convert_encoding($jugador['imagenJugador'], 'UTF-8', 'UTF-8');
+            /*if ($jugador->imagenJugador != NULL) {
                 if(file_exists('/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$jugador->imagenJugador)== FALSE){
                     copy(public_path().'/images/jugador/'.$jugador->imagenJugador,'/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$jugador->imagenJugador);
                 }
-            }
+            }*/
         }
     	return response()->json($jugadores,200);
     }

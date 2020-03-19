@@ -21,13 +21,13 @@ class ClubesApiController extends Controller
     public function index()
     {
         $clubes = Club::all();
-        /*foreach ($clubes as $club) {
+        foreach ($clubes as $club) {
             if ($club->imagenClub != NULL) {
                 if(file_exists('/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub)== FALSE){
                     copy(public_path().'/images/club/'.$club->imagenClub,'/Users/luisfuenzalidalizana/Documents/GitHub/AppMoviles/src/assets/img/'.$club->imagenClub);
                 }
             }
-        }*/
+        }
         return response()->json($clubes,200);
 
     }
