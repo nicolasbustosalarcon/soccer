@@ -23,4 +23,33 @@ class PaisesApiController extends Controller
     	$paises = Pais::all();
     	return response()->json($paises,200);
     }
+
+    public function store(Request $request)
+    {
+    	$paises = new Pais();
+    	
+        $paises->nombrePais = $request->input('nombrePais');
+        
+        $paises->idContinente = $request->input('idContinente');         
+        $paises->save();
+    }
+    public function show($id)
+    {
+        $paises = Pais::findOrFail($id);
+        return response()->json($paises,200);
+    }
+    public function update(Request $request, $id)
+    {
+        $paises = Pais::findOrFail($request->input('idJugador'));
+        $paises->nombrePais = $request->input('nombrePais');
+  
+        $paises->idContinente = $request->input('idContinente');  
+        $paises->update();
+
+    }
+    public function destroy($id)
+    {
+        $paises = Pais::find($id);
+        $paises->delete();
+    }
 }
