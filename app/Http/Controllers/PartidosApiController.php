@@ -15,6 +15,23 @@ use App\Pais;
 use App\Torneo;
 use App\Partido;
 use DB;
+ 
+/*idPartido
+clubLocalPartido
+clubVisitaPartido
+fechaPartido
+horaPartido
+jornadaPartido
+idEstadio
+idArbitroCentral
+idTorneo
+TipoPartido
+golesVisitaPartido
+golesLocalPartido
+estadoPartido
+idArbitroAsistente1
+idArbitroAsistente2
+idCuartoArbitro*/
 
 class PartidosApiController extends Controller
 {
@@ -27,6 +44,21 @@ class PartidosApiController extends Controller
     public function store(Request $request)
     {
     	$partidos = new Partido();
+        $partidos->clubLocalPartido = $request->input('clubLocalPartido');
+        $partidos->clubVisitaPartido = $request->input('clubVisitaPartido');
+        $partidos->fechaPartido = $request->input('fechaPartido');
+        $partidos->horaPartido = $request->input('horaPartido');
+        $partidos->jornadaPartido = $request->input('jornadaPartido');
+        $partidos->idEstadio = $request->input('idEstadio');
+        $partidos->idArbitroCentral = $request->input('idArbitroCentral');
+        $partidos->idTorneo = $request->input('idTorneo');
+        $partidos->TipoPartido = $request->input('TipoPartido');
+        $partidos->golesVisitaPartido = $request->input('golesVisitaPartido');
+        $partidos->golesLocalPartido = $request->input('golesLocalPartido');
+        $partidos->estadoPartido = $request->input('estadoPartido');
+        $partidos->idArbitroAsistente1 = $request->input('idArbitroAsistente1');
+        $partidos->idArbitroAsistente2 = $request->input('idArbitroAsistente2');
+        $partidos->idCuartoArbitro = $request->input('idCuartoArbitro');
         $partidos->save();
     }
     public function show($id)
